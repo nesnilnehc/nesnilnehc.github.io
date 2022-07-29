@@ -29,10 +29,9 @@ categories: "GitHub Pages"
 
 5. 使用 GitHub Desktop 提交并发布
 
-6. 通过 https://账户名.github.io 访问站点
+6. 通过 <https://账户名.github.io> 访问站点
 
 ## 参考
 
 - [GitHub Pages | Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/)
-- https://docs.github.com/cn/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#
-
+- <https://docs.github.com/cn/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#>

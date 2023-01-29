@@ -42,4 +42,4 @@ categories: ai
 1. 选择 [https://deepdreamgenerator.com/](https://deepdreamgenerator.com/)
 
     将步骤 1 中关键词：自然色调，抽象图案，现代简约，动态配色，无缝渐变，翻译成英文作为输入，生成图片
-    ![avatar-2023.jpg]({{ site.url }}/assets/avatars/avatar-2023.jpg)
+    ![avatar-2023.jpg]({{ site.url }}/assets/images/avatar-2023.jpg)

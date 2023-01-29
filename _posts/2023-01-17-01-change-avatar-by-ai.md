@@ -6,6 +6,7 @@ categories: ai
 ---
 
 给自己定了一个小目标：每年要换一个社交头像。
+
 今年使用了一些 AI 工具。步骤如下：
 
 1. 使用 [http://chat.openai.com/](http://chat.openai.com/)

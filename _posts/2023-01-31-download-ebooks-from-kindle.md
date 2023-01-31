@@ -31,7 +31,7 @@ categories: Kindle, ePub
 
 ## 参考
 
-1. [重要通知 | Kindle 中国电子书店运营调整](https://mp.weixin.qq.com/s/jJG36Hbrw2-ZeUT3aDXKBA)
+1. [重要通知 \| Kindle 中国电子书店运营调整](https://mp.weixin.qq.com/s/jJG36Hbrw2-ZeUT3aDXKBA)
 2. [yihong0618/Kindle_download_helper](https://github.com/yihong0618/Kindle_download_helper)
 3. [去除 Kindle 电子书的 DRM 版权保护](https://blog.mzihen.com/kindle-drm-removal/)
 4. [自购亚马逊电子书移除 DRM 教程 DRM 脱壳 + 电子书格式转换](https://zhuanlan.zhihu.com/p/58851910)

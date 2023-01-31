@@ -2,7 +2,7 @@
 layout: post
 title:  "如何下载 Kindle 电子书"
 date:   2023-01-31 17:38:00 +0800
-categories: Kindle, ePub
+categories: Kindle ePub
 ---
 
 由于 Kindle 宣布 2023 年 06 月 30 日停止在中国电子书店的运营<sup>[1]</sup>，我想将购买的一些电子书下载存档。

@@ -2,7 +2,7 @@
 layout: post
 title:  "使用 AI 工具换新头像"
 date:   2023-01-17 14:36:05 +0800
-categories: ai
+categories: AI
 ---
 
 给自己定了一个小目标：每年要换一个社交头像。

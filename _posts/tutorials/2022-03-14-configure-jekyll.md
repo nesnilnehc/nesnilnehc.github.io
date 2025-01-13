@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "如何在 GitHub Pages 网站中配置 Jekyll"
-date:   2022-03-14 14:36:05 +0800
-categories: GitHub Jekyll
+title:  "配置 Jekyll 站点"
+date:   2022-03-14 15:36:05 +0800
+categories: Tutorials
+tags: [Jekyll, Configuration]
 ---
 
 1. [修改主题]([使用主题选择器将主题添加到 GitHub Pages 站点 - GitHub Docs](https://docs.github.com/cn/pages/getting-started-with-github-pages/adding-a-theme-to-your-github-pages-site-with-the-theme-chooser#adding-a-theme-with-the-theme-chooser))

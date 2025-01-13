@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "如何托管站点到 GitHub Pages？"
+title:  "在 GitHub Pages 上托管网站"
 date:   2022-03-14 14:36:05 +0800
-categories: "GitHub Pages"
+categories: Tutorials
+tags: [GitHub Pages, Hosting]
 ---
 
 你可以为一个 GitHub 账户托管一个站点，或者给每一个项目托管一个站点。

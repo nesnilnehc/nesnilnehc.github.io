@@ -2,7 +2,7 @@
 layout: post
 title:  "每周见闻（第 3 期）"
 date:   2023-03-12 00:00:00 +0800
-categories: NEWS
+categories: News
 ---
 
 ## 工具

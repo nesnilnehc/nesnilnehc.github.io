@@ -2,7 +2,7 @@
 layout: post
 title:  "每周见闻（第 2 期）"
 date:   2023-02-05 00:00:00 +0800
-categories: NEWS
+categories: News
 ---
 
 ## 工具

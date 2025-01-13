@@ -12,8 +12,6 @@ tags: [Jekyll, Configuration]
 
    2. 在仓库名称下，单击 **Settings（设置）**
 
-      ![仓库设置按钮](https://docs.github.com/assets/cb-21851/images/help/repository/repo-actions-settings.png)
-
    3. 在 Code and automation 节点，单击 **Pages**
 
    4. 在页面顶部单击所需的主题，然后单击 **Select theme（选择主题）**

@@ -189,15 +189,15 @@ feed:
 ```html
 <div class="sidebar">
   <h2>归档</h2>
-  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% raw %}{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}{% endraw %}
   
   <ul class="archive-list">
-    {% for year in postsByYear %}
+    {% raw %}{% for year in postsByYear %}{% endraw %}
       <li>
         <span class="year">{{ year.name }}</span>
         <span class="count">({{ year.items.size }})</span>
       </li>
-    {% endfor %}
+    {% raw %}{% endfor %}{% endraw %}
   </ul>
 </div>
 ```
@@ -208,9 +208,9 @@ feed:
 <!-- _layouts/default.html -->
 <div class="container">
   <div class="content">
-    {{ content }}
+    {% raw %}{{ content }}{% endraw %}
   </div>
-  {% include sidebar.html %}
+  {% raw %}{% include sidebar.html %}{% endraw %}
 </div>
 ```
 
@@ -235,9 +235,7 @@ feed:
 2. 统一日期格式：
 
 ```liquid
-{% raw %}
-{{ post.date | date: "%Y年%-m月%-d日" }}
-{% endraw %}
+{% raw %}{{ post.date | date: "%Y年%-m月%-d日" }}{% endraw %}
 ```
 
 ### 2. 文件命名规范

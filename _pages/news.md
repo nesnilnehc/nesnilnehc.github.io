@@ -2,8 +2,8 @@
 layout: page
 title: News
 nav_title: News
-nav_order: 1
-permalink: /
+nav_order: 2
+permalink: /news/
 ---
 
 {% for post in site.categories.News %}

@@ -48,6 +48,7 @@ include:
 
 # Header pages (specify the exact order you want)
 header_pages:
+  - _pages/index.md
   - _pages/news.md
   - _pages/tech.md
   - _pages/tutorials.md

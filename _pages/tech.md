@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Technology
-nav_title: Technology
-nav_order: 3
+title: Tech
+nav_title: Tech
+nav_order: 2
 permalink: /tech/
 ---
 

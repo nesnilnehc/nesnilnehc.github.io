@@ -1,0 +1,21 @@
+<div class="sidebar">
+  <h2>Archive</h2>
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  
+  <ul class="archive-list">
+    {% for year in postsByYear %}
+      <li>
+        <span class="year">{{ year.name }}</span>
+        <span class="count">({{ year.items.size }})</span>
+        <ul class="posts-by-year">
+          {% for post in year.items %}
+            <li>
+              <span class="post-date">{{ post.date | date: "%b %-d" }}</span>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

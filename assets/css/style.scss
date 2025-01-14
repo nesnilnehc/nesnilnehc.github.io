@@ -3,10 +3,87 @@
 
 @import "minima";
 
-.site-nav {
-  .menu-icon {
-    > svg path {
-      fill: #424242;
+// 不覆盖 minima 的 wrapper 样式，而是在内容区域添加我们的布局
+.content-wrapper {
+  display: flex;
+  gap: 2rem;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0; // 防止内容溢出
+  max-width: 800px;
+}
+
+.sidebar-wrapper {
+  width: 250px;
+  flex-shrink: 0;
+  
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+.sidebar {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  position: sticky;
+  top: 2rem;
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .archive-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      margin-bottom: 0.5rem;
+    }
+    
+    .year {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .count {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    .posts-by-year {
+      list-style: none;
+      margin: 0.5rem 0 1rem 1rem;
+      padding: 0;
+      
+      li {
+        margin-bottom: 0.25rem;
+        font-size: 0.9rem;
+      }
+      
+      .post-date {
+        color: #666;
+        margin-right: 0.5rem;
+      }
+      
+      a {
+        color: #2a7ae2;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

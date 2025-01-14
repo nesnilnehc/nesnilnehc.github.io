@@ -50,7 +50,7 @@ header_pages:
   - _pages/news.md
   - _pages/tech.md
   - _pages/tutorials.md
-  - _pages/about.markdown
+  - _pages/about.md
 
 # Collections
 collections:

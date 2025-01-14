@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "每周见闻（第 1 期）"
+title:  "每周见闻（2022 年第 1 期）"
 date:   2022-10-30 00:00:00 +0800
 categories: News
 ---

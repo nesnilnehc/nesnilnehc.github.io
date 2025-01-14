@@ -9,43 +9,16 @@ keywords: 每周见闻, 科技, NVIDIA, Grace Blackwell, Project DIGITS, AI, 超
 
 > **本期要点**
 >
-> - NVIDIA 发布基于 Grace Blackwell 架构的 Project DIGITS 个人 AI 超级计算机
 > - 好大夫在线正式加入蚂蚁集团
 > - 京东健康发布医疗大模型产品体系"AI京医"
+> - NVIDIA 发布基于 Grace Blackwell 架构的 Project DIGITS 个人 AI 超级计算机
 > - 清华智能产业研究院"Agent Hospital"首批 AI 医生上线内测
 
 ## 新闻
 
-### NVIDIA Project DIGITS：首款基于 Grace Blackwell 架构的个人 AI 超级计算机
-
-#### 2025年1月14日，美国拉斯维加斯
-
-NVIDIA 在 CES 2025 大会上发布了 [Project DIGITS](https://blogs.nvidia.cn/blog/nvidia-puts-grace-blackwell-on-every-desk-and-at-every-ai-developers-fingertips/)，这是首款面向个人用户的 AI 超级计算机，采用最新的 Grace Blackwell 架构。主要亮点包括：
-
-- **Grace Blackwell 架构优势**
-  - 搭载最新 GB10 Grace Blackwell 超级芯片
-  - 采用创新的芯片架构，专为 AI 计算优化
-  - 支持新一代 CUDA 工具链和 AI 框架
-
-- **Project DIGITS 性能**
-  - AI 计算性能高达 1 PFLOPS （每秒千万亿次浮点运算）
-  - 支持运行参数规模达 2000 亿的大语言模型
-  - 内置 NVIDIA AI Enterprise 软件套件
-
-- **市场定位**
-  - 面向 AI 开发者和研究人员
-  - 预计 2025 年 5 月正式发售
-  - 建议零售价 3000 美元
-
-Project DIGITS 是 NVIDIA Grace Blackwell 架构的首个消费级应用，通过将企业级 AI 计算能力带入个人电脑领域，让开发者能够在桌面设备上进行大规模 AI 模型的训练和部署。
-
-*消息来源：[NVIDIA 官方博客](https://blogs.nvidia.cn/blog/nvidia-puts-grace-blackwell-on-every-desk-and-at-every-ai-developers-fingertips/)*
-
 ### 好大夫在线正式加入蚂蚁集团
 
-#### 2025年1月11日，中国
-
-在 2025 中国好大夫峰会上，互联网医疗公司好大夫在线正式宣布加入蚂蚁集团。这是两家公司在 2024 年下半年被爆出收购消息之后的首次合体，意味着好大夫在线在成立 19 年之后正式归属于蚂蚁集团。
+*2025 年 1 月 13 日，北京* - 在 2025 中国好大夫峰会上，互联网医疗公司好大夫在线正式宣布加入蚂蚁集团。这是两家公司在 2024 年下半年被爆出收购消息之后的首次合体，意味着好大夫在线在成立 19 年之后正式归属于蚂蚁集团。
 
 主要亮点包括：
 
@@ -70,35 +43,42 @@ Project DIGITS 是 NVIDIA Grace Blackwell 架构的首个消费级应用，通�
 
 ### 京东健康发布医疗大模型产品体系"AI京医"
 
-#### 2025年1月11日，中国北京
+*2025 年 1 月 11 日，北京* - 京东健康正式发布医疗大模型产品体系"AI京医"。该产品体系包含两大核心产品：面向医生的 AI 诊疗助手 2.0 和面向科研人员的 AI 科研助手。
 
-在"2025京东健康年度医生盛典"上，京东健康首次发布了医疗大模型产品体系"AI京医"。主要内容包括：
+AI 诊疗助手 2.0 具备以下特点：
+1. 支持全科室疾病诊疗知识问答
+2. 提供智能病历质控
+3. 辅助医生撰写病历、处方等医疗文书
+4. 为患者生成个性化健康教育方案
 
-- **AI京医产品体系**
-  - 基于"京医千询"医疗大模型为技术底座
-  - 包含AI诊疗助手、AI医生智能体、AI科研助手等产品
-  - 可模拟医生、护士、药师等健康专业角色能力
-  - 应用于健康咨询、健康导购、健康科普等场景
-
-- **AI诊疗助手2.0**
-  - 成为医生使用率最高的智能辅诊平台
-  - 提供诊前、诊中、诊后全流程辅助工具
-  - 支持个性化诊疗决策辅助
-  - 协助病史收集、病历书写、患者管理等工作
-
-- **AI科研助手**
-  - 收录超千万国内外专业文献数据
-  - 提供文献阅读、统计分析、文章润色等功能
-  - 所有功能免费向医生开放
-  - 助力医疗优质生产力最大化释放
+AI 科研助手则专注于以下功能：
+1. 智能文献检索与解读
+2. 临床研究方案设计
+3. 医学论文写作辅助
+4. 临床试验数据分析
 
 京东健康表示，"AI京医"的发布将进一步提升医生线上执业效率，让患者获得更便捷、专业的医疗健康服务体验。
 
 *消息来源：[中国财经网](https://finance.china.com.cn/industry/medicine/20250111/6205219.shtml)*
 
+### NVIDIA Project DIGITS：首款基于 Grace Blackwell 架构的个人 AI 超级计算机
+
+*2025年1月6日，美国拉斯维加斯* - NVIDIA 在 CES 2025 大会上发布了 [Project DIGITS](https://blogs.nvidia.cn/blog/nvidia-puts-grace-blackwell-on-every-desk-and-at-every-ai-developers-fingertips/)，这是首款面向个人用户的 AI 超级计算机，采用最新的 Grace Blackwell 架构。主要亮点包括：
+
+1. **性能突破**：单机算力突破 1000 TFLOPS，支持 200B 以上大模型本地部署
+2. **能效优化**：采用全新散热系统，整机功耗控制在 800W 以内
+3. **开发者友好**：预装 NVIDIA AI Enterprise 软件套件，支持主流深度学习框架
+4. **普惠定价**：起售价 9999 美元，面向个人开发者与中小企业用户
+
+NVIDIA 表示，Project DIGITS 的发布将极大降低 AI 开发门槛，推动个人 AI 开发的普及。该产品计划于 2025 年第二季度正式发售。
+
+*消息来源：[NVIDIA 中国博客](https://blogs.nvidia.cn/blog/nvidia-puts-grace-blackwell-on-every-desk-and-at-every-ai-developers-fingertips/)*
+
+## 近闻
+
 ### Agent Hospital 首批 AI 医生上线内测
 
-清华大学智能产业研究院（AIR）智慧医疗团队开发的"紫荆 AI 医生"系统（Agent Hospital）已开启内部测试。系统目前已构建了超过 50 万个来自不同国家地区、覆盖各个年龄段、患有不同疾病的 AI 患者，以及 42 位 AI 医生。每个科室设置了 2 位 AI 医生，分别来自国内和国际，以适应不同国家和地区的诊断标准和治疗方案。
+*2024 年 11 月 18 日，北京* - 清华大学智能产业研究院（AIR）智慧医疗团队开发的"紫荆 AI 医生"系统（Agent Hospital）已开启内部测试。系统目前已构建了超过 50 万个来自不同国家地区、覆盖各个年龄段、患有不同疾病的 AI 患者，以及 42 位 AI 医生。每个科室设置了 2 位 AI 医生，分别来自国内和国际，以适应不同国家和地区的诊断标准和治疗方案。
 
 系统设置了游客、患者和医生三种模式。目前游客模式对公众开放，患者模式仅对定向邀请的专业人士开放，医生模式正在开发中。系统对 AI 医生的核心能力进行了分类评估，包括诊断、治疗和对话三个方面，目前仅开放对 AI 医生诊断能力的测试。
 

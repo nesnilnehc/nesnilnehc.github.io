@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <h2>Archive</h2>
+  <h2>归档</h2>
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   
   <ul class="archive-list">
@@ -10,7 +10,7 @@
         <ul class="posts-by-year">
           {% for post in year.items %}
             <li>
-              <span class="post-date">{{ post.date | date: "%b %-d" }}</span>
+              <span class="post-date">{{ post.date | date: "%-m月%-d日" }}</span>
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </li>
           {% endfor %}

@@ -25,11 +25,11 @@ nav_order: 5
         精确匹配
       </label>
     </div>
-    <input type="text" id="search-input" placeholder="输入搜索关键词..." aria-label="搜索">
+    <input type="text" id="search-input" placeholder="请输入搜索关键词..." aria-label="搜索">
   </div>
 
   <div id="search-results" class="search-results">
-    <p class="search-tip">输入关键词开始搜索...</p>
+    <p class="search-tip">请输入关键词开始搜索...</p>
   </div>
 </div>
 

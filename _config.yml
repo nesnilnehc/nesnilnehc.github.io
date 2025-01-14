@@ -1,12 +1,10 @@
-# Welcome to Jekyll!
+# 欢迎使用 Jekyll！
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# 此配置文件用于影响整个博客的设置，这些设置通常只需配置一次，之后很少需要修改
+# 如果您发现自己经常编辑此文件，请考虑使用 Jekyll 的数据文件功能来管理需要频繁更新的数据
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 由于技术原因，此文件不会在使用 `bundle exec jekyll serve` 时自动重新加载
+# 如果您修改了此文件，请重启服务器进程
 #
 # If you need help with YAML syntax, here are some quick references for you: 
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
@@ -19,10 +17,10 @@
 # in the templates via {{ site.myvariable }}.
 
 # title: Your awesome title
-title: NESNILNEHC's Personal Website
+title: NESNILNEHC 的个人网站
 # email: your-email@example.com
 email: nesnilnehc@hotmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # 忽略换行直到 "baseurl:"
   NESNILNEHC 的个人网站 - 分享技术博客、学习心得和个人见解。这里记录着我在软件开发、
   技术创新和个人成长方面的所思所想。
 baseurl: "" # the subpath of your site, e.g. /blog

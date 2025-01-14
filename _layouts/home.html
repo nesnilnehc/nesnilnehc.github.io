@@ -10,7 +10,7 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Latest Posts" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "最新文章" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts limit:5 -%}
       <li>
@@ -30,7 +30,7 @@ layout: default
 
     <p class="feed-subscribe">
       <a href="{{ 'feed.xml' | relative_url }}">
-        <svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>Subscribe</span>
+        <svg class="svg-icon orange"><use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><span>订阅</span>
       </a>
     </p>
   {%- endif -%}

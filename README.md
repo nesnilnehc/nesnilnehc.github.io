@@ -1,58 +1,63 @@
-# My Personal Blog
+# 个人博客网站
 
-基于 Jekyll 构建的个人博客网站。
+这是一个基于 Jekyll （一个简单的静态网站生成器）构建的个人博客网站
 
-## 特性
+## 主要功能
 
-- 响应式设计，支持移动端浏览
-- 文章分类：News、Technology、Tutorials
-- 按年份归档的侧边栏
+- 响应式设计，完美支持电脑和手机浏览
+- 文章分类
+  - 新闻动态 （News）
+  - 技术分享 （Technology）
+  - 教程指南 （Tutorials）
+- 文章归档侧边栏，按年份整理
 - 支持 Markdown 格式写作
-- 精确搜索功能，支持按标题、内容和分类搜索
-- RSS 订阅支持
+- 站内搜索功能，支持按标题、内容和分类搜索
+- RSS 订阅功能，实时获取更新
 
-## 本地开发
+## 本地开发环境搭建
 
 ### 环境要求
 
-- Ruby 3.x
-- Bundler
-- Jekyll 4.x
+- Ruby 3.x（推荐使用 Ruby 版本管理工具如 RVM 或 rbenv）
+- Bundler（Ruby 包管理器）
+- Jekyll 4.x（静态网站生成器）
 
 ### 安装步骤
 
-1. 克隆仓库：
+1. 克隆代码仓库：
 
    ```bash
    git clone https://github.com/nesnilnehc/nesnilnehc.github.io.git
    cd nesnilnehc.github.io
    ```
 
-2. 安装依赖：
+2. 安装项目依赖：
 
    ```bash
    bundle install
    ```
 
-3. 启动开发服务器：
+3. 启动本地开发服务器：
 
    ```bash
    bundle exec jekyll serve
    ```
 
-4. 访问 `http://localhost:4000` 预览网站
+4. 打开浏览器访问 `http://localhost:4000` 预览网站
 
 ### 写作指南
 
 #### 创建新文章
 
 1. 在 `_posts` 目录下对应的分类子目录中创建新的 Markdown 文件：
-   - News: `_posts/news/`
-   - Technology: `_posts/technology/`
-   - Tutorials: `_posts/tutorials/`
+   - 新闻动态：`_posts/news/`
+   - 技术分享：`_posts/technology/`
+   - 教程指南：`_posts/tutorials/`
 
 2. 文件命名格式：`YYYY-MM-DD-title.md`
-   例如：`2025-01-14-my-new-post.md`
+   例如：`2025-01-14-getting-started-with-jekyll.md`
+
+   > 注意：虽然文章内容是中文，但建议文件名使用英文，这样可以避免 URL 编码问题，提高兼容性
 
 3. 添加文章头信息（Front Matter）：
 
@@ -90,14 +95,14 @@
 
 > 引用文本
 
-代码块：
+代码示例：
 \```python
 def hello_world():
-    print("Hello, World!")
+    print("你好，世界！")
 \```
 ```
 
-### 目录结构
+### 网站目录结构
 
 ```
 .
@@ -109,14 +114,14 @@ def hello_world():
 ├── _layouts           # 页面布局模板
 ├── _pages            # 独立页面
 │   └── search.md     # 搜索页面
-├── _posts            # 博客文章
-│   ├── news         # 新闻类文章
-│   ├── technology   # 技术类文章
-│   └── tutorials    # 教程类文章
-├── assets           # 静态资源
+├── _posts            # 博客文章目录
+│   ├── news         # 新闻动态
+│   ├── technology   # 技术分享
+│   └── tutorials    # 教程指南
+├── assets           # 静态资源文件
 │   ├── css         # 样式文件
 │   ├── images      # 图片文件
-│   └── js          # JavaScript 文件
+│   └── js          # JavaScript 脚本
 ├── feed.xml        # RSS 订阅源
 └── index.md        # 网站首页
 ```
@@ -127,51 +132,45 @@ def hello_world():
 
 网站提供精确的文章搜索功能：
 
-1. 点击导航栏中的搜索图标进入搜索页面
+1. 点击导航栏中的搜索图标（🔍）进入搜索页面
 2. 在搜索页面可以：
    - 选择搜索范围（标题、内容、分类）
-   - 选择是否启用精确匹配
-3. 搜索结果会高亮显示匹配的文本
-4. 支持响应式布局，在移动设备上也能方便使用
+   - 开启精确匹配模式（完全匹配搜索词）
+3. 搜索结果会自动高亮显示匹配的文本
+4. 移动端和电脑端都可以方便地使用搜索功能
 
 #### RSS 订阅
 
 支持通过 RSS 订阅博客更新：
 
-1. 点击导航栏中的 RSS 图标访问订阅源
-2. 使用任何 RSS 阅读器添加 `/feed.xml`
-3. 自动获取最新的 10 篇文章更新
+1. 点击导航栏中的 RSS 图标订阅博客
+2. 可以使用任何 RSS 阅读器添加订阅源：`/feed.xml`
+3. 自动推送最新的 10 篇文章更新
 
-#### 侧边栏说明
+#### 文章归档
 
-网站右侧的侧边栏（Archive）会自动显示所有文章的归档信息：
+网站右侧的归档栏（Archive）自动整理所有文章：
 
-1. 按年份分组显示文章
-2. 每个年份显示该年的文章数量
-3. 展开后显示该年所有文章的发布日期和标题
-4. 点击文章标题可直接跳转到文章页面
+1. 按年份分组显示所有文章
+2. 显示每年发布的文章数量
+3. 点击年份可以展开查看该年所有文章
+4. 点击文章标题直接跳转到文章页面
 
-侧边栏组件的实现在 `_includes/sidebar.html` 文件中，主要功能：
+### 部署说明
 
-- 使用 Liquid 模板语言按年份对文章进行分组
-- 自动计算每年的文章数量
-- 支持响应式布局，在移动设备上会自动调整位置
+本网站使用 GitHub Pages 托管，提交代码后会自动部署：
 
-### 部署
-
-网站会在推送到 GitHub 后自动部署到 GitHub Pages。
-
-1. 提交更改：
+1. 提交更新：
 
    ```bash
    git add .
-   git commit -m "Add new post"
+   git commit -m "添加新文章"
    git push
    ```
 
-2. 等待 GitHub Actions 完成部署
+2. 等待 GitHub Actions 自动部署完成
 3. 访问 `https://nesnilnehc.github.io` 查看更新
 
-## License
+## 开源协议
 
-[MIT License](LICENSE)
+[MIT 开源协议](LICENSE)

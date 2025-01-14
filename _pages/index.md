@@ -1,7 +1,7 @@
 ---
 layout: home
-title: Home
-nav_title: Home
+title: 首页
+nav_title: 首页
 nav_order: 1
 permalink: /
 ---

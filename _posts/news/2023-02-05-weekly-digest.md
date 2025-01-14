@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2023 年每周见闻（第 2 期）"
+title:  "每周见闻（2023 年第 1 期）"
 date:   2023-02-05 00:00:00 +0800
 categories: News
 ---

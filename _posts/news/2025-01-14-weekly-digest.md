@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "每周见闻（2025 年第 1 期）"
-date: 2025-01-14 00:00:00 +0800
+date: 2025-01-14 14:26:00 +0800
 categories: [News]
 description: NVIDIA Grace Blackwell 个人 AI 超级计算机发布，支持万亿次级 AI 计算性能
 keywords: 每周见闻, 科技, NVIDIA, Grace Blackwell, AI, 超级计算机

@@ -10,6 +10,7 @@ keywords: 每周见闻, 科技, NVIDIA, Grace Blackwell, Project DIGITS, AI, 超
 > **本期要点**
 >
 > - NVIDIA 发布基于 Grace Blackwell 架构的 Project DIGITS 个人 AI 超级计算机
+> - 好大夫在线正式加入蚂蚁集团
 
 ## 新闻
 

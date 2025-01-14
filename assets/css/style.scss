@@ -186,6 +186,43 @@
   color: #2a7ae2;
 }
 
+// 导航栏按钮通用样式
+%nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    color: #2a7ae2;
+    background: rgba(42, 122, 226, 0.1);
+  }
+  
+  svg {
+    transition: transform 0.2s ease;
+  }
+  
+  &:hover svg {
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 600px) {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+    
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
 // 导航栏搜索按钮
 .site-nav {
   display: flex;
@@ -203,44 +240,30 @@
   }
   
   .search-button {
+    @extend %nav-button;
     order: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    margin-left: 10px;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.2s ease;
-    
-    &:hover {
-      color: #2a7ae2;
-      background: rgba(42, 122, 226, 0.1);
-    }
-    
-    svg {
-      transition: transform 0.2s ease;
-    }
-    
-    &:hover svg {
-      transform: scale(1.1);
-    }
+  }
+  
+  .rss-button {
+    @extend %nav-button;
+    order: 2;
   }
   
   @media screen and (max-width: 600px) {
     .search-button {
       position: absolute;
+      right: 85px;
+      top: 9px;
+    }
+    
+    .rss-button {
+      position: absolute;
       right: 45px;
       top: 9px;
-      margin-left: 0;
-      width: 32px;
-      height: 32px;
-      
-      svg {
-        width: 18px;
-        height: 18px;
-      }
+    }
+    
+    .nav-trigger + label {
+      right: 0;
     }
   }
 }

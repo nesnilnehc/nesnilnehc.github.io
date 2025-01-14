@@ -3,10 +3,24 @@
 
 @import "minima";
 
-// 不覆盖 minima 的 wrapper 样式，而是在内容区域添加我们的布局
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @media screen and (max-width: 800px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
 .content-wrapper {
   display: flex;
   gap: 2rem;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
@@ -22,10 +36,11 @@
 .sidebar-wrapper {
   width: 250px;
   flex-shrink: 0;
+  position: absolute;
+  left: 830px; // 800px(主内容最大宽度) + 30px(间距)
   
-  @media screen and (max-width: 800px) {
-    width: 100%;
-    margin-top: 2rem;
+  @media screen and (max-width: 1200px) {
+    display: none; // 在较小屏幕上隐藏侧边栏
   }
 }
 

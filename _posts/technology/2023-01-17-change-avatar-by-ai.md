@@ -2,12 +2,12 @@
 layout: post
 title:  "使用 AI 工具换新头像"
 date:   2023-01-17 14:36:05 +0800
-categories: [technology]
+categories: [tech]
 tags:
   - AI
   - avatar
   - tools
-permalink: /technology/change-avatar-by-ai/
+permalink: /tech/change-avatar-by-ai/
 ---
 
 给自己定了一个小目标：每年要换一个社交头像。

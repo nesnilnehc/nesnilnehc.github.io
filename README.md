@@ -12,8 +12,8 @@
 - 响应式设计，完美支持电脑和手机浏览
 - 文章分类
   - 新闻动态 （News）
-  - 技术分享 （Technology）
-  - 教程指南 （Tutorials）
+  - 技术分享 （tech）
+  - 教程指南 （tutorials）
 - 文章归档侧边栏，按年份整理
 - 支持 Markdown 格式写作
 - 站内搜索功能，支持按标题、内容和分类搜索
@@ -56,7 +56,7 @@
 
 1. 在 `_posts` 目录下对应的分类子目录中创建新的 Markdown 文件：
    - 新闻动态：`_posts/news/`
-   - 技术分享：`_posts/technology/`
+   - 技术分享：`_posts/tech/`
    - 教程指南：`_posts/tutorials/`
 
 2. 文件命名格式：`YYYY-MM-DD-title.md`
@@ -71,7 +71,7 @@
    layout: post
    title:  "文章标题"
    date:   2025-01-14 10:00:00 +0800
-   categories: News  # 或 Technology, Tutorials
+   categories: News  # 或 tech, tutorials
    ---
    ```
 
@@ -121,7 +121,7 @@ def hello_world():
 │   └── search.md     # 搜索页面
 ├── _posts            # 博客文章目录
 │   ├── news         # 新闻动态
-│   ├── technology   # 技术分享
+│   ├── tech   # 技术分享
 │   └── tutorials    # 教程指南
 ├── assets           # 静态资源文件
 │   ├── css         # 样式文件

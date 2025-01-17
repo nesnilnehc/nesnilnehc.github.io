@@ -2,7 +2,7 @@
 layout: post
 title:  "如何使用 Jekyll 构建静态网站"
 date:   2022-03-14 14:36:05 +0800
-categories: Tutorials
+categories: tutorials
 tags: [Jekyll, Static Site]
 ---
 

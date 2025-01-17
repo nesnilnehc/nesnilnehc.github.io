@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll 博客优化指南：功能增强与用户体验改进"
 date: 2025-01-14 11:11:28 +0800
-categories: Tutorials
+categories: tutorials
 ---
 
 ## 前言

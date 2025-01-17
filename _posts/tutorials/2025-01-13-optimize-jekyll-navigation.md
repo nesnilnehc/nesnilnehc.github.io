@@ -2,7 +2,7 @@
 layout: post
 title: "优化 Jekyll 站点的导航菜单和分类系统"
 date: 2025-01-13 21:33:45 +0800
-categories: Tutorials
+categories: tutorials
 tags: [Jekyll, Navigation, Categories]
 ---
 
@@ -20,11 +20,11 @@ your-site/
 ├── _pages/             # 存放页面文件
 │   ├── about.markdown
 │   ├── news.md
-│   ├── technology.md
+│   ├── tech.md
 │   └── tutorials.md
 ├── _posts/             # 按分类存放文章
 │   ├── news/
-│   ├── technology/
+│   ├── tech/
 │   └── tutorials/
 └── assets/             # 存放样式和资源文件
     └── css/
@@ -55,7 +55,7 @@ permalink: /url路径/   # 页面的永久链接
 header_pages:
   - _pages/news.md
   - index.md
-  - _pages/technology.md
+  - _pages/tech.md
   - _pages/tutorials.md
   - _pages/about.markdown
 ```
@@ -68,25 +68,25 @@ header_pages:
 
 ```yaml
 ---
-categories: Technology  # 使用 Technology, Tutorials, News
+categories: tech  # 使用 tech, tutorials, News
 tags: [标签1, 标签2]    # 使用标签提供更细致的分类
 ---
 ```
 
 ### 2. 创建分类页面
 
-为每个分类创建独立的页面，例如 `_pages/technology.md`：
+为每个分类创建独立的页面，例如 `_pages/tech.md`：
 
 ```liquid
 ---
 layout: page
-title: technology
-nav_title: technology
+title: tech
+nav_title: tech
 nav_order: 3
-permalink: /technology/
+permalink: /tech/
 ---
 
-{% raw %}{% for post in site.categories.technology %}
+{% raw %}{% for post in site.categories.tech %}
   <article class="post-entry">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <div class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
@@ -100,8 +100,7 @@ permalink: /technology/
 ## 最佳实践
 
 1. **保持命名一致性**
-   - 分类名称统一使用小写：`news`、`tutorials`、`technology`
-   - 避免混用大小写，如 `News` 和 `news`
+   - 分类名称统一使用小写：`news`、`tutorials`、`tech`
 
 2. **使用标签系统**
    - 通过标签提供更细致的分类

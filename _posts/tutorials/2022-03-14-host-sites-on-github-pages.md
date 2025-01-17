@@ -2,7 +2,7 @@
 layout: post
 title:  "在 GitHub Pages 上托管网站"
 date:   2022-03-14 14:36:05 +0800
-categories: Tutorials
+categories: tutorials
 tags: [GitHub Pages, Hosting]
 ---
 

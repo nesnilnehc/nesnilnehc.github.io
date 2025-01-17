@@ -2,7 +2,7 @@
 layout: post
 title: "Mac 卸载应用后打开方式菜单残留问题的解决方法"
 date: 2025-01-17 11:00:57 +0800
-categories: tech
+categories: technology
 tags: macOS 技巧
 ---
 

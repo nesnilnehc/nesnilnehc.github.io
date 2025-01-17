@@ -3,7 +3,7 @@ layout: page
 title: 技术分享
 nav_title: 技术
 nav_order: 2
-permalink: /tech/
+permalink: /technology/
 ---
 
 {% for post in site.categories.Technology %}

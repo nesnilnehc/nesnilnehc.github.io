@@ -20,7 +20,7 @@ your-site/
 ├── _pages/             # 存放页面文件
 │   ├── about.markdown
 │   ├── news.md
-│   ├── tech.md
+│   ├── technology.md
 │   └── tutorials.md
 ├── _posts/             # 按分类存放文章
 │   ├── news/
@@ -55,7 +55,7 @@ permalink: /url路径/   # 页面的永久链接
 header_pages:
   - _pages/news.md
   - index.md
-  - _pages/tech.md
+  - _pages/technology.md
   - _pages/tutorials.md
   - _pages/about.markdown
 ```
@@ -75,7 +75,7 @@ tags: [标签1, 标签2]    # 使用标签提供更细致的分类
 
 ### 2. 创建分类页面
 
-为每个分类创建独立的页面，例如 `_pages/tech.md`：
+为每个分类创建独立的页面，例如 `_pages/technology.md`：
 
 ```liquid
 ---
@@ -83,7 +83,7 @@ layout: page
 title: Technology
 nav_title: Technology
 nav_order: 3
-permalink: /tech/
+permalink: /technology/
 ---
 
 {% raw %}{% for post in site.categories.Technology %}

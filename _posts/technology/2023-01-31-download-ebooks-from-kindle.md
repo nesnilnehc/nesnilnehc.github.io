@@ -8,7 +8,7 @@ tags:
   - ePub
   - tools
   - tutorial
-permalink: /tech/download-ebooks-from-kindle/
+permalink: /technology/download-ebooks-from-kindle/
 ---
 
 由于 Kindle 宣布 2023 年 06 月 30 日停止在中国电子书店的运营<sup>[1]</sup>，我想将购买的一些电子书下载存档。

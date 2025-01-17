@@ -20,9 +20,6 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-          {%- if post.categories -%}
-          <small class="post-category">[{{ post.categories | join: "/" }}]</small>
-          {%- endif -%}
         </h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}

@@ -19,10 +19,18 @@ html, body {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  max-width: calc(100% - 70px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   &,
   &:visited {
     color: $grey-color-dark;
+  }
+
+  @include media-query($on-palm) {
+    font-size: 20px;
   }
 }
 
@@ -34,23 +42,36 @@ html, body {
     display: none;
   }
 
+  .menu-icon {
+    display: none;
+  }
+
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+    transition: color 0.3s ease;
+    width: 100px; // Adjusted width
 
     &:not(:last-child) {
       margin-right: 20px;
+    }
+
+    &:hover {
+      color: $brand-color;
     }
   }
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 50%;
+    transform: translateY(-50%);
     right: $spacing-unit * 0.5;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
-    border-radius: 5px;
+    border-radius: 3px;
     text-align: right;
+    z-index: 2;
+    width: auto;
 
     label[for="nav-trigger"] {
       display: block;
@@ -59,29 +80,83 @@ html, body {
       height: 36px;
       z-index: 2;
       cursor: pointer;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      line-height: 0;
+      text-align: center;
+      padding-top: 10px;
+
+      > svg {
+        width: 18px;
+        height: 15px;
+        transition: transform 0.3s ease;
+        path {
+          fill: $grey-color-dark;
+        }
+      }
     }
 
     input ~ .trigger {
       clear: both;
-      display: none;
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      background-color: $background-color;
+      transition: all 0.25s ease;
+      position: absolute;
+      top: 100%;
+      right: -1px;
+      min-width: 160px;
+      width: max-content;
+      border: 1px solid $grey-color-light;
+      border-top: 0;
+      border-radius: 0 0 3px 3px;
     }
 
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-      padding-right: 10px;
+    input:checked {
+      & ~ .trigger {
+        max-height: 200px;
+        opacity: 1;
+        padding: 5px 0;
+      }
+
+      & ~ label .menu-icon > svg {
+        transform: rotate(45deg);
+      }
     }
 
     .page-link {
       display: block;
-      margin-left: 20px;
-      padding: 5px 10px;
+      padding: 7px 15px;
+      line-height: $base-line-height;
+      margin: 0;
+      transition: background-color 0.2s ease;
 
       &:not(:last-child) {
         margin-right: 0;
       }
+
+      &:hover {
+        background-color: $grey-color-light;
+      }
     }
   }
+}
+
+.dropdown {
+  display: flex;
+  justify-content: flex-end; // Ensure dropdown aligns to the right
 }
 
 /**

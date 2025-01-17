@@ -6,7 +6,7 @@ nav_order: 2
 permalink: /news/
 ---
 
-{% for post in site.categories.News %}
+{% for post in site.categories.news %}
   <article class="post-entry">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <div class="post-meta">{{ post.date | date: "%Y年%-m月%-d日" }}</div>

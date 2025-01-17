@@ -100,8 +100,8 @@ permalink: /technology/
 ## 最佳实践
 
 1. **保持命名一致性**
-   - 分类名称统一使用：`technology`、`tutorials`、`news`
-   - 避免混用 `tech` 和 `technology` 这样的变体
+   - 分类名称统一使用小写：`news`、`tutorials`、`technology`
+   - 避免混用大小写，如 `News` 和 `news`
 
 2. **使用标签系统**
    - 通过标签提供更细致的分类

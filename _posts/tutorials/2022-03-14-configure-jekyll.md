@@ -2,7 +2,7 @@
 layout: post
 title:  "配置 Jekyll 站点"
 date:   2022-03-14 15:36:05 +0800
-categories: Tutorials
+categories: tutorials
 tags: [Jekyll, Configuration]
 ---
 

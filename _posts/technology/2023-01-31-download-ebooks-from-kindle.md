@@ -2,7 +2,7 @@
 layout: post
 title:  "如何下载 Kindle 电子书"
 date:   2023-01-31 17:38:00 +0800
-categories: technology
+categories: [technology]
 tags:
   - Kindle
   - ePub

@@ -9,8 +9,9 @@
 
       <div class="footer-col">
         <div class="social-links">
-          {%- if site.github_username -%}<a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="{{ site.github_username | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg></a>{%- endif -%}
-          {%- if site.twitter_username -%}<a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="{{ site.twitter_username | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg></a>{%- endif -%}
+          {%- if site.github_username -%}<a rel="me" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" title="{{ site.github_username | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg> GitHub</a>{%- endif -%}
+          {%- if site.twitter_username -%}<a rel="me" href="https://twitter.com/{{ site.twitter_username | cgi_escape | escape }}" title="{{ site.twitter_username | escape }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg> Twitter</a>{%- endif -%}
+          <a href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg> RSS</a>
         </div>
       </div>
     </div>

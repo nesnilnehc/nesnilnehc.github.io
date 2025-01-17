@@ -2,6 +2,11 @@
 
 这是一个基于 Jekyll （一个简单的静态网站生成器）构建的个人博客网站
 
+## 访问方式
+
+- 网站：[nesnilnehc.github.io](https://nesnilnehc.github.io)
+- RSS 订阅：[nesnilnehc.github.io/feed.xml](https://nesnilnehc.github.io/feed.xml)
+
 ## 主要功能
 
 - 响应式设计，完美支持电脑和手机浏览

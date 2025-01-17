@@ -80,13 +80,13 @@ tags: [标签1, 标签2]    # 使用标签提供更细致的分类
 ```liquid
 ---
 layout: page
-title: Technology
-nav_title: Technology
+title: technology
+nav_title: technology
 nav_order: 3
 permalink: /technology/
 ---
 
-{% raw %}{% for post in site.categories.Technology %}
+{% raw %}{% for post in site.categories.technology %}
   <article class="post-entry">
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <div class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
@@ -100,8 +100,8 @@ permalink: /technology/
 ## 最佳实践
 
 1. **保持命名一致性**
-   - 分类名称统一使用：`Technology`、`Tutorials`、`News`
-   - 避免混用 `tech` 和 `Technology` 这样的变体
+   - 分类名称统一使用：`technology`、`tutorials`、`news`
+   - 避免混用 `tech` 和 `technology` 这样的变体
 
 2. **使用标签系统**
    - 通过标签提供更细致的分类

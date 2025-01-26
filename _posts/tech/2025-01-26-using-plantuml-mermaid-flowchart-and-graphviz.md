@@ -1,3 +1,16 @@
+---
+layout: post
+title: "使用 PlantUML、Mermaid、Flowchart 和 Graphviz 绘制流程图"
+date: 2025-01-26 14:00:00 +0800
+categories: [tech]
+tags:
+  - PlantUML
+  - Mermaid
+  - Flowchart
+  - Graphviz
+permalink: /tech/using-plantuml-mermaid-flowchart-and-graphviz/
+---
+
 # 使用 PlantUML、Mermaid、Flowchart 和 Graphviz 绘制流程图
 
 在现代软件开发和项目管理中，流程图是帮助团队理解和沟通复杂概念的重要工具。本文将探讨几种流行的文本绘图工具，包括 PlantUML、Mermaid、Flowchart 和 Graphviz，并比较它们的优缺点。

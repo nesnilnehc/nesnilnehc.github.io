@@ -4,8 +4,8 @@
 
 ## 访问方式
 
-- 网站：[nesnilnehc.github.io](https://nesnilnehc.github.io)
-- RSS 订阅：[nesnilnehc.github.io/feed.xml](https://nesnilnehc.github.io/feed.xml)
+- 网站：[nesnilnehc.top](https://nesnilnehc.top)
+- RSS 订阅：[nesnilnehc.top/feed.xml](https://nesnilnehc.top/feed.xml)
 
 ## 主要功能
 
@@ -133,6 +133,7 @@ def hello_world():
 ├── assets           # 静态资源文件
 │   ├── css         # 样式文件
 │   └── images      # 图片文件
+├── CNAME           # GitHub Pages 自定义域名
 ├── feed.xml        # RSS 订阅源
 └── index.md        # 网站首页
 ```
@@ -180,7 +181,7 @@ def hello_world():
    ```
 
 2. 等待 GitHub Pages 发布完成，并确认 GitHub Actions 中的 CI 构建通过
-3. 访问 `https://nesnilnehc.github.io` 查看更新
+3. 访问 `https://nesnilnehc.top` 查看更新
 
 ## 开源协议
 

@@ -24,7 +24,7 @@ description: >- # 忽略换行直到 "baseurl:"
   NESNILNEHC 的个人网站 - 分享技术博客、学习心得和个人见解。这里记录着我在软件开发、
   技术创新和个人成长方面的所思所想。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nesnilnehc.github.io" # the base hostname & protocol for your site
+url: "https://nesnilnehc.top" # the base hostname & protocol for your site
 twitter_username: nesnilnehc
 github_username:  nesnilnehc
 

@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ci.yml"
+      - ".ruby-version"
+      - "404.html"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - "_pages/**"
+      - "_posts/**"
+      - "_sass/**"
+      - "assets/**"
+      - "feed.xml"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/ci.yml"
+      - ".ruby-version"
+      - "404.html"
+      - "Gemfile"
+      - "Gemfile.lock"
+      - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - "_pages/**"
+      - "_posts/**"
+      - "_sass/**"
+      - "assets/**"
+      - "feed.xml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.6"
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --trace

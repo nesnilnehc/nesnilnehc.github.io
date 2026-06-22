@@ -2,7 +2,7 @@
 layout: post
 title:  "每周见闻（2023 年第 1 期）"
 date:   2023-02-05 00:00:00 +0800
-categories: News
+categories: [news]
 ---
 
 ## 工具
@@ -23,7 +23,7 @@ categories: News
 ## 新知
 
 - 英文破折号的分类及作用 <sup>[1]</sup>
-    ![1.jpg]({{ site.url }}/assets/images/20230129/1.jpg)
+    ![1.jpg]({{ "/assets/images/20230129/1.jpg" | relative_url }})
 
 ## 参考
 

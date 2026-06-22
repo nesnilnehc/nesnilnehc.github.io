@@ -20,9 +20,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  gem "jekyll-archives"
-  gem "jekyll-minifier"
-  gem "jekyll-paginate"
 end
 
 # Add these gems to silence Ruby 3.4+ warnings

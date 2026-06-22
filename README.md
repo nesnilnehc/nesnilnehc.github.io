@@ -11,9 +11,9 @@
 
 - 响应式设计，完美支持电脑和手机浏览
 - 文章分类
-  - 新闻动态 （News）
-  - 技术分享 （tech）
-  - 教程指南 （tutorials）
+  - 新闻动态（news）
+  - 技术分享（tech）
+  - 教程指南（tutorials）
 - 文章归档侧边栏，按年份整理
 - 支持 Markdown 格式写作
 - 站内搜索功能，支持按标题、内容和分类搜索
@@ -23,7 +23,7 @@
 
 ### 环境要求
 
-- Ruby 3.x（推荐使用 Ruby 版本管理工具如 RVM 或 rbenv）
+- Ruby 3.3.6（推荐使用 Ruby 版本管理工具如 rbenv）
 - Bundler（Ruby 包管理器）
 - Jekyll 4.x（静态网站生成器）
 
@@ -36,19 +36,26 @@
    cd nesnilnehc.github.io
    ```
 
-2. 安装项目依赖：
+2. 安装并切换项目 Ruby 版本：
+
+   ```bash
+   rbenv install -s 3.3.6
+   rbenv local 3.3.6
+   ```
+
+3. 安装项目依赖：
 
    ```bash
    bundle install
    ```
 
-3. 启动本地开发服务器：
+4. 启动本地开发服务器：
 
    ```bash
    bundle exec jekyll serve
    ```
 
-4. 打开浏览器访问 `http://localhost:4000` 预览网站
+5. 打开浏览器访问 `http://localhost:4000` 预览网站
 
 ### 写作指南
 
@@ -71,7 +78,7 @@
    layout: post
    title:  "文章标题"
    date:   2025-01-14 10:00:00 +0800
-   categories: News  # 或 tech, tutorials
+   categories: [news]  # 或 [tech], [tutorials]
    ---
    ```
 
@@ -96,7 +103,7 @@
 
 [链接文本](https://example.com)
 
-![图片描述](/path/to/image.jpg)
+![图片描述]({{ "/assets/images/example.jpg" | relative_url }})
 
 > 引用文本
 
@@ -125,8 +132,7 @@ def hello_world():
 │   └── tutorials    # 教程指南
 ├── assets           # 静态资源文件
 │   ├── css         # 样式文件
-│   ├── images      # 图片文件
-│   └── js          # JavaScript 脚本
+│   └── images      # 图片文件
 ├── feed.xml        # RSS 订阅源
 └── index.md        # 网站首页
 ```
@@ -163,7 +169,7 @@ def hello_world():
 
 ### 部署说明
 
-本网站使用 GitHub Pages 托管，提交代码后会自动部署：
+本网站使用 GitHub Pages 托管。提交到 `main` 后，GitHub Pages 会发布站点；仓库中的 CI 会在内容、模板、样式或配置变更时执行 Jekyll 构建检查。
 
 1. 提交更新：
 
@@ -173,7 +179,7 @@ def hello_world():
    git push
    ```
 
-2. 等待 GitHub Actions 自动部署完成
+2. 等待 GitHub Pages 发布完成，并确认 GitHub Actions 中的 CI 构建通过
 3. 访问 `https://nesnilnehc.github.io` 查看更新
 
 ## 开源协议

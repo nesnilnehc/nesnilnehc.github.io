@@ -1,4 +1,8 @@
 <div class="sidebar">
+  {%- unless page.url == "/search/" -%}
+    {%- include search.html -%}
+  {%- endunless -%}
+
   <h2>归档</h2>
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   

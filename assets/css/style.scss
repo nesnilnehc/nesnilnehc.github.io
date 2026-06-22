@@ -4,7 +4,7 @@
 @import "minima";
 
 .wrapper {
-  max-width: 800px;
+  max-width: 1120px;
   margin: 0 auto;
   padding-right: 30px;
   padding-left: 30px;
@@ -16,30 +16,29 @@
 }
 
 .content-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 800px) 250px;
   gap: 2rem;
-  position: relative;
-  max-width: 1200px;
+  align-items: start;
+  justify-content: center;
+  max-width: 1120px;
   margin: 0 auto;
 
-  @media screen and (max-width: 800px) {
-    flex-direction: column;
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: minmax(0, 800px);
   }
 }
 
 .main-content {
-  flex: 1;
   min-width: 0; // 防止内容溢出
   max-width: 800px;
+  width: 100%;
 }
 
 .sidebar-wrapper {
-  width: 250px;
-  flex-shrink: 0;
-  position: absolute;
-  left: 830px; // 800px(主内容最大宽度) + 30px(间距)
-  
-  @media screen and (max-width: 1200px) {
+  min-width: 0;
+
+  @media screen and (max-width: 1100px) {
     display: none; // 在较小屏幕上隐藏侧边栏
   }
 }

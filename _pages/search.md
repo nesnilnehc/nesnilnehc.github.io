@@ -5,7 +5,7 @@ permalink: /search/
 nav_order: 5
 ---
 
-<div class="main-content">
+<div class="search-page">
   <div class="search-form">
     <div class="search-options">
       <label>
@@ -33,6 +33,7 @@ nav_order: 5
   </div>
 </div>
 
+{%- include search-data.html -%}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.getElementById('search-input');
@@ -41,19 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const contentSearch = document.getElementById('content-search');
   const categorySearch = document.getElementById('category-search');
   const exactMatch = document.getElementById('exact-match');
-  
-  const posts = [
-    {% for post in site.posts %}
-      {
-        title: {{ post.title | jsonify }},
-        url: {{ post.url | relative_url | jsonify }},
-        date: {{ post.date | date: "%Y-%m-%d" | jsonify }},
-        category: {{ post.categories | first | jsonify }},
-        content: {{ post.content | strip_html | jsonify }},
-        excerpt: {{ post.excerpt | strip_html | truncate: 200 | jsonify }}
-      }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
+  const posts = window.siteSearchPosts || [];
 
   function debounce(func, wait) {
     let timeout;
@@ -69,11 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
     return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 
+  function escapeHTML(value) {
+    return String(value || '').replace(/[&<>"']/g, char => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[char]));
+  }
+
   function highlightText(text, query, isExact) {
-    if (!query) return text;
+    const safeText = escapeHTML(text);
+    if (!query) return safeText;
     const escapedQuery = escapeRegExp(query);
     const regex = new RegExp(isExact ? `\\b${escapedQuery}\\b` : escapedQuery, 'gi');
-    return text.replace(regex, match => `<mark>${match}</mark>`);
+    return safeText.replace(regex, match => `<mark>${match}</mark>`);
   }
 
   function performSearch() {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const titleMatch = searchFields.title && regex.test(post.title);
       const contentMatch = searchFields.content && regex.test(post.content);
-      const categoryMatch = searchFields.category && regex.test(post.category);
+      const categoryMatch = searchFields.category && regex.test(String(post.category || ''));
       
       if (contentMatch) {
         // 查找匹配位置的上下文
@@ -120,11 +120,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const html = results.map(post => `
         <div class="search-result-item">
           <div class="search-result-header">
-            <span class="search-result-date">${post.date}</span>
-            <span class="search-result-category">${post.category}</span>
+            <span class="search-result-date">${escapeHTML(post.date)}</span>
+            <span class="search-result-category">${escapeHTML(post.category)}</span>
           </div>
           <h3 class="search-result-title">
-            <a href="${post.url}">${highlightText(post.title, query, isExact)}</a>
+            <a href="${escapeHTML(post.url)}">${highlightText(post.title, query, isExact)}</a>
           </h3>
           <div class="search-result-excerpt">
             ${highlightText(post.preview || post.excerpt, query, isExact)}

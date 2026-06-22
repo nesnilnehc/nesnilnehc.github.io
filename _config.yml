@@ -38,7 +38,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
 
 # Include pages directory
 include:
@@ -51,17 +50,6 @@ header_pages:
   - _pages/tech.md
   - _pages/tutorials.md
   - _pages/about.md
-
-# Collections
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-
-# Category settings
-category_archive:
-  type: liquid
-  path: /categories/
 
 # Feed settings
 feed:
@@ -78,10 +66,6 @@ social:
   links:
     - https://twitter.com/nesnilnehc
     - https://github.com/nesnilnehc
-
-# Pagination settings
-paginate: 10
-paginate_path: "/page:num/"
 
 # Minima theme settings
 minima:

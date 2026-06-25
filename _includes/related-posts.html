@@ -1,0 +1,20 @@
+{%- assign related_count = 0 -%}
+<section class="related-posts" aria-labelledby="related-posts-title">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker">Continue</p>
+      <h2 id="related-posts-title">继续阅读</h2>
+    </div>
+  </div>
+  <div class="related-posts__list">
+    {%- for candidate in site.categories[page.categories.first] -%}
+      {%- if candidate.url != page.url and related_count < 3 -%}
+        <a href="{{ candidate.url | relative_url }}">
+          <time>{{ candidate.date | date: "%Y-%m-%d" }}</time>
+          <span>{{ candidate.title }}</span>
+        </a>
+        {%- assign related_count = related_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>

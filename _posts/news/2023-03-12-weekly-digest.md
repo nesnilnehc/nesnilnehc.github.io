@@ -1,8 +1,14 @@
 ---
 layout: post
 title:  "每周见闻（2023 年第 2 期）"
+description: "介绍 Microsoft Edge Drop，用于在手机与桌面设备之间快速共享文件、消息和个人笔记。"
 date:   2023-03-12 00:00:00 +0800
 categories: [news]
+tags: [Microsoft Edge, 开发者工具, 文件传输]
+article_type: digest
+series: weekly-observations
+series_order: 3
+permalink: /news/2023/03/12/weekly-digest.html
 ---
 
 ## 工具

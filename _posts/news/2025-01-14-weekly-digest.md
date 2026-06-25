@@ -4,7 +4,11 @@ title: "每周见闻（2025 年第 1 期）"
 date: 2025-01-14 14:26:00 +0800
 categories: [news]
 description: NVIDIA Project DIGITS 个人 AI 超级计算机发布，搭载 Grace Blackwell 架构
-keywords: 每周见闻, 科技, NVIDIA, Grace Blackwell, Project DIGITS, AI, 超级计算机
+tags: [AI, NVIDIA, 医疗科技]
+article_type: digest
+series: weekly-observations
+series_order: 4
+permalink: /news/2025/01/14/weekly-digest.html
 ---
 
 > **本期要点**

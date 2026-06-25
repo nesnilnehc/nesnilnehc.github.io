@@ -3,8 +3,12 @@ layout: post
 title: "每周见闻（2025 年第 2 期）"
 date: 2025-01-20 14:26:00 +0800
 categories: [news]
-description: 本周重要新闻摘要
-keywords: 每周见闻, 科技, 新闻
+description: "介绍 MasterGo AI 的设计图生成能力，以及 Trae AI Builder 模式在需求分析、执行和实时预览方面的开发体验。"
+tags: [AI, MasterGo, Trae]
+article_type: digest
+series: weekly-observations
+series_order: 5
+permalink: /news/2025/01/20/weekly-digest.html
 ---
 
 > **本期要点**

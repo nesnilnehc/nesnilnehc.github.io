@@ -1,0 +1,17 @@
+{%- assign newsletter_url = site.data.site.newsletter_url -%}
+{%- capture subscribe_subject -%}订阅 NESNILNEHC 的内容更新{%- endcapture -%}
+<section class="subscribe-band" aria-labelledby="subscribe-title">
+  <div>
+    <p class="section-kicker">Follow updates</p>
+    <h2 id="subscribe-title">持续获得更新</h2>
+    <p>RSS 适合阅读器；邮件入口适合希望接收站点与系列更新的读者。</p>
+  </div>
+  <div class="subscribe-actions">
+    <a class="primary-action" href="{{ '/feed.xml' | relative_url }}">订阅 RSS</a>
+    {%- if newsletter_url and newsletter_url.size > 0 -%}
+      <a class="secondary-action" href="{{ newsletter_url }}" rel="external">邮件订阅</a>
+    {%- else -%}
+      <a class="secondary-action" href="mailto:{{ site.data.site.email }}?subject={{ subscribe_subject | cgi_escape }}">邮件订阅</a>
+    {%- endif -%}
+  </div>
+</section>

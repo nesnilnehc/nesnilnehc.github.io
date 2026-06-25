@@ -1,8 +1,15 @@
 ---
 layout: post
 title: "Jekyll 博客优化指南：功能增强与用户体验改进"
+description: "从搜索与 RSS、响应式布局、文档规范和加载性能四个方面，整理 Jekyll 博客的实用优化方法。"
 date: 2025-01-14 11:11:28 +0800
-categories: tutorials
+categories: [tutorials]
+tags: [Jekyll, 搜索, RSS, 响应式设计]
+article_type: guide
+series: jekyll-site-building
+series_order: 6
+featured: true
+permalink: /tutorials/2025/01/14/jekyll-blog-optimization.html
 ---
 
 ## 前言

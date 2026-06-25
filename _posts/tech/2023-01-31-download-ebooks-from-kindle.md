@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "如何下载 Kindle 电子书"
+description: "整理 Kindle 中国电子书店停止运营前的电子书下载与存档步骤，包括辅助工具、凭据获取和格式处理。"
 date:   2023-01-31 17:38:00 +0800
 categories: [tech]
 tags:
@@ -8,6 +9,7 @@ tags:
   - ePub
   - tools
   - tutorial
+article_type: guide
 permalink: /tech/download-ebooks-from-kindle/
 ---
 

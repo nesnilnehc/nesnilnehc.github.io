@@ -4,7 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="icon" href="{{ site.data.site.default_share_image | relative_url }}" type="image/jpeg">
   {%- feed_meta -%}
+  {%- if page.cover_image -%}
+  <meta property="og:image" content="{{ page.cover_image | absolute_url }}">
+  <meta name="twitter:image" content="{{ page.cover_image | absolute_url }}">
+  {%- endif -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}

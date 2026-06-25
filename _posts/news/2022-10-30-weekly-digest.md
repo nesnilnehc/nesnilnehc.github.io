@@ -1,8 +1,14 @@
 ---
 layout: post
 title:  "每周见闻（2022 年第 1 期）"
+description: "记录 roadmap.sh 新增的软件架构与开发者学习路线，以及 Vuetify 3.0 发布等值得继续关注的开发资源。"
 date:   2022-10-30 00:00:00 +0800
 categories: [news]
+tags: [开发者资源, 软件架构, Vuetify]
+article_type: digest
+series: weekly-observations
+series_order: 1
+permalink: /news/2022/10/30/weekly-digest.html
 ---
 
 ## 新闻

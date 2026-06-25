@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Mac 卸载应用后打开方式菜单残留问题的解决方法"
+description: "解释 macOS 卸载应用后“打开方式”菜单仍有残留的原因，并通过重建 Launch Services 数据库完成修复。"
 date: 2025-01-17 11:00:57 +0800
 categories: [tech]
-tags: macOS 技巧
+tags: [macOS, Launch Services, 故障排查]
+article_type: troubleshooting
 permalink: /tech/fix-mac-open-with-menu-after-uninstall/
 ---
 在 Mac 上卸载应用程序后，有时会发现在右键菜单的"打开方式"中仍然存在已卸载的应用。这是因为 Launch Services 数据库中保留了这些应用的记录。本文介绍如何通过重置 Launch Services 数据库来解决这个问题。

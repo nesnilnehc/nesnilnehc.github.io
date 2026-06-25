@@ -12,6 +12,7 @@ on:
       - "Gemfile"
       - "Gemfile.lock"
       - "_config.yml"
+      - "_data/**"
       - "_includes/**"
       - "_layouts/**"
       - "_pages/**"
@@ -19,6 +20,8 @@ on:
       - "_sass/**"
       - "assets/**"
       - "feed.xml"
+      - "script/**"
+      - "docs/**"
   push:
     branches:
       - main
@@ -30,6 +33,7 @@ on:
       - "Gemfile"
       - "Gemfile.lock"
       - "_config.yml"
+      - "_data/**"
       - "_includes/**"
       - "_layouts/**"
       - "_pages/**"
@@ -37,6 +41,8 @@ on:
       - "_sass/**"
       - "assets/**"
       - "feed.xml"
+      - "script/**"
+      - "docs/**"
   workflow_dispatch:
 
 permissions:
@@ -58,4 +64,6 @@ jobs:
           bundler-cache: true
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --trace
+        run: |
+          ruby script/validate_content.rb
+          bundle exec jekyll build --trace

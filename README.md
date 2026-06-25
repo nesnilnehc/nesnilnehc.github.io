@@ -76,13 +76,23 @@
    ```yaml
    ---
    layout: post
-   title:  "文章标题"
-   date:   2025-01-14 10:00:00 +0800
-   categories: [news]  # 或 [tech], [tutorials]
+   title: "文章标题"
+   description: "用于列表、搜索和分享的独立摘要"
+   date: 2025-01-14 10:00:00 +0800
+   categories: [tech]
+   tags: [Jekyll, GitHub Pages]
+   article_type: guide
+   permalink: /tech/example/
    ---
    ```
 
-4. 使用 Markdown 格式编写文章内容
+   完整字段、文章类型和发布检查见 [`docs/CONTENT_RULES.md`](docs/CONTENT_RULES.md)。
+
+4. 运行内容检查并使用 Markdown 格式编写文章：
+
+   ```bash
+   ruby script/validate_content.rb
+   ```
 
 #### Markdown 语法示例
 
@@ -146,7 +156,7 @@ def hello_world():
 
 1. 点击导航栏中的搜索图标（🔍）进入搜索页面
 2. 在搜索页面可以：
-   - 选择搜索范围（标题、内容、分类）
+   - 选择搜索范围（标题、内容、分类与标签）
    - 开启精确匹配模式（完全匹配搜索词）
 3. 搜索结果会自动高亮显示匹配的文本
 4. 移动端和电脑端都可以方便地使用搜索功能
@@ -157,16 +167,22 @@ def hello_world():
 
 1. 点击导航栏中的 RSS 图标订阅博客
 2. 可以使用任何 RSS 阅读器添加订阅源：`/feed.xml`
-3. 自动推送最新的 10 篇文章更新
+3. 自动推送最新的 20 篇文章更新
 
 #### 文章归档
 
-网站右侧的归档栏（Archive）自动整理所有文章：
+网站提供独立归档页，文章页和列表页右侧也保留快速归档：
 
 1. 按年份分组显示所有文章
 2. 显示每年发布的文章数量
 3. 点击年份可以展开查看该年所有文章
 4. 点击文章标题直接跳转到文章页面
+
+#### 站点策略与体验决策
+
+- 站点定位与阶段目标：[`docs/SITE_STRATEGY.md`](docs/SITE_STRATEGY.md)
+- 信息架构和界面调整理由：[`docs/UX_DECISIONS.md`](docs/UX_DECISIONS.md)
+- 内容与元数据规则：[`docs/CONTENT_RULES.md`](docs/CONTENT_RULES.md)
 
 ### 部署说明
 

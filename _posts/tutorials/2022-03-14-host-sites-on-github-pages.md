@@ -1,9 +1,14 @@
 ---
 layout: post
 title:  "在 GitHub Pages 上托管网站"
+description: "说明个人站点与项目站点的区别，并给出创建仓库、准备页面和使用 GitHub Pages 发布网站的基础步骤。"
 date:   2022-03-14 14:36:05 +0800
-categories: tutorials
+categories: [tutorials]
 tags: [GitHub Pages, Hosting]
+article_type: guide
+series: jekyll-site-building
+series_order: 3
+permalink: /tutorials/2022/03/14/host-sites-on-github-pages.html
 ---
 
 你可以为一个 GitHub 账户托管一个站点，或者给每一个项目托管一个站点。

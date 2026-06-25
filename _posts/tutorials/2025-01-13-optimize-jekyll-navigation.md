@@ -1,9 +1,14 @@
 ---
 layout: post
 title: "优化 Jekyll 站点的导航菜单和分类系统"
+description: "通过调整目录结构、页面配置和分类入口，改善 Jekyll 站点的导航清晰度与内容发现体验。"
 date: 2025-01-13 21:33:45 +0800
-categories: tutorials
+categories: [tutorials]
 tags: [Jekyll, Navigation, Categories]
+article_type: guide
+series: jekyll-site-building
+series_order: 5
+permalink: /tutorials/2025/01/13/optimize-jekyll-navigation.html
 ---
 
 在建设个人博客网站时，良好的导航系统和清晰的内容分类对于提升用户体验至关重要。本文将介绍如何优化 Jekyll 站点的导航菜单和分类系统，让网站结构更加清晰、易用。

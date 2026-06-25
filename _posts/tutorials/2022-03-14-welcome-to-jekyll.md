@@ -1,9 +1,14 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+description: "介绍 Jekyll 文章文件的命名规则、Front Matter 基础结构，以及本地重新生成站点和展示代码片段的方法。"
 date:   2022-03-14 14:36:05 +0800
-categories: tutorials
+categories: [tutorials]
 tags: [Jekyll, Getting Started]
+article_type: concept
+series: jekyll-site-building
+series_order: 4
+permalink: /tutorials/2022/03/14/welcome-to-jekyll.html
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

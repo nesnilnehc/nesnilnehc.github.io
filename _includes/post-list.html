@@ -1,0 +1,24 @@
+{%- assign posts = include.posts -%}
+{%- if posts.size > 0 -%}
+  <div class="post-entries">
+    {%- for post in posts limit: include.limit -%}
+      <article class="post-entry">
+        <div class="post-entry__meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          {%- if post.article_type -%}
+            <span>{{ post.article_type }}</span>
+          {%- endif -%}
+        </div>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 180 }}</p>
+        {%- if post.tags.size > 0 -%}
+          <div class="tag-list" aria-label="文章标签">
+            {%- for tag in post.tags limit: 4 -%}<span class="tag">{{ tag }}</span>{%- endfor -%}
+          </div>
+        {%- endif -%}
+      </article>
+    {%- endfor -%}
+  </div>
+{%- else -%}
+  <p class="empty-state">该栏目暂时没有文章。</p>
+{%- endif -%}

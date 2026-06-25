@@ -1,9 +1,14 @@
 ---
 layout: post
 title:  "如何使用 Jekyll 构建静态网站"
+description: "从 Ruby、RubyGems、编译工具等基础环境开始，完成 Jekyll 静态网站的初始化和本地运行。"
 date:   2022-03-14 14:36:05 +0800
-categories: tutorials
+categories: [tutorials]
 tags: [Jekyll, Static Site]
+article_type: guide
+series: jekyll-site-building
+series_order: 1
+permalink: /tutorials/2022/03/14/build-static-websites.html
 ---
 
 ## 必备环境

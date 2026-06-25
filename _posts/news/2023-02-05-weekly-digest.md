@@ -1,8 +1,14 @@
 ---
 layout: post
 title:  "每周见闻（2023 年第 1 期）"
+description: "介绍沉浸式翻译等提升外语网页、PDF 与电子书阅读效率的工具，并整理其主要能力和使用场景。"
 date:   2023-02-05 00:00:00 +0800
 categories: [news]
+tags: [开发者工具, 翻译, 阅读]
+article_type: digest
+series: weekly-observations
+series_order: 2
+permalink: /news/2023/02/05/weekly-digest.html
 ---
 
 ## 工具

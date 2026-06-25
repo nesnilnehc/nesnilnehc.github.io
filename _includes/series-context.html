@@ -1,0 +1,23 @@
+{%- assign series_data = site.data.series | where: "id", page.series | first -%}
+{%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
+{%- if series_data -%}
+<aside class="series-context" aria-labelledby="series-context-title">
+  <div class="series-context__heading">
+    <div>
+      <p class="section-kicker">Series {{ page.series_order }} / {{ series_posts.size }}</p>
+      <h2 id="series-context-title">{{ series_data.name }}</h2>
+      <p>{{ series_data.description }}</p>
+    </div>
+    {% capture series_subject %}订阅系列：{{ series_data.name }}{% endcapture %}
+    <a class="text-action" href="mailto:{{ site.data.site.email }}?subject={{ series_subject | cgi_escape }}">订阅系列</a>
+  </div>
+  <ol>
+    {%- for series_post in series_posts -%}
+      <li{% if series_post.url == page.url %} aria-current="page"{% endif %}>
+        <span>{{ series_post.series_order }}</span>
+        <a href="{{ series_post.url | relative_url }}">{{ series_post.title }}</a>
+      </li>
+    {%- endfor -%}
+  </ol>
+</aside>
+{%- endif -%}

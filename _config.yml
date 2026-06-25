@@ -21,10 +21,11 @@ title: NESNILNEHC 的个人网站
 # email: your-email@example.com
 email: nesnilnehc@hotmail.com
 description: >- # 忽略换行直到 "baseurl:"
-  NESNILNEHC 的个人网站 - 分享技术博客、学习心得和个人见解。这里记录着我在软件开发、
-  技术创新和个人成长方面的所思所想。
+  围绕软件工程、开发工具与技术表达，记录可复用的判断、经过验证的实践和可检查的成果。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nesnilnehc.top" # the base hostname & protocol for your site
+lang: zh-CN
+logo: /assets/images/avatar-2023.jpg
 twitter_username: nesnilnehc
 github_username:  nesnilnehc
 
@@ -46,9 +47,9 @@ include:
 # Header pages (specify the exact order you want)
 header_pages:
   - _pages/index.md
-  - _pages/news.md
-  - _pages/tech.md
-  - _pages/tutorials.md
+  - _pages/topics.md
+  - _pages/series.md
+  - _pages/archive.md
   - _pages/about.md
 
 # Feed settings

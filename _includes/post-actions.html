@@ -1,0 +1,28 @@
+{%- assign absolute_post_url = page.url | absolute_url -%}
+{%- capture feedback_subject_helpful -%}文章反馈：有帮助 - {{ page.title }}{%- endcapture -%}
+{%- capture feedback_subject_improve -%}文章反馈：需要改进 - {{ page.title }}{%- endcapture -%}
+{%- capture feedback_body -%}文章：{{ absolute_post_url }}
+
+我的反馈：
+{%- endcapture -%}
+<section class="post-actions" aria-label="分享和反馈">
+  <div class="share-block">
+    <p class="section-kicker">Share</p>
+    <h2>分享这篇文章</h2>
+    <p>复制标题、摘要和链接，或使用设备的系统分享功能。</p>
+    <button class="secondary-action js-share-post"
+      type="button"
+      data-title="{{ page.title | escape }}"
+      data-text="{{ page.description | escape }}"
+      data-url="{{ absolute_post_url }}">分享文章</button>
+  </div>
+  <div class="feedback-block">
+    <p class="section-kicker">Feedback</p>
+    <h2>这篇文章有帮助吗？</h2>
+    <p>反馈会附带当前文章地址，便于后续修订。</p>
+    <div class="feedback-actions">
+      <a href="mailto:{{ site.data.site.email }}?subject={{ feedback_subject_helpful | cgi_escape }}&body={{ feedback_body | cgi_escape }}">有帮助</a>
+      <a href="mailto:{{ site.data.site.email }}?subject={{ feedback_subject_improve | cgi_escape }}&body={{ feedback_body | cgi_escape }}">需要改进</a>
+    </div>
+  </div>
+</section>

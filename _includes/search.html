@@ -7,74 +7,8 @@
       </svg>
     </a>
   </div>
-  <div id="quick-search-results" class="quick-search-results"></div>
+  <div id="quick-search-results" class="quick-search-results" hidden></div>
 </div>
 
 {%- include search-data.html -%}
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const searchInput = document.getElementById('quick-search-input');
-  const searchResults = document.getElementById('quick-search-results');
-  const posts = window.siteSearchPosts || [];
-
-  function debounce(func, wait) {
-    let timeout;
-    return function() {
-      const context = this;
-      const args = arguments;
-      clearTimeout(timeout);
-      timeout = setTimeout(() => func.apply(context, args), wait);
-    };
-  }
-
-  function escapeHTML(value) {
-    return String(value || '').replace(/[&<>"']/g, char => ({
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      '"': '&quot;',
-      "'": '&#39;'
-    }[char]));
-  }
-
-  function performSearch() {
-    const query = searchInput.value.toLowerCase();
-    if (query.length < 2) {
-      searchResults.style.display = 'none';
-      return;
-    }
-
-    const results = posts.filter(post => 
-      post.title.toLowerCase().includes(query) ||
-      String(post.category || '').toLowerCase().includes(query)
-    ).slice(0, 5); // 只显示前5个结果
-
-    if (results.length > 0) {
-      const html = results.map(post => `
-        <div class="quick-search-result-item">
-          <a href="${escapeHTML(post.url)}">
-            <span class="quick-search-result-date">${escapeHTML(post.date)}</span>
-            <span class="quick-search-result-title">${escapeHTML(post.title)}</span>
-          </a>
-        </div>
-      `).join('');
-      
-      searchResults.innerHTML = html;
-      searchResults.style.display = 'block';
-    } else {
-      searchResults.innerHTML = '<div class="no-results">未找到相关文章</div>';
-      searchResults.style.display = 'block';
-    }
-  }
-
-  const debouncedSearch = debounce(performSearch, 300);
-  searchInput.addEventListener('input', debouncedSearch);
-
-  // 点击其他地方时隐藏搜索结果
-  document.addEventListener('click', function(e) {
-    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-      searchResults.style.display = 'none';
-    }
-  });
-});
-</script>
+<script src="{{ '/assets/js/search.js' | relative_url }}" defer></script>

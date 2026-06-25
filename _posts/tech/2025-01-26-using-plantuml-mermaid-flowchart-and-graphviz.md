@@ -1,13 +1,21 @@
 ---
 layout: post
 title: "使用 PlantUML、Mermaid、Flowchart 和 Graphviz 绘制技术图表"
+description: "先按表达目标选择图表类型，再比较 PlantUML、Mermaid、flowchart.js 与 Graphviz 的能力边界和适用场景。"
 date: 2025-01-26 14:00:00 +0800
+modified_date: 2026-06-22 14:00:00 +0800
 categories: [tech]
 tags:
   - PlantUML
   - Mermaid
   - Flowchart
   - Graphviz
+article_type: comparison
+series: technical-diagrams
+series_order: 1
+difficulty: intermediate
+featured: true
+update_note: "重组文章主旨，补充选图方法、工具能力边界以及详细与精简的选择建议。"
 permalink: /tech/using-plantuml-mermaid-flowchart-and-graphviz/
 ---
 

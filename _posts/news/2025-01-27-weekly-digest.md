@@ -3,8 +3,12 @@ layout: post
 title: "每周见闻（2025 年第 4 期）"
 date: 2025-01-27 14:26:00 +0800
 categories: [news]
-description: 本周重要新闻摘要
-keywords: 每周见闻, 科技, 新闻
+description: "介绍 cip.cc 的浏览器与命令行公网 IP 查询方式，提供适用于不同操作系统的快速使用命令。"
+tags: [网络工具, IP, 命令行]
+article_type: digest
+series: weekly-observations
+series_order: 6
+permalink: /news/2025/01/27/weekly-digest.html
 ---
 
 > **本期要点**

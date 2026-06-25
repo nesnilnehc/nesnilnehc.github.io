@@ -1,12 +1,14 @@
 ---
 layout: post
 title:  "使用 AI 工具换新头像"
+description: "记录使用 ChatGPT 提炼设计方向，再借助 AI 图像工具完成年度社交头像设计的实际步骤与产出。"
 date:   2023-01-17 14:36:05 +0800
 categories: [tech]
 tags:
   - AI
   - avatar
   - tools
+article_type: case-study
 permalink: /tech/change-avatar-by-ai/
 ---
 

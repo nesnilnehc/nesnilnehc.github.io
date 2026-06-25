@@ -9,21 +9,22 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="content-wrapper">
+        <div class="content-wrapper{% if page.sidebar == false %} content-wrapper--wide{% endif %}">
           <div class="main-content">
             {{ content }}
           </div>
+          {%- unless page.sidebar == false -%}
           <div class="sidebar-wrapper">
             {%- include sidebar.html -%}
           </div>
+          {%- endunless -%}
         </div>
       </div>
     </main>
 
     {%- include footer.html -%}
 
-
-
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </body>
 
 </html>

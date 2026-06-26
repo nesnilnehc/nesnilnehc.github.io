@@ -1,0 +1,105 @@
+- title: "光"
+  count: 1
+  original_title: "光"
+  artist: "艾热 AIR; Ziba"
+  artists:
+    - "艾热 AIR"
+    - "Ziba"
+  release_title: "《天声一对》现场版"
+  date: "2025-11-09"
+  date_label: "节目日期"
+  tags:
+    - 现场
+    - 对唱
+  note: "明亮、直接，适合放在需要重新提气的时候听。"
+  listen_links:
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=8pmIWFRsREo"
+- title: "春逝"
+  count: 1
+  original_title: "봄날은 간다"
+  artist: "Kim Yuna（金润雅）"
+  artists:
+    - "Kim Yuna（金润雅）"
+  release_title: "One Fine Spring Day OST"
+  date: "2001-09-01"
+  date_label: "专辑页日期"
+  tags:
+    - OST
+    - 告别
+  note: "克制、清冷，把回忆里的疼痛留得很长。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/one-fine-spring-day-original-motion-picture-soundtrack/1618391973"
+- title: "Missing You"
+  count: 1
+  original_title: "Missing You"
+  artist: "G-DRAGON; Kim Yuna（金润雅）"
+  artists:
+    - "G-DRAGON"
+    - "Kim Yuna（金润雅）"
+  release_title: "One of a Kind"
+  date: "2012-09-15"
+  date_label: "数字发行"
+  tags:
+    - K-Pop
+    - 合作
+  note: "旋律很轻，情绪却压得住，适合放在夜里反复听。"
+  listen_links:
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/3BqfHyw9cLm6POreivziWN"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=KBqT_5nyknE"
+- title: "花"
+  count: 1
+  original_title: "꽃 (FLOWER)"
+  artist: "JISOO（金智秀）"
+  artists:
+    - "JISOO（金智秀）"
+  release_title: "ME - Single"
+  date: "2023-03-31"
+  date_label: "数字发行"
+  tags:
+    - K-Pop
+    - Solo
+  note: "编曲克制但记忆点很强，适合留作一个鲜明的流行样本。"
+  listen_links:
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=YudHcBIxlYw"
+- title: "还给时间"
+  count: 1
+  original_title: "还给时间"
+  artist: "张德伊玲"
+  artists:
+    - "张德伊玲"
+  release_title: "还给时间 - Single"
+  date: "2023-04-17"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - 时间
+  note: "把情绪交还给时间，适合在需要慢下来整理自己的时候听。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/%E8%BF%98%E7%BB%99%E6%97%B6%E9%97%B4-single/1679942511"
+- title: "Salvatore"
+  count: 1
+  original_title: "Salvatore"
+  artist: "Niki Luparelli"
+  artists:
+    - "Niki Luparelli"
+  release_title: "Born To Die - A Tribute to Lana Del Rey (Live)"
+  release_context: "Charles Hayden Planetarium, Museum of Science, Boston"
+  date: "2024-07-19"
+  date_label: "数字发行"
+  tags:
+    - Tribute
+    - Live
+  note: "把 Lana Del Rey 的戏剧感处理得更像现场独白，适合留作翻唱样本。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/my/song/salvatore/1756281906"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/3VAdBpzIjeEzXvDopegfJW"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=fxgRW-i0IjY"

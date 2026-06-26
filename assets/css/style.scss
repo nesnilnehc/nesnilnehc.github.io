@@ -51,6 +51,300 @@ h4[id] {
   scroll-margin-top: 96px;
 }
 
+.movie-filter,
+.music-filter {
+  margin-top: 1.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.movie-filter__label,
+.music-filter__label {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.movie-filter__controls,
+.music-filter__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.movie-filter__button,
+.music-filter__button {
+  padding: 0.28rem 0.68rem;
+  color: var(--accent-dark);
+  background: transparent;
+  border: 1px solid rgba(18, 107, 75, 0.22);
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  line-height: 1.4;
+
+  &:hover,
+  &.is-active {
+    color: #fff;
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+}
+
+.movie-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 380px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.movie-entry {
+  position: relative;
+  display: flex;
+  min-height: 320px;
+  padding: 1rem 1rem 1.1rem;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, var(--surface) 100%);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+
+  &[hidden] {
+    display: none;
+  }
+
+  h2 {
+    margin: 2rem 0 0;
+    font-size: 1.26rem;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+}
+
+.movie-entry__index {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--accent);
+  font-family: "Iowan Old Style", "Baskerville", "Songti SC", "STSong", serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.movie-entry__count,
+.music-entry__count {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.9rem;
+  min-width: 1.7rem;
+  padding: 0.08rem 0.42rem;
+  box-sizing: border-box;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.movie-entry__title-group {
+  margin-bottom: 1rem;
+}
+
+.movie-entry__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.14rem 0.45rem;
+    color: var(--accent-dark);
+    background: rgba(18, 107, 75, 0.08);
+    border: 1px solid rgba(18, 107, 75, 0.16);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+}
+
+.movie-entry__meta {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+
+  div {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  dt {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--muted);
+
+    span {
+      display: block;
+      margin-top: 0.1rem;
+    }
+  }
+}
+
+.movie-entry__note {
+  margin-top: auto !important;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.music-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 2rem;
+
+  @media screen and (max-width: 380px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.music-entry {
+  position: relative;
+  display: flex;
+  min-height: 260px;
+  padding: 1rem 1rem 1.1rem;
+  flex-direction: column;
+  background: linear-gradient(180deg, #ffffff 0%, var(--surface) 100%);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+
+  &[hidden] {
+    display: none;
+  }
+
+  h2 {
+    margin: 2rem 0 0;
+    font-size: 1.26rem;
+    line-height: 1.35;
+  }
+}
+
+.music-entry__index {
+  position: absolute;
+  top: 1.05rem;
+  left: 1rem;
+  color: var(--accent);
+  font-family: "Iowan Old Style", "Baskerville", "Songti SC", "STSong", serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+}
+
+.music-entry__title-group {
+  margin-bottom: 1rem;
+}
+
+.music-entry__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.14rem 0.45rem;
+    color: var(--accent-dark);
+    background: rgba(18, 107, 75, 0.08);
+    border: 1px solid rgba(18, 107, 75, 0.16);
+    border-radius: 999px;
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+}
+
+.movie-entry__meta,
+.music-entry__meta {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+
+  div {
+    display: grid;
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  dt {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--muted);
+
+    span {
+      display: block;
+      margin-top: 0.1rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(18, 107, 75, 0.35);
+
+    &:hover {
+      border-bottom-color: currentColor;
+    }
+  }
+}
+
+.music-entry__separator {
+  color: var(--line);
+}
+
+.music-entry__links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 0.35rem;
+  align-items: baseline;
+
+  a,
+  .music-entry__separator {
+    white-space: nowrap;
+  }
+}
+
+.music-entry__note {
+  margin: auto 0 0;
+  padding-top: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
 a {
   color: var(--accent);
 

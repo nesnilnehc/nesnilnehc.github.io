@@ -1,0 +1,168 @@
+- original_title: "Green Book"
+  count: 1
+  chinese_title: "绿皮书"
+  director: "Peter Farrelly（彼得·法雷里）"
+  premiere_date: "2018-09-11"
+  premiere_note: "Toronto International Film Festival"
+  imdb_url: "https://www.imdb.com/title/tt6966692/"
+  awards: "第 91 届奥斯卡最佳影片、最佳原创剧本、最佳男配角；第 76 届金球奖音乐/喜剧类最佳影片。"
+  tags:
+    - 公路
+    - 偏见
+  note: "把偏见、体面和互相理解放进一段公路旅程里。"
+- original_title: "Bohemian Rhapsody"
+  count: 1
+  chinese_title: "波西米亚狂想曲"
+  director: "Bryan Singer（布莱恩·辛格）"
+  premiere_date: "2018-10-23"
+  premiere_note: "Wembley Arena"
+  imdb_url: "https://www.imdb.com/title/tt1727824/"
+  awards: "第 91 届奥斯卡 4 项获奖，包括最佳男主角、最佳剪辑、最佳音效剪辑、最佳混音。"
+  tags:
+    - 传记
+    - 音乐
+  note: "关于舞台、孤独、才华和自我命名。"
+- original_title: "人生最高の贈りもの"
+  count: 1
+  chinese_title: "人生最棒的礼物"
+  director: "Kan Ishibashi（石桥冠）"
+  premiere_date: "2021-01-04"
+  premiere_note: "TV Tokyo 首播"
+  imdb_url: "https://www.imdb.com/title/tt13522030/"
+  awards: "未见主要电影奖项记录。"
+  tags:
+    - 家庭
+    - 告别
+  note: "轻轻地处理亲情、告别和日常生活里的爱。"
+- original_title: "Flamin' Hot"
+  count: 1
+  chinese_title: "热辣奇多的诞生"
+  director: "Eva Longoria（伊娃·朗格利亚）"
+  premiere_date: "2023-03-11"
+  premiere_note: "South by Southwest"
+  imdb_url: "https://www.imdb.com/title/tt8105234/"
+  awards: "第 96 届奥斯卡最佳原创歌曲提名；SXSW 观众奖；Imagen Awards 最佳影片、最佳导演等。"
+  tags:
+    - 商业
+    - 传记
+  note: "一个关于机会、商业叙事和个人野心的故事。"
+- original_title: "The Pursuit of Happyness"
+  count: 1
+  chinese_title: "当幸福来敲门"
+  director: "Gabriele Muccino（加布里埃莱·穆奇诺）"
+  premiere_date: "2006-12-15"
+  premiere_note: "美国上映"
+  imdb_url: "https://www.imdb.com/title/tt0454921/"
+  awards: "第 79 届奥斯卡最佳男主角提名；另有金球奖、评论家选择奖等表演类提名。"
+  tags:
+    - 励志
+    - 父子
+  note: "困境中的行动力，比口号更有说服力。"
+- original_title: "Forrest Gump"
+  count: 1
+  chinese_title: "阿甘正传"
+  director: "Robert Zemeckis（罗伯特·泽米吉斯）"
+  premiere_date: "1994-06-23"
+  premiere_note: "Los Angeles premiere"
+  imdb_url: "https://www.imdb.com/title/tt0109830/"
+  awards: "第 67 届奥斯卡 6 项获奖，包括最佳影片、最佳导演、最佳男主角。"
+  tags:
+    - 人生
+    - 时代
+  note: "用一个人的生命轨迹，串起时代、善意和偶然。"
+- original_title: "The Shawshank Redemption"
+  count: 1
+  chinese_title: "肖申克的救赎"
+  director: "Frank Darabont（弗兰克·德拉邦特）"
+  premiere_date: "1994-09-10"
+  premiere_note: "Toronto International Film Festival"
+  imdb_url: "https://www.imdb.com/title/tt0111161/"
+  awards: "第 67 届奥斯卡 7 项提名，包括最佳影片、最佳男主角、最佳改编剧本。"
+  tags:
+    - 希望
+    - 自由
+  note: "耐心、秩序和希望，构成了一种长期主义。"
+- original_title: "浪浪山小妖怪"
+  count: 1
+  chinese_title: "浪浪山小妖怪"
+  director: "於水"
+  premiere_date: "2025-07-20"
+  premiere_note: "常州首映；中国内地 2025-08-02 上映"
+  imdb_url: "https://www.imdb.com/title/tt36733027/"
+  awards: "刷新中国公司制作 2D 动画电影票房纪录；未见主要国际奖项记录。"
+  tags:
+    - 动画
+    - 小人物
+  note: "普通小人物的出走念头，往往比英雄叙事更贴近人。"
+- original_title: "The Way"
+  count: 1
+  chinese_title: "朝圣之路"
+  director: "Emilio Estevez（艾米利奥·艾斯特维兹）"
+  premiere_date: "2010-09-10"
+  premiere_note: "Toronto International Film Festival"
+  imdb_url: "https://www.imdb.com/title/tt1441912/"
+  awards: "IMDb 记录为 1 项获奖、8 项提名；包括 ALMA Awards 等提名。"
+  tags:
+    - 公路
+    - 修行
+  note: "路途本身成为整理人生的方式。"
+- original_title: "Good Will Hunting"
+  count: 1
+  chinese_title: "心灵捕手"
+  director: "Gus Van Sant（格斯·范·桑特）"
+  premiere_date: "1997-12-02"
+  premiere_note: "Westwood, California premiere"
+  imdb_url: "https://www.imdb.com/title/tt0119217/"
+  awards: "第 70 届奥斯卡最佳男配角、最佳原创剧本；另获金球奖最佳剧本。"
+  tags:
+    - 成长
+    - 天赋
+  note: "聪明不是答案，愿意面对自己才是。"
+- original_title: "Quiz Show"
+  count: 1
+  chinese_title: "机智问答"
+  director: "Robert Redford（罗伯特·雷德福）"
+  premiere_date: "1994-08-30"
+  premiere_note: "Walt Disney Studios, Burbank"
+  imdb_url: "https://www.imdb.com/title/tt0110932/"
+  awards: "第 67 届奥斯卡 4 项提名，包括最佳影片、最佳导演、最佳改编剧本。"
+  tags:
+    - 制度
+    - 名声
+  note: "知识、名声和体制诱惑之间的灰色地带。"
+- original_title: "The Founder"
+  count: 1
+  chinese_title: "大创业家"
+  director: "John Lee Hancock（约翰·李·汉考克）"
+  premiere_date: "2016-11-24"
+  premiere_note: "澳大利亚上映；美国 2016-12-07 洛杉矶首映"
+  imdb_url: "https://www.imdb.com/title/tt4276820/"
+  awards: "Michael Keaton 获 Capri Actor Award；另有若干影评人协会表演类提名。"
+  tags:
+    - 商业
+    - 野心
+  note: "商业成功背后，常常站着不那么舒服的问题。"
+- original_title: "映画 深夜食堂"
+  count: 1
+  chinese_title: "深夜食堂"
+  director: "Joji Matsuoka（松冈锭司）"
+  premiere_date: "2015-01-31"
+  premiere_note: "日本上映"
+  imdb_url: "https://www.imdb.com/title/tt3958276/"
+  awards: "电影版未见主要奖项记录；原作漫画曾获第 55 届小学馆漫画奖。"
+  tags:
+    - 日常
+    - 食物
+  note: "食物只是入口，真正留下来的是人与人的片刻连接。"
+- original_title: "Léon"
+  count: 1
+  chinese_title: "这个杀手不太冷"
+  director: "Luc Besson（吕克·贝松）"
+  premiere_date: "1994-09-14"
+  premiere_note: "法国上映"
+  imdb_url: "https://www.imdb.com/title/tt0110413/"
+  awards: "第 20 届凯撒奖多项提名，包括最佳导演；IMDb 记录为 5 项获奖、16 项提名。"
+  tags:
+    - 犯罪
+    - 孤独
+  note: "冷硬外壳下面，是脆弱、依赖和危险的温柔。"

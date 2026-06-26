@@ -103,3 +103,20 @@
       url: "https://open.spotify.com/track/3VAdBpzIjeEzXvDopegfJW"
     - label: "YouTube"
       url: "https://www.youtube.com/watch?v=fxgRW-i0IjY"
+- title: "成年"
+  count: 1
+  original_title: "成年"
+  artist: "刘凯迪; 牛佳钰"
+  artists:
+    - "刘凯迪"
+    - "牛佳钰"
+  release_title: "成年"
+  date: "2021-12-14"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - 对唱
+  note: "两个声音轮流讲述长大的代价，平静里藏着不甘，适合在需要面对现实时听。"
+  listen_links:
+    - label: "网易云音乐"
+      url: "https://music.163.com/song?id=1903349486"

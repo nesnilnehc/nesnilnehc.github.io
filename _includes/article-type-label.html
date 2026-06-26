@@ -1,0 +1,9 @@
+{%- case include.type -%}
+  {%- when "concept" -%}概念说明
+  {%- when "comparison" -%}选型指南
+  {%- when "guide" -%}操作指南
+  {%- when "troubleshooting" -%}排障步骤
+  {%- when "case-study" -%}实践复盘
+  {%- when "opinion" -%}分析观点
+  {%- else -%}{{ include.type }}
+{%- endcase -%}

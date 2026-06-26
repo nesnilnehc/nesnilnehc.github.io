@@ -12,25 +12,22 @@ REQUIRED_FIELDS = %w[
   categories
   tags
   article_type
+  content_score
+  score_basis
   permalink
 ].freeze
-ALLOWED_CATEGORIES = %w[news tech tutorials].freeze
+ALLOWED_CATEGORIES = %w[tech tutorials].freeze
 ALLOWED_ARTICLE_TYPES = %w[
   concept
   comparison
   guide
   troubleshooting
   case-study
-  digest
   opinion
 ].freeze
 ALLOWED_DIFFICULTIES = %w[beginner intermediate advanced].freeze
 
 errors = []
-series_positions = {}
-
-series_data = YAML.safe_load_file("_data/series.yml", aliases: true)
-series_ids = Array(series_data).map { |series| series.fetch("id") }
 
 Dir.glob(POST_GLOB).sort.each do |path|
   content = File.read(path, encoding: "UTF-8")
@@ -80,6 +77,16 @@ Dir.glob(POST_GLOB).sort.each do |path|
     errors << "#{path}: unknown article_type #{data["article_type"].inspect}"
   end
 
+  content_score = data["content_score"]
+  unless content_score.is_a?(Numeric) && content_score.between?(6.0, 10.0)
+    errors << "#{path}: content_score must be a number from 6.0 to 10.0"
+  end
+
+  score_basis = data["score_basis"].to_s.strip
+  if score_basis.length < 20
+    errors << "#{path}: score_basis must explain the score in at least 20 characters"
+  end
+
   difficulty = data["difficulty"]
   if difficulty && !ALLOWED_DIFFICULTIES.include?(difficulty)
     errors << "#{path}: unknown difficulty #{difficulty.inspect}"
@@ -90,19 +97,6 @@ Dir.glob(POST_GLOB).sort.each do |path|
     errors << "#{path}: permalink must be a whitespace-free absolute path"
   end
 
-  next unless data["series"]
-
-  series = data["series"]
-  order = data["series_order"]
-  errors << "#{path}: unknown series #{series.inspect}" unless series_ids.include?(series)
-  errors << "#{path}: series_order must be a positive integer" unless order.is_a?(Integer) && order.positive?
-
-  position = [series, order]
-  if series_positions.key?(position)
-    errors << "#{path}: duplicates series position #{series} ##{order} with #{series_positions[position]}"
-  else
-    series_positions[position] = path
-  end
 end
 
 if errors.empty?

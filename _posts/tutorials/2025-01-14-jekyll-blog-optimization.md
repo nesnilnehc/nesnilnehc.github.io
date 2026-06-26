@@ -1,321 +1,94 @@
 ---
 layout: post
-title: "Jekyll 博客优化指南：功能增强与用户体验改进"
-description: "从搜索与 RSS、响应式布局、文档规范和加载性能四个方面，整理 Jekyll 博客的实用优化方法。"
+title: "如何把 Jekyll 博客改造成易用的内容站"
+description: "当 Jekyll 博客内容难找、字段混乱或线上样式与本地不一致时，从内容契约、用户导航和 Actions 部署三个层次改造。"
 date: 2025-01-14 11:11:28 +0800
+modified_date: 2026-06-25 12:00:00 +0800
 categories: [tutorials]
-tags: [Jekyll, 搜索, RSS, 响应式设计]
-article_type: guide
-series: jekyll-site-building
-series_order: 6
+tags: [Jekyll, GitHub Pages, 内容架构, 持续部署]
+article_type: case-study
 featured: true
+content_score: 6.0
+score_basis: "能复用内容接口、用户路径和部署一致性的改造思路，但和本站自身改造绑定较强，外部读者收益偏边界。"
+update_note: "改为面向读者问题的改造路径，保留可复用配置、决策边界和验证方法。"
 permalink: /tutorials/2025/01/14/jekyll-blog-optimization.html
 ---
 
-## 前言
+如果你的 Jekyll 博客出现以下问题，不必立即迁移框架：
 
-在使用 Jekyll 搭建博客的过程中，经常需要添加一些基础功能和改进用户体验。本文记录了几个常用的优化配置，包括：
+1. 读者只能按时间翻文章，找不到解决特定问题的入口。
+2. 分类、标签和文章字段不一致，列表、搜索和 SEO 难以复用内容。
+3. 本地与 GitHub Pages 构建环境不同，预览和线上样式不一致。
 
-1. 功能增强：搜索和订阅功能
-2. 布局优化：移动端适配
-3. 文档规范：统一的排版标准
-4. 性能优化：加载速度优化
+优先改造内容接口、用户路径和发布流程。Jekyll 本身通常仍然够用。
 
-## 目录
+## 先定义内容接口
 
-1. [功能增强](#功能增强)
-   - [添加搜索功能](#1-添加搜索功能)
-   - [配置 RSS 订阅](#2-配置-rss-订阅)
-2. [布局优化](#布局优化)
-   - [响应式设计](#1-响应式设计)
-   - [侧边栏实现](#2-侧边栏实现)
-3. [文档规范](#文档规范)
-   - [中文排版规范](#1-中文排版规范)
-   - [文件命名规范](#2-文件命名规范)
-4. [性能优化](#性能优化)
-   - [Jekyll 配置优化](#1-jekyll-配置优化)
-
-## 功能增强
-
-### 1. 添加搜索功能
-
-**目的**：
-
-- 在文章数量较多时，快速定位特定文章
-- 按关键词查找相关内容
-- 减少用户翻页次数
-
-**方案选择**：
-
-- Algolia Search：第三方搜索服务，每月有 10000 次免费搜索额度
-- Simple Jekyll Search：生成 JSON 索引文件，前端 JavaScript 实现搜索
-- Lunr.js：纯前端搜索，支持中文分词，适合小型博客
-
-这里选择 Algolia Search 的原因：
-
-- 搜索速度快，支持实时搜索
-- 自带分词功能，支持中文搜索
-- 有开箱即用的 UI 组件
-- 配置简单，维护成本低
-
-**实现步骤**：
-
-1. 安装依赖：
-
-```bash
-# 在 Gemfile 中添加
-gem 'jekyll-algolia'
-
-# 安装依赖
-bundle install
-```
-
-2. 配置 `_config.yml`：
+把 Front Matter 当作内容与模板之间的接口。先统一每篇文章必须提供的字段：
 
 ```yaml
-# 添加 Algolia 搜索配置
-algolia:
-  application_id: YOUR_APP_ID
-  index_name: YOUR_INDEX_NAME
-  search_only_api_key: YOUR_SEARCH_KEY
+layout: post
+title: "准确描述文章解决的问题"
+description: "可独立用于列表、搜索和分享的摘要"
+date: 2026-06-25 10:00:00 +0800
+categories: [tech]
+tags: [Jekyll, GitHub Pages]
+article_type: guide
+permalink: /tech/example/
 ```
 
-3. 创建搜索页面 `search.html`：
+更新时间、难度和推荐状态可以作为可选字段。统一后，列表、搜索、SEO 和相关文章不再依赖正文猜测。
 
-```html
----
-layout: page
-title: 搜索
----
-<div id="search-searchbar"></div>
-<div id="search-hits"></div>
-```
-
-### 2. 配置 RSS 订阅
-
-**目的**：
-
-- 让用户通过 RSS 阅读器订阅博客更新
-- 支持文章聚合到其他平台
-- 提供标准的文章输出格式
-
-**方案选择**：
-
-- Jekyll Feed：Jekyll 官方插件，输出标准 RSS 2.0 格式
-- 自定义 RSS 模板：可以自定义输出格式，但需要自己维护
-
-选择 Jekyll Feed 的原因：
-
-- 配置简单，只需添加插件即可
-- 自动处理文章更新
-- 输出格式符合 RSS 标准
-
-**实现步骤**：
-
-1. 安装插件：
+再增加一个构建前校验，检查必填字段、分类、标签、文章类型和永久链接：
 
 ```bash
-# 在 Gemfile 中添加
-gem 'jekyll-feed'
-
-# 安装依赖
-bundle install
+ruby script/validate_content.rb
 ```
 
-2. 更新 `_config.yml`：
+## 按用户任务组织入口
 
-```yaml
-plugins:
-  - jekyll-feed
+“新闻、技术、教程”描述的是作者如何发布，不是读者想完成什么。更有效的入口是：
 
-# RSS 配置
-feed:
-  path: feed.xml
-  posts_limit: 20
+- **任务主题**：例如建设网站、排查问题、表达方案。
+- **归档**：按时间回溯。
+- **搜索**：从具体关键词直接进入答案。
+
+首页用简短主张说明内容范围，并直接展示文章。文章页则给出相关阅读、订阅、分享和反馈入口。
+
+这些调整的目标不是增加页面，而是让读者能完成一条连续路径：
+
+```text
+进入文章 -> 获得结论 -> 继续阅读 -> 订阅或反馈
 ```
 
-## 布局优化
+## 不要过早增加基础设施
 
-### 1. 响应式设计
+内容规模较小时，保持静态方案：
 
-**目的**：
+- 搜索索引在构建时生成，浏览器端完成查询。
+- RSS 由 `jekyll-feed` 生成。
+- 邮件订阅和文章反馈暂时使用预填邮件。
 
-- 适配手机和平板等移动设备
-- 确保文章在小屏幕上也能正常阅读
-- 减少横向滚动
+只有文章数量、搜索质量或反馈量证明现有方案不足时，再引入 Pagefind、邮件平台或反馈 API。
 
-**方案说明**：
+## 统一构建与部署
 
-- 设置 viewport 确保正确缩放
-- 使用相对单位适配不同屏幕
-- 在小屏幕上调整导航栏和侧边栏位置
+GitHub Pages 默认构建环境可能不遵循你的 `Gemfile.lock`。使用 GitHub Actions 显式完成：
 
-**实现步骤**：
+1. 安装 `.ruby-version` 指定的 Ruby。
+2. 按锁文件安装依赖。
+3. 校验文章元数据。
+4. 使用生产环境构建 `_site`。
+5. 上传 Pages Artifact 并部署。
 
-1. 在 `_sass` 目录下创建响应式样式文件：
+这样本地预览、CI 和线上站点会共享同一依赖契约。
 
-```scss
-// _sass/_responsive.scss
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 15px;
-  }
-  
-  .sidebar {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-```
+## 判断是否需要迁移框架
 
-2. 引入样式文件：
+完成这些改造后，你应该得到：
 
-```scss
-// assets/css/style.scss
-@import "responsive";
-```
+- 内容规则从约定变成可自动检查的接口。
+- 导航从栏目列表变成主题驱动的阅读路径。
+- 发布从平台隐式构建变成项目锁定环境的显式部署。
 
-### 2. 侧边栏实现
-
-**目的**：
-
-- 展示文章归档，方便按时间浏览
-- 显示文章分类，便于主题浏览
-- 在合适位置展示其他导航信息
-
-**方案说明**：
-
-- 使用 Liquid 模板语言处理数据
-- 文章按年份分组归档
-- 移动端时调整位置到主内容下方
-
-**实现步骤**：
-
-1. 创建 `_includes/sidebar.html`：
-
-```html
-<div class="sidebar">
-  <h2>归档</h2>
-  {% raw %}{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}{% endraw %}
-  
-  <ul class="archive-list">
-    {% raw %}{% for year in postsByYear %}{% endraw %}
-      <li>
-        <span class="year">{{ year.name }}</span>
-        <span class="count">({{ year.items.size }})</span>
-      </li>
-    {% raw %}{% endfor %}{% endraw %}
-  </ul>
-</div>
-```
-
-2. 在布局文件中引入侧边栏：
-
-```html
-<!-- _layouts/default.html -->
-<div class="container">
-  <div class="content">
-    {% raw %}{{ content }}{% endraw %}
-  </div>
-  {% raw %}{% include sidebar.html %}{% endraw %}
-</div>
-```
-
-## 文档规范
-
-### 1. 中文排版规范
-
-**目的**：
-
-- 统一全站的排版风格
-- 提高中英文混排的可读性
-- 便于后期维护和修改
-
-**规范要点**：
-
-1. 在 Markdown 文件中遵循以下规则：
-
-- 中英文之间添加空格：`在 GitHub 上开发程序`
-- 使用全角中文标点：`下载源码，开始编码。`
-- 使用半角数字：`共发布了 10 篇文章`
-
-2. 统一日期格式：
-
-```liquid
-{% raw %}{{ post.date | date: "%Y年%-m月%-d日" }}{% endraw %}
-```
-
-### 2. 文件命名规范
-
-**目的**：
-
-- 统一文件命名方式
-- 避免文件名冲突
-- 方便文件管理和查找
-
-**规范说明**：
-
-- 文章文件：`YYYY-MM-DD-title-with-hyphen.md`
-- 页面文件：`lowercase-with-hyphen.md`
-- 样式文件：`_component-name.scss`
-
-## 性能优化
-
-### 1. Jekyll 配置优化
-
-**目的**：
-
-- 减少站点构建时间
-- 减少不必要的文件生成
-- 优化资源文件大小
-
-**优化方案**：
-
-- 使用增量构建减少构建时间
-- 排除不需要处理的文件
-- 压缩图片等静态资源
-
-**实现步骤**：
-
-1. 更新 `_config.yml`：
-
-```yaml
-# 提升构建性能
-incremental: true
-profile: true
-
-# 排除不需要的文件
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-```
-
-2. 优化图片资源：
-
-```bash
-# 安装图片优化工具
-npm install -g imagemin-cli
-
-# 优化图片
-imagemin images/* --out-dir=images/optimized
-```
-
-## 总结
-
-完成以上配置后，博客将具备：
-
-1. 文章搜索和 RSS 订阅功能
-2. 移动端适配和侧边栏导航
-3. 统一的文档规范
-4. 更快的加载速度
-
-根据实际需求，可以选择性地实施这些优化方案。
-
-## 参考资源
-
-- [Jekyll 官方文档](https://jekyllrb.com/docs/)
-- [Algolia 搜索文档](https://www.algolia.com/doc/)
-- [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
-- [Jekyll Feed 插件](https://github.com/jekyll/jekyll-feed)
+如果问题已经解决，继续使用 Jekyll。只有站点明确需要复杂交互、多语言内容模型或内容 API 时，迁移框架才有实际收益。

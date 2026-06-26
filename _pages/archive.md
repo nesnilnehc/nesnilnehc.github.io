@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 归档
-nav_title: 归档
+title: 文章归档
+nav_title: 文章
 permalink: /archive/
 sidebar: false
 ---

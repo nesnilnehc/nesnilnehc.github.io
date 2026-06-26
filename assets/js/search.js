@@ -38,18 +38,70 @@
   }
 
   function searchableTaxonomy(post) {
-    return [post.category, post.series].concat(post.tags || []).join(" ");
+    return [post.category].concat(post.tags || []).join(" ");
+  }
+
+  function matches(value, matcher) {
+    matcher.lastIndex = 0;
+    return matcher.test(String(value || ""));
+  }
+
+  function scorePost(post, matcher, fields) {
+    let score = 0;
+    if (fields.title && matches(post.title, matcher)) score += 8;
+    if (fields.taxonomy && matches(searchableTaxonomy(post), matcher)) score += 4;
+    if (fields.content && matches(post.content, matcher)) score += 1;
+    return score;
   }
 
   function initQuickSearch() {
     const input = document.getElementById("quick-search-input");
     const container = document.getElementById("quick-search-results");
     if (!input || !container) return;
+    let activeIndex = -1;
+    let currentResults = [];
+
+    function setExpanded(expanded) {
+      input.setAttribute("aria-expanded", String(expanded));
+      container.hidden = !expanded;
+      if (!expanded) {
+        activeIndex = -1;
+        input.removeAttribute("aria-activedescendant");
+      }
+    }
+
+    function setActiveResult(index) {
+      const options = container.querySelectorAll("[role=\"option\"]");
+      options.forEach(function (option) {
+        option.setAttribute("aria-selected", "false");
+      });
+      activeIndex = index;
+      if (activeIndex < 0 || !options[activeIndex]) {
+        input.removeAttribute("aria-activedescendant");
+        return;
+      }
+      options[activeIndex].setAttribute("aria-selected", "true");
+      input.setAttribute("aria-activedescendant", options[activeIndex].id);
+      options[activeIndex].scrollIntoView({ block: "nearest" });
+    }
+
+    function renderResults(results) {
+      currentResults = results;
+      activeIndex = -1;
+      container.innerHTML = results.length ? results.map(function (post, index) {
+        return "<a id=\"quick-search-option-" + index + "\" role=\"option\" aria-selected=\"false\"" +
+          " class=\"quick-search-result-item\" href=\"" + escapeHTML(post.url) +
+          "\"><span class=\"quick-search-result-date\">" + escapeHTML(post.date) +
+          "</span><span class=\"quick-search-result-title\">" + escapeHTML(post.title) +
+          "</span></a>";
+      }).join("") : "<div class=\"no-results\">未找到相关文章</div>";
+      setExpanded(true);
+    }
 
     const run = debounce(function () {
       const query = input.value.trim().toLowerCase();
       if (query.length < 2) {
-        container.hidden = true;
+        setExpanded(false);
         return;
       }
 
@@ -58,19 +110,30 @@
           searchableTaxonomy(post).toLowerCase().includes(query);
       }).slice(0, 5);
 
-      container.innerHTML = results.length ? results.map(function (post) {
-        return "<div class=\"quick-search-result-item\"><a href=\"" + escapeHTML(post.url) +
-          "\"><span class=\"quick-search-result-date\">" + escapeHTML(post.date) +
-          "</span><span class=\"quick-search-result-title\">" + escapeHTML(post.title) +
-          "</span></a></div>";
-      }).join("") : "<div class=\"no-results\">未找到相关文章</div>";
-      container.hidden = false;
+      renderResults(results);
     }, 200);
 
     input.addEventListener("input", run);
+    input.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        setExpanded(false);
+        return;
+      }
+      if (!currentResults.length || container.hidden) return;
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        setActiveResult((activeIndex + 1) % currentResults.length);
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        setActiveResult((activeIndex - 1 + currentResults.length) % currentResults.length);
+      } else if (event.key === "Enter" && activeIndex >= 0) {
+        event.preventDefault();
+        window.location.href = currentResults[activeIndex].url;
+      }
+    });
     document.addEventListener("click", function (event) {
       if (!input.contains(event.target) && !container.contains(event.target)) {
-        container.hidden = true;
+        setExpanded(false);
       }
     });
   }
@@ -87,6 +150,14 @@
 
     function run() {
       const query = input.value.trim();
+      const url = new URL(window.location.href);
+      if (query) {
+        url.searchParams.set("q", query);
+      } else {
+        url.searchParams.delete("q");
+      }
+      window.history.replaceState({}, "", url);
+
       if (query.length < 2) {
         container.innerHTML = "<p class=\"search-tip\">请输入至少 2 个字符。</p>";
         return;
@@ -101,10 +172,20 @@
         "\\b" + escapeRegExp(query) + "\\b" :
         escapeRegExp(query);
       const matcher = new RegExp(expression, "i");
-      const results = posts.filter(function (post) {
-        return (titleOption.checked && matcher.test(post.title)) ||
-          (contentOption.checked && matcher.test(post.content)) ||
-          (taxonomyOption.checked && matcher.test(searchableTaxonomy(post)));
+      const fields = {
+        title: titleOption.checked,
+        content: contentOption.checked,
+        taxonomy: taxonomyOption.checked
+      };
+      const results = posts.map(function (post) {
+        return { post: post, score: scorePost(post, matcher, fields) };
+      }).filter(function (result) {
+        return result.score > 0;
+      }).sort(function (left, right) {
+        return right.score - left.score ||
+          String(right.post.date).localeCompare(String(left.post.date));
+      }).map(function (result) {
+        return result.post;
       });
 
       if (!results.length) {

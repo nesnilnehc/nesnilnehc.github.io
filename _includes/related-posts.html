@@ -1,3 +1,5 @@
+{%- assign category_posts = site.categories[page.categories.first] -%}
+{%- if category_posts.size > 1 -%}
 {%- assign related_count = 0 -%}
 <section class="related-posts" aria-labelledby="related-posts-title">
   <div class="section-heading">
@@ -7,7 +9,7 @@
     </div>
   </div>
   <div class="related-posts__list">
-    {%- for candidate in site.categories[page.categories.first] -%}
+    {%- for candidate in category_posts -%}
       {%- if candidate.url != page.url and related_count < 3 -%}
         <a href="{{ candidate.url | relative_url }}">
           <time>{{ candidate.date | date: "%Y-%m-%d" }}</time>
@@ -18,3 +20,4 @@
     {%- endfor -%}
   </div>
 </section>
+{%- endif -%}

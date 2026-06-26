@@ -25,7 +25,7 @@ layout: default
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}
-      {%- if page.article_type -%}<span class="post-type">{{ page.article_type }}</span>{%- endif -%}
+      {%- if page.article_type -%}<span class="post-type">{% include article-type-label.html type=page.article_type %}</span>{%- endif -%}
     </p>
     {%- if page.update_note -%}
       <p class="update-note"><strong>更新说明：</strong>{{ page.update_note }}</p>
@@ -36,8 +36,6 @@ layout: default
       </div>
     {%- endif -%}
   </header>
-
-  {%- if page.series -%}{%- include series-context.html -%}{%- endif -%}
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}

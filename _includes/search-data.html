@@ -7,7 +7,6 @@ window.siteSearchPosts = [
       date: {{ post.date | date: "%Y-%m-%d" | jsonify }},
       category: {{ post.categories | first | jsonify }},
       tags: {{ post.tags | jsonify }},
-      series: {{ post.series | jsonify }},
       content: {{ post.content | strip_html | jsonify }},
       excerpt: {{ post.description | default: post.excerpt | strip_html | truncate: 200 | jsonify }}
     }{% unless forloop.last %},{% endunless %}

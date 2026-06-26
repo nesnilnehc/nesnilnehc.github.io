@@ -26,11 +26,11 @@ sidebar: false
         精确匹配
       </label>
     </div>
-    <input type="text" id="search-input" placeholder="请输入搜索关键词..." aria-label="搜索">
+    <input type="search" id="search-input" name="q" placeholder="例如：Mermaid…" aria-label="搜索" autocomplete="off">
   </div>
 
-  <div id="search-results" class="search-results">
-    <p class="search-tip">请输入关键词开始搜索...</p>
+  <div id="search-results" class="search-results" aria-live="polite" aria-atomic="false">
+    <p class="search-tip">请输入关键词开始搜索…</p>
   </div>
 </div>
 

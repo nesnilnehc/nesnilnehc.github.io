@@ -103,6 +103,26 @@
       url: "https://open.spotify.com/track/3VAdBpzIjeEzXvDopegfJW"
     - label: "YouTube"
       url: "https://www.youtube.com/watch?v=fxgRW-i0IjY"
+- title: "我用什么把你留住"
+  count: 1
+  original_title: "我用什么把你留住"
+  artist: "福禄寿"
+  artists:
+    - "福禄寿"
+  release_title: "我用什么把你留住"
+  date: "2021-02-18"
+  date_label: "专辑发行"
+  tags:
+    - 华语
+    - 独立
+  note: "把告别、挽留和生命感压进很大的情绪空间里。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/ar/song/%E6%88%91%E7%94%A8%E4%BB%80%E4%B9%88%E6%8A%8A%E4%BD%A0%E7%95%99%E4%BD%8F/1669352715"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/4TYi1udOmvZ0yIhHEMro5f"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=kyxA6C0MyMY"
 - title: "成年"
   count: 1
   original_title: "成年"

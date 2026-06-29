@@ -50,7 +50,7 @@ sidebar: false
   <article class="music-entry" data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}">
     <span class="music-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if track.count %}
-    <span class="music-entry__count" aria-label="喜欢计数">{{ track.count }}</span>
+    <span class="music-entry__count" aria-label="喜欢 {{ track.count }} 次">喜欢 {{ track.count }} 次</span>
     {% endif %}
     <div class="music-entry__title-group">
       <h2>{{ track.original_title }}{% if track.title and track.title != track.original_title %}（{{ track.title }}）{% endif %}</h2>

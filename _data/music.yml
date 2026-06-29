@@ -15,6 +15,26 @@
   listen_links:
     - label: "YouTube"
       url: "https://www.youtube.com/watch?v=8pmIWFRsREo"
+- title: "入秋"
+  count: 1
+  original_title: "入秋"
+  artist: "T-BONE; 江南江南; TRAKINXRAMBO GANG"
+  artists:
+    - "T-BONE"
+    - "江南江南"
+    - "TRAKINXRAMBO GANG"
+  release_title: "入秋 - Single"
+  date: "2022-06-07"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - Hip-Hop
+  note: "旋律松弛，情绪带一点季节转换时的空落感，适合在夏末秋初反复听。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/song/%E5%85%A5%E7%A7%8B/1695818723"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f"
 - title: "春逝"
   count: 1
   original_title: "봄날은 간다"

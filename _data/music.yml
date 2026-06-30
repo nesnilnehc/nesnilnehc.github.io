@@ -35,6 +35,22 @@
       url: "https://music.apple.com/us/song/%E5%85%A5%E7%A7%8B/1695818723"
     - label: "Spotify"
       url: "https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f"
+- title: "少年啊"
+  count: 1
+  original_title: "소년이여 (A Boy)"
+  artist: "G-DRAGON"
+  artists:
+    - "G-DRAGON"
+  release_title: "Heartbreaker"
+  date: "2009-08-18"
+  date_label: "专辑发行"
+  tags:
+    - K-Pop
+    - Solo
+  note: "少年气和自我宣言都很直接，听起来有一种早期锋芒还没被磨圆的劲。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/a-boy/1337476494?i=1337476499"
 - title: "春逝"
   count: 1
   original_title: "봄날은 간다"
@@ -51,6 +67,40 @@
   listen_links:
     - label: "Apple Music"
       url: "https://music.apple.com/us/album/one-fine-spring-day-original-motion-picture-soundtrack/1618391973"
+- title: "失踪"
+  count: 1
+  original_title: "失蹤"
+  artist: "林忆莲（Sandy Lam）"
+  artists:
+    - "林忆莲（Sandy Lam）"
+  release_title: "林憶蓮's"
+  date: "2000-01-01"
+  date_label: "专辑发行"
+  tags:
+    - 华语
+    - 流行
+  note: "旋律很轻，留白却很重，像把一段关系里说不清的空缺慢慢摊开。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/%E5%A4%B1%E8%B9%A4/905222890?i=905222899"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/6vhqBl2CnN0yPChj7KT7Vt"
+- title: "夜想曲"
+  count: 1
+  original_title: "야상곡 (Nocturne)"
+  artist: "Kim Yuna（金润雅）"
+  artists:
+    - "Kim Yuna（金润雅）"
+  release_title: "Glass Mask"
+  date: "2004-03-05"
+  date_label: "专辑发行"
+  tags:
+    - K-Pop
+    - 夜晚
+  note: "声音铺得很静，像把夜里的孤独慢慢推近，适合在很安静的时候听。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/nocturne/1486523073?i=1486523887"
 - title: "Missing You"
   count: 1
   original_title: "Missing You"

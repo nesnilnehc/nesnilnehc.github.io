@@ -25,23 +25,39 @@ sidebar: false
 {% assign music_tags = music_tags | uniq | sort %}
 {% assign tracks_by_release = site.data.music | sort: "date" | reverse %}
 
-<section class="music-filter" aria-label="按艺人筛选音乐">
-  <p class="music-filter__label">按艺人筛选</p>
-  <div class="music-filter__controls">
-    <button class="music-filter__button is-active" type="button" data-music-filter="all" aria-pressed="true">全部</button>
-    {% for artist in music_artists %}
-    <button class="music-filter__button" type="button" data-music-filter="{{ artist | escape }}" aria-pressed="false">{{ artist }}</button>
-    {% endfor %}
+<section class="collection-summary" aria-label="音乐收藏概览">
+  <div>
+    <span class="collection-summary__value">{{ site.data.music | size }}</span>
+    <span class="collection-summary__label">首音乐</span>
+  </div>
+  <div>
+    <span class="collection-summary__value">{{ music_artists | size }}</span>
+    <span class="collection-summary__label">位艺人</span>
+  </div>
+  <div>
+    <span class="collection-summary__value">{{ music_tags | size }}</span>
+    <span class="collection-summary__label">个标签</span>
   </div>
 </section>
 
-<section class="music-filter" aria-label="按标签筛选音乐">
-  <p class="music-filter__label">按标签筛选</p>
-  <div class="music-filter__controls" data-filter-group="music-tag">
-    <button class="music-filter__button is-active" type="button" data-music-tag-filter="all" aria-pressed="true">全部</button>
-    {% for tag in music_tags %}
-    <button class="music-filter__button" type="button" data-music-tag-filter="{{ tag | escape }}" aria-pressed="false">{{ tag }}</button>
-    {% endfor %}
+<section class="collection-filters" aria-label="筛选音乐">
+  <div class="music-filter">
+    <p class="music-filter__label">艺人</p>
+    <div class="music-filter__controls">
+      <button class="music-filter__button is-active" type="button" data-music-filter="all" aria-pressed="true">全部</button>
+      {% for artist in music_artists %}
+      <button class="music-filter__button" type="button" data-music-filter="{{ artist | escape }}" aria-pressed="false">{{ artist }}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="music-filter">
+    <p class="music-filter__label">标签</p>
+    <div class="music-filter__controls" data-filter-group="music-tag">
+      <button class="music-filter__button is-active" type="button" data-music-tag-filter="all" aria-pressed="true">全部</button>
+      {% for tag in music_tags %}
+      <button class="music-filter__button" type="button" data-music-tag-filter="{{ tag | escape }}" aria-pressed="false">{{ tag }}</button>
+      {% endfor %}
+    </div>
   </div>
 </section>
 

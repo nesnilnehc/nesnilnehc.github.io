@@ -23,23 +23,39 @@ sidebar: false
 {% assign movie_directors = movie_directors | uniq | sort %}
 {% assign movies_by_premiere = site.data.movies | sort: "premiere_date" | reverse %}
 
-<section class="movie-filter" aria-label="按标签筛选电影">
-  <p class="movie-filter__label">按标签筛选</p>
-  <div class="movie-filter__controls">
-    <button class="movie-filter__button is-active" type="button" data-movie-filter="all" aria-pressed="true">全部</button>
-    {% for tag in movie_tags %}
-    <button class="movie-filter__button" type="button" data-movie-filter="{{ tag | escape }}" aria-pressed="false">{{ tag }}</button>
-    {% endfor %}
+<section class="collection-summary" aria-label="电影收藏概览">
+  <div>
+    <span class="collection-summary__value">{{ site.data.movies | size }}</span>
+    <span class="collection-summary__label">部电影</span>
+  </div>
+  <div>
+    <span class="collection-summary__value">{{ movie_directors | size }}</span>
+    <span class="collection-summary__label">位导演</span>
+  </div>
+  <div>
+    <span class="collection-summary__value">{{ movie_tags | size }}</span>
+    <span class="collection-summary__label">个标签</span>
   </div>
 </section>
 
-<section class="movie-filter" aria-label="按导演筛选电影">
-  <p class="movie-filter__label">按导演筛选</p>
-  <div class="movie-filter__controls" data-filter-group="movie-director">
-    <button class="movie-filter__button is-active" type="button" data-movie-director-filter="all" aria-pressed="true">全部</button>
-    {% for director in movie_directors %}
-    <button class="movie-filter__button" type="button" data-movie-director-filter="{{ director | escape }}" aria-pressed="false">{{ director }}</button>
-    {% endfor %}
+<section class="collection-filters" aria-label="筛选电影">
+  <div class="movie-filter">
+    <p class="movie-filter__label">标签</p>
+    <div class="movie-filter__controls">
+      <button class="movie-filter__button is-active" type="button" data-movie-filter="all" aria-pressed="true">全部</button>
+      {% for tag in movie_tags %}
+      <button class="movie-filter__button" type="button" data-movie-filter="{{ tag | escape }}" aria-pressed="false">{{ tag }}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="movie-filter">
+    <p class="movie-filter__label">导演</p>
+    <div class="movie-filter__controls" data-filter-group="movie-director">
+      <button class="movie-filter__button is-active" type="button" data-movie-director-filter="all" aria-pressed="true">全部</button>
+      {% for director in movie_directors %}
+      <button class="movie-filter__button" type="button" data-movie-director-filter="{{ director | escape }}" aria-pressed="false">{{ director }}</button>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
@@ -48,7 +64,7 @@ sidebar: false
   <article class="movie-entry" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie.director | escape }}">
     <span class="movie-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if movie.count %}
-    <span class="movie-entry__count" aria-label="喜欢计数">{{ movie.count }}</span>
+    <span class="movie-entry__count" aria-label="喜欢 {{ movie.count }} 次">喜欢 {{ movie.count }} 次</span>
     {% endif %}
     <div class="movie-entry__title-group">
       <h2>

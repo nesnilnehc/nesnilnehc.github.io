@@ -7,7 +7,9 @@ permalink: /music/
 sidebar: false
 ---
 
-这不是歌单平台，也不是乐评索引。这里只放一些我愿意反复听、并且想留在个人站里的音乐。
+<section class="music-profile" aria-label="音乐风格与听感">
+  <p>我偏爱那些能承载辽阔、夜晚、告别、时间、季节转换、长大和挽留的歌。它们可以明亮直接，也可以克制清冷；重要的是能让我慢下来、重新提气，或把一段情绪放回生活里。</p>
+</section>
 
 {% assign music_artists = "" | split: "" %}
 {% for track in site.data.music %}

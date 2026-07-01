@@ -1,13 +1,15 @@
 ---
 layout: page
 title: 喜欢的电影
-nav_title: 片单
+nav_title: 电影
 nav_order: 3
 permalink: /movies/
 sidebar: false
 ---
 
-这不是一份影史清单，也不是评分榜。只是一些我愿意留下来的电影：有些关于选择和尊严，有些关于天赋和骗局，有些只是因为它们留下了很具体的情绪。原作名按原始发行片名记录；中文名采用有公开发行译名时的常用名称。
+<section class="movie-profile" aria-label="电影取向">
+  <p>我偏爱那些把选择、尊严、天赋、骗局、机会、困境、出走和日常连接拍得具体的电影。它们可以温柔，也可以锋利；重要的是让我重新看见一个人怎样在时代、关系和制度里保住自己的判断。</p>
+</section>
 
 {% assign movie_tags = "" | split: "" %}
 {% for movie in site.data.movies %}

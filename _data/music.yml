@@ -156,6 +156,24 @@
   listen_links:
     - label: "YouTube"
       url: "https://www.youtube.com/watch?v=eoGCAzqbK2o"
+- title: "路"
+  count: 1
+  original_title: "길 (The Road)"
+  artist: "Kim Yuna（金润雅）"
+  artists:
+    - "Kim Yuna（金润雅）"
+  release_title: "The Road (From \"Signal\", Pt. 4) - Single"
+  date: "2016-02-20"
+  date_label: "数字发行"
+  tags:
+    - OST
+    - K-Pop
+  note: "鼓点稳稳往前推，声音却像在回头看，把命运感唱得很克制。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/the-road-from-signal-pt-4/1611727919?i=1611727921"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=7nC3pU_F0w0"
 - title: "Missing You"
   count: 1
   original_title: "Missing You"

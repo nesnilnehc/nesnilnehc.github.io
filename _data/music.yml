@@ -51,6 +51,96 @@
       url: "https://music.apple.com/hk/song/%E8%B2%9D%E5%8A%A0%E7%88%BE%E6%B9%96%E7%95%94-live/1601720885"
     - label: "YouTube"
       url: "https://www.youtube.com/watch?v=1ooY0aYA0pw"
+- title: "蓝色土耳其"
+  count: 1
+  original_title: "藍色土耳其"
+  artist: "周传雄（Steve Chou）"
+  artists:
+    - "周传雄（Steve Chou）"
+  release_title: "藍色土耳其"
+  date: "2007-10-24"
+  date_label: "专辑发行"
+  tags:
+    - 华语
+    - 流行
+  note: "旋律带着旅行感，情绪却还是周传雄式的孤单和深情。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/cn/song/%E8%93%9D%E8%89%B2%E5%9C%9F%E8%80%B3%E5%85%B6/1682903731"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=LzlhmD9S_2Y"
+- title: "成人礼"
+  count: 1
+  original_title: "성인식 (Coming of Age Ceremony)"
+  artist: "Park Ji Yoon（朴志胤）"
+  artists:
+    - "Park Ji Yoon（朴志胤）"
+  release_title: "Coming of Age Ceremony"
+  date: "2000-07-26"
+  date_label: "专辑发行"
+  tags:
+    - K-Pop
+    - Solo
+  note: "冷感的节奏和克制的声线很有时代标记，性感却不靠堆叠情绪。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/coming-of-age-ceremony/1638683208?i=1638683212"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=Ceb499goxCM"
+- title: "Wiggle Wiggle"
+  count: 1
+  original_title: "위글위글 (Wigglewiggle)"
+  artist: "HELLOVENUS"
+  artists:
+    - "HELLOVENUS"
+  release_title: "Wigglewiggle - Single"
+  date: "2015-01-05"
+  date_label: "数字发行"
+  tags:
+    - K-Pop
+    - Girl Group
+  note: "直接、夸张、带着二代女团末期的强烈舞曲记忆点。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/song/wigglewiggle/1642869915"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/5v8PeA3Ui2TihKPSLJkpJ4"
+- title: "EYE(S)"
+  count: 1
+  original_title: "EYE(S)"
+  artist: "LÜCY"
+  artists:
+    - "LÜCY"
+  release_title: "EYE(S) - Single"
+  date: "2022-02-07"
+  date_label: "数字发行"
+  tags:
+    - Indie
+    - Folk
+  note: "吉他和人声都很轻，像把情绪压低后慢慢铺开。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/eye-s/1614413514?i=1614413515"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/4Ah02v3e8R2rt8gQzdlCTH"
+- title: "呼吸决定"
+  count: 1
+  original_title: "呼吸决定"
+  artist: "Fine乐团"
+  artists:
+    - "Fine乐团"
+  release_title: "I'm Sorry"
+  date: "2015-10-22"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - 流行
+  note: "旋律轻巧，情绪却很黏，像把恋爱里的犹疑写进呼吸节奏里。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/%E5%91%BC%E5%90%B8%E5%86%B3%E5%AE%9A/1865111686?i=1865111708"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/160m3lGzpADFlI57UpfhTb"
 - title: "入秋"
   count: 1
   original_title: "入秋"
@@ -226,7 +316,7 @@
     - label: "Apple Music"
       url: "https://music.apple.com/us/album/%E8%BF%98%E7%BB%99%E6%97%B6%E9%97%B4-single/1679942511"
 - title: "Salvatore"
-  count: 1
+  count: 2
   original_title: "Salvatore"
   artist: "Niki Luparelli"
   artists:

@@ -173,6 +173,23 @@ h4[id] {
   border-top: 1px solid var(--line);
 }
 
+.collection-group-heading {
+  margin: 0;
+  padding: 0.82rem 0 0.32rem;
+  color: var(--accent-dark);
+  border-bottom: 1px solid rgba(18, 107, 75, 0.14);
+  font-family: "Iowan Old Style", "Baskerville", "Songti SC", "STSong", serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+
+  + .movie-entry,
+  + .music-entry {
+    border-top: 0;
+  }
+}
+
 .movie-entry {
   display: grid;
   grid-template-columns: 4.35rem minmax(0, 1fr);

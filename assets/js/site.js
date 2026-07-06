@@ -42,6 +42,77 @@
     return activeButton ? activeButton.dataset[dataKey] : "all";
   }
 
+  function updateEntryIndexes(selector) {
+    let visibleIndex = 0;
+
+    Array.from(document.querySelectorAll(selector)).forEach(function (entry) {
+      if (entry.hidden) return;
+      visibleIndex += 1;
+      const index = entry.querySelector(".movie-entry__index, .music-entry__index");
+      if (!index) return;
+      index.textContent = String(visibleIndex).padStart(2, "0");
+    });
+  }
+
+  function compareCollectionEntries(left, right, prefix, mode) {
+    const leftCount = Number(left.dataset[prefix + "Count"] || 0);
+    const rightCount = Number(right.dataset[prefix + "Count"] || 0);
+    const leftDate = left.dataset[prefix + "Date"] || "";
+    const rightDate = right.dataset[prefix + "Date"] || "";
+    const leftOrder = Number(left.dataset[prefix + "Order"] || 0);
+    const rightOrder = Number(right.dataset[prefix + "Order"] || 0);
+
+    if (mode === "count" && leftCount !== rightCount) return rightCount - leftCount;
+    if (leftDate !== rightDate) return rightDate.localeCompare(leftDate);
+    if (mode !== "count" && leftCount !== rightCount) return rightCount - leftCount;
+    return leftOrder - rightOrder;
+  }
+
+  function groupLabel(entry, prefix, mode) {
+    if (mode === "count") {
+      return "喜欢 " + Number(entry.dataset[prefix + "Count"] || 0) + " 次";
+    }
+
+    const date = entry.dataset[prefix + "Date"] || "";
+    return date.slice(0, 4) || "未知年份";
+  }
+
+  function createGroupHeading(label, prefix) {
+    const heading = document.createElement("h2");
+    heading.className = "collection-group-heading";
+    heading.dataset[prefix + "GroupHeading"] = "true";
+    heading.textContent = label;
+    return heading;
+  }
+
+  function sortCollection(shelfSelector, entrySelector, prefix, mode) {
+    const shelf = document.querySelector(shelfSelector);
+    if (!shelf) return;
+
+    Array.from(shelf.querySelectorAll(".collection-group-heading")).forEach(function (heading) {
+      heading.remove();
+    });
+
+    const entries = Array.from(shelf.querySelectorAll(entrySelector)).sort(function (left, right) {
+      return compareCollectionEntries(left, right, prefix, mode);
+    });
+    let currentGroup = "";
+
+    entries.forEach(function (entry) {
+      if (!entry.hidden) {
+        const nextGroup = groupLabel(entry, prefix, mode);
+        if (nextGroup !== currentGroup) {
+          currentGroup = nextGroup;
+          shelf.appendChild(createGroupHeading(currentGroup, prefix));
+        }
+      }
+
+        shelf.appendChild(entry);
+    });
+
+    updateEntryIndexes(entrySelector);
+  }
+
   function applyMovieFilters() {
     const activeTag = activeFilterValue("[data-movie-filter]", "movieFilter");
     const activeDirector = activeFilterValue("[data-movie-director-filter]", "movieDirectorFilter");
@@ -56,6 +127,7 @@
       if (isVisible) visibleCount += 1;
     });
 
+    sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));
     announce("已筛选出 " + visibleCount + " 部电影。");
   }
 
@@ -74,8 +146,25 @@
       if (isVisible) visibleCount += 1;
     });
 
+    sortCollection(".music-shelf", ".music-entry", "music", activeFilterValue("[data-music-sort]", "musicSort"));
     announce("已筛选出 " + visibleCount + " 首音乐。");
   }
+
+  Array.from(document.querySelectorAll("[data-movie-sort]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-movie-sort]");
+      sortCollection(".movie-shelf", ".movie-entry", "movie", button.dataset.movieSort);
+      announce(button.dataset.movieSort === "count" ? "已按喜欢次数排序电影。" : "已按时间排序电影。");
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-music-sort]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-music-sort]");
+      sortCollection(".music-shelf", ".music-entry", "music", button.dataset.musicSort);
+      announce(button.dataset.musicSort === "count" ? "已按喜欢次数排序音乐。" : "已按时间排序音乐。");
+    });
+  });
 
   Array.from(document.querySelectorAll("[data-movie-filter]")).forEach(function (button) {
     button.addEventListener("click", function () {
@@ -104,6 +193,9 @@
       applyMusicFilters();
     });
   });
+
+  sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));
+  sortCollection(".music-shelf", ".music-entry", "music", activeFilterValue("[data-music-sort]", "musicSort"));
 
   document.addEventListener("click", function (event) {
     const button = event.target.closest(".js-share-post");

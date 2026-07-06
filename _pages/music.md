@@ -44,6 +44,13 @@ sidebar: false
 
 <section class="collection-filters" aria-label="筛选音乐">
   <div class="music-filter">
+    <p class="music-filter__label">排序</p>
+    <div class="music-filter__controls">
+      <button class="music-filter__button is-active" type="button" data-music-sort="date" aria-pressed="true">时间</button>
+      <button class="music-filter__button" type="button" data-music-sort="count" aria-pressed="false">喜欢次数</button>
+    </div>
+  </div>
+  <div class="music-filter">
     <p class="music-filter__label">艺人</p>
     <div class="music-filter__controls">
       <button class="music-filter__button is-active" type="button" data-music-filter="all" aria-pressed="true">全部</button>
@@ -65,7 +72,7 @@ sidebar: false
 
 <section class="music-shelf" aria-label="喜欢的音乐">
   {% for track in tracks_by_release %}
-  <article class="music-entry" data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}">
+  <article class="music-entry" data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count | default: 0 }}" data-music-order="{{ forloop.index0 }}">
     <span class="music-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if track.count %}
     <span class="music-entry__count" aria-label="喜欢 {{ track.count }} 次">喜欢 {{ track.count }} 次</span>
@@ -96,7 +103,9 @@ sidebar: false
       </div>
       {% endif %}
     </dl>
+    {% if track.note %}
     <p class="music-entry__note">{{ track.note }}</p>
+    {% endif %}
   </article>
   {% endfor %}
 </section>

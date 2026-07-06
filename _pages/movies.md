@@ -42,6 +42,13 @@ sidebar: false
 
 <section class="collection-filters" aria-label="筛选电影">
   <div class="movie-filter">
+    <p class="movie-filter__label">排序</p>
+    <div class="movie-filter__controls">
+      <button class="movie-filter__button is-active" type="button" data-movie-sort="date" aria-pressed="true">时间</button>
+      <button class="movie-filter__button" type="button" data-movie-sort="count" aria-pressed="false">喜欢次数</button>
+    </div>
+  </div>
+  <div class="movie-filter">
     <p class="movie-filter__label">标签</p>
     <div class="movie-filter__controls">
       <button class="movie-filter__button is-active" type="button" data-movie-filter="all" aria-pressed="true">全部</button>
@@ -63,7 +70,7 @@ sidebar: false
 
 <section class="movie-shelf" aria-label="喜欢的电影">
   {% for movie in movies_by_premiere %}
-  <article class="movie-entry" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie.director | escape }}">
+  <article class="movie-entry" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie.director | escape }}" data-movie-date="{{ movie.premiere_date }}" data-movie-count="{{ movie.count | default: 0 }}" data-movie-order="{{ forloop.index0 }}">
     <span class="movie-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if movie.count %}
     <span class="movie-entry__count" aria-label="喜欢 {{ movie.count }} 次">喜欢 {{ movie.count }} 次</span>
@@ -98,7 +105,9 @@ sidebar: false
         <dd><a href="{{ movie.imdb_url }}" target="_blank" rel="noopener noreferrer">IMDb</a></dd>
       </div>
     </dl>
+    {% if movie.note %}
     <p class="movie-entry__note">{{ movie.note }}</p>
+    {% endif %}
   </article>
   {% endfor %}
 </section>

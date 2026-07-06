@@ -141,6 +141,24 @@
       url: "https://music.apple.com/us/album/%E5%91%BC%E5%90%B8%E5%86%B3%E5%AE%9A/1865111686?i=1865111708"
     - label: "Spotify"
       url: "https://open.spotify.com/track/160m3lGzpADFlI57UpfhTb"
+- title: "血腥爱情故事"
+  count: 1
+  original_title: "血腥愛情故事"
+  artist: "张惠妹（aMEI）"
+  artists:
+    - "张惠妹（aMEI）"
+  release_title: "AMIT2"
+  date: "2015-04-04"
+  date_label: "专辑发行"
+  tags:
+    - 华语
+    - 流行
+  note: ""
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/%E8%A1%80%E8%85%A5%E6%84%9B%E6%83%85%E6%95%85%E4%BA%8B/1834912906?i=1834913278"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/6bVz2DuWXyoVIx6UPlHtpd"
 - title: "阿衣莫"
   count: 1
   original_title: "阿衣莫"
@@ -177,6 +195,24 @@
       url: "https://open.spotify.com/track/0adYnj7QNm61OeuyA5MYgU"
     - label: "YouTube"
       url: "https://www.youtube.com/watch?v=ixUEq7MC5O4"
+- title: "如梦"
+  count: 1
+  original_title: "如夢"
+  artist: "陈婧霏（Jingfei Chen）"
+  artists:
+    - "陈婧霏（Jingfei Chen）"
+  release_title: "DONG - Single"
+  date: "2022-11-22"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - 流行
+  note: ""
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/%E5%A6%82%E5%A4%A2/1655847286?i=1655847293"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/5tVFIFBBCWEMLO2zN7Diym"
 - title: "Skyfall"
   count: 1
   original_title: "Skyfall (feat. 민아)"
@@ -196,6 +232,24 @@
       url: "https://music.apple.com/us/album/skyfall-feat-%EB%AF%BC%EC%95%84/940908626?i=940908629"
     - label: "Spotify"
       url: "https://open.spotify.com/album/6jupweizVEGQJI0Vx2K0CS"
+- title: "丁香花散落的时候"
+  count: 1
+  original_title: "라일락이 질때"
+  artist: "Lee Sun Hee（李仙姬）"
+  artists:
+    - "Lee Sun Hee（李仙姬）"
+  release_title: "First Love"
+  date: "1996-10-01"
+  date_label: "专辑发行"
+  tags:
+    - K-Pop
+    - Ballad
+  note: ""
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/%EB%9D%BC%EC%9D%BC%EB%9D%BD%EC%9D%B4-%EC%A7%88%EB%95%8C/1680160749?i=1680160753"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/12eRxZDpOLEgxOXHU7HSPN"
 - title: "大眠"
   count: 1
   original_title: "大眠"
@@ -276,9 +330,9 @@
 - title: "少年啊"
   count: 1
   original_title: "소년이여 (A Boy)"
-  artist: "G-DRAGON"
+  artist: "G-DRAGON（权志龙）"
   artists:
-    - "G-DRAGON"
+    - "G-DRAGON（权志龙）"
   release_title: "Heartbreaker"
   date: "2009-08-18"
   date_label: "专辑发行"
@@ -342,9 +396,9 @@
 - title: "会怎么样呢"
   count: 1
   original_title: "어땠을까 (What Would Have Been?)"
-  artist: "PSY; Park Bom（朴春）"
+  artist: "PSY（朴载相）; Park Bom（朴春）"
   artists:
-    - "PSY"
+    - "PSY（朴载相）"
     - "Park Bom（朴春）"
   release_title: "PSY Summer Stand Concert 2012 The Water Show"
   release_context: "Jamsil Olympic Stadium, Seoul"
@@ -379,9 +433,9 @@
 - title: "Missing You"
   count: 1
   original_title: "Missing You"
-  artist: "G-DRAGON; Kim Yuna（金润雅）"
+  artist: "G-DRAGON（权志龙）; Kim Yuna（金润雅）"
   artists:
-    - "G-DRAGON"
+    - "G-DRAGON（权志龙）"
     - "Kim Yuna（金润雅）"
   release_title: "One of a Kind"
   date: "2012-09-15"
@@ -430,9 +484,9 @@
 - title: "Salvatore"
   count: 3
   original_title: "Salvatore"
-  artist: "Lana Del Rey"
+  artist: "Lana Del Rey（拉娜·德雷）"
   artists:
-    - "Lana Del Rey"
+    - "Lana Del Rey（拉娜·德雷）"
   release_title: "Honeymoon"
   date: "2015-09-18"
   date_label: "专辑发行"
@@ -482,3 +536,143 @@
   listen_links:
     - label: "网易云音乐"
       url: "https://music.163.com/song?id=1903349486"
+- title: "Trouble Maker"
+  count: 1
+  original_title: "Trouble Maker"
+  artist: "Trouble Maker"
+  artists:
+    - "Trouble Maker"
+  release_title: "Trouble Maker - EP"
+  date: "2011-12-01"
+  date_label: "数字发行"
+  tags:
+    - K-Pop
+    - 合作
+  note: "Trouble Maker 由张贤胜和泫雅组成。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/trouble-maker/1343137845?i=1343137850"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=s-zRAQmKUkI"
+- title: "APT."
+  count: 1
+  original_title: "APT."
+  artist: "ROSÉ（朴彩英）; Bruno Mars（布鲁诺·马尔斯）"
+  artists:
+    - "ROSÉ（朴彩英）"
+    - "Bruno Mars（布鲁诺·马尔斯）"
+  release_title: "APT. - Single"
+  date: "2024-10-18"
+  date_label: "数字发行"
+  tags:
+    - Pop
+    - 合作
+  note: ""
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/apt/1773452219?i=1773452221"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=ekr2nIex040"
+- title: "白雪"
+  count: 1
+  original_title: "白い雪"
+  artist: "KOKIA"
+  artists:
+    - "KOKIA"
+  release_title: "songbird"
+  date: "1999-07-16"
+  date_label: "专辑发行"
+  tags:
+    - J-Pop
+  note: ""
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/jp/album/%E7%99%BD%E3%81%84%E9%9B%AA/263337151?i=263339092"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/2HoQ2osahr07hipzMGAhFd"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=mpZTHOQYEYI"
+- title: "左耳"
+  count: 1
+  original_title: "左耳"
+  artist: "赵薇"
+  artists:
+    - "赵薇"
+  release_title: "左耳 - Single"
+  date: "2015-04-13"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - OST
+  note: "电影《左耳》同名主题曲。"
+  listen_links:
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/6moYOYz3apukP6UalLTVuX"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=cX5RrRvrWw8"
+- title: "放空"
+  count: 1
+  original_title: "放空"
+  artist: "A1 TRIP; 大籽; Lil E"
+  artists:
+    - "A1 TRIP"
+    - "大籽"
+    - "Lil E"
+  release_title: "放空 - Single"
+  date: "2021-05-18"
+  date_label: "数字发行"
+  tags:
+    - 华语
+    - Hip-Hop
+  note: ""
+  listen_links:
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/6LcAShmu7y5L38jjD1XA37"
+    - label: "QQ音乐"
+      url: "https://y.qq.com/n/ryqq/songDetail/004ByH6Q4K9jz8?songtype=0"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=Sl2n-lM7kmc"
+- title: "Only One"
+  count: 1
+  original_title: "Only One"
+  artist: "BoA（宝儿）"
+  artists:
+    - "BoA（宝儿）"
+  release_title: "Only One"
+  date: "2012-07-22"
+  date_label: "专辑发行"
+  tags:
+    - K-Pop
+    - Solo
+  note: ""
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/only-one/854900899?i=854900907"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/3Hyl7YrOtBcnh1geON2kSO"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=PQjovLrnvVo"
+- title: "Way Back Into Love"
+  count: 1
+  original_title: "Way Back Into Love"
+  artist: "Hugh Grant（休·格兰特）; Haley Bennett（海莉·贝内特）"
+  artists:
+    - "Hugh Grant（休·格兰特）"
+    - "Haley Bennett（海莉·贝内特）"
+  release_title: "Music and Lyrics (Music from the Motion Picture)"
+  date: "2007-02-13"
+  date_label: "专辑发行"
+  tags:
+    - OST
+    - Pop
+    - 对唱
+  note: "电影《K歌情人》原声歌曲。"
+  listen_links:
+    - label: "Apple Music"
+      url: "https://music.apple.com/us/album/way-back-into-love/214509717?i=214511075"
+    - label: "Spotify"
+      url: "https://open.spotify.com/track/0zYP35FfMItfaP6c9gcQZB"
+    - label: "YouTube"
+      url: "https://www.youtube.com/watch?v=PCp5iXA1uLE"

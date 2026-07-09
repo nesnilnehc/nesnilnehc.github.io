@@ -403,7 +403,7 @@
   - label: Spotify
     url: https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f
 - title: 少年啊
-  count: 1
+  count: 2
   original_title: 소년이여 (A Boy)
   artist: G-DRAGON
   artists:
@@ -651,7 +651,7 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=kyxA6C0MyMY
 - title: 成年
-  count: 1
+  count: 2
   original_title: 成年
   artist: 刘凯迪; 牛佳钰
   artists:
@@ -985,6 +985,25 @@
     url: https://music.apple.com/us/album/nuits-d%C3%A9t%C3%A9/1521501574?i=1521501937
   - label: Spotify
     url: https://open.spotify.com/track/2dxyTLxvO1xzHSD6fDafwZ
+- title: Yesterday Once More
+  count: 1
+  original_title: Yesterday Once More
+  artist: Carpenters
+  artists:
+  - Carpenters
+  lyricists:
+  - John Bettis
+  composers:
+  - Richard Carpenter
+  release_title: Now & Then
+  date: '1973-05-01'
+  date_label: 专辑发行
+  tags:
+  - 流行
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/3wM6RTAnF7IQpMFd7b9ZcL
 - title: 野子
   count: 1
   original_title: 野子
@@ -1009,3 +1028,42 @@
     url: https://open.spotify.com/track/7DinoeOxAStfqDctByUEOk
   - label: YouTube
     url: https://www.youtube.com/watch?v=OShHkfTw_e8
+- title: 美丽心情
+  count: 1
+  original_title: 美丽心情
+  artist: 本多RuRu
+  artists:
+  - 本多RuRu
+  lyricists:
+  - 姚谦
+  composers:
+  - Nakajima Miyuki
+  release_title: 美丽心情
+  date: '2001-02-24'
+  date_label: 专辑发行
+  tags:
+  - 华语
+  - 流行
+  note: 改编自中岛美雪《帰省》。
+  listen_links:
+  - label: 网易云音乐
+    url: https://music.163.com/song?id=5264222
+- title: 帰省
+  count: 1
+  original_title: 帰省
+  artist: Nakajima Miyuki
+  artists:
+  - Nakajima Miyuki
+  lyricists:
+  - Nakajima Miyuki
+  composers:
+  - Nakajima Miyuki
+  release_title: 短篇集
+  date: '2000-11-15'
+  date_label: 专辑发行
+  tags:
+  - J-Pop
+  note: 本多RuRu《美丽心情》改编自此曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/jp/song/%E5%B8%B0%E7%9C%81/1539136659

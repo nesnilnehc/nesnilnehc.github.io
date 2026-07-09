@@ -226,6 +226,10 @@ Jingfei Chen:
   canonical_name: 陈婧霏
   display_name: Jingfei Chen · 陈婧霏
   nickname: Jingfei Chen
+John Bettis:
+  romanized_name: John Bettis
+  canonical_name: John Bettis
+  display_name: John Bettis
 John Carroll Lynch:
   romanized_name: John Carroll Lynch
   canonical_name: John Carroll Lynch
@@ -367,6 +371,11 @@ Mykelti Williamson:
   canonical_name: Mykelti Williamson
   chinese_name: 麦凯尔泰·威廉逊
   display_name: Mykelti Williamson · 麦凯尔泰·威廉逊
+Nakajima Miyuki:
+  romanized_name: Nakajima Miyuki
+  canonical_name: 中島みゆき
+  chinese_name: 中岛美雪
+  display_name: Nakajima Miyuki · 中島みゆき · 中岛美雪
 Natalie Portman:
   romanized_name: Natalie Portman
   canonical_name: Natalie Portman
@@ -456,6 +465,11 @@ Rami Malek:
   canonical_name: Rami Malek
   chinese_name: 拉米·马雷克
   display_name: Rami Malek · 拉米·马雷克
+Richard Carpenter:
+  romanized_name: Richard Carpenter
+  canonical_name: Richard Carpenter
+  chinese_name: 理查德·卡朋特
+  display_name: Richard Carpenter · 理查德·卡朋特
 Rick Nowels:
   romanized_name: Rick Nowels
   canonical_name: Rick Nowels
@@ -639,6 +653,9 @@ aMEI:
 大籽:
   canonical_name: 大籽
   display_name: 大籽
+姚谦:
+  canonical_name: 姚谦
+  display_name: 姚谦
 寺尾聪:
   canonical_name: 寺尾聪
   display_name: 寺尾聪
@@ -660,6 +677,11 @@ aMEI:
 木村绿子:
   canonical_name: 木村绿子
   display_name: 木村绿子
+本多RuRu:
+  romanized_name: Honda RuRu
+  canonical_name: 董璐
+  nickname: 本多RuRu
+  display_name: 本多RuRu · 董璐
 李健:
   canonical_name: 李健
   display_name: 李健

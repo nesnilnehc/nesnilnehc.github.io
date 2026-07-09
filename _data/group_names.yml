@@ -1,0 +1,53 @@
+# 组合/乐队/团体姓名字典，与 person_names.yml 同构（romanized_name / canonical_name / chinese_name / nickname / display_name），仅收录乐队、组合、团体等非单一个人的演职credit。canonical_name 需要逐条以来源材料校准。
+---
+A1 TRIP:
+  romanized_name: A1 TRIP
+  canonical_name: A1 TRIP
+  display_name: A1 TRIP
+AJITAI:
+  romanized_name: AJITAI
+  canonical_name: 阿吉太组合
+  display_name: AJITAI · 阿吉太组合
+  nickname: AJITAI
+BEGIN:
+  romanized_name: BEGIN
+  canonical_name: BEGIN
+  display_name: BEGIN
+Fine乐团:
+  romanized_name: Fine乐团
+  canonical_name: Fine乐团
+  display_name: Fine乐团
+HAYA乐团:
+  romanized_name: HAYA乐团
+  canonical_name: HAYA乐团
+  display_name: HAYA乐团
+HELLOVENUS:
+  romanized_name: HELLOVENUS
+  canonical_name: 헬로비너스
+  nickname: HELLOVENUS
+  display_name: HELLOVENUS · 헬로비너스
+LÜCY:
+  romanized_name: LÜCY
+  canonical_name: LÜCY
+  display_name: LÜCY
+Queen:
+  romanized_name: Queen
+  canonical_name: Queen
+  display_name: Queen
+Trouble Maker:
+  romanized_name: Trouble Maker
+  canonical_name: 트러블메이커
+  nickname: Trouble Maker
+  display_name: Trouble Maker · 트러블메이커
+山丹丹民歌组合:
+  canonical_name: 山丹丹民歌组合
+  display_name: 山丹丹民歌组合
+福禄寿:
+  canonical_name: 福禄寿
+  display_name: 福禄寿
+生鱼片:
+  canonical_name: 生鱼片
+  display_name: 生鱼片
+云南弥渡民歌:
+  canonical_name: 云南弥渡民歌
+  display_name: 云南弥渡民歌

@@ -1,0 +1,8 @@
+{% if include.items.first %}
+  {% for item in include.items %}
+    {% include person-name.html name=item %}
+    {% unless forloop.last %}<span class="person-inline-separator">/</span>{% endunless %}
+  {% endfor %}
+{% elsif include.items %}
+  {% include person-name.html name=include.items %}
+{% endif %}

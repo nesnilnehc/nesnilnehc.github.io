@@ -1,698 +1,1011 @@
-- title: "光"
+---
+- title: 光
   count: 1
-  original_title: "光"
-  artist: "艾热 AIR; Ziba"
+  original_title: 光
+  artist: 艾热 AIR; Ziba
   artists:
-    - "艾热 AIR"
-    - "Ziba"
+  - 艾热 AIR
+  - Ziba
+  lyricists:
+  - 陈粒
+  - 艾热 AIR
+  composers:
+  - 陈粒
   release_title: "《天声一对》现场版"
-  date: "2025-11-09"
-  date_label: "节目日期"
+  date: '2025-11-09'
+  date_label: 节目日期
   tags:
-    - 现场
-    - 对唱
-  note: ""
+  - 现场
+  - 对唱
+  note: ''
   listen_links:
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=8pmIWFRsREo"
-- title: "弥渡山歌"
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=8pmIWFRsREo
+- title: 弥渡山歌
   count: 1
-  original_title: "弥渡山歌"
-  artist: "山丹丹民歌组合"
+  original_title: 弥渡山歌
+  artist: 山丹丹民歌组合
   artists:
-    - "山丹丹民歌组合"
-  release_title: "火辣辣的日子"
-  date: "2018-09-01"
-  date_label: "数字发行"
+  - 山丹丹民歌组合
+  lyricists:
+  - 云南弥渡民歌
+  composers:
+  - 云南弥渡民歌
+  release_title: 火辣辣的日子
+  date: '2018-09-01'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 民歌
-  note: "云南弥渡民歌。"
+  - 华语
+  - 民歌
+  note: 云南弥渡民歌。
   listen_links:
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/5bVugwry6czApFV2SL3Ifn"
-- title: "贝加尔湖畔"
+  - label: Spotify
+    url: https://open.spotify.com/track/5bVugwry6czApFV2SL3Ifn
+- title: 贝加尔湖畔
   count: 3
-  original_title: "貝加爾湖畔 (Live)"
-  artist: "谭晶; 塔斯肯"
+  original_title: 貝加爾湖畔 (Live)
+  artist: 谭晶; 塔斯肯
   artists:
-    - "谭晶"
-    - "塔斯肯"
-  release_title: "蒙面唱将猜猜猜 第3期"
-  date: "2016-10-02"
-  date_label: "节目日期"
+  - 谭晶
+  - 塔斯肯
+  lyricists:
+  - 李健
+  composers:
+  - 李健
+  release_title: 蒙面唱将猜猜猜 第3期
+  date: '2016-10-02'
+  date_label: 节目日期
   tags:
-    - 华语
-    - 现场
-    - 对唱
-  note: ""
+  - 华语
+  - 现场
+  - 对唱
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/hk/song/%E8%B2%9D%E5%8A%A0%E7%88%BE%E6%B9%96%E7%95%94-live/1601720885"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=1ooY0aYA0pw"
-- title: "蓝色土耳其"
+  - label: Apple Music
+    url: https://music.apple.com/hk/song/%E8%B2%9D%E5%8A%A0%E7%88%BE%E6%B9%96%E7%95%94-live/1601720885
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=1ooY0aYA0pw
+- title: 蓝色土耳其
   count: 1
-  original_title: "藍色土耳其"
-  artist: "周传雄（Steve Chou）"
+  original_title: 藍色土耳其
+  artist: Steve Chou
   artists:
-    - "周传雄（Steve Chou）"
-  release_title: "藍色土耳其"
-  date: "2007-10-24"
-  date_label: "专辑发行"
+  - Steve Chou
+  lyricists:
+  - 陈信荣
+  composers:
+  - Steve Chou
+  release_title: 藍色土耳其
+  date: '2007-10-24'
+  date_label: 专辑发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/cn/song/%E8%93%9D%E8%89%B2%E5%9C%9F%E8%80%B3%E5%85%B6/1682903731"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=LzlhmD9S_2Y"
-- title: "成人礼"
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/%E8%93%9D%E8%89%B2%E5%9C%9F%E8%80%B3%E5%85%B6/1682903731
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=LzlhmD9S_2Y
+- title: 成人礼
   count: 1
-  original_title: "성인식 (Coming of Age Ceremony)"
-  artist: "Park Ji Yoon（朴志胤）"
+  original_title: 성인식 (Coming of Age Ceremony)
+  artist: Park Ji Yoon
   artists:
-    - "Park Ji Yoon（朴志胤）"
-  release_title: "Coming of Age Ceremony"
-  date: "2000-07-26"
-  date_label: "专辑发行"
+  - Park Ji Yoon
+  lyricists:
+  - J.Y. Park
+  composers:
+  - J.Y. Park
+  release_title: Coming of Age Ceremony
+  date: '2000-07-26'
+  date_label: 专辑发行
   tags:
-    - K-Pop
-    - Solo
-  note: ""
+  - K-Pop
+  - Solo
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/coming-of-age-ceremony/1638683208?i=1638683212"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=Ceb499goxCM"
-- title: "Wiggle Wiggle"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/coming-of-age-ceremony/1638683208?i=1638683212
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=Ceb499goxCM
+- title: Wiggle Wiggle
   count: 1
-  original_title: "위글위글 (Wigglewiggle)"
-  artist: "HELLOVENUS"
+  original_title: 위글위글 (Wigglewiggle)
+  artist: HELLOVENUS
   artists:
-    - "HELLOVENUS"
-  release_title: "Wigglewiggle - Single"
-  date: "2015-01-05"
-  date_label: "数字发行"
+  - HELLOVENUS
+  lyricists:
+  - 勇敢兄弟
+  composers:
+  - 勇敢兄弟
+  release_title: Wigglewiggle - Single
+  date: '2015-01-05'
+  date_label: 数字发行
   tags:
-    - K-Pop
-    - Girl Group
-  note: ""
+  - K-Pop
+  - Girl Group
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/song/wigglewiggle/1642869915"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/5v8PeA3Ui2TihKPSLJkpJ4"
-- title: "EYE(S)"
+  - label: Apple Music
+    url: https://music.apple.com/us/song/wigglewiggle/1642869915
+  - label: Spotify
+    url: https://open.spotify.com/track/5v8PeA3Ui2TihKPSLJkpJ4
+- title: EYE(S)
   count: 1
-  original_title: "EYE(S)"
-  artist: "LÜCY"
+  original_title: EYE(S)
+  artist: LÜCY
   artists:
-    - "LÜCY"
-  release_title: "EYE(S) - Single"
-  date: "2022-02-07"
-  date_label: "数字发行"
+  - LÜCY
+  lyricists:
+  - LÜCY
+  composers:
+  - LÜCY
+  release_title: EYE(S) - Single
+  date: '2022-02-07'
+  date_label: 数字发行
   tags:
-    - Indie
-    - Folk
-  note: ""
+  - Indie
+  - Folk
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/eye-s/1614413514?i=1614413515"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/4Ah02v3e8R2rt8gQzdlCTH"
-- title: "呼吸决定"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/eye-s/1614413514?i=1614413515
+  - label: Spotify
+    url: https://open.spotify.com/track/4Ah02v3e8R2rt8gQzdlCTH
+- title: 呼吸决定
   count: 1
-  original_title: "呼吸决定"
-  artist: "Fine乐团"
+  original_title: 呼吸决定
+  artist: Fine乐团
   artists:
-    - "Fine乐团"
-  release_title: "I'm Sorry"
-  date: "2015-10-22"
-  date_label: "数字发行"
+  - Fine乐团
+  lyricists:
+  - 刘冠南
+  composers:
+  - 刘冠南
+  release_title: I'm Sorry
+  date: '2015-10-22'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E5%91%BC%E5%90%B8%E5%86%B3%E5%AE%9A/1865111686?i=1865111708"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/160m3lGzpADFlI57UpfhTb"
-- title: "血腥爱情故事"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E5%91%BC%E5%90%B8%E5%86%B3%E5%AE%9A/1865111686?i=1865111708
+  - label: Spotify
+    url: https://open.spotify.com/track/160m3lGzpADFlI57UpfhTb
+- title: 血腥爱情故事
   count: 1
-  original_title: "血腥愛情故事"
-  artist: "张惠妹（aMEI）"
+  original_title: 血腥愛情故事
+  artist: aMEI
   artists:
-    - "张惠妹（aMEI）"
-  release_title: "AMIT2"
-  date: "2015-04-04"
-  date_label: "专辑发行"
+  - aMEI
+  lyricists:
+  - HUSH
+  composers:
+  - HUSH
+  release_title: AMIT2
+  date: '2015-04-04'
+  date_label: 专辑发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E8%A1%80%E8%85%A5%E6%84%9B%E6%83%85%E6%95%85%E4%BA%8B/1834912906?i=1834913278"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/6bVz2DuWXyoVIx6UPlHtpd"
-- title: "阿衣莫"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E8%A1%80%E8%85%A5%E6%84%9B%E6%83%85%E6%95%85%E4%BA%8B/1834912906?i=1834913278
+  - label: Spotify
+    url: https://open.spotify.com/track/6bVz2DuWXyoVIx6UPlHtpd
+- title: 阿衣莫
   count: 1
-  original_title: "阿衣莫"
-  artist: "阿吉太组合（AJITAI）"
+  original_title: 阿衣莫
+  artist: AJITAI
   artists:
-    - "阿吉太组合（AJITAI）"
-  release_title: "阿衣莫 - Single"
-  date: "2017-10-13"
-  date_label: "数字发行"
+  - AJITAI
+  lyricists:
+  - 吉子古且
+  composers:
+  - 吉子古且
+  release_title: 阿衣莫 - Single
+  date: '2017-10-13'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 民歌
-  note: ""
+  - 华语
+  - 民歌
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E9%98%BF%E8%A1%A3%E8%8E%AB/1576500280?i=1576500288"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/1YJ9YK0BBmm0V320I7U6r3"
-- title: "奇遇记"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E9%98%BF%E8%A1%A3%E8%8E%AB/1576500280?i=1576500288
+  - label: Spotify
+    url: https://open.spotify.com/track/1YJ9YK0BBmm0V320I7U6r3
+- title: 奇遇记
   count: 1
-  original_title: "奇遇记"
-  artist: "生鱼片"
+  original_title: 奇遇记
+  artist: 生鱼片
   artists:
-    - "生鱼片"
-  release_title: "奇遇记"
-  date: "2023-08-01"
-  date_label: "数字发行"
+  - 生鱼片
+  lyricists:
+  - 生鱼片
+  composers:
+  - 生鱼片
+  release_title: 奇遇记
+  date: '2023-08-01'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/0adYnj7QNm61OeuyA5MYgU"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=ixUEq7MC5O4"
-- title: "如梦"
+  - label: Spotify
+    url: https://open.spotify.com/track/0adYnj7QNm61OeuyA5MYgU
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=ixUEq7MC5O4
+- title: 如梦
   count: 1
-  original_title: "如夢"
-  artist: "陈婧霏（Jingfei Chen）"
+  original_title: 如夢
+  artist: Jingfei Chen
   artists:
-    - "陈婧霏（Jingfei Chen）"
-  release_title: "DONG - Single"
-  date: "2022-11-22"
-  date_label: "数字发行"
+  - Jingfei Chen
+  lyricists:
+  - Jingfei Chen
+  composers:
+  - Jingfei Chen
+  release_title: DONG - Single
+  date: '2022-11-22'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E5%A6%82%E5%A4%A2/1655847286?i=1655847293"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/5tVFIFBBCWEMLO2zN7Diym"
-- title: "Skyfall"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E5%A6%82%E5%A4%A2/1655847286?i=1655847293
+  - label: Spotify
+    url: https://open.spotify.com/track/5tVFIFBBCWEMLO2zN7Diym
+- title: Skyfall
   count: 1
-  original_title: "Skyfall (feat. 민아)"
-  artist: "Damiano; Minah（敏雅）"
+  original_title: Skyfall (feat. 민아)
+  artist: Damiano; Minah
   artists:
-    - "Damiano"
-    - "Minah（敏雅）"
-  release_title: "Skyfall - Single"
-  date: "2014-11-13"
-  date_label: "数字发行"
+  - Damiano
+  - Minah
+  lyricists:
+  - Damiano
+  composers:
+  - Damiano
+  release_title: Skyfall - Single
+  date: '2014-11-13'
+  date_label: 数字发行
   tags:
-    - K-Pop
-    - 合作
-  note: "Minah 为 Girl's Day 成员。"
+  - K-Pop
+  - 合作
+  note: Minah 为 Girl's Day 成员。
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/skyfall-feat-%EB%AF%BC%EC%95%84/940908626?i=940908629"
-    - label: "Spotify"
-      url: "https://open.spotify.com/album/6jupweizVEGQJI0Vx2K0CS"
-- title: "丁香花散落的时候"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/skyfall-feat-%EB%AF%BC%EC%95%84/940908626?i=940908629
+  - label: Spotify
+    url: https://open.spotify.com/album/6jupweizVEGQJI0Vx2K0CS
+- title: 丁香花散落的时候
   count: 1
-  original_title: "라일락이 질때"
-  artist: "Lee Sun Hee（李仙姬）"
+  original_title: 라일락이 질때
+  artist: Lee Sun Hee
   artists:
-    - "Lee Sun Hee（李仙姬）"
-  release_title: "First Love"
-  date: "1996-10-01"
-  date_label: "专辑发行"
+  - Lee Sun Hee
+  lyricists:
+  - Lee Sun Hee
+  composers:
+  - Lee Sun Hee
+  release_title: First Love
+  date: '1996-10-01'
+  date_label: 专辑发行
   tags:
-    - K-Pop
-    - Ballad
-  note: ""
+  - K-Pop
+  - Ballad
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%EB%9D%BC%EC%9D%BC%EB%9D%BD%EC%9D%B4-%EC%A7%88%EB%95%8C/1680160749?i=1680160753"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/12eRxZDpOLEgxOXHU7HSPN"
-- title: "大眠"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%EB%9D%BC%EC%9D%BC%EB%9D%BD%EC%9D%B4-%EC%A7%88%EB%95%8C/1680160749?i=1680160753
+  - label: Spotify
+    url: https://open.spotify.com/track/12eRxZDpOLEgxOXHU7HSPN
+- title: 大眠
   count: 1
-  original_title: "大眠"
-  artist: "王心凌（Cyndi Wang）"
+  original_title: 大眠
+  artist: Cyndi Wang
   artists:
-    - "王心凌（Cyndi Wang）"
-  release_title: "CYNDILOVES2SING 愛。心凌"
-  date: "2018-12-07"
-  date_label: "专辑发行"
+  - Cyndi Wang
+  lyricists:
+  - 施人诚
+  composers:
+  - 张简君伟
+  release_title: CYNDILOVES2SING 愛。心凌
+  date: '2018-12-07'
+  date_label: 专辑发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/the-big-sleep/1705380952?i=1705380966"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/4poUMK6KEAAtKA31RaaVE3"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=VS1lvYuW3LQ"
-- title: "寂静的天空"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/the-big-sleep/1705380952?i=1705380966
+  - label: Spotify
+    url: https://open.spotify.com/track/4poUMK6KEAAtKA31RaaVE3
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=VS1lvYuW3LQ
+- title: 寂静的天空
   count: 1
-  original_title: "寂靜的天空 (Silent Sky)"
-  artist: "HAYA乐团; Daiqing Tana（黛青塔娜）"
+  original_title: 寂靜的天空 (Silent Sky)
+  artist: HAYA乐团; Daiqing Tana
   artists:
-    - "HAYA乐团"
-    - "Daiqing Tana（黛青塔娜）"
-  release_title: "寂靜的天空 (Silent Sky)"
-  date: "2009-05-20"
-  date_label: "专辑发行"
+  - HAYA乐团
+  - Daiqing Tana
+  lyricists:
+  - HAYA乐团
+  composers:
+  - HAYA乐团
+  release_title: 寂靜的天空 (Silent Sky)
+  date: '2009-05-20'
+  date_label: 专辑发行
   tags:
-    - 华语
-    - 民歌
-  note: "Daiqing Tana 为 HAYA 乐团主唱。"
+  - 华语
+  - 民歌
+  note: Daiqing Tana 为 HAYA 乐团主唱。
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/silent-sky/677120604?i=677120671"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/5WcmbQVzhr60V5oqsuMJx5"
-- title: "岛民的宝物"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/silent-sky/677120604?i=677120671
+  - label: Spotify
+    url: https://open.spotify.com/track/5WcmbQVzhr60V5oqsuMJx5
+- title: 岛民的宝物
   count: 1
-  original_title: "島人ぬ宝"
-  artist: "BEGIN"
+  original_title: 島人ぬ宝
+  artist: BEGIN
   artists:
-    - "BEGIN"
-  release_title: "島人ぬ宝 - EP"
-  date: "2002-05-22"
-  date_label: "数字发行"
+  - BEGIN
+  lyricists:
+  - BEGIN
+  composers:
+  - BEGIN
+  release_title: 島人ぬ宝 - EP
+  date: '2002-05-22'
+  date_label: 数字发行
   tags:
-    - J-Pop
-    - 民歌
-  note: "标题中的「島人」读作「しまんちゅ」，指岛上的人。"
+  - J-Pop
+  - 民歌
+  note: 标题中的「島人」读作「しまんちゅ」，指岛上的人。
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E5%B3%B6%E4%BA%BA%E3%81%AC%E5%AE%9D/1838699003?i=1838699008"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/5WgCHXvD4eJbDuIKDLMLFm"
-- title: "入秋"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E5%B3%B6%E4%BA%BA%E3%81%AC%E5%AE%9D/1838699003?i=1838699008
+  - label: Spotify
+    url: https://open.spotify.com/track/5WgCHXvD4eJbDuIKDLMLFm
+- title: 入秋
   count: 1
-  original_title: "入秋"
-  artist: "T-BONE; 江南江南; TRAKINXRAMBO GANG"
+  original_title: 入秋
+  artist: T-BONE; RAMBO GANG; Trakin; 江楠
   artists:
-    - "T-BONE"
-    - "江南江南"
-    - "TRAKINXRAMBO GANG"
-  release_title: "入秋 - Single"
-  date: "2022-06-07"
-  date_label: "数字发行"
+  - T-BONE
+  - RAMBO GANG
+  - Trakin
+  - 江楠
+  lyricists:
+  - RAMBO GANG
+  composers:
+  - PinkPear
+  release_title: 入秋 - Single
+  date: '2022-06-07'
+  date_label: 数字发行
   tags:
-    - 华语
-    - Hip-Hop
-  note: ""
+  - 华语
+  - Hip-Hop
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/song/%E5%85%A5%E7%A7%8B/1695818723"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f"
-- title: "少年啊"
+  - label: Apple Music
+    url: https://music.apple.com/us/song/%E5%85%A5%E7%A7%8B/1695818723
+  - label: Spotify
+    url: https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f
+- title: 少年啊
   count: 1
-  original_title: "소년이여 (A Boy)"
-  artist: "G-DRAGON（权志龙）"
+  original_title: 소년이여 (A Boy)
+  artist: G-DRAGON
   artists:
-    - "G-DRAGON（权志龙）"
-  release_title: "Heartbreaker"
-  date: "2009-08-18"
-  date_label: "专辑发行"
+  - G-DRAGON
+  lyricists:
+  - G-DRAGON
+  composers:
+  - G-DRAGON
+  - Choice37
+  release_title: Heartbreaker
+  date: '2009-08-18'
+  date_label: 专辑发行
   tags:
-    - K-Pop
-    - Solo
-  note: ""
+  - K-Pop
+  - Solo
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/a-boy/1337476494?i=1337476499"
-- title: "春逝"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/a-boy/1337476494?i=1337476499
+- title: 春逝
   count: 1
-  original_title: "봄날은 간다"
-  artist: "Kim Yuna（金润雅）"
+  original_title: 봄날은 간다
+  artist: Kim Yuna
   artists:
-    - "Kim Yuna（金润雅）"
-  release_title: "One Fine Spring Day OST"
-  date: "2001-09-01"
-  date_label: "专辑页日期"
+  - Kim Yuna
+  lyricists:
+  - Kim Yuna
+  composers:
+  - Matsutoya Yumi
+  release_title: One Fine Spring Day OST
+  date: '2001-09-01'
+  date_label: 专辑页日期
   tags:
-    - OST
-    - 告别
-  note: ""
+  - OST
+  - 告别
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/one-fine-spring-day-original-motion-picture-soundtrack/1618391973"
-- title: "失踪"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/one-fine-spring-day-original-motion-picture-soundtrack/1618391973
+- title: 失踪
   count: 1
-  original_title: "失蹤"
-  artist: "林忆莲（Sandy Lam）"
+  original_title: 失蹤
+  artist: Sandy Lam
   artists:
-    - "林忆莲（Sandy Lam）"
-  release_title: "林憶蓮's"
-  date: "2000-01-01"
-  date_label: "专辑发行"
+  - Sandy Lam
+  lyricists:
+  - 林夕
+  composers:
+  - C.Y. Kong
+  release_title: 林憶蓮's
+  date: '2000-01-01'
+  date_label: 专辑发行
   tags:
-    - 华语
-    - 流行
-  note: ""
+  - 华语
+  - 流行
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E5%A4%B1%E8%B9%A4/905222890?i=905222899"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/6vhqBl2CnN0yPChj7KT7Vt"
-- title: "夜想曲"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E5%A4%B1%E8%B9%A4/905222890?i=905222899
+  - label: Spotify
+    url: https://open.spotify.com/track/6vhqBl2CnN0yPChj7KT7Vt
+- title: 夜想曲
   count: 1
-  original_title: "야상곡 (Nocturne)"
-  artist: "Kim Yuna（金润雅）"
+  original_title: 야상곡 (Nocturne)
+  artist: Kim Yuna
   artists:
-    - "Kim Yuna（金润雅）"
-  release_title: "Glass Mask"
-  date: "2004-03-05"
-  date_label: "专辑发行"
+  - Kim Yuna
+  lyricists:
+  - Kim Yuna
+  composers:
+  - Kim Yuna
+  release_title: Glass Mask
+  date: '2004-03-05'
+  date_label: 专辑发行
   tags:
-    - K-Pop
-    - 夜晚
-  note: ""
+  - K-Pop
+  - 夜晚
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/nocturne/1486523073?i=1486523887"
-- title: "会怎么样呢"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/nocturne/1486523073?i=1486523887
+- title: 会怎么样呢
   count: 1
-  original_title: "어땠을까 (What Would Have Been?)"
-  artist: "PSY（朴载相）; Park Bom（朴春）"
+  original_title: 어땠을까 (What Would Have Been?)
+  artist: PSY; Park Bom
   artists:
-    - "PSY（朴载相）"
-    - "Park Bom（朴春）"
-  release_title: "PSY Summer Stand Concert 2012 The Water Show"
-  release_context: "Jamsil Olympic Stadium, Seoul"
-  date: "2012-08-11"
-  date_label: "现场日期"
+  - PSY
+  - Park Bom
+  lyricists:
+  - PSY
+  composers:
+  - PSY
+  - Yoo Gun-hyung
+  release_title: PSY Summer Stand Concert 2012 The Water Show
+  release_context: Jamsil Olympic Stadium, Seoul
+  date: '2012-08-11'
+  date_label: 现场日期
   tags:
-    - K-Pop
-    - 现场
-    - 合作
-  note: ""
+  - K-Pop
+  - 现场
+  - 合作
+  note: ''
   listen_links:
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=eoGCAzqbK2o"
-- title: "路"
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=eoGCAzqbK2o
+- title: 路
   count: 1
-  original_title: "길 (The Road)"
-  artist: "Kim Yuna（金润雅）"
+  original_title: 길 (The Road)
+  artist: Kim Yuna
   artists:
-    - "Kim Yuna（金润雅）"
-  release_title: "The Road (From \"Signal\", Pt. 4) - Single"
-  date: "2016-02-20"
-  date_label: "数字发行"
+  - Kim Yuna
+  lyricists:
+  - Kim Yuna
+  composers:
+  - Kim Yuna
+  release_title: The Road (From "Signal", Pt. 4) - Single
+  date: '2016-02-20'
+  date_label: 数字发行
   tags:
-    - OST
-    - K-Pop
-  note: ""
+  - OST
+  - K-Pop
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/the-road-from-signal-pt-4/1611727919?i=1611727921"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=7nC3pU_F0w0"
-- title: "Missing You"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/the-road-from-signal-pt-4/1611727919?i=1611727921
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=7nC3pU_F0w0
+- title: Missing You
   count: 1
-  original_title: "Missing You"
-  artist: "G-DRAGON（权志龙）; Kim Yuna（金润雅）"
+  original_title: Missing You
+  artist: G-DRAGON; Kim Yuna
   artists:
-    - "G-DRAGON（权志龙）"
-    - "Kim Yuna（金润雅）"
-  release_title: "One of a Kind"
-  date: "2012-09-15"
-  date_label: "数字发行"
+  - G-DRAGON
+  - Kim Yuna
+  lyricists:
+  - G-DRAGON
+  - Teddy
+  composers:
+  - G-DRAGON
+  - Teddy
+  - Choice37
+  release_title: One of a Kind
+  date: '2012-09-15'
+  date_label: 数字发行
   tags:
-    - K-Pop
-    - 合作
-  note: ""
+  - K-Pop
+  - 合作
+  note: ''
   listen_links:
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/3BqfHyw9cLm6POreivziWN"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=KBqT_5nyknE"
-- title: "花"
+  - label: Spotify
+    url: https://open.spotify.com/track/3BqfHyw9cLm6POreivziWN
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=KBqT_5nyknE
+- title: 花
   count: 1
-  original_title: "꽃 (FLOWER)"
-  artist: "JISOO（金智秀）"
+  original_title: 꽃 (FLOWER)
+  artist: JISOO
   artists:
-    - "JISOO（金智秀）"
-  release_title: "ME - Single"
-  date: "2023-03-31"
-  date_label: "数字发行"
+  - JISOO
+  lyricists:
+  - Vince
+  - KUSH
+  - VVN
+  - Teddy
+  composers:
+  - '24'
+  - VVN
+  - KUSH
+  release_title: ME - Single
+  date: '2023-03-31'
+  date_label: 数字发行
   tags:
-    - K-Pop
-    - Solo
-  note: "JISOO 的首张个人单曲专辑收录曲。"
+  - K-Pop
+  - Solo
+  note: JISOO 的首张个人单曲专辑收录曲。
   listen_links:
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=YudHcBIxlYw"
-- title: "还给时间"
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=YudHcBIxlYw
+- title: 还给时间
   count: 1
-  original_title: "还给时间"
-  artist: "张德伊玲"
+  original_title: 还给时间
+  artist: 张德伊玲
   artists:
-    - "张德伊玲"
-  release_title: "还给时间 - Single"
-  date: "2023-04-17"
-  date_label: "数字发行"
+  - 张德伊玲
+  lyricists:
+  - 张德伊玲
+  composers:
+  - 张德伊玲
+  release_title: 还给时间 - Single
+  date: '2023-04-17'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 时间
-  note: ""
+  - 华语
+  - 时间
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/%E8%BF%98%E7%BB%99%E6%97%B6%E9%97%B4-single/1679942511"
-- title: "Salvatore"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E8%BF%98%E7%BB%99%E6%97%B6%E9%97%B4-single/1679942511
+- title: Salvatore
   count: 3
-  original_title: "Salvatore"
-  artist: "Lana Del Rey（拉娜·德雷）"
+  original_title: Salvatore
+  artist: Lana Del Rey
   artists:
-    - "Lana Del Rey（拉娜·德雷）"
-  release_title: "Honeymoon"
-  date: "2015-09-18"
-  date_label: "专辑发行"
+  - Lana Del Rey
+  lyricists:
+  - Lana Del Rey
+  - Rick Nowels
+  composers:
+  - Lana Del Rey
+  - Rick Nowels
+  release_title: Honeymoon
+  date: '2015-09-18'
+  date_label: 专辑发行
   tags:
-    - Pop
-    - Alternative
-  note: ""
+  - Pop
+  - Alternative
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/salvatore/1440827260?i=1440828152"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/21qg0IBZf8R12qHd9A3AA4"
-- title: "我用什么把你留住"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/salvatore/1440827260?i=1440828152
+  - label: Spotify
+    url: https://open.spotify.com/track/21qg0IBZf8R12qHd9A3AA4
+- title: 我用什么把你留住
   count: 1
-  original_title: "我用什么把你留住"
-  artist: "福禄寿"
+  original_title: 我用什么把你留住
+  artist: 福禄寿
   artists:
-    - "福禄寿"
-  release_title: "我用什么把你留住"
-  date: "2021-02-18"
-  date_label: "专辑发行"
+  - 福禄寿
+  lyricists:
+  - 福禄寿
+  composers:
+  - 福禄寿
+  release_title: 我用什么把你留住
+  date: '2021-02-18'
+  date_label: 专辑发行
   tags:
-    - 华语
-    - 独立
-  note: ""
+  - 华语
+  - 独立
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/ar/song/%E6%88%91%E7%94%A8%E4%BB%80%E4%B9%88%E6%8A%8A%E4%BD%A0%E7%95%99%E4%BD%8F/1669352715"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/4TYi1udOmvZ0yIhHEMro5f"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=kyxA6C0MyMY"
-- title: "成年"
+  - label: Apple Music
+    url: https://music.apple.com/ar/song/%E6%88%91%E7%94%A8%E4%BB%80%E4%B9%88%E6%8A%8A%E4%BD%A0%E7%95%99%E4%BD%8F/1669352715
+  - label: Spotify
+    url: https://open.spotify.com/track/4TYi1udOmvZ0yIhHEMro5f
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=kyxA6C0MyMY
+- title: 成年
   count: 1
-  original_title: "成年"
-  artist: "刘凯迪; 牛佳钰"
+  original_title: 成年
+  artist: 刘凯迪; 牛佳钰
   artists:
-    - "刘凯迪"
-    - "牛佳钰"
-  release_title: "成年"
-  date: "2021-12-14"
-  date_label: "数字发行"
+  - 刘凯迪
+  - 牛佳钰
+  lyricists:
+  - 邢聪
+  composers:
+  - 牛佳钰
+  release_title: 成年
+  date: '2021-12-14'
+  date_label: 数字发行
   tags:
-    - 华语
-    - 对唱
-  note: ""
+  - 华语
+  - 对唱
+  note: ''
   listen_links:
-    - label: "网易云音乐"
-      url: "https://music.163.com/song?id=1903349486"
-- title: "Trouble Maker"
+  - label: 网易云音乐
+    url: https://music.163.com/song?id=1903349486
+- title: Trouble Maker
   count: 1
-  original_title: "Trouble Maker"
-  artist: "Trouble Maker"
+  original_title: Trouble Maker
+  artist: Trouble Maker
   artists:
-    - "Trouble Maker"
-  release_title: "Trouble Maker - EP"
-  date: "2011-12-01"
-  date_label: "数字发行"
+  - Trouble Maker
+  lyricists:
+  - Shinsadong Tiger
+  - Rado
+  - LE
+  composers:
+  - Shinsadong Tiger
+  - Rado
+  release_title: Trouble Maker - EP
+  date: '2011-12-01'
+  date_label: 数字发行
   tags:
-    - K-Pop
-    - 合作
-  note: "Trouble Maker 由张贤胜和泫雅组成。"
+  - K-Pop
+  - 合作
+  note: Trouble Maker 由张贤胜和泫雅组成。
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/trouble-maker/1343137845?i=1343137850"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=s-zRAQmKUkI"
-- title: "APT."
+  - label: Apple Music
+    url: https://music.apple.com/us/album/trouble-maker/1343137845?i=1343137850
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=s-zRAQmKUkI
+- title: APT.
   count: 1
-  original_title: "APT."
-  artist: "ROSÉ（朴彩英）; Bruno Mars（布鲁诺·马尔斯）"
+  original_title: APT.
+  artist: ROSÉ; Bruno Mars
   artists:
-    - "ROSÉ（朴彩英）"
-    - "Bruno Mars（布鲁诺·马尔斯）"
-  release_title: "APT. - Single"
-  date: "2024-10-18"
-  date_label: "数字发行"
+  - ROSÉ
+  - Bruno Mars
+  lyricists:
+  - ROSÉ
+  - Bruno Mars
+  - Amy Allen
+  - Christopher Brody Brown
+  - Omer Fedi
+  - Philip Lawrence
+  - Rogét Chahayed
+  - Theron Thomas
+  - Henry Walter
+  - Mike Chapman
+  - Nicky Chinn
+  composers:
+  - ROSÉ
+  - Bruno Mars
+  - Amy Allen
+  - Christopher Brody Brown
+  - Omer Fedi
+  - Philip Lawrence
+  - Rogét Chahayed
+  - Theron Thomas
+  - Henry Walter
+  - Mike Chapman
+  - Nicky Chinn
+  release_title: APT. - Single
+  date: '2024-10-18'
+  date_label: 数字发行
   tags:
-    - Pop
-    - 合作
-  note: ""
+  - Pop
+  - 合作
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/apt/1773452219?i=1773452221"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=ekr2nIex040"
-- title: "白雪"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/apt/1773452219?i=1773452221
+  - label: Spotify
+    url: https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=ekr2nIex040
+- title: 白雪
   count: 1
-  original_title: "白い雪"
-  artist: "KOKIA"
+  original_title: 白い雪
+  artist: KOKIA
   artists:
-    - "KOKIA"
-  release_title: "songbird"
-  date: "1999-07-16"
-  date_label: "专辑发行"
+  - KOKIA
+  lyricists:
+  - KOKIA
+  composers:
+  - KOKIA
+  release_title: songbird
+  date: '1999-07-16'
+  date_label: 专辑发行
   tags:
-    - J-Pop
-  note: ""
+  - J-Pop
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/jp/album/%E7%99%BD%E3%81%84%E9%9B%AA/263337151?i=263339092"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/2HoQ2osahr07hipzMGAhFd"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=mpZTHOQYEYI"
-- title: "左耳"
+  - label: Apple Music
+    url: https://music.apple.com/jp/album/%E7%99%BD%E3%81%84%E9%9B%AA/263337151?i=263339092
+  - label: Spotify
+    url: https://open.spotify.com/track/2HoQ2osahr07hipzMGAhFd
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=mpZTHOQYEYI
+- title: 左耳
   count: 1
-  original_title: "左耳"
-  artist: "赵薇"
+  original_title: 左耳
+  artist: 赵薇
   artists:
-    - "赵薇"
-  release_title: "左耳 - Single"
-  date: "2015-04-13"
-  date_label: "数字发行"
+  - 赵薇
+  lyricists:
+  - 林夕
+  composers:
+  - 王宗贤
+  release_title: 左耳 - Single
+  date: '2015-04-13'
+  date_label: 数字发行
   tags:
-    - 华语
-    - OST
-  note: "电影《左耳》同名主题曲。"
+  - 华语
+  - OST
+  note: 电影《左耳》同名主题曲。
   listen_links:
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/6moYOYz3apukP6UalLTVuX"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=cX5RrRvrWw8"
-- title: "放空"
+  - label: Spotify
+    url: https://open.spotify.com/track/6moYOYz3apukP6UalLTVuX
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=cX5RrRvrWw8
+- title: 放空
   count: 1
-  original_title: "放空"
-  artist: "A1 TRIP; 大籽; Lil E"
+  original_title: 放空
+  artist: A1 TRIP; 大籽; Lil E
   artists:
-    - "A1 TRIP"
-    - "大籽"
-    - "Lil E"
-  release_title: "放空 - Single"
-  date: "2021-05-18"
-  date_label: "数字发行"
+  - A1 TRIP
+  - 大籽
+  - Lil E
+  lyricists:
+  - A1 TRIP
+  - 大籽
+  - Lil E
+  composers:
+  - A1 TRIP
+  - 大籽
+  - Lil E
+  release_title: 放空 - Single
+  date: '2021-05-18'
+  date_label: 数字发行
   tags:
-    - 华语
-    - Hip-Hop
-  note: ""
+  - 华语
+  - Hip-Hop
+  note: ''
   listen_links:
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/6LcAShmu7y5L38jjD1XA37"
-    - label: "QQ音乐"
-      url: "https://y.qq.com/n/ryqq/songDetail/004ByH6Q4K9jz8?songtype=0"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=Sl2n-lM7kmc"
-- title: "Only One"
+  - label: Spotify
+    url: https://open.spotify.com/track/6LcAShmu7y5L38jjD1XA37
+  - label: QQ音乐
+    url: https://y.qq.com/n/ryqq/songDetail/004ByH6Q4K9jz8?songtype=0
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=Sl2n-lM7kmc
+- title: Only One
   count: 1
-  original_title: "Only One"
-  artist: "BoA（宝儿）"
+  original_title: Only One
+  artist: BoA
   artists:
-    - "BoA（宝儿）"
-  release_title: "Only One"
-  date: "2012-07-22"
-  date_label: "专辑发行"
+  - BoA
+  lyricists:
+  - BoA
+  composers:
+  - BoA
+  release_title: Only One
+  date: '2012-07-22'
+  date_label: 专辑发行
   tags:
-    - K-Pop
-    - Solo
-  note: ""
+  - K-Pop
+  - Solo
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/only-one/854900899?i=854900907"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/3Hyl7YrOtBcnh1geON2kSO"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=PQjovLrnvVo"
-- title: "Way Back Into Love"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/only-one/854900899?i=854900907
+  - label: Spotify
+    url: https://open.spotify.com/track/3Hyl7YrOtBcnh1geON2kSO
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=PQjovLrnvVo
+- title: Way Back Into Love
   count: 1
-  original_title: "Way Back Into Love"
-  artist: "Hugh Grant（休·格兰特）; Haley Bennett（海莉·贝内特）"
+  original_title: Way Back Into Love
+  artist: Hugh Grant; Haley Bennett
   artists:
-    - "Hugh Grant（休·格兰特）"
-    - "Haley Bennett（海莉·贝内特）"
-  release_title: "Music and Lyrics (Music from the Motion Picture)"
-  date: "2007-02-13"
-  date_label: "专辑发行"
+  - Hugh Grant
+  - Haley Bennett
+  lyricists:
+  - Adam Schlesinger
+  composers:
+  - Adam Schlesinger
+  release_title: Music and Lyrics (Music from the Motion Picture)
+  date: '2007-02-13'
+  date_label: 专辑发行
   tags:
-    - OST
-    - Pop
-    - 对唱
-  note: "电影《K歌情人》原声歌曲。"
+  - OST
+  - Pop
+  - 对唱
+  note: 电影《K歌情人》原声歌曲。
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/way-back-into-love/214509717?i=214511075"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/0zYP35FfMItfaP6c9gcQZB"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=PCp5iXA1uLE"
-- title: "Zeze"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/way-back-into-love/214509717?i=214511075
+  - label: Spotify
+    url: https://open.spotify.com/track/0zYP35FfMItfaP6c9gcQZB
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=PCp5iXA1uLE
+- title: Zeze
   count: 1
-  original_title: "Zezé"
-  artist: "IU（李知恩）"
+  original_title: Zezé
+  artist: IU
   artists:
-    - "IU（李知恩）"
-  release_title: "CHAT-SHIRE"
-  date: "2015-10-23"
-  date_label: "专辑发行"
+  - IU
+  lyricists:
+  - IU
+  composers:
+  - Lee Jong-hoon
+  - Lee Chae-gyu
+  release_title: CHAT-SHIRE
+  date: '2015-10-23'
+  date_label: 专辑发行
   tags:
-    - K-Pop
-    - Solo
-  note: ""
+  - K-Pop
+  - Solo
+  note: ''
   listen_links:
-    - label: "Apple Music"
-      url: "https://music.apple.com/us/album/zez%C3%A9/1051977837?i=1051977841"
-    - label: "Spotify"
-      url: "https://open.spotify.com/track/1dwOTQnBuN8LeVX4jNwJXS"
-    - label: "YouTube"
-      url: "https://www.youtube.com/watch?v=I6c_Gjvruz8"
+  - label: Apple Music
+    url: https://music.apple.com/us/album/zez%C3%A9/1051977837?i=1051977841
+  - label: Spotify
+    url: https://open.spotify.com/track/1dwOTQnBuN8LeVX4jNwJXS
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=I6c_Gjvruz8
+- title: 贼
+  count: 1
+  original_title: 賊
+  artist: Penny Tai
+  artists:
+  - Penny Tai
+  lyricists:
+  - Penny Tai
+  composers:
+  - Penny Tai
+  release_title: 贼
+  date: '2016-08-04'
+  date_label: 专辑发行
+  tags:
+  - 华语
+  - 流行
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E8%B4%BC/1833413863?i=1833413878
+  - label: Spotify
+    url: https://open.spotify.com/album/6VdqEpAfoX4VEgMXMV22QN
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=VrPvEWcyUCc
+- title: 你根本无法理解这件事的重大意义
+  count: 1
+  original_title: 你根本无法理解这件事的重大意义
+  artist: 许飞
+  artists:
+  - 许飞
+  lyricists:
+  - 许飞
+  composers:
+  - 许飞
+  release_title: 廿年笨蛋书
+  date: '2025-05-08'
+  date_label: 专辑发行
+  tags:
+  - 华语
+  - 流行
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E4%BD%A0%E6%A0%B9%E6%9C%AC%E6%97%A0%E6%B3%95%E7%90%86%E8%A7%A3%E8%BF%99%E4%BB%B6%E4%BA%8B%E7%9A%84%E9%87%8D%E5%A4%A7%E6%84%8F%E4%B9%89/1812195773?i=1812195779
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=yuB1THeAXzE
+- title: 波西米亚狂想曲
+  count: 1
+  original_title: Bohemian Rhapsody
+  artist: Queen
+  artists:
+  - Queen
+  lyricists:
+  - Freddie Mercury
+  composers:
+  - Freddie Mercury
+  release_title: A Night at the Opera
+  date: '1975-11-21'
+  date_label: 专辑发行
+  tags:
+  - Rock
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/bohemian-rhapsody/1440806041?i=1440806768
+  - label: Spotify
+    url: https://open.spotify.com/track/7tFiyTwD0nx5a1eklYtX2J
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=fJ9rUzIMcZQ
+- title: 夏夜
+  count: 1
+  original_title: Nuits d'été
+  artist: Oscar Anton; Clementine
+  artists:
+  - Oscar Anton
+  - Clementine
+  lyricists:
+  - Oscar Anton
+  - Clementine
+  composers:
+  - Oscar Anton
+  - Clementine
+  release_title: Nuits d'été - Single
+  date: '2020-04-24'
+  date_label: 数字发行
+  tags:
+  - Indie Pop
+  - 合作
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/nuits-d%C3%A9t%C3%A9/1521501574?i=1521501937
+  - label: Spotify
+    url: https://open.spotify.com/track/2dxyTLxvO1xzHSD6fDafwZ
+- title: 野子
+  count: 1
+  original_title: 野子
+  artist: 苏运莹
+  artists:
+  - 苏运莹
+  lyricists:
+  - 苏运莹
+  composers:
+  - 苏运莹
+  release_title: 第二季中国好歌曲十大金曲
+  date: '2015-08-07'
+  date_label: 专辑发行
+  tags:
+  - 华语
+  - 现场
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E9%87%8E%E5%AD%90-live/1601621341?i=1601621344
+  - label: Spotify
+    url: https://open.spotify.com/track/7DinoeOxAStfqDctByUEOk
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=OShHkfTw_e8

@@ -11,7 +11,7 @@
 
 ```bash
 bundle install
-bundle exec jekyll serve
+make dev
 ```
 
 访问 <http://localhost:4000>。

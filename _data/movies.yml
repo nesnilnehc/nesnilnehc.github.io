@@ -1,168 +1,319 @@
-- original_title: "Green Book"
+---
+- original_title: Green Book
   count: 1
-  chinese_title: "绿皮书"
-  director: "Peter Farrelly（彼得·法雷里）"
-  premiere_date: "2018-09-11"
-  premiere_note: "Toronto International Film Festival"
-  imdb_url: "https://www.imdb.com/title/tt6966692/"
-  awards: "第 91 届奥斯卡最佳影片、最佳原创剧本、最佳男配角；第 76 届金球奖音乐/喜剧类最佳影片。"
+  chinese_title: 绿皮书
+  director: Peter Farrelly
+  cast:
+  - Viggo Mortensen
+  - Mahershala Ali
+  - Linda Cardellini
+  premiere_date: '2018-09-11'
+  premiere_note: Toronto International Film Festival
+  imdb_url: https://www.imdb.com/title/tt6966692/
+  poster: "/assets/images/movies/green-book.png"
+  awards: 第 91 届奥斯卡最佳影片、最佳原创剧本、最佳男配角；第 76 届金球奖音乐/喜剧类最佳影片。
   tags:
-    - 公路
-    - 偏见
-  note: "影片基于 Tony Lip 与 Don Shirley 1962 年美国南方巡演经历改编。"
-- original_title: "Bohemian Rhapsody"
+  - 公路
+  - 偏见
+  note: 影片基于 Tony Lip 与 Don Shirley 1962 年美国南方巡演经历改编。
+- original_title: Bohemian Rhapsody
   count: 1
-  chinese_title: "波西米亚狂想曲"
-  director: "Bryan Singer（布莱恩·辛格）"
-  premiere_date: "2018-10-23"
-  premiere_note: "Wembley Arena"
-  imdb_url: "https://www.imdb.com/title/tt1727824/"
-  awards: "第 91 届奥斯卡 4 项获奖，包括最佳男主角、最佳剪辑、最佳音效剪辑、最佳混音。"
+  chinese_title: 波西米亚狂想曲
+  director: Bryan Singer
+  cast:
+  - Rami Malek
+  - Lucy Boynton
+  - Gwilym Lee
+  - Ben Hardy
+  - Joseph Mazzello
+  premiere_date: '2018-10-23'
+  premiere_note: Wembley Arena
+  imdb_url: https://www.imdb.com/title/tt1727824/
+  poster: "/assets/images/movies/bohemian-rhapsody.png"
+  awards: 第 91 届奥斯卡 4 项获奖，包括最佳男主角、最佳剪辑、最佳音效剪辑、最佳混音。
   tags:
-    - 传记
-    - 音乐
-  note: "影片以 Queen 乐队主唱 Freddie Mercury 的生平与 Live Aid 演出为主要叙事。"
-- original_title: "人生最高の贈りもの"
+  - 传记
+  - 音乐
+  note: 影片以 Queen 乐队主唱 Freddie Mercury 的生平与 Live Aid 演出为主要叙事。
+- original_title: 人生最高の贈りもの
   count: 1
-  chinese_title: "人生最棒的礼物"
-  director: "Kan Ishibashi（石桥冠）"
-  premiere_date: "2021-01-04"
-  premiere_note: "TV Tokyo 首播"
-  imdb_url: "https://www.imdb.com/title/tt13522030/"
-  awards: "未见主要电影奖项记录。"
+  chinese_title: 人生最棒的礼物
+  director: Kan Ishibashi
+  cast:
+  - 石原里美
+  - 寺尾聪
+  - 向井理
+  - 胜地凉
+  - 木村绿子
+  - 角野卓造
+  premiere_date: '2021-01-04'
+  premiere_note: TV Tokyo 首播
+  imdb_url: https://www.imdb.com/title/tt13522030/
+  poster: "/assets/images/movies/jinsei-saikou-no-okurimono.webp"
+  awards: 未见主要电影奖项记录。
   tags:
-    - 家庭
-    - 告别
-  note: ""
-- original_title: "Flamin' Hot"
+  - 家庭
+  - 告别
+  note: ''
+- original_title: Flamin' Hot
   count: 1
-  chinese_title: "热辣奇多的诞生"
-  director: "Eva Longoria（伊娃·朗格利亚）"
-  premiere_date: "2023-03-11"
-  premiere_note: "South by Southwest"
-  imdb_url: "https://www.imdb.com/title/tt8105234/"
-  awards: "第 96 届奥斯卡最佳原创歌曲提名；SXSW 观众奖；Imagen Awards 最佳影片、最佳导演等。"
+  chinese_title: 热辣奇多的诞生
+  director: Eva Longoria
+  cast:
+  - Jesse Garcia
+  - Annie Gonzalez
+  - Dennis Haysbert
+  - Tony Shalhoub
+  premiere_date: '2023-03-11'
+  premiere_note: South by Southwest
+  imdb_url: https://www.imdb.com/title/tt8105234/
+  poster: "/assets/images/movies/flamin-hot.png"
+  awards: 第 96 届奥斯卡最佳原创歌曲提名；SXSW 观众奖；Imagen Awards 最佳影片、最佳导演等。
   tags:
-    - 商业
-    - 传记
-  note: "影片改编自 Richard Montañez 关于 Flamin' Hot Cheetos 的回忆录叙述。"
-- original_title: "The Pursuit of Happyness"
+  - 商业
+  - 传记
+  note: 影片改编自 Richard Montañez 关于 Flamin' Hot Cheetos 的回忆录叙述。
+- original_title: The Pursuit of Happyness
   count: 1
-  chinese_title: "当幸福来敲门"
-  director: "Gabriele Muccino（加布里埃莱·穆奇诺）"
-  premiere_date: "2006-12-15"
-  premiere_note: "美国上映"
-  imdb_url: "https://www.imdb.com/title/tt0454921/"
-  awards: "第 79 届奥斯卡最佳男主角提名；另有金球奖、评论家选择奖等表演类提名。"
+  chinese_title: 当幸福来敲门
+  director: Gabriele Muccino
+  cast:
+  - Will Smith
+  - Jaden Smith
+  - Thandiwe Newton
+  premiere_date: '2006-12-15'
+  premiere_note: 美国上映
+  imdb_url: https://www.imdb.com/title/tt0454921/
+  poster: "/assets/images/movies/the-pursuit-of-happyness.jpg"
+  awards: 第 79 届奥斯卡最佳男主角提名；另有金球奖、评论家选择奖等表演类提名。
   tags:
-    - 励志
-    - 父子
-  note: "影片根据 Chris Gardner 的真实经历及同名回忆录改编。"
-- original_title: "Forrest Gump"
+  - 励志
+  - 父子
+  note: 影片根据 Chris Gardner 的真实经历及同名回忆录改编。
+- original_title: Forrest Gump
   count: 1
-  chinese_title: "阿甘正传"
-  director: "Robert Zemeckis（罗伯特·泽米吉斯）"
-  premiere_date: "1994-06-23"
-  premiere_note: "Los Angeles premiere"
-  imdb_url: "https://www.imdb.com/title/tt0109830/"
-  awards: "第 67 届奥斯卡 6 项获奖，包括最佳影片、最佳导演、最佳男主角。"
+  chinese_title: 阿甘正传
+  director: Robert Zemeckis
+  cast:
+  - Tom Hanks
+  - Robin Wright
+  - Gary Sinise
+  - Mykelti Williamson
+  - Sally Field
+  premiere_date: '1994-06-23'
+  premiere_note: Los Angeles premiere
+  imdb_url: https://www.imdb.com/title/tt0109830/
+  poster: "/assets/images/movies/forrest-gump.jpg"
+  awards: 第 67 届奥斯卡 6 项获奖，包括最佳影片、最佳导演、最佳男主角。
   tags:
-    - 人生
-    - 时代
-  note: "影片改编自 Winston Groom 1986 年同名小说。"
-- original_title: "The Shawshank Redemption"
+  - 人生
+  - 时代
+  note: 影片改编自 Winston Groom 1986 年同名小说。
+- original_title: The Shawshank Redemption
   count: 1
-  chinese_title: "肖申克的救赎"
-  director: "Frank Darabont（弗兰克·德拉邦特）"
-  premiere_date: "1994-09-10"
-  premiere_note: "Toronto International Film Festival"
-  imdb_url: "https://www.imdb.com/title/tt0111161/"
-  awards: "第 67 届奥斯卡 7 项提名，包括最佳影片、最佳男主角、最佳改编剧本。"
+  chinese_title: 肖申克的救赎
+  director: Frank Darabont
+  cast:
+  - Tim Robbins
+  - Morgan Freeman
+  - Bob Gunton
+  - William Sadler
+  - Clancy Brown
+  premiere_date: '1994-09-10'
+  premiere_note: Toronto International Film Festival
+  imdb_url: https://www.imdb.com/title/tt0111161/
+  poster: "/assets/images/movies/the-shawshank-redemption.jpg"
+  awards: 第 67 届奥斯卡 7 项提名，包括最佳影片、最佳男主角、最佳改编剧本。
   tags:
-    - 希望
-    - 自由
-  note: "影片改编自 Stephen King 中篇小说《Rita Hayworth and Shawshank Redemption》。"
-- original_title: "浪浪山小妖怪"
+  - 希望
+  - 自由
+  note: 影片改编自 Stephen King 中篇小说《Rita Hayworth and Shawshank Redemption》。
+- original_title: 浪浪山小妖怪
   count: 1
-  chinese_title: "浪浪山小妖怪"
-  director: "於水"
-  premiere_date: "2025-07-20"
-  premiere_note: "常州首映；中国内地 2025-08-02 上映"
-  imdb_url: "https://www.imdb.com/title/tt36733027/"
-  awards: "刷新中国公司制作 2D 动画电影票房纪录；未见主要国际奖项记录。"
+  chinese_title: 浪浪山小妖怪
+  director: 於水
+  cast:
+  - 陈子平
+  - 路扬
+  - 董汶亮
+  - 刘琮
+  premiere_date: '2025-07-20'
+  premiere_note: 常州首映；中国内地 2025-08-02 上映
+  imdb_url: https://www.imdb.com/title/tt36733027/
+  poster: "/assets/images/movies/nobody-2025.jpg"
+  awards: 刷新中国公司制作 2D 动画电影票房纪录；未见主要国际奖项记录。
   tags:
-    - 动画
-    - 小人物
-  note: "影片延续《中国奇谭》单元《小妖怪的夏天》的世界观。"
-- original_title: "The Way"
+  - 动画
+  - 小人物
+  note: 影片延续《中国奇谭》单元《小妖怪的夏天》的世界观。
+- original_title: The Way
   count: 1
-  chinese_title: "朝圣之路"
-  director: "Emilio Estevez（艾米利奥·艾斯特维兹）"
-  premiere_date: "2010-09-10"
-  premiere_note: "Toronto International Film Festival"
-  imdb_url: "https://www.imdb.com/title/tt1441912/"
-  awards: "IMDb 记录为 1 项获奖、8 项提名；包括 ALMA Awards 等提名。"
+  chinese_title: 朝圣之路
+  director: Emilio Estevez
+  cast:
+  - Martin Sheen
+  - Deborah Kara Unger
+  - James Nesbitt
+  - Yorick van Wageningen
+  - Emilio Estevez
+  premiere_date: '2010-09-10'
+  premiere_note: Toronto International Film Festival
+  imdb_url: https://www.imdb.com/title/tt1441912/
+  poster: "/assets/images/movies/the-way.png"
+  awards: IMDb 记录为 1 项获奖、8 项提名；包括 ALMA Awards 等提名。
   tags:
-    - 公路
-    - 修行
-  note: "片名中的 The Way 指圣地亚哥朝圣之路。"
-- original_title: "Good Will Hunting"
+  - 公路
+  - 修行
+  note: 片名中的 The Way 指圣地亚哥朝圣之路。
+- original_title: Good Will Hunting
   count: 1
-  chinese_title: "心灵捕手"
-  director: "Gus Van Sant（格斯·范·桑特）"
-  premiere_date: "1997-12-02"
-  premiere_note: "Westwood, California premiere"
-  imdb_url: "https://www.imdb.com/title/tt0119217/"
-  awards: "第 70 届奥斯卡最佳男配角、最佳原创剧本；另获金球奖最佳剧本。"
+  chinese_title: 心灵捕手
+  director: Gus Van Sant
+  cast:
+  - Matt Damon
+  - Robin Williams
+  - Ben Affleck
+  - Minnie Driver
+  - Stellan Skarsgård
+  premiere_date: '1997-12-02'
+  premiere_note: Westwood, California premiere
+  imdb_url: https://www.imdb.com/title/tt0119217/
+  poster: "/assets/images/movies/good-will-hunting.png"
+  awards: 第 70 届奥斯卡最佳男配角、最佳原创剧本；另获金球奖最佳剧本。
   tags:
-    - 成长
-    - 天赋
-  note: "影片剧本由 Matt Damon 与 Ben Affleck 共同编写。"
-- original_title: "Quiz Show"
+  - 成长
+  - 天赋
+  note: 影片剧本由 Matt Damon 与 Ben Affleck 共同编写。
+- original_title: Quiz Show
   count: 1
-  chinese_title: "机智问答"
-  director: "Robert Redford（罗伯特·雷德福）"
-  premiere_date: "1994-08-30"
-  premiere_note: "Walt Disney Studios, Burbank"
-  imdb_url: "https://www.imdb.com/title/tt0110932/"
-  awards: "第 67 届奥斯卡 4 项提名，包括最佳影片、最佳导演、最佳改编剧本。"
+  chinese_title: 机智问答
+  director: Robert Redford
+  cast:
+  - John Turturro
+  - Rob Morrow
+  - Ralph Fiennes
+  - Paul Scofield
+  - David Paymer
+  premiere_date: '1994-08-30'
+  premiere_note: Walt Disney Studios, Burbank
+  imdb_url: https://www.imdb.com/title/tt0110932/
+  poster: "/assets/images/movies/quiz-show.jpg"
+  awards: 第 67 届奥斯卡 4 项提名，包括最佳影片、最佳导演、最佳改编剧本。
   tags:
-    - 制度
-    - 名声
-  note: "影片取材自 1950 年代美国电视问答节目作弊丑闻。"
-- original_title: "The Founder"
+  - 制度
+  - 名声
+  note: 影片取材自 1950 年代美国电视问答节目作弊丑闻。
+- original_title: The Founder
   count: 1
-  chinese_title: "大创业家"
-  director: "John Lee Hancock（约翰·李·汉考克）"
-  premiere_date: "2016-11-24"
-  premiere_note: "澳大利亚上映；美国 2016-12-07 洛杉矶首映"
-  imdb_url: "https://www.imdb.com/title/tt4276820/"
-  awards: "Michael Keaton 获 Capri Actor Award；另有若干影评人协会表演类提名。"
+  chinese_title: 大创业家
+  director: John Lee Hancock
+  cast:
+  - Michael Keaton
+  - Nick Offerman
+  - John Carroll Lynch
+  - Linda Cardellini
+  - B. J. Novak
+  - Laura Dern
+  premiere_date: '2016-11-24'
+  premiere_note: 澳大利亚上映；美国 2016-12-07 洛杉矶首映
+  imdb_url: https://www.imdb.com/title/tt4276820/
+  poster: "/assets/images/movies/the-founder.png"
+  awards: Michael Keaton 获 Capri Actor Award；另有若干影评人协会表演类提名。
   tags:
-    - 商业
-    - 野心
-  note: "影片以 Ray Kroc 与麦当劳连锁扩张历史为主要素材。"
-- original_title: "映画 深夜食堂"
+  - 商业
+  - 野心
+  note: 影片以 Ray Kroc 与麦当劳连锁扩张历史为主要素材。
+- original_title: 映画 深夜食堂
   count: 1
-  chinese_title: "深夜食堂"
-  director: "Joji Matsuoka（松冈锭司）"
-  premiere_date: "2015-01-31"
-  premiere_note: "日本上映"
-  imdb_url: "https://www.imdb.com/title/tt3958276/"
-  awards: "电影版未见主要奖项记录；原作漫画曾获第 55 届小学馆漫画奖。"
+  chinese_title: 深夜食堂
+  director: Joji Matsuoka
+  cast:
+  - 小林薰
+  - 高冈早纪
+  - 柄本时生
+  - 多部未华子
+  - 余贵美子
+  premiere_date: '2015-01-31'
+  premiere_note: 日本上映
+  imdb_url: https://www.imdb.com/title/tt3958276/
+  poster: "/assets/images/movies/midnight-diner.jpg"
+  awards: 电影版未见主要奖项记录；原作漫画曾获第 55 届小学馆漫画奖。
   tags:
-    - 日常
-    - 食物
-  note: "影片改编自安倍夜郎漫画《深夜食堂》。"
-- original_title: "Léon"
+  - 日常
+  - 食物
+  note: 影片改编自安倍夜郎漫画《深夜食堂》。
+- original_title: Léon
   count: 1
-  chinese_title: "这个杀手不太冷"
-  director: "Luc Besson（吕克·贝松）"
-  premiere_date: "1994-09-14"
-  premiere_note: "法国上映"
-  imdb_url: "https://www.imdb.com/title/tt0110413/"
-  awards: "第 20 届凯撒奖多项提名，包括最佳导演；IMDb 记录为 5 项获奖、16 项提名。"
+  chinese_title: 这个杀手不太冷
+  director: Luc Besson
+  cast:
+  - Jean Reno
+  - Gary Oldman
+  - Natalie Portman
+  - Danny Aiello
+  premiere_date: '1994-09-14'
+  premiere_note: 法国上映
+  imdb_url: https://www.imdb.com/title/tt0110413/
+  poster: "/assets/images/movies/leon.jpg"
+  awards: 第 20 届凯撒奖多项提名，包括最佳导演；IMDb 记录为 5 项获奖、16 项提名。
   tags:
-    - 犯罪
-    - 孤独
-  note: ""
+  - 犯罪
+  - 孤独
+  note: ''
+- original_title: "The Lord of the Rings: The Fellowship of the Ring"
+  count: 1
+  chinese_title: 指环王1：护戒使者
+  director: Peter Jackson
+  cast:
+  - Elijah Wood
+  - Ian McKellen
+  - Viggo Mortensen
+  - Sean Astin
+  - Orlando Bloom
+  premiere_date: '2001-12-10'
+  premiere_note: Odeon Leicester Square, London
+  imdb_url: https://www.imdb.com/title/tt0120737/
+  poster: "/assets/images/movies/the-fellowship-of-the-ring.jpg"
+  awards: 第 74 届奥斯卡 4 项获奖（最佳摄影、最佳化妆、最佳原创配乐、最佳视觉效果），13 项提名包括最佳影片、最佳导演。
+  tags:
+  - 奇幻
+  - 冒险
+  note: 影片改编自 J.R.R. Tolkien 同名小说三部曲首部。
+- original_title: "The Lord of the Rings: The Two Towers"
+  count: 1
+  chinese_title: 指环王2：双塔奇兵
+  director: Peter Jackson
+  cast:
+  - Elijah Wood
+  - Ian McKellen
+  - Viggo Mortensen
+  - Sean Astin
+  - Orlando Bloom
+  premiere_date: '2002-12-05'
+  premiere_note: Ziegfeld Theatre, New York City
+  imdb_url: https://www.imdb.com/title/tt0167261/
+  poster: "/assets/images/movies/the-two-towers.jpg"
+  awards: 第 75 届奥斯卡 2 项获奖（最佳音效剪辑、最佳视觉效果），6 项提名包括最佳影片。
+  tags:
+  - 奇幻
+  - 冒险
+  note: ''
+- original_title: "The Lord of the Rings: The Return of the King"
+  count: 1
+  chinese_title: 指环王3：王者无敌
+  director: Peter Jackson
+  cast:
+  - Elijah Wood
+  - Ian McKellen
+  - Viggo Mortensen
+  - Sean Astin
+  - Orlando Bloom
+  premiere_date: '2003-12-01'
+  premiere_note: Embassy Theatre, Wellington
+  imdb_url: https://www.imdb.com/title/tt0167260/
+  poster: "/assets/images/movies/the-return-of-the-king.jpg"
+  awards: 第 76 届奥斯卡 11 项提名全部获奖，包括最佳影片、最佳导演、最佳改编剧本；11 中 11 的获奖率创奥斯卡纪录。
+  tags:
+  - 奇幻
+  - 冒险
+  note: ''

@@ -19,10 +19,15 @@ sidebar: false
 {% endfor %}
 {% assign movie_tags = movie_tags | uniq | sort %}
 {% assign movie_directors = "" | split: "" %}
+{% assign movie_cast_members = "" | split: "" %}
 {% for movie in site.data.movies %}
   {% assign movie_directors = movie_directors | push: movie.director %}
+  {% for member in movie.cast %}
+    {% assign movie_cast_members = movie_cast_members | push: member %}
+  {% endfor %}
 {% endfor %}
 {% assign movie_directors = movie_directors | uniq | sort %}
+{% assign movie_cast_members = movie_cast_members | uniq | sort %}
 {% assign movies_by_premiere = site.data.movies | sort: "premiere_date" | reverse %}
 
 <section class="collection-summary" aria-label="电影收藏概览">
@@ -62,7 +67,16 @@ sidebar: false
     <div class="movie-filter__controls" data-filter-group="movie-director">
       <button class="movie-filter__button is-active" type="button" data-movie-director-filter="all" aria-pressed="true">全部</button>
       {% for director in movie_directors %}
-      <button class="movie-filter__button" type="button" data-movie-director-filter="{{ director | escape }}" aria-pressed="false">{{ director }}</button>
+      <button class="movie-filter__button" type="button" data-movie-director-filter="{{ director | escape }}" aria-pressed="false">{% include person-name.html name=director %}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="movie-filter">
+    <p class="movie-filter__label">主演</p>
+    <div class="movie-filter__controls" data-filter-group="movie-cast">
+      <button class="movie-filter__button is-active" type="button" data-movie-cast-filter="all" aria-pressed="true">全部</button>
+      {% for member in movie_cast_members %}
+      <button class="movie-filter__button" type="button" data-movie-cast-filter="{{ member | escape }}" aria-pressed="false">{% include person-name.html name=member %}</button>
       {% endfor %}
     </div>
   </div>
@@ -70,11 +84,19 @@ sidebar: false
 
 <section class="movie-shelf" aria-label="喜欢的电影">
   {% for movie in movies_by_premiere %}
-  <article class="movie-entry" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie.director | escape }}" data-movie-date="{{ movie.premiere_date }}" data-movie-count="{{ movie.count | default: 0 }}" data-movie-order="{{ forloop.index0 }}">
-    <span class="movie-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
-    {% if movie.count %}
-    <span class="movie-entry__count" aria-label="喜欢 {{ movie.count }} 次">喜欢 {{ movie.count }} 次</span>
-    {% endif %}
+  <article class="movie-entry" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie.director | escape }}" data-movie-cast="{{ movie.cast | join: '|' | escape }}" data-movie-date="{{ movie.premiere_date }}" data-movie-count="{{ movie.count | default: 0 }}" data-movie-order="{{ forloop.index0 }}">
+    <div class="movie-entry__media">
+      {% assign poster_src = movie.poster_url | default: movie.poster %}
+      {% if poster_src %}
+      <figure class="movie-entry__poster">
+        <img src="{% if movie.poster_url %}{{ poster_src }}{% else %}{{ poster_src | relative_url }}{% endif %}" alt="{{ movie.chinese_title | default: movie.original_title }} 海报" loading="lazy" decoding="async">
+      </figure>
+      {% endif %}
+      <span class="movie-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
+      {% if movie.count %}
+      <span class="movie-entry__count" aria-label="喜欢 {{ movie.count }} 次">喜欢 {{ movie.count }} 次</span>
+      {% endif %}
+    </div>
     <div class="movie-entry__title-group">
       <h2>
         {{ movie.original_title }}{% if movie.chinese_title and movie.chinese_title != movie.original_title %}（{{ movie.chinese_title }}）{% endif %}
@@ -90,8 +112,14 @@ sidebar: false
     <dl class="movie-entry__meta">
       <div>
         <dt>导演</dt>
-        <dd>{{ movie.director }}</dd>
+        <dd>{% include person-name.html name=movie.director %}</dd>
       </div>
+      {% if movie.cast %}
+      <div>
+        <dt>主演</dt>
+        <dd>{% include person-name-list.html items=movie.cast %}</dd>
+      </div>
+      {% endif %}
       <div>
         <dt>首映</dt>
         <dd><time datetime="{{ movie.premiere_date }}">{{ movie.premiere_date }}</time>{% if movie.premiere_note %}<span>{{ movie.premiere_note }}</span>{% endif %}</dd>

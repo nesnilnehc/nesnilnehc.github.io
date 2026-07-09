@@ -116,13 +116,16 @@
   function applyMovieFilters() {
     const activeTag = activeFilterValue("[data-movie-filter]", "movieFilter");
     const activeDirector = activeFilterValue("[data-movie-director-filter]", "movieDirectorFilter");
+    const activeCast = activeFilterValue("[data-movie-cast-filter]", "movieCastFilter");
     let visibleCount = 0;
 
     Array.from(document.querySelectorAll("[data-movie-tags]")).forEach(function (entry) {
       const tags = splitValues(entry.dataset.movieTags);
+      const cast = splitValues(entry.dataset.movieCast);
       const tagMatches = activeTag === "all" || tags.includes(activeTag);
       const directorMatches = activeDirector === "all" || entry.dataset.movieDirector === activeDirector;
-      const isVisible = tagMatches && directorMatches;
+      const castMatches = activeCast === "all" || cast.includes(activeCast);
+      const isVisible = tagMatches && directorMatches && castMatches;
       entry.hidden = !isVisible;
       if (isVisible) visibleCount += 1;
     });
@@ -180,6 +183,13 @@
     });
   });
 
+  Array.from(document.querySelectorAll("[data-movie-cast-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-movie-cast-filter]");
+      applyMovieFilters();
+    });
+  });
+
   Array.from(document.querySelectorAll("[data-music-filter]")).forEach(function (button) {
     button.addEventListener("click", function () {
       setActiveButton(button, "[data-music-filter]");
@@ -196,6 +206,48 @@
 
   sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));
   sortCollection(".music-shelf", ".music-entry", "music", activeFilterValue("[data-music-sort]", "musicSort"));
+
+  function setupCollapsibleFilters() {
+    var maxRows = 2;
+
+    Array.from(document.querySelectorAll(".movie-filter__controls, .music-filter__controls")).forEach(function (controls) {
+      var toggleClass = controls.classList.contains("movie-filter__controls") ? "movie-filter__toggle" : "music-filter__toggle";
+      var existingToggle = controls.nextElementSibling;
+      var wasExpanded = Boolean(existingToggle) && existingToggle.classList.contains(toggleClass) && existingToggle.getAttribute("aria-expanded") === "true";
+      if (existingToggle && existingToggle.classList.contains(toggleClass)) existingToggle.remove();
+      controls.classList.remove("is-collapsed");
+      controls.style.removeProperty("--filter-collapsed-height");
+
+      var rowTops = [];
+      Array.from(controls.children).forEach(function (button) {
+        if (!rowTops.includes(button.offsetTop)) rowTops.push(button.offsetTop);
+      });
+      if (rowTops.length <= maxRows) return;
+
+      controls.style.setProperty("--filter-collapsed-height", (rowTops[maxRows] - rowTops[0]) + "px");
+      if (!wasExpanded) controls.classList.add("is-collapsed");
+
+      var toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = toggleClass;
+      toggle.setAttribute("aria-expanded", String(wasExpanded));
+      toggle.textContent = wasExpanded ? "收起" : "展开全部";
+      toggle.addEventListener("click", function () {
+        var isCollapsed = controls.classList.toggle("is-collapsed");
+        toggle.textContent = isCollapsed ? "展开全部" : "收起";
+        toggle.setAttribute("aria-expanded", String(!isCollapsed));
+      });
+      controls.insertAdjacentElement("afterend", toggle);
+    });
+  }
+
+  setupCollapsibleFilters();
+
+  var filterResizeTimer;
+  window.addEventListener("resize", function () {
+    window.clearTimeout(filterResizeTimer);
+    filterResizeTimer = window.setTimeout(setupCollapsibleFilters, 200);
+  });
 
   document.addEventListener("click", function (event) {
     const button = event.target.closest(".js-share-post");

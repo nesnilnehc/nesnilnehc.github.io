@@ -34,7 +34,7 @@ sidebar: false
   </div>
   <div>
     <span class="collection-summary__value">{{ music_artists | size }}</span>
-    <span class="collection-summary__label">位艺人</span>
+    <span class="collection-summary__label">个表演</span>
   </div>
   <div>
     <span class="collection-summary__value">{{ music_tags | size }}</span>
@@ -51,11 +51,11 @@ sidebar: false
     </div>
   </div>
   <div class="music-filter">
-    <p class="music-filter__label">艺人</p>
+    <p class="music-filter__label">表演</p>
     <div class="music-filter__controls">
       <button class="music-filter__button is-active" type="button" data-music-filter="all" aria-pressed="true">全部</button>
       {% for artist in music_artists %}
-      <button class="music-filter__button" type="button" data-music-filter="{{ artist | escape }}" aria-pressed="false">{{ artist }}</button>
+      <button class="music-filter__button" type="button" data-music-filter="{{ artist | escape }}" aria-pressed="false">{% include person-name.html name=artist %}</button>
       {% endfor %}
     </div>
   </div>
@@ -89,9 +89,21 @@ sidebar: false
     </div>
     <dl class="music-entry__meta">
       <div>
-        <dt>艺人</dt>
-        <dd>{{ track.artist }}</dd>
+        <dt>表演</dt>
+        <dd>{% include person-name-list.html items=track.artists %}</dd>
       </div>
+      {% if track.lyricists %}
+      <div>
+        <dt>作词</dt>
+        <dd>{% include person-name-list.html items=track.lyricists %}</dd>
+      </div>
+      {% endif %}
+      {% if track.composers %}
+      <div>
+        <dt>作曲</dt>
+        <dd>{% include person-name-list.html items=track.composers %}</dd>
+      </div>
+      {% endif %}
       <div>
         <dt>发行</dt>
         <dd><time datetime="{{ track.date }}">{{ track.date }}</time>{% if track.date_label %}<span>{{ track.date_label }}</span>{% endif %}<span>{{ track.release_title }}{% if track.release_context %} · {{ track.release_context }}{% endif %}</span></dd>

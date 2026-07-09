@@ -13,6 +13,12 @@ BEGIN:
   romanized_name: BEGIN
   canonical_name: BEGIN
   display_name: BEGIN
+Carpenters:
+  romanized_name: Carpenters
+  canonical_name: Carpenters
+  chinese_name: 卡朋特乐队
+  nickname: 木匠兄妹
+  display_name: Carpenters · 卡朋特乐队
 Fine乐团:
   romanized_name: Fine乐团
   canonical_name: Fine乐团

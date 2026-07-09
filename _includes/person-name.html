@@ -1,0 +1,32 @@
+{% assign raw_name = include.name %}
+{% assign name_entry = site.data.person_names[raw_name] %}
+{% assign is_group = false %}
+{% unless name_entry %}
+  {% assign name_entry = site.data.group_names[raw_name] %}
+  {% if name_entry %}{% assign is_group = true %}{% endif %}
+{% endunless %}
+
+<span class="credit-name{% if is_group %} credit-name--group{% endif %}">
+{%- if name_entry.display_name -%}
+  {{ name_entry.display_name }}
+{%- elsif name_entry -%}
+  {% assign name_parts = "" | split: "" %}
+  {% if name_entry.nickname %}
+    {% unless name_parts contains name_entry.nickname %}{% assign name_parts = name_parts | push: name_entry.nickname %}{% endunless %}
+  {% endif %}
+  {% if name_entry.nicknames %}
+    {% for nickname in name_entry.nicknames %}
+      {% unless name_parts contains nickname %}{% assign name_parts = name_parts | push: nickname %}{% endunless %}
+    {% endfor %}
+  {% endif %}
+  {% if name_entry.canonical_name %}
+    {% unless name_parts contains name_entry.canonical_name %}{% assign name_parts = name_parts | push: name_entry.canonical_name %}{% endunless %}
+  {% endif %}
+  {% if name_entry.chinese_name %}
+    {% unless name_parts contains name_entry.chinese_name %}{% assign name_parts = name_parts | push: name_entry.chinese_name %}{% endunless %}
+  {% endif %}
+  {{ name_parts | join: " · " }}
+{%- else -%}
+  {{ raw_name }}
+{%- endif -%}
+</span>

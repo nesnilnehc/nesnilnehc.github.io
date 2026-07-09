@@ -1,0 +1,727 @@
+# 人物姓名字典。顶层 key 就是 romanized_name；没有可靠罗马字时才使用原名。chinese_name 只来自人物页显式维护字段，不从译名自动生成。canonical_name 需要逐条以来源材料校准。
+---
+'24':
+  canonical_name: '24'
+  display_name: '24'
+Adam Schlesinger:
+  romanized_name: Adam Schlesinger
+  canonical_name: Adam Schlesinger
+  display_name: Adam Schlesinger
+Amy Allen:
+  romanized_name: Amy Allen
+  canonical_name: Amy Allen
+  display_name: Amy Allen
+Annie Gonzalez:
+  romanized_name: Annie Gonzalez
+  canonical_name: Annie Gonzalez
+  chinese_name: 安妮·冈萨雷斯
+  display_name: Annie Gonzalez · 安妮·冈萨雷斯
+B. J. Novak:
+  romanized_name: B. J. Novak
+  canonical_name: B. J. Novak
+  chinese_name: B·J·诺瓦克
+  display_name: B. J. Novak · B·J·诺瓦克
+Ben Affleck:
+  romanized_name: Ben Affleck
+  canonical_name: Ben Affleck
+  chinese_name: 本·阿弗莱克
+  display_name: Ben Affleck · 本·阿弗莱克
+Ben Hardy:
+  romanized_name: Ben Hardy
+  canonical_name: Ben Hardy
+  chinese_name: 本·哈迪
+  display_name: Ben Hardy · 本·哈迪
+BoA:
+  romanized_name: BoA
+  canonical_name: 권보아
+  chinese_name: 宝儿
+  nickname: BoA
+  display_name: BoA · 권보아 · 宝儿
+Bob Gunton:
+  romanized_name: Bob Gunton
+  canonical_name: Bob Gunton
+  chinese_name: 鲍勃·冈顿
+  display_name: Bob Gunton · 鲍勃·冈顿
+Bruno Mars:
+  romanized_name: Bruno Mars
+  canonical_name: Bruno Mars
+  chinese_name: 布鲁诺·马尔斯
+  display_name: Bruno Mars · 布鲁诺·马尔斯
+Bryan Singer:
+  romanized_name: Bryan Singer
+  canonical_name: Bryan Singer
+  chinese_name: 布莱恩·辛格
+  display_name: Bryan Singer · 布莱恩·辛格
+C.Y. Kong:
+  romanized_name: C.Y. Kong
+  canonical_name: 江志仁
+  display_name: C.Y. Kong · 江志仁
+Choice37:
+  romanized_name: Choice37
+  canonical_name: Choice37
+  display_name: Choice37
+Christopher Brody Brown:
+  romanized_name: Christopher Brody Brown
+  canonical_name: Christopher Brody Brown
+  display_name: Christopher Brody Brown
+Clancy Brown:
+  romanized_name: Clancy Brown
+  canonical_name: Clancy Brown
+  chinese_name: 克兰西·布朗
+  display_name: Clancy Brown · 克兰西·布朗
+Clementine:
+  romanized_name: Clementine
+  canonical_name: Clementine
+  display_name: Clementine
+Cyndi Wang:
+  romanized_name: Cyndi Wang
+  canonical_name: 王心凌
+  display_name: Cyndi Wang · 王心凌
+  nickname: Cyndi Wang
+Daiqing Tana:
+  romanized_name: Daiqing Tana
+  canonical_name: 黛青塔娜
+  display_name: Daiqing Tana · 黛青塔娜
+Damiano:
+  romanized_name: Damiano
+  canonical_name: Damiano
+  display_name: Damiano
+Danny Aiello:
+  romanized_name: Danny Aiello
+  canonical_name: Danny Aiello
+  chinese_name: 丹尼·爱罗
+  display_name: Danny Aiello · 丹尼·爱罗
+David Paymer:
+  romanized_name: David Paymer
+  canonical_name: David Paymer
+  chinese_name: 大卫·佩默
+  display_name: David Paymer · 大卫·佩默
+Deborah Kara Unger:
+  romanized_name: Deborah Kara Unger
+  canonical_name: Deborah Kara Unger
+  chinese_name: 黛博拉·卡拉·安格
+  display_name: Deborah Kara Unger · 黛博拉·卡拉·安格
+Dennis Haysbert:
+  romanized_name: Dennis Haysbert
+  canonical_name: Dennis Haysbert
+  chinese_name: 丹尼斯·海斯伯特
+  display_name: Dennis Haysbert · 丹尼斯·海斯伯特
+Elijah Wood:
+  romanized_name: Elijah Wood
+  canonical_name: Elijah Wood
+  chinese_name: 伊利亚·伍德
+  display_name: Elijah Wood · 伊利亚·伍德
+Emilio Estevez:
+  romanized_name: Emilio Estevez
+  canonical_name: Emilio Estevez
+  chinese_name: 艾米利奥·艾斯特维兹
+  display_name: Emilio Estevez · 艾米利奥·艾斯特维兹
+Eva Longoria:
+  romanized_name: Eva Longoria
+  canonical_name: Eva Longoria
+  chinese_name: 伊娃·朗格利亚
+  display_name: Eva Longoria · 伊娃·朗格利亚
+Frank Darabont:
+  romanized_name: Frank Darabont
+  canonical_name: Frank Darabont
+  chinese_name: 弗兰克·德拉邦特
+  display_name: Frank Darabont · 弗兰克·德拉邦特
+Freddie Mercury:
+  romanized_name: Freddie Mercury
+  canonical_name: Freddie Mercury
+  display_name: Freddie Mercury
+G-DRAGON:
+  romanized_name: G-DRAGON
+  canonical_name: 권지용
+  chinese_name: 权志龙
+  nickname: G-DRAGON
+  display_name: G-DRAGON · 권지용 · 权志龙
+Gabriele Muccino:
+  romanized_name: Gabriele Muccino
+  canonical_name: Gabriele Muccino
+  chinese_name: 加布里埃莱·穆奇诺
+  display_name: Gabriele Muccino · 加布里埃莱·穆奇诺
+Gary Oldman:
+  romanized_name: Gary Oldman
+  canonical_name: Gary Oldman
+  chinese_name: 加里·奥德曼
+  display_name: Gary Oldman · 加里·奥德曼
+Gary Sinise:
+  romanized_name: Gary Sinise
+  canonical_name: Gary Sinise
+  chinese_name: 加里·西尼斯
+  display_name: Gary Sinise · 加里·西尼斯
+Gus Van Sant:
+  romanized_name: Gus Van Sant
+  canonical_name: Gus Van Sant
+  chinese_name: 格斯·范·桑特
+  display_name: Gus Van Sant · 格斯·范·桑特
+Gwilym Lee:
+  romanized_name: Gwilym Lee
+  canonical_name: Gwilym Lee
+  chinese_name: 格威利姆·李
+  display_name: Gwilym Lee · 格威利姆·李
+HUSH:
+  romanized_name: HUSH
+  canonical_name: HUSH
+  display_name: HUSH
+Haley Bennett:
+  romanized_name: Haley Bennett
+  canonical_name: Haley Bennett
+  chinese_name: 海莉·贝内特
+  display_name: Haley Bennett · 海莉·贝内特
+Henry Walter:
+  romanized_name: Henry Walter
+  canonical_name: Henry Walter
+  display_name: Henry Walter
+Hugh Grant:
+  romanized_name: Hugh Grant
+  canonical_name: Hugh Grant
+  chinese_name: 休·格兰特
+  display_name: Hugh Grant · 休·格兰特
+Ian McKellen:
+  romanized_name: Ian McKellen
+  canonical_name: Ian McKellen
+  chinese_name: 伊恩·麦克莱恩
+  display_name: Ian McKellen · 伊恩·麦克莱恩
+IU:
+  romanized_name: IU
+  canonical_name: 이지은
+  chinese_name: 李知恩
+  nickname: IU
+  display_name: IU · 이지은 · 李知恩
+J.Y. Park:
+  romanized_name: J.Y. Park
+  canonical_name: 박진영
+  nickname: J.Y. Park
+  display_name: J.Y. Park · 박진영
+JISOO:
+  romanized_name: JISOO
+  canonical_name: 김지수
+  chinese_name: 金智秀
+  nickname: JISOO
+  display_name: JISOO · 김지수 · 金智秀
+Jaden Smith:
+  romanized_name: Jaden Smith
+  canonical_name: Jaden Smith
+  chinese_name: 贾登·史密斯
+  display_name: Jaden Smith · 贾登·史密斯
+James Nesbitt:
+  romanized_name: James Nesbitt
+  canonical_name: James Nesbitt
+  chinese_name: 詹姆斯·内斯比特
+  display_name: James Nesbitt · 詹姆斯·内斯比特
+Jean Reno:
+  romanized_name: Jean Reno
+  canonical_name: Jean Reno
+  chinese_name: 让·雷诺
+  display_name: Jean Reno · 让·雷诺
+Jesse Garcia:
+  romanized_name: Jesse Garcia
+  canonical_name: Jesse Garcia
+  chinese_name: 杰西·加西亚
+  display_name: Jesse Garcia · 杰西·加西亚
+Jingfei Chen:
+  romanized_name: Jingfei Chen
+  canonical_name: 陈婧霏
+  display_name: Jingfei Chen · 陈婧霏
+  nickname: Jingfei Chen
+John Carroll Lynch:
+  romanized_name: John Carroll Lynch
+  canonical_name: John Carroll Lynch
+  chinese_name: 约翰·卡洛·林奇
+  display_name: John Carroll Lynch · 约翰·卡洛·林奇
+John Lee Hancock:
+  romanized_name: John Lee Hancock
+  canonical_name: John Lee Hancock
+  chinese_name: 约翰·李·汉考克
+  display_name: John Lee Hancock · 约翰·李·汉考克
+John Turturro:
+  romanized_name: John Turturro
+  canonical_name: John Turturro
+  chinese_name: 约翰·特托罗
+  display_name: John Turturro · 约翰·特托罗
+Joji Matsuoka:
+  romanized_name: Joji Matsuoka
+  canonical_name: 松岡錠司
+  chinese_name: 松冈锭司
+  display_name: Joji Matsuoka · 松岡錠司 · 松冈锭司
+Joseph Mazzello:
+  romanized_name: Joseph Mazzello
+  canonical_name: Joseph Mazzello
+  chinese_name: 约瑟夫·梅泽罗
+  display_name: Joseph Mazzello · 约瑟夫·梅泽罗
+KOKIA:
+  romanized_name: KOKIA
+  canonical_name: 吉田亜紀子
+  nickname: KOKIA
+  display_name: KOKIA · 吉田亜紀子
+KUSH:
+  romanized_name: KUSH
+  canonical_name: 김병훈
+  nickname: KUSH
+  display_name: KUSH · 김병훈
+Kan Ishibashi:
+  romanized_name: Kan Ishibashi
+  canonical_name: 石橋冠
+  chinese_name: 石桥冠
+  display_name: Kan Ishibashi · 石橋冠 · 石桥冠
+Kim Yuna:
+  romanized_name: Kim Yuna
+  canonical_name: 김윤아
+  chinese_name: 金润雅
+  display_name: Kim Yuna · 김윤아 · 金润雅
+LE:
+  romanized_name: LE
+  canonical_name: 안효진
+  nickname: LE
+  display_name: LE · 안효진
+Lana Del Rey:
+  romanized_name: Lana Del Rey
+  canonical_name: Lana Del Rey
+  chinese_name: 拉娜·德雷
+  display_name: Lana Del Rey · 拉娜·德雷
+Laura Dern:
+  romanized_name: Laura Dern
+  canonical_name: Laura Dern
+  chinese_name: 劳拉·邓恩
+  display_name: Laura Dern · 劳拉·邓恩
+Lee Chae-gyu:
+  romanized_name: Lee Chae-gyu
+  canonical_name: Lee Chae-gyu
+  display_name: Lee Chae-gyu
+Lee Jong-hoon:
+  romanized_name: Lee Jong-hoon
+  canonical_name: Lee Jong-hoon
+  display_name: Lee Jong-hoon
+Lee Sun Hee:
+  romanized_name: Lee Sun Hee
+  canonical_name: 이선희
+  chinese_name: 李仙姬
+  display_name: Lee Sun Hee · 이선희 · 李仙姬
+Lil E:
+  romanized_name: Lil E
+  canonical_name: Lil E
+  display_name: Lil E
+Linda Cardellini:
+  romanized_name: Linda Cardellini
+  canonical_name: Linda Cardellini
+  chinese_name: 琳达·卡德里尼
+  display_name: Linda Cardellini · 琳达·卡德里尼
+Luc Besson:
+  romanized_name: Luc Besson
+  canonical_name: Luc Besson
+  chinese_name: 吕克·贝松
+  display_name: Luc Besson · 吕克·贝松
+Lucy Boynton:
+  romanized_name: Lucy Boynton
+  canonical_name: Lucy Boynton
+  chinese_name: 露西·宝通
+  display_name: Lucy Boynton · 露西·宝通
+Mahershala Ali:
+  romanized_name: Mahershala Ali
+  canonical_name: Mahershala Ali
+  chinese_name: 马赫沙拉·阿里
+  display_name: Mahershala Ali · 马赫沙拉·阿里
+Martin Sheen:
+  romanized_name: Martin Sheen
+  canonical_name: Martin Sheen
+  chinese_name: 马丁·辛
+  display_name: Martin Sheen · 马丁·辛
+Matsutoya Yumi:
+  romanized_name: Matsutoya Yumi
+  canonical_name: 松任谷由実
+  display_name: Matsutoya Yumi · 松任谷由実
+Matt Damon:
+  romanized_name: Matt Damon
+  canonical_name: Matt Damon
+  chinese_name: 马特·达蒙
+  display_name: Matt Damon · 马特·达蒙
+Michael Keaton:
+  romanized_name: Michael Keaton
+  canonical_name: Michael Keaton
+  chinese_name: 迈克尔·基顿
+  display_name: Michael Keaton · 迈克尔·基顿
+Mike Chapman:
+  romanized_name: Mike Chapman
+  canonical_name: Mike Chapman
+  display_name: Mike Chapman
+Minah:
+  romanized_name: Minah
+  canonical_name: 방민아
+  chinese_name: 敏雅
+  nickname: Minah
+  display_name: Minah · 방민아 · 敏雅
+Minnie Driver:
+  romanized_name: Minnie Driver
+  canonical_name: Minnie Driver
+  chinese_name: 明妮·德里弗
+  display_name: Minnie Driver · 明妮·德里弗
+Morgan Freeman:
+  romanized_name: Morgan Freeman
+  canonical_name: Morgan Freeman
+  chinese_name: 摩根·弗里曼
+  display_name: Morgan Freeman · 摩根·弗里曼
+Mykelti Williamson:
+  romanized_name: Mykelti Williamson
+  canonical_name: Mykelti Williamson
+  chinese_name: 麦凯尔泰·威廉逊
+  display_name: Mykelti Williamson · 麦凯尔泰·威廉逊
+Natalie Portman:
+  romanized_name: Natalie Portman
+  canonical_name: Natalie Portman
+  chinese_name: 娜塔莉·波特曼
+  display_name: Natalie Portman · 娜塔莉·波特曼
+Nick Offerman:
+  romanized_name: Nick Offerman
+  canonical_name: Nick Offerman
+  chinese_name: 尼克·奥弗曼
+  display_name: Nick Offerman · 尼克·奥弗曼
+Nicky Chinn:
+  romanized_name: Nicky Chinn
+  canonical_name: Nicky Chinn
+  display_name: Nicky Chinn
+Omer Fedi:
+  romanized_name: Omer Fedi
+  canonical_name: Omer Fedi
+  display_name: Omer Fedi
+Orlando Bloom:
+  romanized_name: Orlando Bloom
+  canonical_name: Orlando Bloom
+  chinese_name: 奥兰多·布鲁姆
+  display_name: Orlando Bloom · 奥兰多·布鲁姆
+Oscar Anton:
+  romanized_name: Oscar Anton
+  canonical_name: Oscar Anton
+  display_name: Oscar Anton
+PSY:
+  romanized_name: PSY
+  canonical_name: 박재상
+  chinese_name: 朴载相
+  nickname: PSY
+  display_name: PSY · 박재상 · 朴载相
+Park Bom:
+  romanized_name: Park Bom
+  canonical_name: 박봄
+  chinese_name: 朴春
+  nickname: Park Bom
+  display_name: Park Bom · 박봄 · 朴春
+Park Ji Yoon:
+  romanized_name: Park Ji Yoon
+  canonical_name: 박지윤
+  chinese_name: 朴志胤
+  display_name: Park Ji Yoon · 박지윤 · 朴志胤
+Paul Scofield:
+  romanized_name: Paul Scofield
+  canonical_name: Paul Scofield
+  chinese_name: 保罗·斯科菲尔德
+  display_name: Paul Scofield · 保罗·斯科菲尔德
+Penny Tai:
+  romanized_name: Penny Tai
+  canonical_name: 戴佩妮
+  display_name: Penny Tai · 戴佩妮
+  nickname: Penny Tai
+Peter Farrelly:
+  romanized_name: Peter Farrelly
+  canonical_name: Peter Farrelly
+  chinese_name: 彼得·法雷里
+  display_name: Peter Farrelly · 彼得·法雷里
+Peter Jackson:
+  romanized_name: Peter Jackson
+  canonical_name: Peter Jackson
+  chinese_name: 彼得·杰克逊
+  display_name: Peter Jackson · 彼得·杰克逊
+Philip Lawrence:
+  romanized_name: Philip Lawrence
+  canonical_name: Philip Lawrence
+  display_name: Philip Lawrence
+ROSÉ:
+  romanized_name: ROSÉ
+  canonical_name: 박채영
+  chinese_name: 朴彩英
+  nickname: ROSÉ
+  display_name: ROSÉ · 박채영 · 朴彩英
+Rado:
+  romanized_name: Rado
+  canonical_name: 송주영
+  nickname: Rado
+  display_name: Rado · 송주영
+Ralph Fiennes:
+  romanized_name: Ralph Fiennes
+  canonical_name: Ralph Fiennes
+  chinese_name: 拉尔夫·费因斯
+  display_name: Ralph Fiennes · 拉尔夫·费因斯
+Rami Malek:
+  romanized_name: Rami Malek
+  canonical_name: Rami Malek
+  chinese_name: 拉米·马雷克
+  display_name: Rami Malek · 拉米·马雷克
+Rick Nowels:
+  romanized_name: Rick Nowels
+  canonical_name: Rick Nowels
+  display_name: Rick Nowels
+Rob Morrow:
+  romanized_name: Rob Morrow
+  canonical_name: Rob Morrow
+  chinese_name: 罗伯·莫洛
+  display_name: Rob Morrow · 罗伯·莫洛
+Robert Redford:
+  romanized_name: Robert Redford
+  canonical_name: Robert Redford
+  chinese_name: 罗伯特·雷德福
+  display_name: Robert Redford · 罗伯特·雷德福
+Robert Zemeckis:
+  romanized_name: Robert Zemeckis
+  canonical_name: Robert Zemeckis
+  chinese_name: 罗伯特·泽米吉斯
+  display_name: Robert Zemeckis · 罗伯特·泽米吉斯
+Robin Williams:
+  romanized_name: Robin Williams
+  canonical_name: Robin Williams
+  chinese_name: 罗宾·威廉姆斯
+  display_name: Robin Williams · 罗宾·威廉姆斯
+Robin Wright:
+  romanized_name: Robin Wright
+  canonical_name: Robin Wright
+  chinese_name: 罗宾·怀特
+  display_name: Robin Wright · 罗宾·怀特
+Rogét Chahayed:
+  romanized_name: Rogét Chahayed
+  canonical_name: Rogét Chahayed
+  display_name: Rogét Chahayed
+Sally Field:
+  romanized_name: Sally Field
+  canonical_name: Sally Field
+  chinese_name: 莎莉·菲尔德
+  display_name: Sally Field · 莎莉·菲尔德
+Sandy Lam:
+  romanized_name: Sandy Lam
+  canonical_name: 林忆莲
+  display_name: Sandy Lam · 林忆莲
+  nickname: Sandy Lam
+Sean Astin:
+  romanized_name: Sean Astin
+  canonical_name: Sean Astin
+  chinese_name: 西恩·奥斯汀
+  display_name: Sean Astin · 西恩·奥斯汀
+Shinsadong Tiger:
+  romanized_name: Shinsadong Tiger
+  canonical_name: 이호양
+  nickname: Shinsadong Tiger
+  display_name: Shinsadong Tiger · 이호양
+Stellan Skarsgård:
+  romanized_name: Stellan Skarsgård
+  canonical_name: Stellan Skarsgård
+  chinese_name: 斯特兰·斯卡斯加德
+  display_name: Stellan Skarsgård · 斯特兰·斯卡斯加德
+Steve Chou:
+  romanized_name: Steve Chou
+  canonical_name: 周传雄
+  display_name: Steve Chou · 周传雄
+  nickname: Steve Chou
+PinkPear:
+  romanized_name: PinkPear
+  canonical_name: PinkPear
+  display_name: PinkPear
+RAMBO GANG:
+  romanized_name: RAMBO GANG
+  canonical_name: RAMBO GANG
+  display_name: RAMBO GANG
+T-BONE:
+  romanized_name: T-BONE
+  canonical_name: T-BONE
+  display_name: T-BONE
+Trakin:
+  romanized_name: Trakin
+  canonical_name: Trakin
+  display_name: Trakin
+Teddy:
+  romanized_name: Teddy
+  canonical_name: 박홍준
+  nickname: Teddy
+  display_name: Teddy · 박홍준
+Thandiwe Newton:
+  romanized_name: Thandiwe Newton
+  canonical_name: Thandiwe Newton
+  chinese_name: 坦迪·牛顿
+  display_name: Thandiwe Newton · 坦迪·牛顿
+Theron Thomas:
+  romanized_name: Theron Thomas
+  canonical_name: Theron Thomas
+  display_name: Theron Thomas
+Tim Robbins:
+  romanized_name: Tim Robbins
+  canonical_name: Tim Robbins
+  chinese_name: 蒂姆·罗宾斯
+  display_name: Tim Robbins · 蒂姆·罗宾斯
+Tom Hanks:
+  romanized_name: Tom Hanks
+  canonical_name: Tom Hanks
+  chinese_name: 汤姆·汉克斯
+  display_name: Tom Hanks · 汤姆·汉克斯
+Tony Shalhoub:
+  romanized_name: Tony Shalhoub
+  canonical_name: Tony Shalhoub
+  chinese_name: 托尼·夏尔赫布
+  display_name: Tony Shalhoub · 托尼·夏尔赫布
+VVN:
+  romanized_name: VVN
+  canonical_name: VVN
+  display_name: VVN
+Viggo Mortensen:
+  romanized_name: Viggo Mortensen
+  canonical_name: Viggo Mortensen
+  chinese_name: 维果·莫腾森
+  display_name: Viggo Mortensen · 维果·莫腾森
+Vince:
+  romanized_name: Vince
+  canonical_name: Vince
+  display_name: Vince
+White Cherry:
+  romanized_name: White Cherry
+  canonical_name: White Cherry
+  display_name: White Cherry
+Will Smith:
+  romanized_name: Will Smith
+  canonical_name: Will Smith
+  chinese_name: 威尔·史密斯
+  display_name: Will Smith · 威尔·史密斯
+William Sadler:
+  romanized_name: William Sadler
+  canonical_name: William Sadler
+  chinese_name: 威廉姆·赛德勒
+  display_name: William Sadler · 威廉姆·赛德勒
+Yoo Gun-hyung:
+  romanized_name: Yoo Gun-hyung
+  canonical_name: 유건형
+  display_name: Yoo Gun-hyung · 유건형
+Yorick van Wageningen:
+  romanized_name: Yorick van Wageningen
+  canonical_name: Yorick van Wageningen
+  chinese_name: 约里克·范·韦杰宁根
+  display_name: Yorick van Wageningen · 约里克·范·韦杰宁根
+Ziba:
+  romanized_name: Ziba
+  canonical_name: Ziba
+  display_name: Ziba
+aMEI:
+  romanized_name: aMEI
+  canonical_name: 张惠妹
+  display_name: aMEI · 张惠妹
+  nickname: aMEI
+余贵美子:
+  canonical_name: 余贵美子
+  display_name: 余贵美子
+刘冠南:
+  canonical_name: 刘冠南
+  display_name: 刘冠南
+刘凯迪:
+  canonical_name: 刘凯迪
+  display_name: 刘凯迪
+刘琮:
+  canonical_name: 刘琮
+  display_name: 刘琮
+勇敢兄弟:
+  canonical_name: 勇敢兄弟
+  display_name: 勇敢兄弟
+吉子古且:
+  canonical_name: 吉子古且
+  display_name: 吉子古且
+向井理:
+  canonical_name: 向井理
+  display_name: 向井理
+塔斯肯:
+  canonical_name: 塔斯肯
+  display_name: 塔斯肯
+多部未华子:
+  canonical_name: 多部未华子
+  display_name: 多部未华子
+大籽:
+  canonical_name: 大籽
+  display_name: 大籽
+寺尾聪:
+  canonical_name: 寺尾聪
+  display_name: 寺尾聪
+小林薰:
+  canonical_name: 小林薰
+  display_name: 小林薰
+张德伊玲:
+  canonical_name: 张德伊玲
+  display_name: 张德伊玲
+张简君伟:
+  canonical_name: 张简君伟
+  display_name: 张简君伟
+於水:
+  canonical_name: 於水
+  display_name: 於水
+施人诚:
+  canonical_name: 施人诚
+  display_name: 施人诚
+木村绿子:
+  canonical_name: 木村绿子
+  display_name: 木村绿子
+李健:
+  canonical_name: 李健
+  display_name: 李健
+林夕:
+  canonical_name: 林夕
+  display_name: 林夕
+柄本时生:
+  canonical_name: 柄本时生
+  display_name: 柄本时生
+江楠:
+  canonical_name: 江楠
+  display_name: 江楠
+牛佳钰:
+  canonical_name: 牛佳钰
+  display_name: 牛佳钰
+王宗贤:
+  canonical_name: 王宗贤
+  display_name: 王宗贤
+石原里美:
+  canonical_name: 石原里美
+  display_name: 石原里美
+胜地凉:
+  canonical_name: 胜地凉
+  display_name: 胜地凉
+艾热 AIR:
+  romanized_name: 艾热 AIR
+  canonical_name: 艾热 AIR
+  display_name: 艾热 AIR
+苏运莹:
+  canonical_name: 苏运莹
+  display_name: 苏运莹
+董汶亮:
+  canonical_name: 董汶亮
+  display_name: 董汶亮
+角野卓造:
+  canonical_name: 角野卓造
+  display_name: 角野卓造
+许飞:
+  canonical_name: 许飞
+  display_name: 许飞
+谭晶:
+  canonical_name: 谭晶
+  chinese_name: 谭晶
+  display_name: 谭晶
+赵薇:
+  canonical_name: 赵薇
+  display_name: 赵薇
+路扬:
+  canonical_name: 路扬
+  display_name: 路扬
+邢聪:
+  canonical_name: 邢聪
+  display_name: 邢聪
+陈信荣:
+  canonical_name: 陈信荣
+  display_name: 陈信荣
+陈子平:
+  canonical_name: 陈子平
+  display_name: 陈子平
+陈粒:
+  canonical_name: 陈粒
+  display_name: 陈粒
+高冈早纪:
+  canonical_name: 高冈早纪
+  display_name: 高冈早纪

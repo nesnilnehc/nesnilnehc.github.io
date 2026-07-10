@@ -18,6 +18,25 @@ sidebar: false
   {% endfor %}
 {% endfor %}
 {% assign music_artists = music_artists | uniq | sort %}
+{% assign music_languages = "" | split: "" %}
+{% for track in site.data.music %}
+  {% for language in track.languages %}
+    {% assign music_languages = music_languages | push: language %}
+  {% endfor %}
+{% endfor %}
+{% assign music_languages = music_languages | uniq | sort %}
+{% assign music_primary_genres = "" | split: "" %}
+{% for track in site.data.music %}
+  {% assign music_primary_genres = music_primary_genres | push: track.primary_genre %}
+{% endfor %}
+{% assign music_primary_genres = music_primary_genres | uniq | sort %}
+{% assign music_genres = "" | split: "" %}
+{% for track in site.data.music %}
+  {% for genre in track.genres %}
+    {% assign music_genres = music_genres | push: genre %}
+  {% endfor %}
+{% endfor %}
+{% assign music_genres = music_genres | uniq | sort %}
 {% assign music_tags = "" | split: "" %}
 {% for track in site.data.music %}
   {% for tag in track.tags %}
@@ -37,8 +56,12 @@ sidebar: false
     <span class="collection-summary__label">个表演</span>
   </div>
   <div>
-    <span class="collection-summary__value">{{ music_tags | size }}</span>
-    <span class="collection-summary__label">个标签</span>
+    <span class="collection-summary__value">{{ music_languages | size }}</span>
+    <span class="collection-summary__label">种语种</span>
+  </div>
+  <div>
+    <span class="collection-summary__value">{{ music_primary_genres | size }}</span>
+    <span class="collection-summary__label">类主曲风</span>
   </div>
 </section>
 
@@ -60,29 +83,57 @@ sidebar: false
     </div>
   </div>
   <div class="music-filter">
+    <p class="music-filter__label">语种</p>
+    <div class="music-filter__controls" data-filter-group="music-language">
+      <button class="music-filter__button is-active" type="button" data-music-language-filter="all" aria-pressed="true">全部</button>
+      {% for language in music_languages %}
+      <button class="music-filter__button" type="button" data-music-language-filter="{{ language | escape }}" aria-pressed="false">{% include music-taxonomy-label.html group="languages" value=language %}</button>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="music-filter">
+    <p class="music-filter__label">主曲风</p>
+    <div class="music-filter__controls" data-filter-group="music-genre">
+      <button class="music-filter__button is-active" type="button" data-music-genre-filter="all" aria-pressed="true">全部</button>
+      {% for genre in music_primary_genres %}
+      <button class="music-filter__button" type="button" data-music-genre-filter="{{ genre | escape }}" aria-pressed="false">{% include music-taxonomy-label.html group="genres" value=genre %}</button>
+      {% endfor %}
+    </div>
+  </div>
+  {% if music_tags.size > 0 %}
+  <div class="music-filter">
     <p class="music-filter__label">标签</p>
     <div class="music-filter__controls" data-filter-group="music-tag">
       <button class="music-filter__button is-active" type="button" data-music-tag-filter="all" aria-pressed="true">全部</button>
       {% for tag in music_tags %}
-      <button class="music-filter__button" type="button" data-music-tag-filter="{{ tag | escape }}" aria-pressed="false">{{ tag }}</button>
+      <button class="music-filter__button" type="button" data-music-tag-filter="{{ tag | escape }}" aria-pressed="false">{% include music-taxonomy-label.html group="tags" value=tag %}</button>
       {% endfor %}
     </div>
   </div>
+  {% endif %}
 </section>
 
 <section class="music-shelf" aria-label="喜欢的音乐">
   {% for track in tracks_by_release %}
-  <article class="music-entry" data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count | default: 0 }}" data-music-order="{{ forloop.index0 }}">
+  <article class="music-entry" data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-languages="{{ track.languages | join: '|' | escape }}" data-music-genre="{{ track.primary_genre | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count | default: 0 }}" data-music-order="{{ forloop.index0 }}">
     <span class="music-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if track.count %}
     <span class="music-entry__count" aria-label="喜欢 {{ track.count }} 次">喜欢 {{ track.count }} 次</span>
     {% endif %}
     <div class="music-entry__title-group">
       <h2>{{ track.original_title }}{% if track.title and track.title != track.original_title %}（{{ track.title }}）{% endif %}</h2>
-      {% if track.tags %}
+      {% assign track_chip_count = track.languages.size | plus: 1 | plus: track.genres.size | plus: track.tags.size %}
+      {% if track_chip_count > 0 %}
       <ul class="music-entry__tags" aria-label="分类标签">
+        {% for language in track.languages %}
+        <li>{% include music-taxonomy-label.html group="languages" value=language %}</li>
+        {% endfor %}
+        <li>{% include music-taxonomy-label.html group="genres" value=track.primary_genre %}</li>
+        {% for genre in track.genres %}
+        <li>{% include music-taxonomy-label.html group="genre_styles" value=genre %}</li>
+        {% endfor %}
         {% for tag in track.tags %}
-        <li>{{ tag }}</li>
+        <li>{% include music-taxonomy-label.html group="tags" value=tag %}</li>
         {% endfor %}
       </ul>
       {% endif %}

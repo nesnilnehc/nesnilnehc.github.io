@@ -26,6 +26,7 @@ ALLOWED_ARTICLE_TYPES = %w[
   opinion
 ].freeze
 ALLOWED_DIFFICULTIES = %w[beginner intermediate advanced].freeze
+MUSIC_TAXONOMY_GROUPS = %w[languages genres tags].freeze
 
 errors = []
 
@@ -97,6 +98,54 @@ Dir.glob(POST_GLOB).sort.each do |path|
     errors << "#{path}: permalink must be a whitespace-free absolute path"
   end
 
+end
+
+begin
+  music = YAML.safe_load_file(
+    "_data/music.yml",
+    permitted_classes: [Date, Time],
+    aliases: true
+  ) || []
+  music_taxonomy = YAML.safe_load_file("_data/music_taxonomy.yml", aliases: true) || {}
+
+  music.each do |track|
+    title = track["title"] || "(untitled)"
+    primary_genre = track["primary_genre"]
+
+    if track.key?("contexts")
+      errors << "_data/music.yml: #{title} contexts has been folded into tags"
+    end
+
+    if primary_genre.to_s.empty?
+      errors << "_data/music.yml: #{title} primary_genre must not be empty"
+    elsif !music_taxonomy.fetch("genres", {}).key?(primary_genre)
+      errors << "_data/music.yml: #{title} has unmapped primary_genre: #{primary_genre}"
+    end
+
+    MUSIC_TAXONOMY_GROUPS.each do |group|
+      values = track[group]
+      unless values.is_a?(Array)
+        errors << "_data/music.yml: #{title} #{group} must be an array"
+        next
+      end
+
+      if group == "languages" && values.empty?
+        errors << "_data/music.yml: #{title} #{group} must not be empty"
+      end
+
+      if group == "genres" && values.include?(primary_genre)
+        errors << "_data/music.yml: #{title} genres must not repeat primary_genre"
+      end
+
+      taxonomy_group = group == "genres" ? "genre_styles" : group
+      unknown_values = values - music_taxonomy.fetch(taxonomy_group, {}).keys
+      next if unknown_values.empty?
+
+      errors << "_data/music.yml: #{title} has unmapped #{group}: #{unknown_values.join(", ")}"
+    end
+  end
+rescue Psych::SyntaxError => error
+  errors << "_data/music.yml or _data/music_taxonomy.yml: invalid YAML (#{error.message.lines.first.strip})"
 end
 
 if errors.empty?

@@ -136,15 +136,20 @@
 
   function applyMusicFilters() {
     const activeArtist = activeFilterValue("[data-music-filter]", "musicFilter");
+    const activeLanguage = activeFilterValue("[data-music-language-filter]", "musicLanguageFilter");
+    const activeGenre = activeFilterValue("[data-music-genre-filter]", "musicGenreFilter");
     const activeTag = activeFilterValue("[data-music-tag-filter]", "musicTagFilter");
     let visibleCount = 0;
 
     Array.from(document.querySelectorAll("[data-music-artists]")).forEach(function (entry) {
       const artists = splitValues(entry.dataset.musicArtists);
+      const languages = splitValues(entry.dataset.musicLanguages);
       const tags = splitValues(entry.dataset.musicTags);
       const artistMatches = activeArtist === "all" || artists.includes(activeArtist);
+      const languageMatches = activeLanguage === "all" || languages.includes(activeLanguage);
+      const genreMatches = activeGenre === "all" || entry.dataset.musicGenre === activeGenre;
       const tagMatches = activeTag === "all" || tags.includes(activeTag);
-      const isVisible = artistMatches && tagMatches;
+      const isVisible = artistMatches && languageMatches && genreMatches && tagMatches;
       entry.hidden = !isVisible;
       if (isVisible) visibleCount += 1;
     });
@@ -193,6 +198,20 @@
   Array.from(document.querySelectorAll("[data-music-filter]")).forEach(function (button) {
     button.addEventListener("click", function () {
       setActiveButton(button, "[data-music-filter]");
+      applyMusicFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-music-language-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-music-language-filter]");
+      applyMusicFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-music-genre-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-music-genre-filter]");
       applyMusicFilters();
     });
   });

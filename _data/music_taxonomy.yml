@@ -1,0 +1,44 @@
+languages:
+  zh: 中文
+  ko: 한국어
+  en: English
+  ja: 日本語
+  fr: Français
+
+genres:
+  blues: 布鲁斯 / Blues
+  classical: 古典 / Classical
+  country: 乡村 / Country
+  electronic: 电子 / Electronic
+  folk: 民谣 / Folk
+  funk: 放克 / Funk
+  hip-hop: 嘻哈 / Hip-Hop
+  jazz: 爵士 / Jazz
+  latin: 拉丁 / Latin
+  metal: 金属 / Metal
+  pop: 流行 / Pop
+  r-and-b: R&B / Soul
+  reggae: 雷鬼 / Reggae
+  rock: 摇滚 / Rock
+  traditional: 传统 / Traditional
+  world: 世界音乐 / World
+
+genre_styles:
+  alternative-pop: 另类流行 / Alternative Pop
+  ballad: 抒情 / Ballad
+  folk: 民谣 / Folk
+  indie-folk: 独立民谣 / Indie Folk
+  indie-pop: 独立流行 / Indie Pop
+
+tags:
+  collaboration: 合作
+  duet: 对唱
+  farewell: 告别
+  girl-group: 女团
+  j-pop: J-Pop
+  k-pop: K-Pop
+  live: 现场
+  night: 夜晚
+  solo: Solo
+  soundtrack: 原声
+  time: 时间

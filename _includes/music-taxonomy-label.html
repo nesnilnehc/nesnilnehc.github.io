@@ -1,0 +1,3 @@
+{%- assign taxonomy_group = site.data.music_taxonomy[include.group] -%}
+{%- assign taxonomy_label = taxonomy_group[include.value] -%}
+{{- taxonomy_label | default: include.value -}}

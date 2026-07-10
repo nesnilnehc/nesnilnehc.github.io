@@ -14,9 +14,13 @@
   release_title: "《天声一对》现场版"
   date: '2025-11-09'
   date_label: 节目日期
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
   tags:
-  - 现场
-  - 对唱
+  - live
+  - duet
   note: ''
   listen_links:
   - label: YouTube
@@ -34,9 +38,11 @@
   release_title: 火辣辣的日子
   date: '2018-09-01'
   date_label: 数字发行
-  tags:
-  - 华语
-  - 民歌
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags: []
   note: 云南弥渡民歌。
   listen_links:
   - label: Spotify
@@ -55,10 +61,14 @@
   release_title: 蒙面唱将猜猜猜 第3期
   date: '2016-10-02'
   date_label: 节目日期
+  languages:
+  - zh
+  primary_genre: folk
+  genres:
+  - ballad
   tags:
-  - 华语
-  - 现场
-  - 对唱
+  - live
+  - duet
   note: ''
   listen_links:
   - label: Apple Music
@@ -78,9 +88,11 @@
   release_title: 藍色土耳其
   date: '2007-10-24'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -100,9 +112,13 @@
   release_title: Coming of Age Ceremony
   date: '2000-07-26'
   date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - Solo
+  - k-pop
+  - solo
   note: ''
   listen_links:
   - label: Apple Music
@@ -122,9 +138,13 @@
   release_title: Wigglewiggle - Single
   date: '2015-01-05'
   date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - Girl Group
+  - k-pop
+  - girl-group
   note: ''
   listen_links:
   - label: Apple Music
@@ -144,9 +164,12 @@
   release_title: EYE(S) - Single
   date: '2022-02-07'
   date_label: 数字发行
-  tags:
-  - Indie
-  - Folk
+  languages:
+  - zh
+  primary_genre: folk
+  genres:
+  - indie-folk
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -166,9 +189,11 @@
   release_title: I'm Sorry
   date: '2015-10-22'
   date_label: 数字发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -188,9 +213,11 @@
   release_title: AMIT2
   date: '2015-04-04'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -210,9 +237,11 @@
   release_title: 阿衣莫 - Single
   date: '2017-10-13'
   date_label: 数字发行
-  tags:
-  - 华语
-  - 民歌
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -232,9 +261,11 @@
   release_title: 奇遇记
   date: '2023-08-01'
   date_label: 数字发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Spotify
@@ -254,9 +285,11 @@
   release_title: DONG - Single
   date: '2022-11-22'
   date_label: 数字发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -277,9 +310,14 @@
   release_title: Skyfall - Single
   date: '2014-11-13'
   date_label: 数字发行
+  languages:
+  - ko
+  - en
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - 合作
+  - k-pop
+  - collaboration
   note: Minah 为 Girl's Day 成员。
   listen_links:
   - label: Apple Music
@@ -299,9 +337,13 @@
   release_title: First Love
   date: '1996-10-01'
   date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres:
+  - ballad
   tags:
-  - K-Pop
-  - Ballad
+  - k-pop
   note: ''
   listen_links:
   - label: Apple Music
@@ -321,9 +363,11 @@
   release_title: CYNDILOVES2SING 愛。心凌
   date: '2018-12-07'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -346,9 +390,11 @@
   release_title: 寂靜的天空 (Silent Sky)
   date: '2009-05-20'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 民歌
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags: []
   note: Daiqing Tana 为 HAYA 乐团主唱。
   listen_links:
   - label: Apple Music
@@ -368,9 +414,12 @@
   release_title: 島人ぬ宝 - EP
   date: '2002-05-22'
   date_label: 数字发行
+  languages:
+  - ja
+  primary_genre: folk
+  genres: []
   tags:
-  - J-Pop
-  - 民歌
+  - j-pop
   note: 标题中的「島人」读作「しまんちゅ」，指岛上的人。
   listen_links:
   - label: Apple Music
@@ -393,9 +442,11 @@
   release_title: 入秋 - Single
   date: '2022-06-07'
   date_label: 数字发行
-  tags:
-  - 华语
-  - Hip-Hop
+  languages:
+  - zh
+  primary_genre: hip-hop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -416,9 +467,13 @@
   release_title: Heartbreaker
   date: '2009-08-18'
   date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
   tags:
-  - K-Pop
-  - Solo
+  - k-pop
+  - solo
   note: ''
   listen_links:
   - label: Apple Music
@@ -436,9 +491,14 @@
   release_title: One Fine Spring Day OST
   date: '2001-09-01'
   date_label: 专辑页日期
+  languages:
+  - ko
+  primary_genre: pop
+  genres:
+  - ballad
   tags:
-  - OST
-  - 告别
+  - soundtrack
+  - farewell
   note: ''
   listen_links:
   - label: Apple Music
@@ -456,9 +516,11 @@
   release_title: 林憶蓮's
   date: '2000-01-01'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -478,9 +540,14 @@
   release_title: Glass Mask
   date: '2004-03-05'
   date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres:
+  - ballad
   tags:
-  - K-Pop
-  - 夜晚
+  - k-pop
+  - night
   note: ''
   listen_links:
   - label: Apple Music
@@ -501,10 +568,14 @@
   release_context: Jamsil Olympic Stadium, Seoul
   date: '2012-08-11'
   date_label: 现场日期
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
   tags:
-  - K-Pop
-  - 现场
-  - 合作
+  - k-pop
+  - live
+  - collaboration
   note: ''
   listen_links:
   - label: YouTube
@@ -522,9 +593,14 @@
   release_title: The Road (From "Signal", Pt. 4) - Single
   date: '2016-02-20'
   date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres:
+  - ballad
   tags:
-  - OST
-  - K-Pop
+  - soundtrack
+  - k-pop
   note: ''
   listen_links:
   - label: Apple Music
@@ -548,9 +624,13 @@
   release_title: One of a Kind
   date: '2012-09-15'
   date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - 合作
+  - k-pop
+  - collaboration
   note: ''
   listen_links:
   - label: Spotify
@@ -575,9 +655,13 @@
   release_title: ME - Single
   date: '2023-03-31'
   date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - Solo
+  - k-pop
+  - solo
   note: JISOO 的首张个人单曲专辑收录曲。
   listen_links:
   - label: YouTube
@@ -595,9 +679,12 @@
   release_title: 还给时间 - Single
   date: '2023-04-17'
   date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
   tags:
-  - 华语
-  - 时间
+  - time
   note: ''
   listen_links:
   - label: Apple Music
@@ -617,9 +704,12 @@
   release_title: Honeymoon
   date: '2015-09-18'
   date_label: 专辑发行
-  tags:
-  - Pop
-  - Alternative
+  languages:
+  - en
+  primary_genre: pop
+  genres:
+  - alternative-pop
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -639,9 +729,12 @@
   release_title: 我用什么把你留住
   date: '2021-02-18'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 独立
+  languages:
+  - zh
+  primary_genre: pop
+  genres:
+  - indie-pop
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -664,9 +757,12 @@
   release_title: 成年
   date: '2021-12-14'
   date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
   tags:
-  - 华语
-  - 对唱
+  - duet
   note: ''
   listen_links:
   - label: 网易云音乐
@@ -687,9 +783,13 @@
   release_title: Trouble Maker - EP
   date: '2011-12-01'
   date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - 合作
+  - k-pop
+  - collaboration
   note: Trouble Maker 由张贤胜和泫雅组成。
   listen_links:
   - label: Apple Music
@@ -730,9 +830,12 @@
   release_title: APT. - Single
   date: '2024-10-18'
   date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
   tags:
-  - Pop
-  - 合作
+  - collaboration
   note: ''
   listen_links:
   - label: Apple Music
@@ -754,8 +857,12 @@
   release_title: songbird
   date: '1999-07-16'
   date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
   tags:
-  - J-Pop
+  - j-pop
   note: ''
   listen_links:
   - label: Apple Music
@@ -777,9 +884,12 @@
   release_title: 左耳 - Single
   date: '2015-04-13'
   date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
   tags:
-  - 华语
-  - OST
+  - soundtrack
   note: 电影《左耳》同名主题曲。
   listen_links:
   - label: Spotify
@@ -805,9 +915,11 @@
   release_title: 放空 - Single
   date: '2021-05-18'
   date_label: 数字发行
-  tags:
-  - 华语
-  - Hip-Hop
+  languages:
+  - zh
+  primary_genre: hip-hop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Spotify
@@ -829,9 +941,13 @@
   release_title: Only One
   date: '2012-07-22'
   date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - Solo
+  - k-pop
+  - solo
   note: ''
   listen_links:
   - label: Apple Music
@@ -854,10 +970,13 @@
   release_title: Music and Lyrics (Music from the Motion Picture)
   date: '2007-02-13'
   date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
   tags:
-  - OST
-  - Pop
-  - 对唱
+  - soundtrack
+  - duet
   note: 电影《K歌情人》原声歌曲。
   listen_links:
   - label: Apple Music
@@ -880,9 +999,13 @@
   release_title: CHAT-SHIRE
   date: '2015-10-23'
   date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
   tags:
-  - K-Pop
-  - Solo
+  - k-pop
+  - solo
   note: ''
   listen_links:
   - label: Apple Music
@@ -904,9 +1027,11 @@
   release_title: 贼
   date: '2016-08-04'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -928,9 +1053,11 @@
   release_title: 廿年笨蛋书
   date: '2025-05-08'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -950,8 +1077,11 @@
   release_title: A Night at the Opera
   date: '1975-11-21'
   date_label: 专辑发行
-  tags:
-  - Rock
+  languages:
+  - en
+  primary_genre: rock
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -976,9 +1106,14 @@
   release_title: Nuits d'été - Single
   date: '2020-04-24'
   date_label: 数字发行
+  languages:
+  - en
+  - fr
+  primary_genre: pop
+  genres:
+  - indie-pop
   tags:
-  - Indie Pop
-  - 合作
+  - collaboration
   note: ''
   listen_links:
   - label: Apple Music
@@ -998,8 +1133,11 @@
   release_title: Now & Then
   date: '1973-05-01'
   date_label: 专辑发行
-  tags:
-  - 流行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
   note: ''
   listen_links:
   - label: Spotify
@@ -1017,9 +1155,12 @@
   release_title: 第二季中国好歌曲十大金曲
   date: '2015-08-07'
   date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
   tags:
-  - 华语
-  - 现场
+  - live
   note: ''
   listen_links:
   - label: Apple Music
@@ -1041,9 +1182,11 @@
   release_title: 美丽心情
   date: '2001-02-24'
   date_label: 专辑发行
-  tags:
-  - 华语
-  - 流行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
   note: 改编自中岛美雪《帰省》。
   listen_links:
   - label: 网易云音乐
@@ -1061,9 +1204,87 @@
   release_title: 短篇集
   date: '2000-11-15'
   date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
   tags:
-  - J-Pop
+  - j-pop
   note: 本多RuRu《美丽心情》改编自此曲。
   listen_links:
   - label: Apple Music
     url: https://music.apple.com/jp/song/%E5%B8%B0%E7%9C%81/1539136659
+- title: 江山无限
+  count: 1
+  original_title: 江山无限
+  artist: 屠洪刚
+  artists:
+  - 屠洪刚
+  lyricists:
+  - 邹静之
+  composers:
+  - 赵季平
+  release_title: 精忠报国
+  date: '1999-09-01'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: traditional
+  genres: []
+  tags:
+  - soundtrack
+  note: 电视剧《康熙微服私访记》片头曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/%E6%B1%9F%E5%B1%B1%E6%97%A0%E9%99%90/1812773327
+  - label: Spotify
+    url: https://open.spotify.com/track/2vV41r6JW060fCcsNM1srK
+  - label: 网易云音乐
+    url: https://music.163.com/song?id=470759479
+- title: 偷心海盗
+  count: 1
+  original_title: 偷心海盗
+  artist: 栗儿
+  artists:
+  - 栗儿
+  lyricists:
+  - 栗儿
+  composers:
+  - 小童.David
+  release_title: 一千零一夜
+  date: '2006-05-26'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: QQ音乐
+    url: https://y.qq.com/n/ryqq/songDetail/00081r5M0uNy4A
+- title: Nine Million Bicycles
+  count: 1
+  original_title: Nine Million Bicycles
+  artist: Katie Melua
+  artists:
+  - Katie Melua
+  lyricists:
+  - Mike Batt
+  composers:
+  - Mike Batt
+  release_title: Piece by Piece
+  date: '2005-09-19'
+  date_label: 单曲发行
+  languages:
+  - en
+  primary_genre: pop
+  genres:
+  - folk
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/nine-million-bicycles/292453105
+  - label: Spotify
+    url: https://open.spotify.com/track/0xQdisF8CHkso4LnJcaIMr

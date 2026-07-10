@@ -1288,3 +1288,28 @@
     url: https://music.apple.com/us/song/nine-million-bicycles/292453105
   - label: Spotify
     url: https://open.spotify.com/track/0xQdisF8CHkso4LnJcaIMr
+- title: A-Ha
+  count: 1
+  original_title: A-Ha
+  artist: Ivy
+  artists:
+  - Ivy
+  lyricists:
+  - Choi Gap Won
+  composers:
+  - Kim Do Hoon
+  release_title: My Sweet And Free Day
+  date: '2005-07-19'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/6ZkBIzDPm46S5KfZs4oD2f
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/80108002

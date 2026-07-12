@@ -114,6 +114,7 @@
   }
 
   function applyMovieFilters() {
+    const activeType = activeFilterValue("[data-movie-type-filter]", "movieTypeFilter");
     const activeTag = activeFilterValue("[data-movie-filter]", "movieFilter");
     const activeDirector = activeFilterValue("[data-movie-director-filter]", "movieDirectorFilter");
     const activeCast = activeFilterValue("[data-movie-cast-filter]", "movieCastFilter");
@@ -122,16 +123,18 @@
     Array.from(document.querySelectorAll("[data-movie-tags]")).forEach(function (entry) {
       const tags = splitValues(entry.dataset.movieTags);
       const cast = splitValues(entry.dataset.movieCast);
+      const directors = splitValues(entry.dataset.movieDirector);
+      const typeMatches = activeType === "all" || entry.dataset.movieType === activeType;
       const tagMatches = activeTag === "all" || tags.includes(activeTag);
-      const directorMatches = activeDirector === "all" || entry.dataset.movieDirector === activeDirector;
+      const directorMatches = activeDirector === "all" || directors.includes(activeDirector);
       const castMatches = activeCast === "all" || cast.includes(activeCast);
-      const isVisible = tagMatches && directorMatches && castMatches;
+      const isVisible = typeMatches && tagMatches && directorMatches && castMatches;
       entry.hidden = !isVisible;
       if (isVisible) visibleCount += 1;
     });
 
     sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));
-    announce("已筛选出 " + visibleCount + " 部电影。");
+    announce("已筛选出 " + visibleCount + " 部影视作品。");
   }
 
   function applyMusicFilters() {
@@ -162,7 +165,7 @@
     button.addEventListener("click", function () {
       setActiveButton(button, "[data-movie-sort]");
       sortCollection(".movie-shelf", ".movie-entry", "movie", button.dataset.movieSort);
-      announce(button.dataset.movieSort === "count" ? "已按喜欢次数排序电影。" : "已按时间排序电影。");
+      announce(button.dataset.movieSort === "count" ? "已按喜欢次数排序影视作品。" : "已按时间排序影视作品。");
     });
   });
 
@@ -177,6 +180,13 @@
   Array.from(document.querySelectorAll("[data-movie-filter]")).forEach(function (button) {
     button.addEventListener("click", function () {
       setActiveButton(button, "[data-movie-filter]");
+      applyMovieFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-movie-type-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-movie-type-filter]");
       applyMovieFilters();
     });
   });

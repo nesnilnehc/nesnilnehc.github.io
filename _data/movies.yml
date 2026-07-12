@@ -1,6 +1,7 @@
 ---
 - original_title: Green Book
   count: 1
+  type: film
   chinese_title: 绿皮书
   director: Peter Farrelly
   cast:
@@ -18,6 +19,7 @@
   note: 影片基于 Tony Lip 与 Don Shirley 1962 年美国南方巡演经历改编。
 - original_title: Bohemian Rhapsody
   count: 1
+  type: film
   chinese_title: 波西米亚狂想曲
   director: Bryan Singer
   cast:
@@ -37,6 +39,7 @@
   note: 影片以 Queen 乐队主唱 Freddie Mercury 的生平与 Live Aid 演出为主要叙事。
 - original_title: 人生最高の贈りもの
   count: 1
+  type: film
   chinese_title: 人生最棒的礼物
   director: Kan Ishibashi
   cast:
@@ -57,6 +60,7 @@
   note: ''
 - original_title: Flamin' Hot
   count: 1
+  type: film
   chinese_title: 热辣奇多的诞生
   director: Eva Longoria
   cast:
@@ -75,6 +79,7 @@
   note: 影片改编自 Richard Montañez 关于 Flamin' Hot Cheetos 的回忆录叙述。
 - original_title: The Pursuit of Happyness
   count: 1
+  type: film
   chinese_title: 当幸福来敲门
   director: Gabriele Muccino
   cast:
@@ -92,6 +97,7 @@
   note: 影片根据 Chris Gardner 的真实经历及同名回忆录改编。
 - original_title: Forrest Gump
   count: 1
+  type: film
   chinese_title: 阿甘正传
   director: Robert Zemeckis
   cast:
@@ -111,6 +117,7 @@
   note: 影片改编自 Winston Groom 1986 年同名小说。
 - original_title: The Shawshank Redemption
   count: 1
+  type: film
   chinese_title: 肖申克的救赎
   director: Frank Darabont
   cast:
@@ -130,6 +137,7 @@
   note: 影片改编自 Stephen King 中篇小说《Rita Hayworth and Shawshank Redemption》。
 - original_title: 浪浪山小妖怪
   count: 1
+  type: film
   chinese_title: 浪浪山小妖怪
   director: 於水
   cast:
@@ -148,6 +156,7 @@
   note: 影片延续《中国奇谭》单元《小妖怪的夏天》的世界观。
 - original_title: The Way
   count: 1
+  type: film
   chinese_title: 朝圣之路
   director: Emilio Estevez
   cast:
@@ -167,6 +176,7 @@
   note: 片名中的 The Way 指圣地亚哥朝圣之路。
 - original_title: Good Will Hunting
   count: 1
+  type: film
   chinese_title: 心灵捕手
   director: Gus Van Sant
   cast:
@@ -186,6 +196,7 @@
   note: 影片剧本由 Matt Damon 与 Ben Affleck 共同编写。
 - original_title: Quiz Show
   count: 1
+  type: film
   chinese_title: 机智问答
   director: Robert Redford
   cast:
@@ -205,6 +216,7 @@
   note: 影片取材自 1950 年代美国电视问答节目作弊丑闻。
 - original_title: The Founder
   count: 1
+  type: film
   chinese_title: 大创业家
   director: John Lee Hancock
   cast:
@@ -225,6 +237,7 @@
   note: 影片以 Ray Kroc 与麦当劳连锁扩张历史为主要素材。
 - original_title: 映画 深夜食堂
   count: 1
+  type: film
   chinese_title: 深夜食堂
   director: Joji Matsuoka
   cast:
@@ -244,6 +257,7 @@
   note: 影片改编自安倍夜郎漫画《深夜食堂》。
 - original_title: Léon
   count: 1
+  type: film
   chinese_title: 这个杀手不太冷
   director: Luc Besson
   cast:
@@ -262,6 +276,7 @@
   note: ''
 - original_title: "The Lord of the Rings: The Fellowship of the Ring"
   count: 1
+  type: film
   chinese_title: 指环王1：护戒使者
   director: Peter Jackson
   cast:
@@ -281,6 +296,7 @@
   note: 影片改编自 J.R.R. Tolkien 同名小说三部曲首部。
 - original_title: "The Lord of the Rings: The Two Towers"
   count: 1
+  type: film
   chinese_title: 指环王2：双塔奇兵
   director: Peter Jackson
   cast:
@@ -300,6 +316,7 @@
   note: ''
 - original_title: "The Lord of the Rings: The Return of the King"
   count: 1
+  type: film
   chinese_title: 指环王3：王者无敌
   director: Peter Jackson
   cast:
@@ -317,3 +334,150 @@
   - 奇幻
   - 冒险
   note: ''
+- original_title: The Red Race
+  count: 1
+  type: documentary
+  chinese_title: 红跑道
+  director: 干超
+  cast: []
+  premiere_date: '2008-06-22'
+  premiere_note: AFI Silverdocs Documentary Festival
+  imdb_url: https://www.imdb.com/title/tt1433221/
+  poster: "/assets/images/movies/the-red-race.jpg"
+  poster_fit: contain
+  awards: 第 14 届上海电视节白玉兰奖最佳社会类纪录片金奖；2008 年 AFI Silverdocs 国际纪录片竞赛单元评委会特别奖；Peabody Award。
+  tags:
+  - 体育
+  note: 作品记录上海少体校体操儿童的训练与家庭处境。
+- original_title: Naruto
+  count: 1
+  type: animation-series
+  chinese_title: 火影忍者
+  director: Hayato Date
+  cast:
+  - Junko Takeuchi
+  - Noriaki Sugiyama
+  - Chie Nakamura
+  - Kazuhiko Inoue
+  - Toshihiko Seki
+  - Showtaro Morikubo
+  - Ryoka Yuzuki
+  - Kentaro Ito
+  - Kosuke Toriumi
+  - Nana Mizuki
+  - Shinji Kawada
+  - Yoichi Masukawa
+  - Koichi Tochika
+  - Yukari Tamura
+  - Hochu Otsuka
+  - Masako Katsuki
+  - Kujira
+  - Nobutoshi Canna
+  - Akira Ishida
+  premiere_date: '2002-10-03'
+  premiere_note: TV Tokyo 首播
+  imdb_url: https://www.imdb.com/title/tt0409591/
+  poster: "/assets/images/movies/naruto.webp"
+  awards: IMDb 记录为 1 项获奖。
+  tags:
+  - 动画
+  - 少年
+  note: 动画改编自岸本齐史同名漫画。
+- original_title: 런닝맨
+  count: 1
+  type: variety
+  chinese_title: Running Man
+  director: Jo Hyo-jin
+  cast:
+  - Yoo Jae-suk
+  - Jee Seok-jin
+  - Kim Jong-kook
+  - Haha
+  - Song Ji-hyo
+  - Yang Se-chan
+  - Ji Ye-eun
+  - Kang Hoon
+  - Choi Daniel
+  - Lizzy
+  - Song Joong-ki
+  - Gary
+  - Lee Kwang-soo
+  - Jeon So-min
+  premiere_date: '2010-07-11'
+  premiere_note: SBS 首播
+  imdb_url: https://www.imdb.com/title/tt2185037/
+  poster: "/assets/images/movies/running-man.webp"
+  awards: 多次获得 SBS Entertainment Awards 节目类奖项，包括 2025 年 Program of the Year。
+  tags:
+  - 游戏
+  note: ''
+- original_title: 三国演义
+  count: 1
+  type: tv-series
+  chinese_title: 三国演义
+  director: 王扶林
+  cast:
+  - 鲍国安
+  - 唐国强
+  - 孙彦军
+  - 陆树铭
+  - 李靖飞
+  - 吴晓东
+  - 洪宇宙
+  - 魏宗万
+  - 张光北
+  premiere_date: '1994-10-23'
+  premiere_note: CCTV 首播
+  imdb_url: https://www.imdb.com/title/tt0108914/
+  poster: "/assets/images/movies/san-guo-yan-yi.jpg"
+  awards: 获中国电视剧飞天奖优秀连续剧、优秀男演员、优秀美术奖；中国电视金鹰奖最佳长篇电视剧等。
+  tags:
+  - 历史
+  - 名著改编
+  note: 电视剧改编自罗贯中长篇小说《三国演义》。
+- original_title: 天道
+  count: 1
+  type: tv-series
+  chinese_title: 天道
+  director: 张前
+  cast:
+  - 王志文
+  - 左小青
+  - 曾红生
+  - 石爻
+  - 郑强
+  - 王全有
+  - 施大生
+  - 李洪权
+  premiere_date: '2008-06-01'
+  premiere_note: 中国大陆首播
+  imdb_url: https://www.imdb.com/title/tt31887480/
+  poster: "/assets/images/movies/tian-dao.png"
+  awards: 未见主要影视奖项记录。
+  tags:
+  - 商业
+  - 小说改编
+  note: 电视剧改编自豆豆长篇小说《遥远的救世主》。
+- original_title: Friends
+  count: 1
+  type: tv-series
+  chinese_title: 老友记
+  directors:
+  - David Crane
+  - Marta Kauffman
+  cast:
+  - Jennifer Aniston
+  - Courteney Cox
+  - Lisa Kudrow
+  - Matt LeBlanc
+  - Matthew Perry
+  - David Schwimmer
+  premiere_date: '1994-09-22'
+  premiere_note: NBC 首播
+  imdb_url: https://www.imdb.com/title/tt0108778/
+  poster: "/assets/images/movies/friends.jpg"
+  awards: 62 项 Primetime Emmy Awards 提名，获 6 项；第 54 届 Primetime Emmy Awards 最佳喜剧剧集。
+  tags:
+  - 情景喜剧
+  - 友情
+  note: 全剧共 10 季 236 集。

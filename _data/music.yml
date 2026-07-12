@@ -1313,3 +1313,49 @@
     url: https://open.spotify.com/track/6ZkBIzDPm46S5KfZs4oD2f
   - label: Bugs
     url: https://music.bugs.co.kr/track/80108002
+- title: 出现又离开
+  count: 1
+  original_title: 出现又离开 (Live)
+  artist: 梁博
+  artists:
+  - 梁博
+  lyricists:
+  - 梁博
+  composers:
+  - 梁博
+  release_title: 我是唱作人 第2期 (Live)
+  date: '2019-04-19'
+  date_label: 节目发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - live
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E5%87%BA%E7%8E%B0%E5%8F%88%E7%A6%BB%E5%BC%80-live/1850931804?i=1850931814
+- title: 那就是我
+  count: 1
+  original_title: 那就是我
+  artist: 关贵敏
+  artists:
+  - 关贵敏
+  lyricists:
+  - 晓光
+  composers:
+  - 谷建芬
+  release_title: 那就是我
+  date: '1982-01-01'
+  date_label: 创作年份
+  languages:
+  - zh
+  primary_genre: traditional
+  genres:
+  - folk
+  tags: []
+  note: ''
+  listen_links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=M744wSK2t4w

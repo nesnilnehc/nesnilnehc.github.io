@@ -166,8 +166,9 @@ sidebar: false
       </div>
       {% endif %}
     </dl>
-    {% if track.note %}
-    <p class="music-entry__note">{{ track.note }}</p>
+    {% assign track_note = track.note | strip %}
+    {% if track_note != "" %}
+    <p class="music-entry__note">{{ track_note }}</p>
     {% endif %}
   </article>
   {% endfor %}

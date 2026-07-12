@@ -27,6 +27,17 @@ ALLOWED_ARTICLE_TYPES = %w[
 ].freeze
 ALLOWED_DIFFICULTIES = %w[beginner intermediate advanced].freeze
 MUSIC_TAXONOMY_GROUPS = %w[languages genres tags].freeze
+MOVIE_REQUIRED_FIELDS = %w[
+  original_title
+  count
+  type
+  premiere_date
+  imdb_url
+  poster
+  awards
+  tags
+  note
+].freeze
 
 errors = []
 
@@ -146,6 +157,77 @@ begin
   end
 rescue Psych::SyntaxError => error
   errors << "_data/music.yml or _data/music_taxonomy.yml: invalid YAML (#{error.message.lines.first.strip})"
+end
+
+begin
+  movies = YAML.safe_load_file(
+    "_data/movies.yml",
+    permitted_classes: [Date, Time],
+    aliases: true
+  ) || []
+  movie_types = YAML.safe_load_file("_data/movie_types.yml", aliases: true) || {}
+  person_names = YAML.safe_load_file("_data/person_names.yml", aliases: true) || {}
+  group_names = YAML.safe_load_file("_data/group_names.yml", aliases: true) || {}
+
+  movies.each do |movie|
+    title = movie["chinese_title"] || movie["original_title"] || "(untitled)"
+
+    MOVIE_REQUIRED_FIELDS.each do |field|
+      value = movie[field]
+      missing_value = value.nil? || (field != "note" && value == "")
+      errors << "_data/movies.yml: #{title} missing #{field}" if missing_value
+    end
+
+    credit_names = movie["directors"] || [movie["director"]].compact
+    if credit_names.empty?
+      errors << "_data/movies.yml: #{title} missing director or directors"
+    elsif !credit_names.is_a?(Array)
+      errors << "_data/movies.yml: #{title} directors must be an array"
+    elsif credit_names.any? { |name| name.to_s.strip.empty? }
+      errors << "_data/movies.yml: #{title} directors must not contain empty names"
+    end
+
+    unmapped_credit_names = (credit_names + Array(movie["cast"])).uniq.reject do |name|
+      person_names.key?(name) || group_names.key?(name)
+    end
+    unless unmapped_credit_names.empty?
+      errors << "_data/movies.yml: #{title} has unmapped credit names: #{unmapped_credit_names.join(", ")}"
+    end
+
+    type = movie["type"]
+    type_label = movie_types[type]
+    if type.to_s.empty?
+      errors << "_data/movies.yml: #{title} type must not be empty"
+    elsif !movie_types.key?(type)
+      errors << "_data/movies.yml: #{title} has unmapped type: #{type}"
+    end
+
+    poster = movie["poster"].to_s
+    if poster.empty?
+      errors << "_data/movies.yml: #{title} poster must not be empty"
+    elsif !File.exist?(poster.sub(%r{\A/}, ""))
+      errors << "_data/movies.yml: #{title} poster file does not exist: #{poster}"
+    end
+
+    tags = movie["tags"]
+    unless tags.is_a?(Array)
+      errors << "_data/movies.yml: #{title} tags must be an array"
+      next
+    end
+
+    if type_label && tags.include?(type_label)
+      errors << "_data/movies.yml: #{title} tags must not repeat type label: #{type_label}"
+    end
+
+    cast = movie["cast"]
+    if cast && !cast.is_a?(Array)
+      errors << "_data/movies.yml: #{title} cast must be an array"
+    elsif cast&.any? { |member| member.to_s.strip.empty? }
+      errors << "_data/movies.yml: #{title} cast must not contain empty names"
+    end
+  end
+rescue Psych::SyntaxError => error
+  errors << "_data/movies.yml or _data/movie_types.yml: invalid YAML (#{error.message.lines.first.strip})"
 end
 
 if errors.empty?

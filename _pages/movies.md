@@ -157,8 +157,8 @@ sidebar: false
       </div>
       {% endif %}
       <div>
-        <dt>首播/上映</dt>
-        <dd><time datetime="{{ movie.premiere_date }}">{{ movie.premiere_date }}</time>{% if movie.premiere_note %}<span>{{ movie.premiere_note }}</span>{% endif %}</dd>
+        <dt>播映</dt>
+        <dd class="movie-entry__premiere">{% include movie-premiere.html date=movie.premiere_date note=movie.premiere_note type=movie.type %}</dd>
       </div>
       <div>
         <dt>获奖</dt>

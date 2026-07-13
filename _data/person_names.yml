@@ -681,6 +681,12 @@ aMEI:
 张德伊玲:
   canonical_name: 张德伊玲
   display_name: 张德伊玲
+墨臻:
+  canonical_name: 墨臻
+  display_name: 墨臻
+素素:
+  canonical_name: 素素
+  display_name: 素素
 张简君伟:
   canonical_name: 张简君伟
   display_name: 张简君伟
@@ -857,6 +863,26 @@ Matthew Perry:
   canonical_name: Matthew Perry
   chinese_name: 马修·派瑞
   display_name: Matthew Perry · 马修·派瑞
+Stefanie Heinzmann:
+  romanized_name: Stefanie Heinzmann
+  canonical_name: Stefanie Heinzmann
+  display_name: Stefanie Heinzmann
+Niara Scarlett:
+  romanized_name: Niara Scarlett
+  canonical_name: Niara Scarlett
+  display_name: Niara Scarlett
+Jens Bergmark:
+  romanized_name: Jens Bergmark
+  canonical_name: Jens Bergmark
+  display_name: Jens Bergmark
+Henrik Korpi:
+  romanized_name: Henrik Korpi
+  canonical_name: Henrik Korpi
+  display_name: Henrik Korpi
+Mattias Franzen:
+  romanized_name: Mattias Franzen
+  canonical_name: Mattias Franzen
+  display_name: Mattias Franzen
 Noriaki Sugiyama:
   romanized_name: Noriaki Sugiyama
   canonical_name: 杉山紀彰
@@ -1035,6 +1061,10 @@ Yukari Tamura:
 张光北:
   canonical_name: 张光北
   display_name: 张光北
+小霞:
+  romanized_name: Xiao Xia
+  canonical_name: 小霞
+  chinese_name: 黄绮珊
 李洪权:
   canonical_name: 李洪权
   display_name: 李洪权
@@ -1047,6 +1077,9 @@ Yukari Tamura:
 郑强:
   canonical_name: 郑强
   display_name: 郑强
+金润吉:
+  canonical_name: 金润吉
+  display_name: 金润吉
 魏宗万:
   canonical_name: 魏宗万
   display_name: 魏宗万

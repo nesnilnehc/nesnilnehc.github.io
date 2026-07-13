@@ -156,8 +156,8 @@ sidebar: false
       </div>
       {% endif %}
       <div>
-        <dt>发行</dt>
-        <dd><time datetime="{{ track.date }}">{{ track.date }}</time>{% if track.date_label %}<span>{{ track.date_label }}</span>{% endif %}<span>{{ track.release_title }}{% if track.release_context %} · {{ track.release_context }}{% endif %}</span></dd>
+        <dt>来源</dt>
+        <dd class="music-entry__release">{% include music-release.html date=track.date date_label=track.date_label release_title=track.release_title release_context=track.release_context title=track.title original_title=track.original_title %}</dd>
       </div>
       {% if track.listen_links %}
       <div>

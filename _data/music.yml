@@ -11,7 +11,7 @@
   - 艾热 AIR
   composers:
   - 陈粒
-  release_title: "《天声一对》现场版"
+  release_title: 天声一对
   date: '2025-11-09'
   date_label: 节目日期
   languages:
@@ -667,15 +667,16 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=YudHcBIxlYw
 - title: 还给时间
-  count: 1
+  count: 2
   original_title: 还给时间
   artist: 张德伊玲
   artists:
   - 张德伊玲
   lyricists:
-  - 张德伊玲
+  - 墨臻
+  - 素素
   composers:
-  - 张德伊玲
+  - 墨臻
   release_title: 还给时间 - Single
   date: '2023-04-17'
   date_label: 数字发行
@@ -683,8 +684,7 @@
   - zh
   primary_genre: pop
   genres: []
-  tags:
-  - time
+  tags: []
   note: ''
   listen_links:
   - label: Apple Music
@@ -1065,7 +1065,7 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=yuB1THeAXzE
 - title: 波西米亚狂想曲
-  count: 1
+  count: 2
   original_title: Bohemian Rhapsody
   artist: Queen
   artists:
@@ -1359,3 +1359,73 @@
   listen_links:
   - label: YouTube
     url: https://www.youtube.com/watch?v=M744wSK2t4w
+- title: Like a Bullet
+  count: 1
+  original_title: Like a Bullet
+  artist: Stefanie Heinzmann
+  artists:
+  - Stefanie Heinzmann
+  lyricists:
+  - Niara Scarlett
+  - Jens Bergmark
+  - Henrik Korpi
+  - Mattias Franzen
+  composers:
+  - Niara Scarlett
+  - Jens Bergmark
+  - Henrik Korpi
+  - Mattias Franzen
+  release_title: Like a Bullet
+  date: '2008-04-18'
+  date_label: 单曲发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/like-a-bullet/1443563148?i=1443563156
+  - label: Spotify
+    url: https://open.spotify.com/track/2QaB1sSrq4NLEbxf15Dm5U
+- title: DISCO
+  count: 1
+  original_title: DISCO
+  artist: 金润吉
+  artists:
+  - 金润吉
+  lyricists:
+  - 金润吉
+  composers:
+  - 金润吉
+  release_title: DISCO
+  date: '2025-09-09'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/3JgttO54pEj78mMbLY41wu
+- title: 我的美丽
+  count: 1
+  original_title: 我的美丽
+  artist: 小霞
+  artists:
+  - 小霞
+  release_title: X II A O
+  date: '2021-12-15'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/my-beauty/1598308142?i=1598308359

@@ -509,12 +509,14 @@ h4[id] {
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    span:not(.credit-name):not(.person-inline-separator) {
-      display: inline;
+    &:not(.movie-entry__premiere):not(.music-entry__release):not(.music-entry__links) {
+      span:not(.credit-name):not(.person-inline-separator) {
+        display: inline;
 
-      &::before {
-        content: " / ";
-        color: var(--line);
+        &::before {
+          content: " / ";
+          color: var(--line);
+        }
       }
     }
   }
@@ -540,10 +542,12 @@ h4[id] {
   }
 }
 
+.movie-entry__separator,
 .music-entry__separator {
   color: var(--line);
 }
 
+.movie-entry__premiere,
 .music-entry__links {
   display: inline-flex;
   flex-wrap: wrap;
@@ -555,6 +559,28 @@ h4[id] {
 
   a,
   .music-entry__separator {
+    white-space: nowrap;
+  }
+}
+
+.movie-entry__premiere {
+  time,
+  span {
+    white-space: nowrap;
+  }
+}
+
+.music-entry__release {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 0.35rem;
+  align-items: baseline;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+
+  time,
+  span {
     white-space: nowrap;
   }
 }

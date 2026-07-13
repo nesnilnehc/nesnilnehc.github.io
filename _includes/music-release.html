@@ -1,0 +1,56 @@
+{%- assign release_kind = include.date_label | default: "" | strip -%}
+{%- assign release_title = include.release_title | default: "" | strip -%}
+{%- assign release_context = include.release_context | default: "" | strip -%}
+{%- assign track_title = include.title | default: "" | strip -%}
+{%- assign original_title = include.original_title | default: "" | strip -%}
+{%- if release_title contains " - Single" -%}
+  {%- assign release_title_clean = release_title | replace: " - Single", "" -%}
+{%- elsif release_title contains " - EP" -%}
+  {%- assign release_title_clean = release_title | replace: " - EP", "" -%}
+{%- else -%}
+  {%- assign release_title_clean = release_title -%}
+{%- endif -%}
+{%- assign release_title_clean = release_title_clean | replace: "《", "" | replace: "》", "" | strip -%}
+{%- assign release_title_matches_track = false -%}
+{%- if release_title_clean == track_title or release_title_clean == original_title -%}
+  {%- assign release_title_matches_track = true -%}
+{%- endif -%}
+{%- case release_kind -%}
+  {%- when "专辑发行" -%}
+    {%- assign release_kind = "专辑" -%}
+  {%- when "专辑页日期" -%}
+    {%- assign release_kind = "专辑" -%}
+  {%- when "数字发行" -%}
+    {%- if release_title contains " - EP" -%}
+      {%- assign release_kind = "EP" -%}
+    {%- elsif release_title contains "OST" or release_title contains "From " -%}
+      {%- assign release_kind = "原声" -%}
+    {%- elsif release_title contains " - Single" -%}
+      {%- assign release_kind = "单曲" -%}
+    {%- elsif release_title_matches_track -%}
+      {%- assign release_kind = "单曲" -%}
+    {%- else -%}
+      {%- assign release_kind = "收录" -%}
+    {%- endif -%}
+  {%- when "单曲发行" -%}
+    {%- if release_title_matches_track or release_title == "" -%}
+      {%- assign release_kind = "单曲" -%}
+    {%- else -%}
+      {%- assign release_kind = "收录" -%}
+    {%- endif -%}
+  {%- when "节目日期" -%}
+    {%- assign release_kind = "节目" -%}
+  {%- when "节目发行" -%}
+    {%- assign release_kind = "节目" -%}
+  {%- when "现场日期" -%}
+    {%- assign release_kind = "现场" -%}
+  {%- when "创作年份" -%}
+    {%- assign release_kind = "创作" -%}
+{%- endcase -%}
+{%- assign show_release_title = true -%}
+{%- if release_title_clean == "" -%}
+  {%- assign show_release_title = false -%}
+{%- elsif release_kind == "单曲" and release_title_matches_track -%}
+  {%- assign show_release_title = false -%}
+{%- endif -%}
+<time datetime="{{ include.date }}">{{ include.date }}</time>{%- if release_kind != "" -%}<span class="music-entry__separator">/</span><span>{%- if show_release_title -%}{{ release_kind }}《{{ release_title_clean }}》{%- else -%}{{ release_kind }}{%- endif -%}</span>{%- endif -%}{%- if release_context != "" -%}<span class="music-entry__separator">/</span><span>{{ release_context }}</span>{%- endif -%}

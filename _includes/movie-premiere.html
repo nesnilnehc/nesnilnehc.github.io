@@ -1,0 +1,27 @@
+{%- assign work_type = include.type | default: "film" | strip -%}
+{%- assign note = include.note | default: "" | strip -%}
+{%- assign event_kind = "" -%}
+{%- assign event_place = note -%}
+{%- if note == "" -%}
+  {%- assign event_place = "" -%}
+{%- elsif note contains "首播" -%}
+  {%- assign event_place = note | replace: " 首播", "" | replace: "首播", "" | strip -%}
+  {%- if work_type == "tv-series" or work_type == "animation-series" or work_type == "variety" -%}
+    {%- assign event_kind = "电视首播" -%}
+  {%- else -%}
+    {%- assign event_kind = "首播" -%}
+  {%- endif -%}
+{%- elsif note contains "上映" -%}
+  {%- assign event_place = note | replace: " 上映", "" | replace: "上映", "" | strip -%}
+  {%- assign event_kind = "上映" -%}
+{%- elsif note contains "Film Festival" or note contains "Silverdocs" or note contains "South by Southwest" -%}
+  {%- assign event_kind = "电影节" -%}
+{%- elsif note contains "premiere" or note contains "首映" -%}
+  {%- assign event_place = note | replace: " premiere", "" | replace: "首映", "" | strip -%}
+  {%- assign event_kind = "首映" -%}
+{%- elsif work_type == "film" or work_type == "documentary" -%}
+  {%- assign event_kind = "首映" -%}
+{%- else -%}
+  {%- assign event_kind = "首播" -%}
+{%- endif -%}
+<time datetime="{{ include.date }}">{{ include.date }}</time>{%- if event_kind != "" -%}<span class="movie-entry__separator">/</span><span>{{ event_kind }}</span>{%- endif -%}{%- if event_place != "" -%}<span class="movie-entry__separator">/</span><span>{{ event_place }}</span>{%- endif -%}

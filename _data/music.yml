@@ -1473,3 +1473,27 @@
     url: https://music.apple.com/cn/song/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8-love-growth/1694247363
   - label: Spotify
     url: https://open.spotify.com/track/792k4anV331nos5pLSqDaL
+- title: Last Smile
+  count: 1
+  original_title: Last Smile
+  artist: LOVE PSYCHEDELICO
+  artists:
+  - LOVE PSYCHEDELICO
+  lyricists:
+  - Kumi
+  composers:
+  - Naoki
+  release_title: Last Smile
+  date: '2000-11-01'
+  date_label: 单曲发行
+  languages:
+  - en
+  primary_genre: rock
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/3AiObRbCpA13ez1ki5JpVK
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=bKn_lz6NoBA

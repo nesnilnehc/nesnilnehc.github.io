@@ -1429,3 +1429,29 @@
   listen_links:
   - label: Apple Music
     url: https://music.apple.com/us/album/my-beauty/1598308142?i=1598308359
+- title: 光合作用（Love Growth）
+  count: 1
+  original_title: 光合作用（Love Growth）
+  artist: 曾涵江; 卫彬月
+  artists:
+  - 曾涵江
+  - 卫彬月
+  lyricists:
+  - 曾涵江
+  composers:
+  - 曾涵江
+  release_title: 光合作用（Love Growth） - Single
+  date: '2023-06-09'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/%E5%85%89%E5%90%88%E4%BD%9C%E7%94%A8-love-growth/1694247363
+  - label: Spotify
+    url: https://open.spotify.com/track/792k4anV331nos5pLSqDaL

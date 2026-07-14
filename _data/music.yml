@@ -49,7 +49,7 @@
     url: https://open.spotify.com/track/5bVugwry6czApFV2SL3Ifn
 - title: 贝加尔湖畔
   count: 3
-  original_title: 貝加爾湖畔 (Live)
+  original_title: 貝加爾湖畔
   artist: 谭晶; 塔斯肯
   artists:
   - 谭晶
@@ -1315,7 +1315,7 @@
     url: https://music.bugs.co.kr/track/80108002
 - title: 出现又离开
   count: 1
-  original_title: 出现又离开 (Live)
+  original_title: 出现又离开
   artist: 梁博
   artists:
   - 梁博
@@ -1323,7 +1323,7 @@
   - 梁博
   composers:
   - 梁博
-  release_title: 我是唱作人 第2期 (Live)
+  release_title: 我是唱作人 第2期
   date: '2019-04-19'
   date_label: 节目发行
   languages:

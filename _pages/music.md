@@ -162,7 +162,7 @@ sidebar: false
       {% if track.listen_links %}
       <div>
         <dt>收听</dt>
-        <dd class="music-entry__links">{% for link in track.listen_links %}<a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>{% unless forloop.last %}<span class="music-entry__separator">/</span>{% endunless %}{% endfor %}</dd>
+        <dd class="music-entry__links">{% for link in track.listen_links %}{% include music-listen-link.html label=link.label url=link.url %}{% unless forloop.last %}<span class="music-entry__separator">/</span>{% endunless %}{% endfor %}</dd>
       </div>
       {% endif %}
     </dl>

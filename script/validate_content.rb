@@ -38,6 +38,19 @@ MOVIE_REQUIRED_FIELDS = %w[
   tags
   note
 ].freeze
+BOOK_REQUIRED_FIELDS = %w[
+  original_title
+  chinese_title
+  count
+  authors
+  category
+  tags
+  original_publish_date
+  publisher
+  isbn
+  source_url
+  note
+].freeze
 
 errors = []
 
@@ -228,6 +241,54 @@ begin
   end
 rescue Psych::SyntaxError => error
   errors << "_data/movies.yml or _data/movie_types.yml: invalid YAML (#{error.message.lines.first.strip})"
+end
+
+begin
+  books = YAML.safe_load_file(
+    "_data/books.yml",
+    permitted_classes: [Date, Time],
+    aliases: true
+  ) || []
+  person_names = YAML.safe_load_file("_data/person_names.yml", aliases: true) || {}
+  group_names = YAML.safe_load_file("_data/group_names.yml", aliases: true) || {}
+
+  books.each do |book|
+    title = book["chinese_title"] || book["original_title"] || "(untitled)"
+
+    BOOK_REQUIRED_FIELDS.each do |field|
+      value = book[field]
+      missing_value = value.nil? || (field != "note" && value == "")
+      errors << "_data/books.yml: #{title} missing #{field}" if missing_value
+    end
+
+    authors = book["authors"]
+    if authors && !authors.is_a?(Array)
+      errors << "_data/books.yml: #{title} authors must be an array"
+    elsif authors&.any? { |author| author.to_s.strip.empty? }
+      errors << "_data/books.yml: #{title} authors must not contain empty names"
+    end
+
+    translators = book["translators"]
+    if translators && !translators.is_a?(Array)
+      errors << "_data/books.yml: #{title} translators must be an array"
+    elsif translators&.any? { |translator| translator.to_s.strip.empty? }
+      errors << "_data/books.yml: #{title} translators must not contain empty names"
+    end
+
+    unmapped_book_names = (Array(authors) + Array(translators)).uniq.reject do |name|
+      person_names.key?(name) || group_names.key?(name)
+    end
+    unless unmapped_book_names.empty?
+      errors << "_data/books.yml: #{title} has unmapped person names: #{unmapped_book_names.join(", ")}"
+    end
+
+    tags = book["tags"]
+    unless tags.is_a?(Array)
+      errors << "_data/books.yml: #{title} tags must be an array"
+    end
+  end
+rescue Psych::SyntaxError => error
+  errors << "_data/books.yml: invalid YAML (#{error.message.lines.first.strip})"
 end
 
 if errors.empty?

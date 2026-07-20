@@ -1,0 +1,93 @@
+---
+- chinese_title: 驱动力
+  original_title: "Drive: The Surprising Truth About What Motivates Us"
+  count: 1
+  authors:
+  - Daniel H. Pink
+  translators:
+  - 龚怡屏
+  category: 管理
+  tags:
+  - 动机
+  - 管理
+  - 心理学
+  original_publish_date: '2009-12-29'
+  chinese_publish_date: '2023-07-01'
+  publisher: 中国财政经济出版社
+  isbn: '9787522321530'
+  source_url: https://www.amazon.com/Drive-Surprising-Truth-Motivates-Chinese/dp/7522321530
+  note: 围绕自主、专精、目的三种内在动机，解释为什么单纯依靠外部奖惩难以驱动复杂工作。
+- chinese_title: 创新者的窘境
+  original_title: "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail"
+  count: 1
+  authors:
+  - Clayton M. Christensen
+  translators:
+  - 胡建桥
+  category: 商业
+  tags:
+  - 创新
+  - 管理
+  - 商业
+  original_publish_date: '1997-05-01'
+  chinese_publish_date: '2020-06-01'
+  publisher: 中信出版社
+  isbn: '9787521718195'
+  source_url: https://www.books.com.tw/products/CN11715790
+  note: 提出破坏性创新理论，解释领先企业为什么会在看似正确的客户、资源和增长逻辑中错过新市场。
+- chinese_title: 影响力
+  original_title: "Influence: The Psychology of Persuasion"
+  count: 1
+  authors:
+  - Robert B. Cialdini
+  translators:
+  - 闾佳
+  category: 心理学
+  tags:
+  - 心理学
+  - 说服
+  - 商业
+  original_publish_date: '1984-01-01'
+  chinese_publish_date: '2010-01-01'
+  publisher: 万卷出版公司
+  isbn: '9787547012123'
+  source_url: https://libm.nwupl.edu.cn/bookInfo_01h0015724.html
+  note: 总结互惠、承诺和一致、社会认同、喜好、权威、稀缺等影响原则，解释人为什么会在特定情境下自动顺从。
+- chinese_title: 稀缺
+  original_title: "Scarcity: Why Having Too Little Means So Much"
+  count: 1
+  authors:
+  - Sendhil Mullainathan
+  - Eldar Shafir
+  translators:
+  - 魏薇
+  - 龙志勇
+  category: 行为经济学
+  tags:
+  - 心理学
+  - 行为经济学
+  - 决策
+  original_publish_date: '2013-09-03'
+  chinese_publish_date: '2018-07-01'
+  publisher: 浙江人民出版社
+  isbn: '9787213087929'
+  source_url: https://www.mybookone.com.hk/page/detail_w/1242723635061440514/%E7%A8%80%E7%BC%BA%E2%94%80%E2%94%80%E6%88%91%E5%80%91%E6%98%AF%E5%A6%82%E4%BD%95%E9%99%B7%E5%85%A5%E8%B2%A7%E7%AA%AE%E8%88%87%E5%BF%99%E7%A2%8C%E7%9A%84_%E7%B6%93%E5%85%B8%E7%89%88/9787213087929.html
+  note: 解释金钱、时间等资源稀缺如何占用心智带宽，形成管窥、权衡和短视决策，并让稀缺状态自我强化。
+- chinese_title: 福格行为模型
+  original_title: Tiny Habits
+  count: 1
+  authors:
+  - B.J. Fogg
+  translators:
+  - 徐毅
+  category: 行为设计
+  tags:
+  - 行为设计
+  - 习惯
+  - 心理学
+  original_publish_date: '2019-12-31'
+  chinese_publish_date: '2021-10-01'
+  publisher: 天津科学技术出版社
+  isbn: '9787557696672'
+  source_url: https://cread.jd.com/read/startRead.action?bookId=30750195&readType=1
+  note: 用 B=MAP 解释行为发生需要动机、能力和提示同时出现，并把行为改变拆成更小、更容易重复的微习惯设计。

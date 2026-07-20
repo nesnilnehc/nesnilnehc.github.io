@@ -1,15 +1,75 @@
 <script>
-window.siteSearchPosts = [
-  {% for post in site.posts %}
-    {
-      title: {{ post.title | jsonify }},
-      url: {{ post.url | relative_url | jsonify }},
-      date: {{ post.date | date: "%Y-%m-%d" | jsonify }},
-      category: {{ post.categories | first | jsonify }},
-      tags: {{ post.tags | jsonify }},
-      content: {{ post.content | strip_html | jsonify }},
-      excerpt: {{ post.description | default: post.excerpt | strip_html | truncate: 200 | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-];
+window.siteSearchItems = [];
+{% for post in site.posts %}
+window.siteSearchItems.push({
+  kind: "article",
+  kindLabel: "文章",
+  title: {{ post.title | jsonify }},
+  url: {{ post.url | relative_url | jsonify }},
+  meta: {{ post.date | date: "%Y-%m-%d" | jsonify }},
+  category: {{ post.categories | first | jsonify }},
+  tags: {{ post.tags | jsonify }},
+  content: {{ post.content | strip_html | jsonify }},
+  excerpt: {{ post.description | default: post.excerpt | strip_html | truncate: 200 | jsonify }}
+});
+{% endfor %}
+{% for movie in site.data.movies %}
+{% assign movie_title = movie.chinese_title | default: movie.original_title %}
+{% assign movie_type_label = site.data.movie_types[movie.type] | default: movie.type %}
+{% capture movie_search_content %}{{ movie.original_title }} {{ movie.chinese_title }} {{ movie.director }} {{ movie.directors | join: ' ' }} {{ movie.cast | join: ' ' }} {{ movie.awards }} {{ movie.note }}{% endcapture %}
+window.siteSearchItems.push({
+  kind: "movie",
+  kindLabel: "影视",
+  title: {{ movie_title | jsonify }},
+  url: {{ '/movies/' | relative_url | jsonify }},
+  meta: {{ movie.premiere_date | jsonify }},
+  category: {{ movie_type_label | jsonify }},
+  tags: {{ movie.tags | jsonify }},
+  content: {{ movie_search_content | strip | jsonify }},
+  excerpt: {{ movie.note | default: movie.original_title | jsonify }}
+});
+{% endfor %}
+{% for book in site.data.books %}
+{% assign book_title = book.chinese_title | default: book.original_title %}
+{% capture book_search_content %}{{ book.original_title }} {{ book.chinese_title }} {{ book.authors | join: ' ' }} {{ book.translators | join: ' ' }} {{ book.publisher }} {{ book.isbn }} {{ book.note }}{% endcapture %}
+window.siteSearchItems.push({
+  kind: "book",
+  kindLabel: "书籍",
+  title: {{ book_title | jsonify }},
+  url: {{ '/books/' | relative_url | jsonify }},
+  meta: {{ book.original_publish_date | jsonify }},
+  category: {{ book.category | jsonify }},
+  tags: {{ book.tags | jsonify }},
+  content: {{ book_search_content | strip | jsonify }},
+  excerpt: {{ book.note | jsonify }}
+});
+{% endfor %}
+{% for track in site.data.music %}
+{% capture music_search_content %}{{ track.original_title }} {{ track.title }} {{ track.artist }} {{ track.artists | join: ' ' }} {{ track.lyricists | join: ' ' }} {{ track.composers | join: ' ' }} {{ track.release_title }} {{ track.note }}{% endcapture %}
+window.siteSearchItems.push({
+  kind: "music",
+  kindLabel: "音乐",
+  title: {{ track.title | jsonify }},
+  url: {{ '/music/' | relative_url | jsonify }},
+  meta: {{ track.artist | jsonify }},
+  category: "音乐",
+  tags: {{ track.tags | jsonify }},
+  content: {{ music_search_content | strip | jsonify }},
+  excerpt: {{ track.release_title | default: track.artist | jsonify }}
+});
+{% endfor %}
+{% for work in site.data.literature %}
+{% capture literature_search_content %}{{ work.author }} {{ work.author_note }} {{ work.period }} {{ work.polity }} {{ work.aliases | join: ' ' }} {{ work.content | join: ' ' }} {{ work.note }}{% endcapture %}
+window.siteSearchItems.push({
+  kind: "literature",
+  kindLabel: "诗文",
+  title: {{ work.title | jsonify }},
+  url: {{ '/poetry/#' | append: work.id | relative_url | jsonify }},
+  meta: {{ work.period | append: ' · ' | append: work.author | jsonify }},
+  category: {{ work.type | jsonify }},
+  tags: {{ work.aliases | jsonify }},
+  content: {{ literature_search_content | strip | jsonify }},
+  excerpt: {{ work.note | jsonify }}
+});
+{% endfor %}
 </script>

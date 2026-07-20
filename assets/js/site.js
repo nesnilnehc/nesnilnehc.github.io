@@ -48,7 +48,7 @@
     Array.from(document.querySelectorAll(selector)).forEach(function (entry) {
       if (entry.hidden) return;
       visibleIndex += 1;
-      const index = entry.querySelector(".movie-entry__index, .music-entry__index");
+      const index = entry.querySelector(".movie-entry__index, .music-entry__index, .book-entry__index, .poetry-entry__index");
       if (!index) return;
       index.textContent = String(visibleIndex).padStart(2, "0");
     });
@@ -161,6 +161,50 @@
     announce("已筛选出 " + visibleCount + " 首音乐。");
   }
 
+  function applyBookFilters() {
+    const activeAuthor = activeFilterValue("[data-book-author-filter]", "bookAuthorFilter");
+    const activeCategory = activeFilterValue("[data-book-category-filter]", "bookCategoryFilter");
+    const activeTag = activeFilterValue("[data-book-tag-filter]", "bookTagFilter");
+    let visibleCount = 0;
+
+    Array.from(document.querySelectorAll("[data-book-authors]")).forEach(function (entry) {
+      const authors = splitValues(entry.dataset.bookAuthors);
+      const tags = splitValues(entry.dataset.bookTags);
+      const authorMatches = activeAuthor === "all" || authors.includes(activeAuthor);
+      const categoryMatches = activeCategory === "all" || entry.dataset.bookCategory === activeCategory;
+      const tagMatches = activeTag === "all" || tags.includes(activeTag);
+      const isVisible = authorMatches && categoryMatches && tagMatches;
+      entry.hidden = !isVisible;
+      if (isVisible) visibleCount += 1;
+    });
+
+    sortCollection(".book-shelf", ".book-entry", "book", activeFilterValue("[data-book-sort]", "bookSort"));
+    announce("已筛选出 " + visibleCount + " 本书籍。");
+  }
+
+  function applyPoetryFilters(shouldAnnounce) {
+    const activePeriod = activeFilterValue("[data-poetry-period-filter]", "poetryPeriodFilter");
+    const activeType = activeFilterValue("[data-poetry-type-filter]", "poetryTypeFilter");
+    let visibleCount = 0;
+
+    Array.from(document.querySelectorAll(".poetry-entry[data-poetry-period]")).forEach(function (entry) {
+      const periodMatches = activePeriod === "all" || entry.dataset.poetryPeriod === activePeriod;
+      const typeMatches = activeType === "all" || entry.dataset.poetryType === activeType;
+      const isVisible = periodMatches && typeMatches;
+      entry.hidden = !isVisible;
+      if (!isVisible) entry.open = false;
+      if (isVisible) visibleCount += 1;
+    });
+
+    updateEntryIndexes(".poetry-entry[data-poetry-period]");
+
+    const resultCount = document.querySelector("[data-poetry-result-count]");
+    const emptyState = document.querySelector("[data-poetry-empty]");
+    if (resultCount) resultCount.textContent = "共 " + visibleCount + " 篇";
+    if (emptyState) emptyState.hidden = visibleCount !== 0;
+    if (shouldAnnounce !== false) announce("已筛选出 " + visibleCount + " 篇诗文。");
+  }
+
   Array.from(document.querySelectorAll("[data-movie-sort]")).forEach(function (button) {
     button.addEventListener("click", function () {
       setActiveButton(button, "[data-movie-sort]");
@@ -174,6 +218,14 @@
       setActiveButton(button, "[data-music-sort]");
       sortCollection(".music-shelf", ".music-entry", "music", button.dataset.musicSort);
       announce(button.dataset.musicSort === "count" ? "已按喜欢次数排序音乐。" : "已按时间排序音乐。");
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-book-sort]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-book-sort]");
+      sortCollection(".book-shelf", ".book-entry", "book", button.dataset.bookSort);
+      announce(button.dataset.bookSort === "count" ? "已按喜欢次数排序书籍。" : "已按时间排序书籍。");
     });
   });
 
@@ -233,14 +285,51 @@
     });
   });
 
+  Array.from(document.querySelectorAll("[data-book-author-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-book-author-filter]");
+      applyBookFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-book-category-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-book-category-filter]");
+      applyBookFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-book-tag-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-book-tag-filter]");
+      applyBookFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-poetry-period-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-poetry-period-filter]");
+      applyPoetryFilters();
+    });
+  });
+
+  Array.from(document.querySelectorAll("[data-poetry-type-filter]")).forEach(function (button) {
+    button.addEventListener("click", function () {
+      setActiveButton(button, "[data-poetry-type-filter]");
+      applyPoetryFilters();
+    });
+  });
+
   sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));
   sortCollection(".music-shelf", ".music-entry", "music", activeFilterValue("[data-music-sort]", "musicSort"));
+  sortCollection(".book-shelf", ".book-entry", "book", activeFilterValue("[data-book-sort]", "bookSort"));
+  applyPoetryFilters(false);
 
   function setupCollapsibleFilters() {
     var maxRows = 2;
 
-    Array.from(document.querySelectorAll(".movie-filter__controls, .music-filter__controls")).forEach(function (controls) {
-      var toggleClass = controls.classList.contains("movie-filter__controls") ? "movie-filter__toggle" : "music-filter__toggle";
+    Array.from(document.querySelectorAll(".movie-filter__controls, .music-filter__controls, .book-filter__controls, .poetry-filter__controls")).forEach(function (controls) {
+      var toggleClass = controls.classList.contains("movie-filter__controls") ? "movie-filter__toggle" : controls.classList.contains("music-filter__controls") ? "music-filter__toggle" : controls.classList.contains("book-filter__controls") ? "book-filter__toggle" : "poetry-filter__toggle";
       var existingToggle = controls.nextElementSibling;
       var wasExpanded = Boolean(existingToggle) && existingToggle.classList.contains(toggleClass) && existingToggle.getAttribute("aria-expanded") === "true";
       if (existingToggle && existingToggle.classList.contains(toggleClass)) existingToggle.remove();

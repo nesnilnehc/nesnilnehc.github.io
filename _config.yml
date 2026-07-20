@@ -49,7 +49,9 @@ header_pages:
   - _pages/index.md
   - _pages/archive.md
   - _pages/movies.md
+  - _pages/books.md
   - _pages/music.md
+  - _pages/poetry.md
   - _pages/about.md
 
 # Feed settings

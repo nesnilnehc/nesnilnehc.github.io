@@ -454,7 +454,7 @@
   - label: Spotify
     url: https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f
 - title: 少年啊
-  count: 2
+  count: 3
   original_title: 소년이여 (A Boy)
   artist: G-DRAGON
   artists:
@@ -504,7 +504,7 @@
   - label: Apple Music
     url: https://music.apple.com/us/album/one-fine-spring-day-original-motion-picture-soundtrack/1618391973
 - title: 失踪
-  count: 1
+  count: 2
   original_title: 失蹤
   artist: Sandy Lam
   artists:
@@ -514,7 +514,7 @@
   composers:
   - C.Y. Kong
   release_title: 林憶蓮's
-  date: '2000-01-01'
+  date: '2000-01-18'
   date_label: 专辑发行
   languages:
   - zh
@@ -526,7 +526,7 @@
   - label: Apple Music
     url: https://music.apple.com/us/album/%E5%A4%B1%E8%B9%A4/905222890?i=905222899
   - label: Spotify
-    url: https://open.spotify.com/track/6vhqBl2CnN0yPChj7KT7Vt
+    url: https://open.spotify.com/track/4SM7vQU7FYRHKM9X9GNor6
 - title: 夜想曲
   count: 1
   original_title: 야상곡 (Nocturne)
@@ -1314,7 +1314,7 @@
   - label: Bugs
     url: https://music.bugs.co.kr/track/80108002
 - title: 出现又离开
-  count: 1
+  count: 2
   original_title: 出现又离开
   artist: 梁博
   artists:
@@ -1497,3 +1497,267 @@
     url: https://open.spotify.com/track/3AiObRbCpA13ez1ki5JpVK
   - label: YouTube
     url: https://www.youtube.com/watch?v=bKn_lz6NoBA
+- title: Just Hold Me
+  count: 1
+  original_title: Just Hold Me
+  artist: Maria Mena
+  artists:
+  - Maria Mena
+  lyricists:
+  - Maria Mena
+  - Arvid Solvang
+  composers:
+  - Maria Mena
+  - Arvid Solvang
+  release_title: Just Hold Me - Single
+  date: '2006-04-24'
+  date_label: 单曲发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/just-hold-me/217975742?i=217975757
+  - label: Spotify
+    url: https://open.spotify.com/track/7IPMUKKlLQEBuKVhNzwTR1
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=tyvA6lFdiWc
+- title: Heaven
+  count: 1
+  original_title: Heaven
+  artist: Ailee
+  artists:
+  - Ailee
+  lyricists:
+  - Wheesung
+  composers:
+  - Wheesung
+  - Iggy
+  - Seo Yong-bae
+  release_title: Heaven - Single
+  date: '2012-02-09'
+  date_label: 单曲发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  - solo
+  note: Ailee 的出道单曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/heaven/1640484142?i=1640484143
+  - label: Spotify
+    url: https://open.spotify.com/track/2Y34BGd4MdPVzaEk0tbqQj
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=L9ro1KjkJMg
+- title: 表态
+  count: 1
+  original_title: 表态
+  artist: 梁博
+  artists:
+  - 梁博
+  lyricists:
+  - 梁博
+  composers:
+  - 梁博
+  release_title: 我是唱作人 第1期
+  date: '2019-04-12'
+  date_label: 节目发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - live
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E8%A1%A8%E6%80%81-live/1850929115?i=1850929234
+  - label: Spotify
+    url: https://open.spotify.com/track/0WvILLJTxsOWun3EQywQ0r
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=wiCmV8YSZWM
+- title: What's Up?
+  count: 1
+  original_title: What's Up?
+  artist: 4 Non Blondes
+  artists:
+  - 4 Non Blondes
+  lyricists:
+  - Linda Perry
+  composers:
+  - Linda Perry
+  release_title: What's Up? - Single
+  date: '1993-03-11'
+  date_label: 单曲发行
+  languages:
+  - en
+  primary_genre: rock
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/whats-up/1440902342?i=1440902348
+  - label: Spotify
+    url: https://open.spotify.com/track/0jWgAnTrNZmOGmqgvHhZEm
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=6NXnxTNIWkc
+- title: 我从来不懂你的幽默
+  count: 1
+  original_title: 我從來不懂你的幽默
+  artist: 杨乃文
+  artists:
+  - 杨乃文
+  lyricists:
+  - 马念先
+  composers:
+  - Sasha Smith
+  - Vivian Smith
+  release_title: ZERO
+  date: '2013-12-20'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/%E6%88%91%E4%BB%8E%E6%9D%A5%E4%B8%8D%E6%87%82%E4%BD%A0%E7%9A%84%E5%B9%BD%E9%BB%98/767236731
+  - label: Spotify
+    url: https://open.spotify.com/track/2Ba8AMXnZtnBTz62LLbsvn
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=K_ayIcxrdvg
+- title: 明天，你好
+  count: 1
+  original_title: 明天，你好
+  artist: 牛奶咖啡
+  artists:
+  - 牛奶咖啡
+  lyricists:
+  - 王海涛
+  composers:
+  - 牛奶咖啡
+  release_title: Lost & Found去寻找 - EP
+  date: '2011-07-11'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E6%98%8E%E5%A4%A9-%E4%BD%A0%E5%A5%BD/1690822689?i=1690822691
+  - label: Spotify
+    url: https://open.spotify.com/track/1o0CJ0J7TcF0VMGqLSxw3t
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=glHseBiqf4E
+- title: SORROW
+  count: 1
+  original_title: SORROW
+  artist: Bad Blood
+  artists:
+  - Bad Blood
+  release_title: M2 & XIV of YinTsang 哥们儿mixtape06
+  date: '2006'
+  date_label: 数字发行
+  languages:
+  - zh
+  - en
+  primary_genre: hip-hop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=HuAsbE8qN4E
+- title: 卖火柴的小女孩
+  count: 1
+  original_title: 卖火柴的小女孩
+  artist: 刘美麟
+  artists:
+  - 刘美麟
+  lyricists:
+  - 阿弟仔
+  composers:
+  - 阿弟仔
+  release_title: 该不该长大
+  date: '2013-07-08'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E5%8D%96%E7%81%AB%E6%9F%B4%E7%9A%84%E5%B0%8F%E5%A5%B3%E5%AD%A9/1751784910?i=1751785213
+  - label: Spotify
+    url: https://open.spotify.com/track/2H4sKP3ovNmBXKHd9LgyiA
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=7DfSIbY0pDY
+- title: Loving Strangers
+  count: 1
+  original_title: Loving Strangers
+  artist: Jocelyn Pook; Russian Red
+  artists:
+  - Jocelyn Pook
+  - Russian Red
+  lyricists:
+  - Russian Red
+  composers:
+  - Russian Red
+  release_title: Habitación en Roma (BSO)
+  date: '2010-04-26'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: folk
+  genres:
+  - indie-folk
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/es/album/loving-strangers-feat-russian-red/686280634?i=686280712
+  - label: Spotify
+    url: https://open.spotify.com/track/46NO0xvLl97e2e41bNbtBL
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=NgbcXig1TZ8
+- title: 半岛铁盒
+  count: 1
+  original_title: 半島鐵盒
+  artist: 周杰伦
+  artists:
+  - 周杰伦
+  lyricists:
+  - 周杰伦
+  composers:
+  - 周杰伦
+  release_title: 八度空间
+  date: '2002-07-18'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/album/%E5%8D%8A%E5%B2%9B%E9%93%81%E7%9B%92/536161722?i=536162079
+  - label: Spotify
+    url: https://open.spotify.com/track/24F4oxC8oUBbRvpEOGjwPj
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=duZDsG3tvoA

@@ -7,6 +7,12 @@ Adam Schlesinger:
   romanized_name: Adam Schlesinger
   canonical_name: Adam Schlesinger
   display_name: Adam Schlesinger
+Ailee:
+  romanized_name: Ailee
+  canonical_name: 이예진
+  chinese_name: 李艺真
+  nickname: Ailee
+  display_name: Ailee · 이예진 · 李艺真
 Amy Allen:
   romanized_name: Amy Allen
   canonical_name: Amy Allen
@@ -16,11 +22,24 @@ Annie Gonzalez:
   canonical_name: Annie Gonzalez
   chinese_name: 安妮·冈萨雷斯
   display_name: Annie Gonzalez · 安妮·冈萨雷斯
+Arvid Solvang:
+  romanized_name: Arvid Solvang
+  canonical_name: Arvid Solvang
+  display_name: Arvid Solvang
 B. J. Novak:
   romanized_name: B. J. Novak
   canonical_name: B. J. Novak
   chinese_name: B·J·诺瓦克
   display_name: B. J. Novak · B·J·诺瓦克
+B.J. Fogg:
+  romanized_name: B.J. Fogg
+  canonical_name: B.J. Fogg
+  chinese_name: B.J. 福格
+  display_name: B.J. Fogg · B.J. 福格
+Bad Blood:
+  romanized_name: Bad Blood
+  canonical_name: Bad Blood
+  display_name: Bad Blood
 Ben Affleck:
   romanized_name: Ben Affleck
   canonical_name: Ben Affleck
@@ -64,6 +83,11 @@ Christopher Brody Brown:
   romanized_name: Christopher Brody Brown
   canonical_name: Christopher Brody Brown
   display_name: Christopher Brody Brown
+Clayton M. Christensen:
+  romanized_name: Clayton M. Christensen
+  canonical_name: Clayton M. Christensen
+  chinese_name: 克莱顿·克里斯坦森
+  display_name: Clayton M. Christensen · 克莱顿·克里斯坦森
 Clancy Brown:
   romanized_name: Clancy Brown
   canonical_name: Clancy Brown
@@ -91,6 +115,11 @@ Danny Aiello:
   canonical_name: Danny Aiello
   chinese_name: 丹尼·爱罗
   display_name: Danny Aiello · 丹尼·爱罗
+Daniel H. Pink:
+  romanized_name: Daniel H. Pink
+  canonical_name: Daniel H. Pink
+  chinese_name: 丹尼尔·平克
+  display_name: Daniel H. Pink · 丹尼尔·平克
 David Paymer:
   romanized_name: David Paymer
   canonical_name: David Paymer
@@ -116,6 +145,11 @@ Emilio Estevez:
   canonical_name: Emilio Estevez
   chinese_name: 艾米利奥·艾斯特维兹
   display_name: Emilio Estevez · 艾米利奥·艾斯特维兹
+Eldar Shafir:
+  romanized_name: Eldar Shafir
+  canonical_name: Eldar Shafir
+  chinese_name: 埃尔德·沙菲尔
+  display_name: Eldar Shafir · 埃尔德·沙菲尔
 Eva Longoria:
   romanized_name: Eva Longoria
   canonical_name: Eva Longoria
@@ -190,6 +224,11 @@ IU:
   chinese_name: 李知恩
   nickname: IU
   display_name: IU · 이지은 · 李知恩
+Iggy:
+  romanized_name: Iggy
+  canonical_name: 이기
+  nickname: Iggy
+  display_name: Iggy · 이기
 J.Y. Park:
   romanized_name: J.Y. Park
   canonical_name: 박진영
@@ -245,6 +284,10 @@ John Turturro:
   canonical_name: John Turturro
   chinese_name: 约翰·特托罗
   display_name: John Turturro · 约翰·特托罗
+Jocelyn Pook:
+  romanized_name: Jocelyn Pook
+  canonical_name: Jocelyn Pook
+  display_name: Jocelyn Pook
 Joji Matsuoka:
   romanized_name: Joji Matsuoka
   canonical_name: 松岡錠司
@@ -317,6 +360,11 @@ Linda Cardellini:
   canonical_name: Linda Cardellini
   chinese_name: 琳达·卡德里尼
   display_name: Linda Cardellini · 琳达·卡德里尼
+Linda Perry:
+  romanized_name: Linda Perry
+  canonical_name: Linda Perry
+  chinese_name: 琳达·佩里
+  display_name: Linda Perry · 琳达·佩里
 Luc Besson:
   romanized_name: Luc Besson
   canonical_name: Luc Besson
@@ -332,6 +380,10 @@ Mahershala Ali:
   canonical_name: Mahershala Ali
   chinese_name: 马赫沙拉·阿里
   display_name: Mahershala Ali · 马赫沙拉·阿里
+Maria Mena:
+  romanized_name: Maria Mena
+  canonical_name: Maria Mena
+  display_name: Maria Mena
 Martin Sheen:
   romanized_name: Martin Sheen
   canonical_name: Martin Sheen
@@ -494,6 +546,11 @@ Robert Redford:
   canonical_name: Robert Redford
   chinese_name: 罗伯特·雷德福
   display_name: Robert Redford · 罗伯特·雷德福
+Robert B. Cialdini:
+  romanized_name: Robert B. Cialdini
+  canonical_name: Robert B. Cialdini
+  chinese_name: 罗伯特·B·西奥迪尼
+  display_name: Robert B. Cialdini · 罗伯特·B·西奥迪尼
 Robert Zemeckis:
   romanized_name: Robert Zemeckis
   canonical_name: Robert Zemeckis
@@ -513,16 +570,31 @@ Rogét Chahayed:
   romanized_name: Rogét Chahayed
   canonical_name: Rogét Chahayed
   display_name: Rogét Chahayed
+Russian Red:
+  romanized_name: Russian Red
+  canonical_name: Lourdes Hernández González
+  chinese_name: 罗素红
+  nickname: Russian Red
+  display_name: Russian Red · Lourdes Hernández González · 罗素红
 Sally Field:
   romanized_name: Sally Field
   canonical_name: Sally Field
   chinese_name: 莎莉·菲尔德
   display_name: Sally Field · 莎莉·菲尔德
+Sasha Smith:
+  romanized_name: Sasha Smith
+  canonical_name: Sasha Smith
+  display_name: Sasha Smith
 Sandy Lam:
   romanized_name: Sandy Lam
   canonical_name: 林忆莲
   display_name: Sandy Lam · 林忆莲
   nickname: Sandy Lam
+Sendhil Mullainathan:
+  romanized_name: Sendhil Mullainathan
+  canonical_name: Sendhil Mullainathan
+  chinese_name: 塞德希尔·穆来纳森
+  display_name: Sendhil Mullainathan · 塞德希尔·穆来纳森
 Sean Astin:
   romanized_name: Sean Astin
   canonical_name: Sean Astin
@@ -601,6 +673,10 @@ Vince:
   romanized_name: Vince
   canonical_name: Vince
   display_name: Vince
+Vivian Smith:
+  romanized_name: Vivian Smith
+  canonical_name: Vivian Smith
+  display_name: Vivian Smith
 White Cherry:
   romanized_name: White Cherry
   canonical_name: White Cherry
@@ -1039,6 +1115,10 @@ Showtaro Morikubo:
   romanized_name: Showtaro Morikubo
   canonical_name: 森久保祥太郎
   display_name: Showtaro Morikubo · 森久保祥太郎
+Seo Yong-bae:
+  romanized_name: Seo Yong-bae
+  canonical_name: 서용배
+  display_name: Seo Yong-bae · 서용배
 Song Joong-ki:
   romanized_name: Song Joong-ki
   canonical_name: 송중기
@@ -1049,6 +1129,12 @@ Toshihiko Seki:
   canonical_name: 関俊彦
   chinese_name: 关俊彦
   display_name: Toshihiko Seki · 関俊彦 · 关俊彦
+Wheesung:
+  romanized_name: Wheesung
+  canonical_name: 휘성
+  chinese_name: 辉晟
+  nickname: Realslow
+  display_name: Wheesung · 휘성 · 辉晟
 Yang Se-chan:
   romanized_name: Yang Se-chan
   canonical_name: 양세찬
@@ -1069,6 +1155,14 @@ Yukari Tamura:
 张光北:
   canonical_name: 张光北
   display_name: 张光北
+周杰伦:
+  romanized_name: Jay Chou
+  canonical_name: 周杰倫
+  chinese_name: 周杰伦
+  display_name: 周杰伦 · 周杰倫 · Jay Chou
+徐毅:
+  canonical_name: 徐毅
+  display_name: 徐毅
 小霞:
   romanized_name: Xiao Xia
   canonical_name: 小霞
@@ -1076,18 +1170,52 @@ Yukari Tamura:
 李洪权:
   canonical_name: 李洪权
   display_name: 李洪权
+龙志勇:
+  canonical_name: 龙志勇
+  display_name: 龙志勇
+刘美麟:
+  canonical_name: 刘美麟
+  display_name: 刘美麟
 洪宇宙:
   canonical_name: 洪宇宙
   display_name: 洪宇宙
 王全有:
   canonical_name: 王全有
   display_name: 王全有
+王海涛:
+  canonical_name: 王海涛
+  display_name: 王海涛
+胡建桥:
+  canonical_name: 胡建桥
+  display_name: 胡建桥
+闾佳:
+  canonical_name: 闾佳
+  display_name: 闾佳
+魏薇:
+  canonical_name: 魏薇
+  display_name: 魏薇
+杨乃文:
+  canonical_name: 楊乃文
+  chinese_name: 杨乃文
+  display_name: 杨乃文 · 楊乃文
 郑强:
   canonical_name: 郑强
   display_name: 郑强
+马念先:
+  canonical_name: 馬念先
+  chinese_name: 马念先
+  display_name: 马念先 · 馬念先
 金润吉:
   canonical_name: 金润吉
   display_name: 金润吉
+龚怡屏:
+  canonical_name: 龚怡屏
+  display_name: 龚怡屏
+阿弟仔:
+  canonical_name: 張健偉
+  chinese_name: 阿弟仔
+  nickname: 阿弟仔
+  display_name: 阿弟仔 · 張健偉
 魏宗万:
   canonical_name: 魏宗万
   display_name: 魏宗万

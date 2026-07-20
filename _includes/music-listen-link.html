@@ -1,0 +1,57 @@
+{%- assign label = include.label | default: "" | strip -%}
+{%- assign url = include.url | default: "" | strip -%}
+{%- assign icon_class = "music-listen-icon music-listen-icon--default" -%}
+{%- case label -%}
+  {%- when "Apple Music" -%}
+    {%- assign icon_class = "music-listen-icon music-listen-icon--apple" -%}
+  {%- when "Spotify" -%}
+    {%- assign icon_class = "music-listen-icon music-listen-icon--spotify" -%}
+  {%- when "YouTube" -%}
+    {%- assign icon_class = "music-listen-icon music-listen-icon--youtube" -%}
+  {%- when "QQ音乐" -%}
+    {%- assign icon_class = "music-listen-icon music-listen-icon--qq" -%}
+  {%- when "网易云音乐" -%}
+    {%- assign icon_class = "music-listen-icon music-listen-icon--netease" -%}
+  {%- when "Bugs" -%}
+    {%- assign icon_class = "music-listen-icon music-listen-icon--bugs" -%}
+{%- endcase -%}
+<a class="music-listen-link" href="{{ url }}" target="_blank" rel="noopener noreferrer" aria-label="在 {{ label }} 收听">
+  <span class="{{ icon_class }}" aria-hidden="true">
+    {%- case label -%}
+      {%- when "Spotify" -%}
+      <svg viewBox="0 0 24 24" focusable="false">
+        <circle cx="12" cy="12" r="9"></circle>
+        <path d="M7.8 9.2c2.9-.8 6.2-.6 8.6.8"></path>
+        <path d="M8.6 12c2.2-.6 4.8-.4 6.7.7"></path>
+        <path d="M9.3 14.6c1.6-.4 3.4-.3 4.8.5"></path>
+      </svg>
+      {%- when "YouTube" -%}
+      <svg viewBox="0 0 24 24" focusable="false">
+        <rect x="4" y="6.5" width="16" height="11" rx="3"></rect>
+        <path d="M10.5 9.5v5l4.3-2.5z"></path>
+      </svg>
+      {%- when "QQ音乐" -%}
+      <svg viewBox="0 0 24 24" focusable="false">
+        <circle cx="12" cy="12" r="8"></circle>
+        <path d="M14.8 15.2l2.1 2.1"></path>
+        <path d="M9.1 12.1c0-2.2 1.2-3.7 2.9-3.7s2.9 1.5 2.9 3.7-1.2 3.7-2.9 3.7-2.9-1.5-2.9-3.7z"></path>
+      </svg>
+      {%- when "网易云音乐" -%}
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M8.1 16.6h7.9a3.2 3.2 0 0 0 .4-6.4 5 5 0 0 0-9.4-1.5 4 4 0 0 0 1.1 7.9z"></path>
+        <path d="M9 13.1c1.9-1.5 4.1-1.5 6 0"></path>
+      </svg>
+      {%- when "Bugs" -%}
+      <svg viewBox="0 0 24 24" focusable="false">
+        <rect x="6" y="5" width="12" height="14" rx="3"></rect>
+        <path d="M10 9h2.5a2 2 0 0 1 0 4H10z"></path>
+        <path d="M10 13h3.2a2 2 0 0 1 0 4H10z"></path>
+      </svg>
+      {%- else -%}
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M15.5 5.5v10.1a2.8 2.8 0 1 1-1.6-2.5V7.2l-5 1.1v8.8a2.8 2.8 0 1 1-1.6-2.5V7.7z"></path>
+      </svg>
+    {%- endcase -%}
+  </span>
+  <span>{{ label }}</span>
+</a>

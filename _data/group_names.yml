@@ -1,5 +1,10 @@
 # 组合/乐队/团体姓名字典，与 person_names.yml 同构（romanized_name / canonical_name / chinese_name / nickname / display_name），仅收录乐队、组合、团体等非单一个人的演职credit。canonical_name 需要逐条以来源材料校准。
 ---
+4 Non Blondes:
+  romanized_name: 4 Non Blondes
+  canonical_name: 4 Non Blondes
+  chinese_name: 非金发四美
+  display_name: 4 Non Blondes · 非金发四美
 A1 TRIP:
   romanized_name: A1 TRIP
   canonical_name: A1 TRIP
@@ -49,6 +54,11 @@ Trouble Maker:
   canonical_name: 트러블메이커
   nickname: Trouble Maker
   display_name: Trouble Maker · 트러블메이커
+牛奶咖啡:
+  romanized_name: Milk Coffee
+  canonical_name: 牛奶咖啡
+  nickname: 牛奶@咖啡
+  display_name: 牛奶咖啡 · 牛奶@咖啡
 山丹丹民歌组合:
   canonical_name: 山丹丹民歌组合
   display_name: 山丹丹民歌组合

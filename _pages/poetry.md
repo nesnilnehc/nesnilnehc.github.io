@@ -8,7 +8,7 @@ sidebar: false
 ---
 
 <section class="poetry-profile" aria-label="诗文取向">
-  <p>收录偶然读到、愿意反复回看的诗、偈与短文。篇幅不必长，重要的是能在寥寥数语里，让人重新看见当下。</p>
+  <p>收录偶然读到、愿意反复回看的诗、偈与短文。篇幅不必长，重要的是能在寥寥数语里，让人重新看见当下。非中文作品保留原文；有可靠中文译文时一并收录。</p>
 </section>
 
 {% assign poetry_authors = "" | split: "" %}
@@ -75,20 +75,36 @@ sidebar: false
       <span class="poetry-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
       <span class="poetry-entry__identity">
         <span class="poetry-entry__title">{{ work.title }}</span>
-        <span class="poetry-entry__byline">{{ work.period }}{% if work.polity != "" %}<span aria-hidden="true"> · </span>{{ work.polity }}{% endif %}<span aria-hidden="true"> · </span>{{ work.author }}{% if work.author_note != "" %}（{{ work.author_note }}）{% endif %}</span>
+        <span class="poetry-entry__byline">{{ work.period }}{% if work.region != "" %}<span aria-hidden="true"> · </span>{{ work.region }}{% endif %}<span aria-hidden="true"> · </span>{% include person-name.html name=work.author %}</span>
       </span>
       <span class="poetry-entry__type">{{ work.type }}</span>
       <span class="poetry-entry__toggle" aria-hidden="true"></span>
     </summary>
 
     <div class="poetry-entry__body">
-      <blockquote class="poetry-entry__text{% if work.form == 'prose' %} poetry-entry__text--prose{% endif %}">
+      <div class="poetry-entry__version">
+        {% if work.language != "zh" %}<p class="poetry-entry__version-label">原文</p>{% endif %}
+        <blockquote class="poetry-entry__text{% if work.form == 'prose' %} poetry-entry__text--prose{% endif %}">
         {% if work.form == "verse" %}
         <p>{% for line in work.content %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
         {% else %}
         {% for paragraph in work.content %}<p>{{ paragraph }}</p>{% endfor %}
         {% endif %}
-      </blockquote>
+        </blockquote>
+      </div>
+
+      {% if work.translated_content and work.translated_content != empty %}
+      <div class="poetry-entry__version poetry-entry__version--translation">
+        <p class="poetry-entry__version-label">中文译文</p>
+        <blockquote class="poetry-entry__text poetry-entry__text--translation{% if work.form == 'prose' %} poetry-entry__text--prose{% endif %}">
+          {% if work.form == "verse" %}
+          <p>{% for line in work.translated_content %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+          {% else %}
+          {% for paragraph in work.translated_content %}<p>{{ paragraph }}</p>{% endfor %}
+          {% endif %}
+        </blockquote>
+      </div>
+      {% endif %}
 
       <footer class="poetry-entry__source">
         <p>{{ work.note }}</p>

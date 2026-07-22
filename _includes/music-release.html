@@ -1,6 +1,7 @@
 {%- assign release_kind = include.date_label | default: "" | strip -%}
 {%- assign release_title = include.release_title | default: "" | strip -%}
 {%- assign release_context = include.release_context | default: "" | strip -%}
+{%- assign release_url = include.release_url | default: "" | strip -%}
 {%- assign track_title = include.title | default: "" | strip -%}
 {%- assign original_title = include.original_title | default: "" | strip -%}
 {%- if release_title contains " - Single" -%}
@@ -53,4 +54,4 @@
 {%- elsif release_kind == "单曲" and release_title_matches_track -%}
   {%- assign show_release_title = false -%}
 {%- endif -%}
-<time datetime="{{ include.date }}">{{ include.date }}</time>{%- if release_kind != "" -%}<span class="music-entry__separator">/</span><span>{%- if show_release_title -%}{{ release_kind }}《{{ release_title_clean }}》{%- else -%}{{ release_kind }}{%- endif -%}</span>{%- endif -%}{%- if release_context != "" -%}<span class="music-entry__separator">/</span><span>{{ release_context }}</span>{%- endif -%}
+<time datetime="{{ include.date }}">{{ include.date }}</time>{%- if release_kind != "" -%}<span class="music-entry__separator">/</span><span>{%- if show_release_title and release_url != "" -%}<a href="{{ release_url }}">{{ release_kind }}《{{ release_title_clean }}》</a>{%- elsif show_release_title -%}{{ release_kind }}《{{ release_title_clean }}》{%- else -%}{{ release_kind }}{%- endif -%}</span>{%- endif -%}{%- if release_context != "" -%}<span class="music-entry__separator">/</span><span>{{ release_context }}</span>{%- endif -%}

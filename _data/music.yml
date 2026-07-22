@@ -1,4 +1,98 @@
 ---
+- title: LILAC
+  id: iu-lilac
+  album_id: iu-lilac-album
+  count: 1
+  original_title: 라일락
+  artist: IU
+  artists:
+  - IU
+  lyricists:
+  - IU
+  composers:
+  - Im Su-ho
+  - Dr.JO
+  - Woong Kim
+  - N!ko
+  release_title: LILAC
+  date: '2021-03-25'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1560113134
+  - label: Spotify
+    url: https://open.spotify.com/track/5xrtzzzikpG3BLbo4q1Yul
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=v7bnOxV4jAc
+- title: Flu
+  id: iu-flu
+  album_id: iu-lilac-album
+  count: 1
+  original_title: Flu
+  artist: IU
+  artists:
+  - IU
+  lyricists:
+  - IU
+  composers:
+  - Ryan S. Jhun
+  - Madilyn Bailey
+  - Martin Coogan
+  - Jacob Chatelain
+  - London Jackson
+  - Zacchariah Palmer
+  release_title: LILAC
+  date: '2021-03-25'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1560113135
+  - label: Spotify
+    url: https://open.spotify.com/track/2j0MsDAMJ2ahsxP3z86ChI
+- title: 东京
+  id: jun-shibata-tokyo
+  album_id: jun-shibata-cover-70s
+  count: 1
+  original_title: 東京
+  artist: Jun Shibata
+  artists:
+  - Jun Shibata
+  lyricists:
+  - Mitsugu Morita
+  composers:
+  - Mitsugu Morita
+  release_title: COVER 70's
+  date: '2012-10-31'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: folk
+  genres: []
+  tags:
+  - j-pop
+  - solo
+  note: 翻唱自マイ・ペース1975年发行的《東京》。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/jp/song/569777049
+  - label: Spotify
+    url: https://open.spotify.com/track/36Ik1FwIKAkZoIMmGnuMRu
 - title: 光
   count: 1
   original_title: 光
@@ -48,7 +142,7 @@
   - label: Spotify
     url: https://open.spotify.com/track/5bVugwry6czApFV2SL3Ifn
 - title: 贝加尔湖畔
-  count: 3
+  count: 4
   original_title: 貝加爾湖畔
   artist: 谭晶; 塔斯肯
   artists:
@@ -1761,3 +1855,67 @@
     url: https://open.spotify.com/track/24F4oxC8oUBbRvpEOGjwPj
   - label: YouTube
     url: https://www.youtube.com/watch?v=duZDsG3tvoA
+- title: Best Friend
+  count: 1
+  original_title: Best Friend
+  artist: Saweetie; Doja Cat
+  artists:
+  - Saweetie
+  - Doja Cat
+  lyricists:
+  - Saweetie
+  - Doja Cat
+  - Asia Smith
+  - Kaine
+  - Dr. Luke
+  - Rocco Did It Again!
+  - Theron Thomas
+  composers:
+  - Saweetie
+  - Doja Cat
+  - Asia Smith
+  - Kaine
+  - Dr. Luke
+  - Rocco Did It Again!
+  - Theron Thomas
+  release_title: Best Friend - Single
+  date: '2021-01-07'
+  date_label: 单曲发行
+  languages:
+  - en
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/best-friend-feat-doja-cat/1542959211?i=1542959224
+  - label: Spotify
+    url: https://open.spotify.com/track/20BOju91NaEFK5Py4VJ2pp
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=_xJUCsyMQes
+- title: 若把你
+  count: 1
+  original_title: 若把你
+  artist: Kirsty
+  artists:
+  - Kirsty
+  lyricists:
+  - Kirsty
+  composers:
+  - Kirsty
+  release_title: 若把你 - Single
+  date: '2018-07-11'
+  date_label: 单曲发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/6aJ66r3V9KtOi6ZQ3dc6LA
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=708k7ITbtyw

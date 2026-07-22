@@ -1,12 +1,27 @@
 ---
+- id: learn-the-rules-like-a-pro
+  title: Learn the rules like a pro
+  author: Pablo Picasso
+  period: 20世纪
+  region: 西班牙
+  type: 金句
+  form: prose
+  language: en
+  aliases: []
+  content:
+  - Learn the rules like a pro, so you can break them like an artist.
+  translated_content: []
+  note: 此句常被归于巴勃罗·毕加索，但现有网络引文未提供可核验的一手出处。
+  source_label: Goodreads（社区引文，未经核实）
+  source_url: https://www.goodreads.com/quotes/558213-learn-the-rules-like-a-pro-so-you-can-break
 - id: meihua-ji
   title: 梅花偈
-  author: 无尽藏师太
-  author_note: 无尽藏比丘尼
-  period: 唐代
-  polity: ''
+  author: 无尽藏比丘尼
+  period: 唐
+  region: ''
   type: 禅诗
   form: verse
+  language: zh
   aliases:
   - 悟道诗
   - 嗅梅诗
@@ -15,36 +30,39 @@
   - 芒鞋踏破岭头云。
   - 归来偶把梅花嗅，
   - 春在枝头已十分。
+  translated_content: []
   note: 相传为唐代无尽藏比丘尼悟道时所作，亦常题作《悟道诗》或《嗅梅诗》。
   source_label: 国家文化记忆库
   source_url: https://tcmb.culture.tw/zh-tw/detail?id=140000000223&indexCode=MOCCOLLECTIONS
 - id: jiezi-shu
   title: 诫子书
   author: 诸葛亮
-  author_note: ''
-  period: 三国时期
-  polity: 蜀汉
+  period: 三国
+  region: 蜀汉
   type: 家书
   form: prose
+  language: zh
   aliases: []
   content:
   - 夫君子之行，静以修身，俭以养德。非淡泊无以明志，非宁静无以致远。夫学须静也，才须学也，非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能治性。年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！
+  translated_content: []
   note: 诸葛亮写给儿子诸葛瞻的家书，后收入《诸葛亮集》。
   source_label: 维基文库《诸葛亮集》
   source_url: https://zh.wikisource.org/zh-hans/%E8%AB%B8%E8%91%9B%E4%BA%AE%E9%9B%86_(%E5%BC%B5%E6%BE%8D)
 - id: ruzi-ge
   title: 孺子歌
   author: 佚名
-  author_note: ''
   period: 春秋战国
-  polity: ''
+  region: ''
   type: 歌谣
   form: verse
+  language: zh
   aliases:
   - 沧浪歌
   content:
   - 沧浪之水清（qīng）兮，可以濯（zhuó）我缨（yīng）。
   - 沧浪之水浊（zhuó）兮，可以濯我足。
+  translated_content: []
   note: 《孟子·离娄上》载“有孺子歌曰”，后世亦称《沧浪歌》。
   source_label: 中国哲学书电子化计划《孟子·离娄上》
   source_url: https://ctext.org/text.pl?if=gb&node=1678&remap=gb

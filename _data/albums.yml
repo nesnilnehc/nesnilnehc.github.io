@@ -1,0 +1,45 @@
+---
+- title: LILAC
+  id: iu-lilac-album
+  original_title: LILAC
+  count: 1
+  artist: IU
+  artists:
+  - IU
+  release_date: '2021-03-25'
+  release_type: 录音室专辑
+  languages:
+  - ko
+  genre: K-Pop
+  track_count: 10
+  duration: 36 分钟
+  label: EDAM Entertainment
+  artwork_url: https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/9f/83/359f83b3-1423-3153-1641-98e948b7fc65/cover_-_EDAM_5_LILAC.jpg/600x600bb.jpg
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/iu-5th-album-lilac/1560113132
+  - label: Spotify
+    url: https://open.spotify.com/album/01dPJcwyht77brL4JQiR8R
+- title: COVER 70's
+  id: jun-shibata-cover-70s
+  original_title: COVER 70's
+  count: 1
+  artist: Jun Shibata
+  artists:
+  - Jun Shibata
+  release_date: '2012-10-31'
+  release_type: 翻唱专辑
+  languages:
+  - ja
+  genre: J-Pop
+  track_count: 12
+  duration: 45 分钟
+  label: Victor Entertainment
+  artwork_url: https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7e/36/4e/7e364e4b-1e5e-b3ca-2249-8bfab0f45ccb/VICL-63935.jpg/600x600bb.jpg
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/jp/album/cover-70s/569776919
+  - label: Spotify
+    url: https://open.spotify.com/album/2tzlBFyqyoKiTSJ4AeizDe

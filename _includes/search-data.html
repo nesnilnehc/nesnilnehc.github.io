@@ -58,14 +58,31 @@ window.siteSearchItems.push({
   excerpt: {{ track.release_title | default: track.artist | jsonify }}
 });
 {% endfor %}
+{% for album in site.data.albums %}
+{% capture album_search_content %}{{ album.original_title }} {{ album.title }} {{ album.artist }} {{ album.artists | join: ' ' }} {{ album.release_type }} {{ album.genre }} {{ album.label }} {{ album.note }}{% endcapture %}
+window.siteSearchItems.push({
+  kind: "album",
+  kindLabel: "专辑",
+  title: {{ album.title | jsonify }},
+  url: {{ '/albums/#' | append: album.id | relative_url | jsonify }},
+  meta: {{ album.artist | jsonify }},
+  category: {{ album.release_type | jsonify }},
+  tags: [{{ album.genre | jsonify }}],
+  content: {{ album_search_content | strip | jsonify }},
+  excerpt: {{ album.original_title | default: album.artist | jsonify }}
+});
+{% endfor %}
 {% for work in site.data.literature %}
-{% capture literature_search_content %}{{ work.author }} {{ work.author_note }} {{ work.period }} {{ work.polity }} {{ work.aliases | join: ' ' }} {{ work.content | join: ' ' }} {{ work.note }}{% endcapture %}
+{% capture literature_author %}{% include person-name.html name=work.author %}{% endcapture %}
+{% assign literature_author_text = literature_author | strip_html | strip %}
+{% capture literature_meta %}{{ work.period }}{% if work.region != "" %} · {{ work.region }}{% endif %} · {{ literature_author_text }}{% endcapture %}
+{% capture literature_search_content %}{{ literature_author_text }} {{ work.period }} {{ work.region }} {{ work.aliases | join: ' ' }} {{ work.content | join: ' ' }} {{ work.translated_content | join: ' ' }} {{ work.note }}{% endcapture %}
 window.siteSearchItems.push({
   kind: "literature",
   kindLabel: "诗文",
   title: {{ work.title | jsonify }},
   url: {{ '/poetry/#' | append: work.id | relative_url | jsonify }},
-  meta: {{ work.period | append: ' · ' | append: work.author | jsonify }},
+  meta: {{ literature_meta | strip | jsonify }},
   category: {{ work.type | jsonify }},
   tags: {{ work.aliases | jsonify }},
   content: {{ literature_search_content | strip | jsonify }},

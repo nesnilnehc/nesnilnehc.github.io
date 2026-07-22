@@ -123,6 +123,16 @@ canonical_url:
 - 禁止重复 `title`、`artist`、`release_title`、`date`、`date_label`、`tags`、`director`、`premiere_date`、`premiere_note`、`awards` 已经表达的信息；没有额外可靠事实时使用 `note: ""`。
 - 禁止使用评价性表达，例如“动人”“有力量”“更贴近”“值得”“最有意思”“成立”“压得住”。
 
+## 诗文收藏
+
+`_data/literature.yml` 中的时期、姓名与正文遵循以下规则：
+
+- `period` 使用历史时期本名或世纪，例如 `春秋战国`、`三国`、`唐`、`20世纪`；不附加“代”或“时期”。国家、政权或地域另写入 `region`。
+- `author` 使用 `_data/person_names.yml` 的稳定键。中文人物使用中文原名；外文人物使用罗马字姓名，并由姓名组件统一显示为“原文名 · 中文名”。无法确认作者时使用 `佚名`。
+- `language` 使用小写 ISO 639 语言代码；`content` 始终保存原文。
+- `translated_content` 保存已有可靠中文译文，没有时使用空数组。不要为补齐页面而自行翻译。
+- `form` 只使用 `verse` 或 `prose`，译文沿用原文的段落或分行形式。
+
 ## 图片
 
 - 替代文本必须描述图片传递的信息，不能只写文件名或“截图”。

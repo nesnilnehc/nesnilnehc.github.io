@@ -11,6 +11,11 @@ sidebar: false
   <p>我偏爱那些能承载辽阔、夜晚、告别、时间、季节转换、长大和挽留的歌。它们可以明亮直接，也可以克制清冷；重要的是能让我慢下来、重新提气，或把一段情绪放回生活里。</p>
 </section>
 
+<nav class="music-collection-nav" aria-label="音乐收藏分类">
+  <a class="is-active" href="{{ '/music/' | relative_url }}" aria-current="page">单曲</a>
+  <a href="{{ '/albums/' | relative_url }}">专辑</a>
+</nav>
+
 {% assign music_artists = "" | split: "" %}
 {% for track in site.data.music %}
   {% for artist in track.artists %}
@@ -115,13 +120,13 @@ sidebar: false
 
 <section class="music-shelf" aria-label="喜欢的音乐">
   {% for track in tracks_by_release %}
-  <article class="music-entry" data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-languages="{{ track.languages | join: '|' | escape }}" data-music-genre="{{ track.primary_genre | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count | default: 0 }}" data-music-order="{{ forloop.index0 }}">
+  <article class="music-entry"{% if track.id %} id="{{ track.id }}"{% endif %} data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-languages="{{ track.languages | join: '|' | escape }}" data-music-genre="{{ track.primary_genre | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count | default: 0 }}" data-music-order="{{ forloop.index0 }}">
     <span class="music-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if track.count %}
     <span class="music-entry__count" aria-label="喜欢 {{ track.count }} 次">喜欢 {{ track.count }} 次</span>
     {% endif %}
     <div class="music-entry__title-group">
-      <h2>{{ track.original_title }}{% if track.title and track.title != track.original_title %}（{{ track.title }}）{% endif %}</h2>
+      <h2>{% include music-title.html original_title=track.original_title title=track.title %}</h2>
       {% assign track_chip_count = track.languages.size | plus: 1 | plus: track.genres.size | plus: track.tags.size %}
       {% if track_chip_count > 0 %}
       <ul class="music-entry__tags" aria-label="分类标签">
@@ -157,7 +162,16 @@ sidebar: false
       {% endif %}
       <div>
         <dt>来源</dt>
-        <dd class="music-entry__release">{% include music-release.html date=track.date date_label=track.date_label release_title=track.release_title release_context=track.release_context title=track.title original_title=track.original_title %}</dd>
+        {% assign linked_album = nil %}
+        {% assign linked_album_url = "" %}
+        {% if track.album_id %}
+          {% assign linked_album = site.data.albums | where: "id", track.album_id | first %}
+          {% if linked_album %}
+            {% assign linked_album_path = "/albums/#" | append: linked_album.id %}
+            {% assign linked_album_url = linked_album_path | relative_url %}
+          {% endif %}
+        {% endif %}
+        <dd class="music-entry__release">{% include music-release.html date=track.date date_label=track.date_label release_title=track.release_title release_context=track.release_context release_url=linked_album_url title=track.title original_title=track.original_title %}</dd>
       </div>
       {% if track.listen_links %}
       <div>

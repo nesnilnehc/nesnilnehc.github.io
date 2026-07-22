@@ -1,0 +1,3 @@
+{%- assign original_title = include.original_title | default: "" | strip -%}
+{%- assign title = include.title | default: "" | strip -%}
+{%- if original_title != "" -%}{{ original_title }}{%- else -%}{{ title }}{%- endif -%}{%- if title != "" and title != original_title -%}（{{ title }}）{%- endif -%}

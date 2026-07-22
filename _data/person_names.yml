@@ -1,5 +1,65 @@
 # 人物姓名字典。顶层 key 就是 romanized_name；没有可靠罗马字时才使用原名。chinese_name 只来自人物页显式维护字段，不从译名自动生成。canonical_name 需要逐条以来源材料校准。
 ---
+'Choi Gap Won':
+  romanized_name: Choi Gap Won
+  canonical_name: 최갑원
+  display_name: Choi Gap Won · 최갑원
+Dr.JO:
+  romanized_name: Dr.JO
+  canonical_name: Dr.JO
+  display_name: Dr.JO
+Im Su-ho:
+  romanized_name: Im Su-ho
+  canonical_name: 임수호
+  display_name: Im Su-ho · 임수호
+Jacob Chatelain:
+  romanized_name: Jacob Chatelain
+  canonical_name: Jacob Chatelain
+  display_name: Jacob Chatelain
+Kim Do Hoon:
+  romanized_name: Kim Do Hoon
+  canonical_name: 김도훈
+  display_name: Kim Do Hoon · 김도훈
+Kumi:
+  romanized_name: Kumi
+  canonical_name: Kumi
+  display_name: Kumi
+London Jackson:
+  romanized_name: London Jackson
+  canonical_name: London Jackson
+  display_name: London Jackson
+Madilyn Bailey:
+  romanized_name: Madilyn Bailey
+  canonical_name: Madilyn Bailey
+  display_name: Madilyn Bailey
+Martin Coogan:
+  romanized_name: Martin Coogan
+  canonical_name: Martin Coogan
+  display_name: Martin Coogan
+Mitsugu Morita:
+  romanized_name: Mitsugu Morita
+  canonical_name: 森田貢
+  display_name: Mitsugu Morita · 森田貢
+N!ko:
+  romanized_name: N!ko
+  canonical_name: N!ko
+  display_name: N!ko
+Naoki:
+  romanized_name: Naoki
+  canonical_name: Naoki
+  display_name: Naoki
+Ryan S. Jhun:
+  romanized_name: Ryan S. Jhun
+  canonical_name: 라이언 전
+  display_name: Ryan S. Jhun · 라이언 전
+Woong Kim:
+  romanized_name: Woong Kim
+  canonical_name: 웅킴
+  display_name: Woong Kim · 웅킴
+Zacchariah Palmer:
+  romanized_name: Zacchariah Palmer
+  canonical_name: Zacchariah Palmer
+  display_name: Zacchariah Palmer
 '24':
   canonical_name: '24'
   display_name: '24'
@@ -22,6 +82,10 @@ Annie Gonzalez:
   canonical_name: Annie Gonzalez
   chinese_name: 安妮·冈萨雷斯
   display_name: Annie Gonzalez · 安妮·冈萨雷斯
+Asia Smith:
+  romanized_name: Asia Smith
+  canonical_name: Asia Smith
+  display_name: Asia Smith
 Arvid Solvang:
   romanized_name: Arvid Solvang
   canonical_name: Arvid Solvang
@@ -110,6 +174,17 @@ Damiano:
   romanized_name: Damiano
   canonical_name: Damiano
   display_name: Damiano
+Doja Cat:
+  romanized_name: Doja Cat
+  canonical_name: Amala Ratna Zandile Dlamini
+  chinese_name: 蜜桃猫朵佳
+  nickname: Doja Cat
+  display_name: Doja Cat · Amala Ratna Zandile Dlamini · 蜜桃猫朵佳
+Dr. Luke:
+  romanized_name: Dr. Luke
+  canonical_name: Lukasz Gottwald
+  nickname: Dr. Luke
+  display_name: Dr. Luke · Lukasz Gottwald
 Danny Aiello:
   romanized_name: Danny Aiello
   canonical_name: Danny Aiello
@@ -240,6 +315,15 @@ JISOO:
   chinese_name: 金智秀
   nickname: JISOO
   display_name: JISOO · 김지수 · 金智秀
+Kaine:
+  romanized_name: Kaine
+  canonical_name: Kaine
+  display_name: Kaine
+Kirsty:
+  romanized_name: Kirsty
+  canonical_name: 刘瑾睿
+  nickname: Kirsty
+  display_name: Kirsty · 刘瑾睿
 Jaden Smith:
   romanized_name: Jaden Smith
   canonical_name: Jaden Smith
@@ -298,6 +382,10 @@ Joseph Mazzello:
   canonical_name: Joseph Mazzello
   chinese_name: 约瑟夫·梅泽罗
   display_name: Joseph Mazzello · 约瑟夫·梅泽罗
+Jun Shibata:
+  romanized_name: Jun Shibata
+  canonical_name: 柴田淳
+  display_name: Jun Shibata · 柴田淳
 KOKIA:
   romanized_name: KOKIA
   canonical_name: 吉田亜紀子
@@ -482,6 +570,11 @@ Park Ji Yoon:
   canonical_name: 박지윤
   chinese_name: 朴志胤
   display_name: Park Ji Yoon · 박지윤 · 朴志胤
+Pablo Picasso:
+  romanized_name: Pablo Picasso
+  canonical_name: Pablo Picasso
+  chinese_name: 巴勃罗·毕加索
+  display_name: Pablo Picasso · 巴勃罗·毕加索
 Paul Scofield:
   romanized_name: Paul Scofield
   canonical_name: Paul Scofield
@@ -556,6 +649,11 @@ Robert Zemeckis:
   canonical_name: Robert Zemeckis
   chinese_name: 罗伯特·泽米吉斯
   display_name: Robert Zemeckis · 罗伯特·泽米吉斯
+Rocco Did It Again!:
+  romanized_name: Rocco Did It Again!
+  canonical_name: Rocco Valdes
+  nickname: Rocco Did It Again!
+  display_name: Rocco Did It Again! · Rocco Valdes
 Robin Williams:
   romanized_name: Robin Williams
   canonical_name: Robin Williams
@@ -590,6 +688,12 @@ Sandy Lam:
   canonical_name: 林忆莲
   display_name: Sandy Lam · 林忆莲
   nickname: Sandy Lam
+Saweetie:
+  romanized_name: Saweetie
+  canonical_name: Diamonté Quiava Valentin Harper
+  chinese_name: 萨维蒂
+  nickname: Saweetie
+  display_name: Saweetie · Diamonté Quiava Valentin Harper · 萨维蒂
 Sendhil Mullainathan:
   romanized_name: Sendhil Mullainathan
   canonical_name: Sendhil Mullainathan
@@ -982,6 +1086,15 @@ Yoo Jae-suk:
   canonical_name: 유재석
   chinese_name: 刘在石
   display_name: Yoo Jae-suk · 유재석 · 刘在石
+何赛飞:
+  canonical_name: 何赛飞
+  display_name: 何赛飞
+刘佩琦:
+  canonical_name: 刘佩琦
+  display_name: 刘佩琦
+嘉娜·沙哈提:
+  canonical_name: 嘉娜·沙哈提
+  display_name: 嘉娜·沙哈提
 唐国强:
   canonical_name: 唐国强
   display_name: 唐国强
@@ -991,6 +1104,9 @@ Yoo Jae-suk:
 左小青:
   canonical_name: 左小青
   display_name: 左小青
+徐亮:
+  canonical_name: 徐亮
+  display_name: 徐亮
 干超:
   canonical_name: 干超
   display_name: 干超
@@ -1003,6 +1119,15 @@ Yoo Jae-suk:
 曾红生:
   canonical_name: 曾红生
   display_name: 曾红生
+斯琴高娃:
+  canonical_name: 斯琴高娃
+  display_name: 斯琴高娃
+贾妮:
+  canonical_name: 贾妮
+  display_name: 贾妮
+范近轮:
+  canonical_name: 范近轮
+  display_name: 范近轮
 李靖飞:
   canonical_name: 李靖飞
   display_name: 李靖飞
@@ -1015,12 +1140,30 @@ Yoo Jae-suk:
 石爻:
   canonical_name: 石爻
   display_name: 石爻
+谷智鑫:
+  canonical_name: 谷智鑫
+  display_name: 谷智鑫
+郭宝昌:
+  canonical_name: 郭宝昌
+  display_name: 郭宝昌
 陆树铭:
   canonical_name: 陆树铭
   display_name: 陆树铭
+钱枫:
+  canonical_name: 钱枫
+  display_name: 钱枫
+陈锐:
+  canonical_name: 陈锐
+  display_name: 陈锐
+陈宝国:
+  canonical_name: 陈宝国
+  display_name: 陈宝国
 鲍国安:
   canonical_name: 鲍国安
   display_name: 鲍国安
+龚若飞:
+  canonical_name: 龚若飞
+  display_name: 龚若飞
 Akira Ishida:
   romanized_name: Akira Ishida
   canonical_name: 石田彰
@@ -1232,3 +1375,9 @@ Lucy Iris:
 梁博:
   canonical_name: 梁博
   display_name: 梁博
+无尽藏比丘尼:
+  canonical_name: 无尽藏比丘尼
+  display_name: 无尽藏比丘尼
+诸葛亮:
+  canonical_name: 诸葛亮
+  display_name: 诸葛亮

@@ -458,6 +458,48 @@
   - 商业
   - 小说改编
   note: 电视剧改编自豆豆长篇小说《遥远的救世主》。
+- original_title: 恰同学少年
+  count: 1
+  type: tv-series
+  chinese_title: 恰同学少年
+  directors:
+  - 龚若飞
+  - 嘉娜·沙哈提
+  cast:
+  - 谷智鑫
+  - 徐亮
+  - 钱枫
+  - 范近轮
+  - 陈锐
+  premiere_date: '2007-03-22'
+  premiere_note: CCTV-1 首播
+  imdb_url: https://www.imdb.com/title/tt28212799/
+  poster: "/assets/images/movies/qia-tong-xue-shao-nian.jpg"
+  awards: 第 26 届中国电视剧飞天奖长篇电视剧一等奖、优秀编剧奖；第 24 届中国电视金鹰奖优秀长篇电视剧奖。
+  tags:
+  - 青春
+  - 历史
+  note: 全剧共 23 集，讲述毛泽东、蔡和森等人在湖南第一师范求学的故事。
+- original_title: 大宅门
+  count: 1
+  type: tv-series
+  chinese_title: 大宅门
+  director: 郭宝昌
+  cast:
+  - 陈宝国
+  - 刘佩琦
+  - 何赛飞
+  - 斯琴高娃
+  - 贾妮
+  premiere_date: '2001-04-15'
+  premiere_note: CCTV-1 首播
+  imdb_url: https://www.imdb.com/title/tt1368472/
+  poster: "/assets/images/movies/da-zhai-men.jpg"
+  awards: 未获飞天奖、金鹰奖或五个一工程奖。
+  tags:
+  - 家族
+  - 历史
+  note: 系列分两部，共 72 集；本条目的首播日期为 40 集第一部。
 - original_title: Friends
   count: 1
   type: tv-series

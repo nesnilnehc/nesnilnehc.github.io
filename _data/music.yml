@@ -1973,3 +1973,30 @@
     url: https://open.spotify.com/track/6tJmPnHeCidKixJ7VEdGgy
   - label: YouTube
     url: https://www.youtube.com/watch?v=bfn8yueBifw
+- title: 不醉不会
+  count: 1
+  original_title: 不醉不会
+  artist: 田馥甄
+  artists:
+  - 田馥甄
+  lyricists:
+  - 林夕
+  composers:
+  - 刘大江
+  release_title: 渺小
+  date: '2013-11-29'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - soundtrack
+  note: 电视剧《没有名字的甜点店》主题曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/tw/song/%E4%B8%8D%E9%86%89%E4%B8%8D%E6%9C%83/780523138
+  - label: Spotify
+    url: https://open.spotify.com/track/3k2Pn0rfj7EA4jyHCM4cKq
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=7gQxgKaiPzk

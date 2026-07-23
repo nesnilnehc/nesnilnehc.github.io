@@ -2059,3 +2059,61 @@
     url: https://open.spotify.com/track/0l56Hyp8yQQ35teUMk0ncb
   - label: YouTube
     url: https://www.youtube.com/watch?v=YFEt96ChhgE
+- title: 想念我了吗
+  count: 1
+  original_title: 내가 그리웠니 (Miss Me Or Diss Me)
+  artist: MC Mong; Jinsil
+  artists:
+  - MC Mong
+  - Jinsil
+  lyricists:
+  - MC Mong
+  composers:
+  - MC Mong
+  release_title: Miss Me Or Diss Me
+  date: '2014-11-03'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - k-pop
+  - collaboration
+  note: 由 Mad Soul Child 成员 Jinsil 特别献声。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/miss-me-or-diss-me-feat-jinsil/936541824?i=936541881
+  - label: Spotify
+    url: https://open.spotify.com/track/5oB8j9n9uZsxmykscprHJ8
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=-6OxVfem0WM
+- title: 坏
+  count: 1
+  original_title: 나쁘다 (Bad)
+  artist: Tablo; Jinsil
+  artists:
+  - Tablo
+  - Jinsil
+  lyricists:
+  - Tablo
+  composers:
+  - Tablo
+  release_title: Fever's End, Pt. 1
+  date: '2011-10-21'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - k-pop
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/bad-feat-jinsil/1339095508?i=1339095510
+  - label: Spotify
+    url: https://open.spotify.com/track/4DnPw4EevIVK6tf5YTzaDV
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=dPmX-K7eadM

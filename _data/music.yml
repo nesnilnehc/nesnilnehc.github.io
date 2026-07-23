@@ -2030,3 +2030,32 @@
     url: https://open.spotify.com/track/57LioO1gSll1wvPDAjiET3
   - label: YouTube
     url: https://www.youtube.com/watch?v=v9a8s9lbT34
+- title: Lips
+  count: 1
+  original_title: Lips
+  artist: Marian Hill
+  artists:
+  - Marian Hill
+  lyricists:
+  - Samantha Gongol
+  - Jeremy Lloyd
+  composers:
+  - Samantha Gongol
+  - Jeremy Lloyd
+  release_title: Lips / Got It
+  date: '2014-12-02'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: electronic
+  genres:
+  - synth-pop
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/lips/1440880072
+  - label: Spotify
+    url: https://open.spotify.com/track/0l56Hyp8yQQ35teUMk0ncb
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=YFEt96ChhgE

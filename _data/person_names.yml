@@ -376,6 +376,10 @@ John Turturro:
   canonical_name: John Turturro
   chinese_name: 约翰·特托罗
   display_name: John Turturro · 约翰·特托罗
+Jinsil:
+  romanized_name: Jinsil
+  canonical_name: 진실
+  display_name: Jinsil · 진실
 Jocelyn Pook:
   romanized_name: Jocelyn Pook
   canonical_name: Jocelyn Pook
@@ -494,6 +498,12 @@ Matt Damon:
   canonical_name: Matt Damon
   chinese_name: 马特·达蒙
   display_name: Matt Damon · 马特·达蒙
+MC Mong:
+  romanized_name: MC Mong
+  canonical_name: 신동현
+  chinese_name: MC梦
+  nickname: MC Mong
+  display_name: MC Mong · 신동현
 Michael Keaton:
   romanized_name: Michael Keaton
   canonical_name: Michael Keaton
@@ -755,6 +765,12 @@ T-BONE:
   romanized_name: T-BONE
   canonical_name: T-BONE
   display_name: T-BONE
+Tablo:
+  romanized_name: Tablo
+  canonical_name: 이선웅
+  chinese_name: 李善雄
+  nickname: Tablo
+  display_name: Tablo · 이선웅
 Trakin:
   romanized_name: Trakin
   canonical_name: Trakin

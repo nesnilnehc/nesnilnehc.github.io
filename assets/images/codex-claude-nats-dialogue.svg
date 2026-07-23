@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Codex 与 Claude 通过 NATS 自动沟通</title>
+  <desc id="desc">Codex 和 Claude 在各自会话中运行 Runner，通过 Docker NATS 完成讨论请求、准备确认、开始讨论和自动往返。</desc>
+  <defs>
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#3973c6"/></marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#3a8f5b"/></marker>
+    <marker id="purpleArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#7857b8"/></marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#1d2a3a" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1200" height="650" rx="24" fill="#fbfcfe"/>
+  <text x="600" y="55" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="28" font-weight="700" fill="#172033">Codex 与 Claude 通过 NATS 自动沟通</text>
+  <text x="600" y="87" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" fill="#5d6878">两个现有会话各自监听，NATS 只负责转发消息</text>
+
+  <rect x="40" y="130" width="280" height="350" rx="20" fill="#e8f1ff" stroke="#3973c6" stroke-width="3" filter="url(#shadow)"/>
+  <text x="180" y="180" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#17365d">Codex 会话</text>
+  <rect x="78" y="204" width="204" height="74" rx="12" fill="#fff" stroke="#9bbbe6"/>
+  <text x="180" y="233" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="17" font-weight="700" fill="#17365d">Runner</text>
+  <text x="180" y="260" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" fill="#39516e">查看消息 → 回复 → 再查看</text>
+  <text x="180" y="447" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" fill="#526983">当前任务保持运行</text>
+
+  <path d="M480 150 C480 122 720 122 720 150 L720 460 C720 488 480 488 480 460 Z" fill="#f4f0ff" stroke="#7857b8" stroke-width="3" filter="url(#shadow)"/>
+  <ellipse cx="600" cy="150" rx="120" ry="24" fill="#e9e1fb" stroke="#7857b8" stroke-width="3"/>
+  <text x="600" y="179" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#3f2a68">NATS</text>
+  <text x="600" y="203" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" fill="#665281">Docker 消息中转</text>
+
+  <rect x="880" y="130" width="280" height="350" rx="20" fill="#eaf8ef" stroke="#3a8f5b" stroke-width="3" filter="url(#shadow)"/>
+  <text x="1020" y="180" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="24" font-weight="700" fill="#204d32">Claude 会话</text>
+  <rect x="918" y="204" width="204" height="74" rx="12" fill="#fff" stroke="#9bc9ac"/>
+  <text x="1020" y="233" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="17" font-weight="700" fill="#204d32">Runner</text>
+  <text x="1020" y="260" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" fill="#3d654a">查看消息 → 回复 → 再查看</text>
+  <text x="1020" y="447" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="14" fill="#4d6f59">当前任务保持运行</text>
+
+  <line x1="320" y1="305" x2="475" y2="305" stroke="#3973c6" stroke-width="4" marker-end="url(#blueArrow)"/>
+  <line x1="725" y1="305" x2="875" y2="305" stroke="#3973c6" stroke-width="4" marker-end="url(#blueArrow)"/>
+  <rect x="520" y="286" width="160" height="38" rx="19" fill="#fff" stroke="#b8cbe7"/>
+  <text x="600" y="311" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#244e87">1　讨论请求 →</text>
+
+  <line x1="880" y1="350" x2="725" y2="350" stroke="#3a8f5b" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <line x1="480" y1="350" x2="325" y2="350" stroke="#3a8f5b" stroke-width="4" marker-end="url(#greenArrow)"/>
+  <rect x="520" y="331" width="160" height="38" rx="19" fill="#fff" stroke="#a9d1b7"/>
+  <text x="600" y="356" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#296640">← 2　已准备好</text>
+
+  <line x1="320" y1="395" x2="475" y2="395" stroke="#3973c6" stroke-width="4" marker-end="url(#blueArrow)"/>
+  <line x1="725" y1="395" x2="875" y2="395" stroke="#3973c6" stroke-width="4" marker-end="url(#blueArrow)"/>
+  <rect x="520" y="376" width="160" height="38" rx="19" fill="#fff" stroke="#b8cbe7"/>
+  <text x="600" y="401" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#244e87">3　开始讨论 →</text>
+
+  <line x1="325" y1="440" x2="875" y2="440" stroke="#7857b8" stroke-width="4" stroke-dasharray="8 7" marker-start="url(#purpleArrow)" marker-end="url(#purpleArrow)"/>
+  <rect x="520" y="421" width="160" height="38" rx="19" fill="#fff" stroke="#c5b4e4"/>
+  <text x="600" y="446" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="15" font-weight="700" fill="#573d87">4　观点与回复 ↔</text>
+
+  <rect x="330" y="540" width="540" height="62" rx="16" fill="#fff7df" stroke="#c59020" stroke-width="2"/>
+  <text x="600" y="578" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="17" font-weight="700" fill="#62470e">结束：达成目标，或达到轮次上限</text>
+</svg>

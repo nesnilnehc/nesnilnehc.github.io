@@ -1919,3 +1919,57 @@
     url: https://open.spotify.com/track/6aJ66r3V9KtOi6ZQ3dc6LA
   - label: YouTube
     url: https://www.youtube.com/watch?v=708k7ITbtyw
+- title: Dear
+  count: 1
+  original_title: Dear
+  artist: lecca
+  artists:
+  - lecca
+  lyricists:
+  - lecca
+  composers:
+  - lecca
+  release_title: URBAN PIRATES
+  date: '2006-08-23'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: reggae
+  genres: []
+  tags:
+  - j-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/jp/album/dear/182593090?i=182595441
+  - label: Spotify
+    url: https://open.spotify.com/track/7oYUN51guTI4XMZnLFUzNy
+- title: 0.0000%
+  count: 1
+  original_title: 0.0000%
+  artist: 7co
+  artists:
+  - 7co
+  lyricists:
+  - Ashida Nanako
+  composers:
+  - RYUJA
+  - Ashida Nanako
+  release_title: 0.0000% - Single
+  date: '2025-02-14'
+  date_label: 数字发行
+  languages:
+  - ja
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - j-pop
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/0-0000/1793333977
+  - label: Spotify
+    url: https://open.spotify.com/track/6tJmPnHeCidKixJ7VEdGgy
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=bfn8yueBifw

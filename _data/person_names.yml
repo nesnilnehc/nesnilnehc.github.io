@@ -82,6 +82,10 @@ Annie Gonzalez:
   canonical_name: Annie Gonzalez
   chinese_name: 安妮·冈萨雷斯
   display_name: Annie Gonzalez · 安妮·冈萨雷斯
+Ashida Nanako:
+  romanized_name: Ashida Nanako
+  canonical_name: 芦田菜名子
+  display_name: Ashida Nanako · 芦田菜名子
 Asia Smith:
   romanized_name: Asia Smith
   canonical_name: Asia Smith
@@ -614,6 +618,10 @@ Rado:
   canonical_name: 송주영
   nickname: Rado
   display_name: Rado · 송주영
+RYUJA:
+  romanized_name: RYUJA
+  canonical_name: RYUJA
+  display_name: RYUJA
 Ralph Fiennes:
   romanized_name: Ralph Fiennes
   canonical_name: Ralph Fiennes
@@ -1380,6 +1388,11 @@ Lucy Iris:
   canonical_name: Jennifer Horne
   nickname: Lucy Iris
   display_name: Lucy Iris · Jennifer Horne
+lecca:
+  romanized_name: lecca
+  canonical_name: 斎藤礼伊奈
+  nickname: lecca
+  display_name: lecca · 斎藤礼伊奈
 梁博:
   canonical_name: 梁博
   display_name: 梁博

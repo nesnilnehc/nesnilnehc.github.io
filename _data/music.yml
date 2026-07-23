@@ -2000,3 +2000,33 @@
     url: https://open.spotify.com/track/3k2Pn0rfj7EA4jyHCM4cKq
   - label: YouTube
     url: https://www.youtube.com/watch?v=7gQxgKaiPzk
+- title: Psycho
+  count: 1
+  original_title: Psycho
+  artist: Soyeon
+  artists:
+  - Soyeon
+  lyricists:
+  - Soyeon
+  composers:
+  - Soyeon
+  - Pop Time
+  - Kako
+  release_title: Windy
+  date: '2021-07-05'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - k-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/psycho/1574124149
+  - label: Spotify
+    url: https://open.spotify.com/track/57LioO1gSll1wvPDAjiET3
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=v9a8s9lbT34

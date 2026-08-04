@@ -577,6 +577,12 @@ PSY:
   chinese_name: 朴载相
   nickname: PSY
   display_name: PSY · 박재상 · 朴载相
+Lena Park:
+  romanized_name: Lena Park
+  canonical_name: 박정현
+  chinese_name: 朴正炫
+  nickname: Park Jung-hyun
+  display_name: Lena Park · 박정현 · 朴正炫
 Park Bom:
   romanized_name: Park Bom
   canonical_name: 박봄
@@ -981,6 +987,15 @@ aMEI:
 许飞:
   canonical_name: 许飞
   display_name: 许飞
+吴遥:
+  canonical_name: 吴遥
+  display_name: 吴遥
+木木:
+  canonical_name: 木木
+  display_name: 木木
+心乱:
+  canonical_name: 心乱
+  display_name: 心乱
 谭晶:
   canonical_name: 谭晶
   chinese_name: 谭晶
@@ -1432,6 +1447,10 @@ lecca:
 诸葛亮:
   canonical_name: 诸葛亮
   display_name: 诸葛亮
+葱香科学家:
+  canonical_name: 王悠然
+  nickname: 葱香科学家
+  display_name: 葱香科学家 · 王悠然
 Soyeon:
   romanized_name: Soyeon
   canonical_name: 전소연

@@ -646,6 +646,38 @@
   listen_links:
   - label: Apple Music
     url: https://music.apple.com/us/album/nocturne/1486523073?i=1486523887
+- title: 到底怎样
+  count: 1
+  original_title: 어땠을까 (What Would Have Been?)
+  artist: PSY; Lena Park
+  artists:
+  - PSY
+  - Lena Park
+  lyricists:
+  - PSY
+  composers:
+  - PSY
+  - Yoo Gun-hyung
+  release_title: PSY 6 (Six Rules), Part 1
+  date: '2012-07-15'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres:
+  - ballad
+  tags:
+  - k-pop
+  - collaboration
+  - duet
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/what-would-have-been-feat-lena-park/1339074801
+  - label: Spotify
+    url: https://open.spotify.com/track/5Kbpcd3hOqu4ZRAJNAjIcg
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=z6In9jqBxyM
 - title: 会怎么样呢
   count: 1
   original_title: 어땠을까 (What Would Have Been?)
@@ -1336,7 +1368,7 @@
   - label: 网易云音乐
     url: https://music.163.com/song?id=470759479
 - title: 偷心海盗
-  count: 1
+  count: 2
   original_title: 偷心海盗
   artist: 栗儿
   artists:
@@ -2117,3 +2149,74 @@
     url: https://open.spotify.com/track/4DnPw4EevIVK6tf5YTzaDV
   - label: YouTube
     url: https://www.youtube.com/watch?v=dPmX-K7eadM
+- title: 你的一生我只借一晚
+  count: 1
+  original_title: 你的一生我只借一晚
+  artist: 吴遥
+  artists:
+  - 吴遥
+  lyricists:
+  - 木木
+  composers:
+  - 心乱
+  release_title: 你的一生我只借一晚
+  date: '2008-11-01'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: 电影《爱情神话》(2021) 中被引用为背景音乐。
+  listen_links:
+  - label: 网易云音乐
+    url: https://music.163.com/song?id=28308845
+  - label: QQ音乐
+    url: https://y.qq.com/n/ryqq/songDetail/0024MMwO0ZU2yV
+- title: 乌兰巴托的夜
+  count: 1
+  original_title: 乌兰巴托的夜
+  artist: 葱香科学家
+  artists:
+  - 葱香科学家
+  release_title: 乌兰巴托的夜
+  date: '2023-08-16'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/2fYLof1HVWmvdDoW4PQBnJ
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=cbIYDUtLJ9o
+- title: all over love
+  count: 1
+  original_title: all over love
+  artist: LOVE PSYCHEDELICO
+  artists:
+  - LOVE PSYCHEDELICO
+  lyricists:
+  - Kumi
+  - Naoki
+  composers:
+  - Kumi
+  - Naoki
+  release_title: LOVE PSYCHEDELICO III
+  date: '2004-02-25'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: rock
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/jp/album/all-over-love/1122908108?i=1122908247
+  - label: Spotify
+    url: https://open.spotify.com/track/3StkX9ob8MIUg5dGX5KZZX

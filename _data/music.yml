@@ -142,7 +142,7 @@
   - label: Spotify
     url: https://open.spotify.com/track/5bVugwry6czApFV2SL3Ifn
 - title: 贝加尔湖畔
-  count: 4
+  count: 5
   original_title: 貝加爾湖畔
   artist: 谭晶; 塔斯肯
   artists:
@@ -598,7 +598,7 @@
   - label: Apple Music
     url: https://music.apple.com/us/album/one-fine-spring-day-original-motion-picture-soundtrack/1618391973
 - title: 失踪
-  count: 2
+  count: 3
   original_title: 失蹤
   artist: Sandy Lam
   artists:
@@ -1415,7 +1415,7 @@
   - label: Spotify
     url: https://open.spotify.com/track/0xQdisF8CHkso4LnJcaIMr
 - title: A-Ha
-  count: 1
+  count: 2
   original_title: A-Ha
   artist: Ivy
   artists:
@@ -2150,7 +2150,7 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=dPmX-K7eadM
 - title: 你的一生我只借一晚
-  count: 1
+  count: 2
   original_title: 你的一生我只借一晚
   artist: 吴遥
   artists:
@@ -2220,3 +2220,172 @@
     url: https://music.apple.com/jp/album/all-over-love/1122908108?i=1122908247
   - label: Spotify
     url: https://open.spotify.com/track/3StkX9ob8MIUg5dGX5KZZX
+- title: 没离开过
+  count: 1
+  original_title: 没离开过
+  artist: 林志炫
+  artists:
+  - 林志炫
+  lyricists:
+  - 楼南蔚
+  composers:
+  - Louis Biancaniello
+  - Sam Watters
+  release_title: 擦声而过Ⅱ
+  date: '2008-12-16'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: 改编自席琳·迪翁演唱的《I Surrender》。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/1461438376
+- title: Arrow
+  count: 1
+  original_title: 화살 (Arrow)
+  artist: J.Fla
+  artists:
+  - J.Fla
+  lyricists:
+  - J.Fla
+  composers:
+  - J.Fla
+  release_title: 화살 (Arrow)
+  date: '2014-12-15'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/au/album/arrow-single/1773808399
+- title: 故障的电扇
+  count: 1
+  original_title: 고장난 선풍기
+  artist: MC Mong; Gary; Hyolyn
+  artists:
+  - MC Mong
+  - Gary
+  - Hyolyn
+  lyricists:
+  - MC Mong
+  - Duble Kick
+  - Gary
+  composers:
+  - Duble Kick
+  - Homeboy
+  release_title: Miss Me Or Diss Me
+  date: '2014-11-03'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - k-pop
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/kr/song/936541910
+- title: Team
+  count: 1
+  original_title: Team
+  artist: Lorde
+  artists:
+  - Lorde
+  lyricists:
+  - Ella Yelich-O'Connor
+  - Joel Little
+  composers:
+  - Ella Yelich-O'Connor
+  - Joel Little
+  release_title: Pure Heroine
+  date: '2013-09-13'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: pop
+  genres:
+  - alternative-pop
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/la/song/1440818672
+  - label: Spotify
+    url: https://open.spotify.com/track/3G6hD9B2ZHOsgf4WfNu7X1
+- title: Colorful World
+  count: 1
+  original_title: Colorful World
+  artist: Vinida Weng
+  artists:
+  - Vinida Weng
+  lyricists:
+  - Vinida Weng
+  composers:
+  - Vinida Weng
+  release_title: Before
+  date: '2016-03-03'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: 酷狗音乐
+    url: https://www.kugou.com/song-36/bvw9f9a.html
+- title: I Remember Everything
+  count: 1
+  original_title: I Remember Everything
+  artist: Kong Lyrics
+  artists:
+  - Kong Lyrics
+  lyricists:
+  - Sot Tey
+  composers:
+  - Sot Tey
+  release_title: I Still Cry for You
+  date: '2026-03-16'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: folk
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1885850331
+- title: 我终于弄丢了你
+  count: 2
+  original_title: 我终于弄丢了你
+  artist: 卫彬月
+  artists:
+  - 卫彬月
+  lyricists:
+  - 卫彬月
+  composers:
+  - 卫彬月
+  languages:
+  - zh
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - solo
+  note: 编曲为 IMMORTAL，混音及母带工程师为 Gian.z。
+  listen_links: []

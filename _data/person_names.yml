@@ -8,14 +8,45 @@ Dr.JO:
   romanized_name: Dr.JO
   canonical_name: Dr.JO
   display_name: Dr.JO
+Ella Yelich-O'Connor:
+  romanized_name: Ella Yelich-O'Connor
+  canonical_name: Ella Yelich-O'Connor
+  chinese_name: 艾拉·叶里奇-奥康纳
+  display_name: Ella Yelich-O'Connor · 艾拉·叶里奇-奥康纳
+Duble Kick:
+  romanized_name: Duble Kick
+  canonical_name: 이단옆차기
+  chinese_name: 二段横踢
+  display_name: Duble Kick · 이단옆차기 · 二段横踢
+Homeboy:
+  romanized_name: Homeboy
+  canonical_name: Homeboy
+  display_name: Homeboy
+Hyolyn:
+  romanized_name: Hyolyn
+  canonical_name: 김효정
+  chinese_name: 孝琳
+  nickname: Hyolyn
+  display_name: Hyolyn · 김효정 · 孝琳
 Im Su-ho:
   romanized_name: Im Su-ho
   canonical_name: 임수호
   display_name: Im Su-ho · 임수호
+J.Fla:
+  romanized_name: J.Fla
+  canonical_name: 김정화
+  chinese_name: 金正华
+  nickname: J.Fla
+  display_name: J.Fla · 김정화 · 金正华
 Jacob Chatelain:
   romanized_name: Jacob Chatelain
   canonical_name: Jacob Chatelain
   display_name: Jacob Chatelain
+Joel Little:
+  romanized_name: Joel Little
+  canonical_name: Joel Little
+  chinese_name: 乔尔·利特
+  display_name: Joel Little · 乔尔·利特
 Kim Do Hoon:
   romanized_name: Kim Do Hoon
   canonical_name: 김도훈
@@ -28,6 +59,12 @@ London Jackson:
   romanized_name: London Jackson
   canonical_name: London Jackson
   display_name: London Jackson
+Lorde:
+  romanized_name: Lorde
+  canonical_name: Ella Marija Lani Yelich-O'Connor
+  chinese_name: 洛德
+  nickname: Lorde
+  display_name: Lorde · Ella Marija Lani Yelich-O'Connor · 洛德
 Madilyn Bailey:
   romanized_name: Madilyn Bailey
   canonical_name: Madilyn Bailey
@@ -1441,6 +1478,20 @@ lecca:
 梁博:
   canonical_name: 梁博
   display_name: 梁博
+林志炫:
+  canonical_name: 林志炫
+  display_name: 林志炫
+楼南蔚:
+  canonical_name: 楼南蔚
+  display_name: 楼南蔚
+Louis Biancaniello:
+  romanized_name: Louis Biancaniello
+  canonical_name: Louis Biancaniello
+  display_name: Louis Biancaniello
+Sam Watters:
+  romanized_name: Sam Watters
+  canonical_name: Sam Watters
+  display_name: Sam Watters
 无尽藏比丘尼:
   canonical_name: 无尽藏比丘尼
   display_name: 无尽藏比丘尼
@@ -1465,3 +1516,17 @@ Kako:
   romanized_name: Kako
   canonical_name: Kako
   display_name: Kako
+Kong Lyrics:
+  romanized_name: Kong Lyrics
+  canonical_name: Kong Lyrics
+  display_name: Kong Lyrics
+Sot Tey:
+  romanized_name: Sot Tey
+  canonical_name: Sot Tey
+  display_name: Sot Tey
+Vinida Weng:
+  romanized_name: Vinida Weng
+  canonical_name: 翁颖
+  chinese_name: 万妮达
+  nickname: Vinida
+  display_name: Vinida Weng · 翁颖 · 万妮达

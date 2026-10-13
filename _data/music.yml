@@ -195,7 +195,7 @@
     url: https://www.youtube.com/watch?v=LzlhmD9S_2Y
 - title: 成人礼
   count: 1
-  original_title: 성인식 (Coming of Age Ceremony)
+  original_title: 성인식
   artist: Park Ji Yoon
   artists:
   - Park Ji Yoon
@@ -221,7 +221,7 @@
     url: https://www.youtube.com/watch?v=Ceb499goxCM
 - title: Wiggle Wiggle
   count: 1
-  original_title: 위글위글 (Wigglewiggle)
+  original_title: 위글위글
   artist: HELLOVENUS
   artists:
   - HELLOVENUS
@@ -392,7 +392,7 @@
     url: https://open.spotify.com/track/5tVFIFBBCWEMLO2zN7Diym
 - title: Skyfall
   count: 1
-  original_title: Skyfall (feat. 민아)
+  original_title: Skyfall
   artist: Damiano; Minah
   artists:
   - Damiano
@@ -472,7 +472,7 @@
     url: https://www.youtube.com/watch?v=VS1lvYuW3LQ
 - title: 寂静的天空
   count: 1
-  original_title: 寂靜的天空 (Silent Sky)
+  original_title: 寂靜的天空
   artist: HAYA乐团; Daiqing Tana
   artists:
   - HAYA乐团
@@ -549,7 +549,7 @@
     url: https://open.spotify.com/track/1QtXcdD2XKRMuQh8vzBp1f
 - title: 少年啊
   count: 4
-  original_title: 소년이여 (A Boy)
+  original_title: 소년이여
   artist: G-DRAGON
   artists:
   - G-DRAGON
@@ -623,7 +623,7 @@
     url: https://open.spotify.com/track/4SM7vQU7FYRHKM9X9GNor6
 - title: 夜想曲
   count: 1
-  original_title: 야상곡 (Nocturne)
+  original_title: 야상곡
   artist: Kim Yuna
   artists:
   - Kim Yuna
@@ -648,7 +648,7 @@
     url: https://music.apple.com/us/album/nocturne/1486523073?i=1486523887
 - title: 到底怎样
   count: 1
-  original_title: 어땠을까 (What Would Have Been?)
+  original_title: 어땠을까
   artist: PSY; Lena Park
   artists:
   - PSY
@@ -680,7 +680,7 @@
     url: https://www.youtube.com/watch?v=z6In9jqBxyM
 - title: 会怎么样呢
   count: 1
-  original_title: 어땠을까 (What Would Have Been?)
+  original_title: 어땠을까
   artist: PSY; Park Bom
   artists:
   - PSY
@@ -708,7 +708,7 @@
     url: https://www.youtube.com/watch?v=eoGCAzqbK2o
 - title: 路
   count: 1
-  original_title: 길 (The Road)
+  original_title: 길
   artist: Kim Yuna
   artists:
   - Kim Yuna
@@ -765,7 +765,7 @@
     url: https://www.youtube.com/watch?v=KBqT_5nyknE
 - title: 花
   count: 1
-  original_title: 꽃 (FLOWER)
+  original_title: 꽃
   artist: JISOO
   artists:
   - JISOO
@@ -2093,7 +2093,7 @@
     url: https://www.youtube.com/watch?v=YFEt96ChhgE
 - title: 想念我了吗
   count: 1
-  original_title: 내가 그리웠니 (Miss Me Or Diss Me)
+  original_title: 내가 그리웠니
   artist: MC Mong; Jinsil
   artists:
   - MC Mong
@@ -2122,7 +2122,7 @@
     url: https://www.youtube.com/watch?v=-6OxVfem0WM
 - title: 坏
   count: 1
-  original_title: 나쁘다 (Bad)
+  original_title: 나쁘다
   artist: Tablo; Jinsil
   artists:
   - Tablo
@@ -2246,7 +2246,7 @@
     url: https://music.apple.com/cn/song/1461438376
 - title: Arrow
   count: 1
-  original_title: 화살 (Arrow)
+  original_title: 화살
   artist: J.Fla
   artists:
   - J.Fla
@@ -2391,7 +2391,7 @@
   listen_links: []
 - title: Cha Cha
   count: 1
-  original_title: 차 차 (Cha Cha)
+  original_title: 차 차
   artist: Eugene
   artists:
   - Eugene
@@ -2413,3 +2413,24 @@
   listen_links:
   - label: Bugs
     url: https://music.bugs.co.kr/track/80001022
+- title: 茶汤
+  count: 1
+  original_title: 茶湯
+  artist: 郁可唯
+  artists:
+  - 郁可唯
+  lyricists:
+  - 方文山
+  release_title: 微加幸福（微笑幸福庆功版）
+  date: '2011-10-28'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/1023680012

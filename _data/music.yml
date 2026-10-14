@@ -2426,6 +2426,8 @@
   - 郁可唯
   lyricists:
   - 方文山
+  composers:
+  - 陈杰汉
   release_title: 微加幸福（微笑幸福庆功版）
   date: '2011-10-28'
   date_label: 专辑发行
@@ -2439,3 +2441,32 @@
   listen_links:
   - label: LINE MUSIC
     url: https://music-tw.line.me/track/1023680012
+- title: MIDNIGHT2077
+  count: 1
+  original_title: MIDNIGHT2077
+  artist: Lambert凌; 陳梦嘉
+  artists:
+  - Lambert凌
+  - 陳梦嘉
+  lyricists:
+  - Lambert凌
+  - 陳梦嘉
+  composers:
+  - Lambert凌
+  - 陳梦嘉
+  release_title: MIDNIGHT2077
+  date: '2021-01-30'
+  date_label: 数字发行
+  languages:
+  - zh
+  - en
+  primary_genre: pop
+  genres: []
+  tags:
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/midnight2077-single/1861386532
+  - label: 网易云音乐
+    url: https://music.163.com/song?id=1815954387

@@ -2470,3 +2470,26 @@
     url: https://music.apple.com/us/album/midnight2077-single/1861386532
   - label: 网易云音乐
     url: https://music.163.com/song?id=1815954387
+- title: 二手烟
+  count: 1
+  original_title: 二手煙
+  artist: 蔡健雅
+  artists:
+  - 蔡健雅
+  lyricists:
+  - 小寒
+  composers:
+  - 蔡健雅
+  release_title: 双栖动物
+  date: '2005-01-07'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/1028286007

@@ -349,6 +349,25 @@
   tags:
   - 体育
   note: 作品记录上海少体校体操儿童的训练与家庭处境。
+- original_title: 被数学选中的人
+  count: 1
+  type: documentary
+  chinese_title: 被数学选中的人
+  directors:
+  - 李金炜
+  - 李争
+  cast: []
+  # 中科院自然科学史研究所王涛个人页记载 CCTV-9 于 2021-10-25 至 2021-10-28 播出。
+  premiere_date: '2021-10-25'
+  premiere_note: CCTV-9 首播
+  # 尚未确认 IMDb 条目，暂使用站内标题检索链接。
+  imdb_url: https://www.imdb.com/find/?q=Chosen%20By%20Mathematics&s=tt
+  poster: "/assets/images/movies/bei-shu-xue-xuan-zhong-de-ren.png"
+  awards: 暂无已核实的获奖信息。
+  tags:
+  - 数学
+  - 科普
+  note: 全片共 4 集，通过生活中的数学应用与数学家访谈介绍数学与人的关系。
 - original_title: Naruto
   count: 1
   type: animation-series

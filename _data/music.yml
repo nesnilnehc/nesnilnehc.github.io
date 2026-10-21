@@ -2150,7 +2150,7 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=dPmX-K7eadM
 - title: 你的一生我只借一晚
-  count: 2
+  count: 3
   original_title: 你的一生我只借一晚
   artist: 吴遥
   artists:
@@ -2493,3 +2493,27 @@
   listen_links:
   - label: LINE MUSIC
     url: https://music-tw.line.me/track/1028286007
+- title: 等待
+  count: 1
+  original_title: 等待
+  artist: 韩磊
+  artists:
+  - 韩磊
+  lyricists:
+  - 葛根塔娜
+  composers:
+  - 张宏光
+  release_title: 帝王之声
+  date: '2004-12-28'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  - soundtrack
+  note: 电视剧《汉武大帝》片尾曲。
+  listen_links:
+  - label: Qobuz
+    url: https://www.qobuz.com/jp-ja/album/-/ui302g4zb6bob

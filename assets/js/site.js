@@ -133,6 +133,7 @@
       if (isVisible) visibleCount += 1;
     });
 
+    document.dispatchEvent(new CustomEvent("collection-filter", {detail: {kind: "movie"}}));
     sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));
     announce("已筛选出 " + visibleCount + " 部影视作品。");
   }
@@ -157,6 +158,7 @@
       if (isVisible) visibleCount += 1;
     });
 
+    document.dispatchEvent(new CustomEvent("collection-filter", {detail: {kind: "music"}}));
     sortCollection(".music-shelf", ".music-entry", "music", activeFilterValue("[data-music-sort]", "musicSort"));
     announce("已筛选出 " + visibleCount + " 首音乐。");
   }
@@ -318,6 +320,12 @@
       setActiveButton(button, "[data-poetry-type-filter]");
       applyPoetryFilters();
     });
+  });
+
+  document.addEventListener("collection-visibility", function (event) {
+    const kind = event.detail.kind;
+    if (kind !== "music" && kind !== "movie") return;
+    sortCollection("." + kind + "-shelf", "." + kind + "-entry", kind, activeFilterValue("[data-" + kind + "-sort]", kind + "Sort"));
   });
 
   sortCollection(".movie-shelf", ".movie-entry", "movie", activeFilterValue("[data-movie-sort]", "movieSort"));

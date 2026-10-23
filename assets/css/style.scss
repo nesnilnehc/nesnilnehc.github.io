@@ -81,6 +81,122 @@ h4[id] {
   font-size: 0.82rem;
 }
 
+.collection-summary > [data-analytics-toggle] {
+  margin-left: auto;
+  align-self: center;
+}
+
+.analytics-text-button {
+  border: 0;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  color: var(--accent-dark);
+  padding: 0.4rem 0;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.collection-analytics {
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+  border-block: 1px solid var(--line);
+
+  &[hidden] { display: none; }
+  p { font-size: 0.85rem; color: var(--muted); }
+  button:focus-visible, a:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  summary { cursor: pointer; font-size: 0.85rem; color: var(--accent-dark); padding: 0.6rem 0; }
+}
+
+.post-content .collection-analytics h2 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.post-content .collection-analytics h3 { font-size: 1.05rem; margin: 0 0 0.35rem; }
+.collection-analytics__header { margin-bottom: 1rem; }
+.collection-analytics__header p { margin: 0.4rem 0 0; overflow-wrap: anywhere; }
+.collection-analytics__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+  border-block: 1px solid var(--line);
+  margin-bottom: 1.5rem;
+  dt { font-size: 0.8rem; color: var(--muted); }
+  dd { margin: 0.35rem 0 0; font-size: 1.15rem; color: var(--accent-dark); font-variant-numeric: tabular-nums; }
+  .collection-analytics__note { font-size: 0.72rem; color: var(--muted); }
+}
+.collection-analytics__charts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 2rem;
+  > section { min-width: 0; }
+}
+.collection-analytics__axis { margin-bottom: 1rem; }
+.collection-analytics__note { font-size: 0.72rem; color: var(--muted); }
+.like-distribution {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  min-height: 230px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--line);
+}
+.like-distribution__column {
+  display: flex;
+  flex: 1 0 48px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+  height: 230px;
+  max-width: 100px;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  &[aria-pressed="true"] { border-color: var(--accent); background: var(--surface); }
+  &:hover .like-distribution__bar { background: var(--accent-dark); }
+}
+.like-distribution__bar { display: block; width: 100%; max-width: 48px; background: var(--accent); min-height: 0; }
+.like-ranking__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  a { overflow-wrap: anywhere; color: var(--ink); font-size: 0.85rem; line-height: 1.5; }
+}
+.like-ranking__count { color: var(--muted); font-size: 0.8rem; white-space: nowrap; }
+.like-ranking__track { grid-column: 1 / -1; height: 5px; background: var(--surface); margin-top: 0.3rem; }
+.like-ranking__bar { display: block; height: 100%; background: var(--signal); }
+.collection-analytics__table { overflow-x: auto; table { font-size: 0.8rem; } th, td { overflow-wrap: anywhere; } }
+.collection-analytics__selection { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 1rem; }
+.music-entry:focus, .movie-entry:focus { outline: 2px solid var(--accent); outline-offset: 4px; scroll-margin-top: 24px; }
+
+@media (max-width: 600px) {
+  .collection-analytics__charts { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .collection-analytics__metrics { gap: 0.7rem; dd { font-size: 1rem; } }
+}
+
+@media (max-width: 480px) {
+  .collection-analytics__metrics {
+    grid-template-columns: minmax(0, 1fr);
+    > div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.15rem 0.8rem; }
+    dt { align-self: center; }
+    dd { margin: 0; }
+    .collection-analytics__note { grid-column: 1 / -1; }
+  }
+}
+
 .movie-profile,
 .music-profile,
 .album-profile,

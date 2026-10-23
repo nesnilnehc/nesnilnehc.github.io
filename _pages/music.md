@@ -5,6 +5,7 @@ nav_title: 音乐
 nav_order: 4
 permalink: /music/
 sidebar: false
+collection_analytics: true
 ---
 
 <section class="music-profile" aria-label="音乐风格与听感">
@@ -68,6 +69,7 @@ sidebar: false
     <span class="collection-summary__value">{{ music_primary_genres | size }}</span>
     <span class="collection-summary__label">类主曲风</span>
   </div>
+  <button type="button" class="analytics-text-button" data-analytics-toggle aria-controls="collection-analytics" aria-expanded="false" hidden>统计分析</button>
 </section>
 
 <section class="collection-filters" aria-label="筛选音乐">
@@ -118,9 +120,11 @@ sidebar: false
   {% endif %}
 </section>
 
+{% include collection-analytics.html kind="music" %}
+
 <section class="music-shelf" aria-label="喜欢的音乐">
   {% for track in tracks_by_release %}
-  <article class="music-entry"{% if track.id %} id="{{ track.id }}"{% endif %} data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-languages="{{ track.languages | join: '|' | escape }}" data-music-genre="{{ track.primary_genre | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count | default: 0 }}" data-music-order="{{ forloop.index0 }}">
+  <article class="music-entry"{% if track.id %} id="{{ track.id }}"{% endif %} data-music-artists="{{ track.artists | join: '|' | escape }}" data-music-languages="{{ track.languages | join: '|' | escape }}" data-music-genre="{{ track.primary_genre | escape }}" data-music-tags="{{ track.tags | join: '|' | escape }}" data-music-date="{{ track.date }}" data-music-count="{{ track.count }}" data-music-order="{{ forloop.index0 }}">
     <span class="music-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
     {% if track.count %}
     <span class="music-entry__count" aria-label="喜欢 {{ track.count }} 次">喜欢 {{ track.count }} 次</span>

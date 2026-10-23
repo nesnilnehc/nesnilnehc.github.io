@@ -5,6 +5,7 @@ nav_title: 影视
 nav_order: 3
 permalink: /movies/
 sidebar: false
+collection_analytics: true
 ---
 
 <section class="movie-profile" aria-label="影视取向">
@@ -56,6 +57,7 @@ sidebar: false
     <span class="collection-summary__value">{{ movie_tags | size }}</span>
     <span class="collection-summary__label">个标签</span>
   </div>
+  <button type="button" class="analytics-text-button" data-analytics-toggle aria-controls="collection-analytics" aria-expanded="false" hidden>统计分析</button>
 </section>
 
 <section class="collection-filters" aria-label="筛选影视">
@@ -104,6 +106,8 @@ sidebar: false
   </div>
 </section>
 
+{% include collection-analytics.html kind="movie" %}
+
 <section class="movie-shelf" aria-label="喜欢的影视">
   {% for movie in movies_by_premiere %}
   {% if movie.directors %}
@@ -113,7 +117,7 @@ sidebar: false
   {% else %}
     {% assign movie_credit_names = "" | split: "" %}
   {% endif %}
-  <article class="movie-entry" data-movie-type="{{ movie.type | default: 'film' | escape }}" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie_credit_names | join: '|' | escape }}" data-movie-cast="{{ movie.cast | join: '|' | escape }}" data-movie-date="{{ movie.premiere_date }}" data-movie-count="{{ movie.count | default: 0 }}" data-movie-order="{{ forloop.index0 }}">
+  <article class="movie-entry" data-movie-type="{{ movie.type | default: 'film' | escape }}" data-movie-tags="{{ movie.tags | join: '|' | escape }}" data-movie-director="{{ movie_credit_names | join: '|' | escape }}" data-movie-cast="{{ movie.cast | join: '|' | escape }}" data-movie-date="{{ movie.premiere_date }}" data-movie-count="{{ movie.count }}" data-movie-order="{{ forloop.index0 }}">
     <div class="movie-entry__media">
       {% assign poster_src = movie.poster_url | default: movie.poster %}
       {% if poster_src %}

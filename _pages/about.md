@@ -16,6 +16,8 @@ permalink: /about/
 
 ## 在项目中使用 AI
 
+<a href="https://ai-cortex.nesnilnehc.top/"><img src="{{ '/assets/images/ai-cortex.svg' | relative_url }}" alt="AI Cortex" width="48" height="48"></a>
+
 [AI Cortex](https://ai-cortex.nesnilnehc.top/) 是面向软件交付与项目治理的开源资产库，提供可执行的技能、统一文档结构的规格、协作协议和质量规则。需要让 AI 参与需求整理、方案设计、代码审查或发布时，可以从网站了解使用方式，也可以查看 [GitHub 源码与安装说明](https://github.com/nesnilnehc/ai-cortex)。
 
 ## 联系方式

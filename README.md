@@ -70,3 +70,7 @@ TEST_URL=http://localhost:4000 make test-browser
 ## 部署
 
 推送 `main` 后，GitHub Actions 使用项目锁定的 Ruby 和 Jekyll 版本构建并部署 GitHub Pages。
+
+## 项目标识
+
+`assets/images/ai-cortex.svg` 同步自 [AI Cortex 的共享 SVG](https://github.com/nesnilnehc/ai-cortex/blob/35f17e0f7461359ca6a17aa51b309899a0fdc81e/website/favicon.svg)，用于关于页的项目入口。更新时从上游同步，不单独修改图形；配色与使用方式遵循 [品牌规范](https://github.com/nesnilnehc/ai-cortex/blob/35f17e0f7461359ca6a17aa51b309899a0fdc81e/docs/brand/README.md)。

@@ -54,15 +54,26 @@
     });
   }
 
+  function collectionCount(entry, prefix) {
+    if ((prefix === "music" || prefix === "movie") && window.LikeCount) {
+      return window.LikeCount.parseCount(entry.dataset[prefix + "Count"]);
+    }
+    return Number(entry.dataset[prefix + "Count"] || 0);
+  }
+
   function compareCollectionEntries(left, right, prefix, mode) {
-    const leftCount = Number(left.dataset[prefix + "Count"] || 0);
-    const rightCount = Number(right.dataset[prefix + "Count"] || 0);
+    const leftCount = collectionCount(left, prefix);
+    const rightCount = collectionCount(right, prefix);
     const leftDate = left.dataset[prefix + "Date"] || "";
     const rightDate = right.dataset[prefix + "Date"] || "";
     const leftOrder = Number(left.dataset[prefix + "Order"] || 0);
     const rightOrder = Number(right.dataset[prefix + "Order"] || 0);
 
-    if (mode === "count" && leftCount !== rightCount) return rightCount - leftCount;
+    if (mode === "count" && leftCount !== rightCount) {
+      if (leftCount === null) return 1;
+      if (rightCount === null) return -1;
+      return rightCount - leftCount;
+    }
     if (leftDate !== rightDate) return rightDate.localeCompare(leftDate);
     if (mode !== "count" && leftCount !== rightCount) return rightCount - leftCount;
     return leftOrder - rightOrder;
@@ -70,7 +81,8 @@
 
   function groupLabel(entry, prefix, mode) {
     if (mode === "count") {
-      return "喜欢 " + Number(entry.dataset[prefix + "Count"] || 0) + " 次";
+      const count = collectionCount(entry, prefix);
+      return count === null ? "喜欢次数未记录" : "喜欢 " + count + " 次";
     }
 
     const date = entry.dataset[prefix + "Date"] || "";

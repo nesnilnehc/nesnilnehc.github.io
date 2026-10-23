@@ -150,3 +150,26 @@ test('desktop and mobile render nonblank charts with no horizontal page overflow
     }
   }
 });
+
+
+// Covers: docs/backlog/2026-10-23-like-count-analytics.md, acceptance criterion 6;
+// docs/design/like-count-analytics.md, invalid counts must not silently become zero.
+test('music and movie count sorting distinguish invalid counts from a valid zero', async () => {
+  for (const kind of ['music', 'movie']) {
+    const {page, errors} = await open(kind);
+    await page.locator('.'+kind+'-entry').evaluateAll((entries, prefix) => {
+      entries[0].dataset[prefix+'Count'] = '';
+      entries[1].dataset[prefix+'Count'] = 'NaN';
+      entries[2].dataset[prefix+'Count'] = '0';
+    }, kind);
+    await page.locator('[data-'+kind+'-sort="count"]').click();
+    const groups = await page.locator('.'+kind+'-shelf .collection-group-heading').allTextContents();
+    assert(groups.includes('喜欢次数未记录'));
+    assert(groups.includes('喜欢 0 次'));
+    assert(!groups.some(text => /NaN/.test(text)));
+    const last = await page.locator('.'+kind+'-entry').evaluateAll((entries, prefix) => entries.slice(-2).map(e => e.dataset[prefix+'Count']), kind);
+    assert.deepEqual(last.sort(), ['', 'NaN'].sort());
+    assert.deepEqual(errors, []);
+    await page.close();
+  }
+});

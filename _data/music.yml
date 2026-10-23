@@ -1167,7 +1167,7 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=VrPvEWcyUCc
 - title: 你根本无法理解这件事的重大意义
-  count: 1
+  count: 2
   original_title: 你根本无法理解这件事的重大意义
   artist: 许飞
   artists:
@@ -2517,3 +2517,31 @@
   listen_links:
   - label: Qobuz
     url: https://www.qobuz.com/jp-ja/album/-/ui302g4zb6bob
+- title: 总有一天
+  count: 1
+  original_title: 언젠가는
+  artist: Lee Tzsche
+  artists:
+  - Lee Tzsche
+  lyricists:
+  - Lee Tzsche
+  composers:
+  - Lee Tzsche
+  - 안진우
+  release_title: Darkness
+  date: '1993-01-01'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres:
+  - ballad
+  tags:
+  - k-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/54376
+  - label: Apple Music
+    url: https://music.apple.com/us/album/darkness/1493950567

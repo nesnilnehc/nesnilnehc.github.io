@@ -1351,7 +1351,8 @@ Kosuke Toriumi:
 Kujira:
   romanized_name: Kujira
   canonical_name: くじら
-  display_name: Kujira · くじら
+  chinese_name: 鲸
+  display_name: Kujira · くじら · 鲸
 Lee Kwang-soo:
   romanized_name: Lee Kwang-soo
   canonical_name: 이광수
@@ -1361,7 +1362,8 @@ Lizzy:
   romanized_name: Lizzy
   canonical_name: 박수영
   nickname: Lizzy
-  display_name: Lizzy · 박수영
+  chinese_name: 朴修映
+  display_name: Lizzy · 박수영 · 朴修映
 Masako Katsuki:
   romanized_name: Masako Katsuki
   canonical_name: 勝生真沙子
@@ -1424,7 +1426,8 @@ Yoichi Masukawa:
 Yukari Tamura:
   romanized_name: Yukari Tamura
   canonical_name: 田村ゆかり
-  display_name: Yukari Tamura · 田村ゆかり
+  chinese_name: 田村由香里
+  display_name: Yukari Tamura · 田村ゆかり · 田村由香里
 吴晓东:
   canonical_name: 吴晓东
   display_name: 吴晓东

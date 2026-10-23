@@ -1,0 +1,35 @@
+---
+artifact_type: backlog-item
+created_by: capture-work-items
+lifecycle: living
+type: requirement
+date: 2026-10-23
+status: captured
+priority: unset
+strategic_goal_id: [goal-3]
+source: user
+---
+
+# 音乐与影视喜欢次数统计分析
+
+## 问题与需求
+
+站点维护者需要了解音乐与影视收藏中已记录的喜欢次数分布，以及高喜欢次数条目在各自收藏中的占比，以便回顾个人偏好。现有页面提供单条次数展示和排序，但缺少直观的整体统计分析。
+
+用户要求以图表呈现统计分析，范围同时包含音乐和影视；本条目仅记录需求，不授权实现。
+
+## 验收标准
+
+- [ ] 音乐和影视均可查看基于已记录喜欢次数的图表统计。
+- [ ] 可查看喜欢次数分布、高喜欢次数条目及其占比；统计结果与原始数据一致。
+- [ ] 音乐与影视分别统计，明确显示统计范围与口径，包括占比分母和高喜欢次数条目的选取规则。
+- [ ] 仅有累计次数时，不推断喜欢发生的时间趋势；发行或上映日期不作为喜欢日期。
+
+## 依据与边界
+
+- 目标归属：[goal-3：个人收藏可准确回顾与分析](../project-overview/strategic-goals.md#goal-3个人收藏可准确回顾与分析)。
+- 数据依据：音乐使用 [`_data/music.yml`](../../_data/music.yml) 的 `count`，影视使用 [`_data/movies.yml`](../../_data/movies.yml) 的 `count`。
+- 现状依据：[`_pages/music.md`](../../_pages/music.md) 与 [`_pages/movies.md`](../../_pages/movies.md) 已展示喜欢次数并提供次数排序；这是基于仓库实现的现状核实，不代表实际用户点击统计。
+- 用户已确认上述范围与验收标准。图表类型、入口位置、高喜欢次数条目的具体选取规则及占比分母留待设计时明确，本文不预设实现方案。
+- 不将喜欢次数等同于播放次数、观看次数、独立用户数或大众评分。
+- 正文语言沿用[战略目标文档](../project-overview/strategic-goals.md)记录的中文规划约定；机器字段和枚举保留原值。

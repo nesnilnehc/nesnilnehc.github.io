@@ -51,6 +51,22 @@ bundle exec jekyll build
 - [内容规范](docs/CONTENT_RULES.md)
 - [体验决策](docs/UX_DECISIONS.md)
 
+## 收藏统计测试
+
+统计计算测试使用 Node.js 内置测试运行器，无需额外包：
+
+```bash
+make test
+```
+
+浏览器测试需要可解析的 `playwright` 包和已安装的 Chromium。先构建站点并启动本地预览，再执行：
+
+```bash
+TEST_URL=http://localhost:4000 make test-browser
+```
+
+外部工具环境提供 Playwright 时，可通过 `NODE_PATH` 指向其包目录，无需将浏览器测试依赖加入站点运行环境。截图默认保存到 `/tmp/like-count-analytics`，可用 `SCREENSHOT_DIR` 覆盖。
+
 ## 部署
 
 推送 `main` 后，GitHub Actions 使用项目锁定的 Ruby 和 Jekyll 版本构建并部署 GitHub Pages。

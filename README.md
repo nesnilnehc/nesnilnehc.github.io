@@ -73,4 +73,4 @@ TEST_URL=http://localhost:4000 make test-browser
 
 ## 项目标识
 
-`assets/images/ai-cortex.svg` 同步自 [AI Cortex 的共享 SVG](https://github.com/nesnilnehc/ai-cortex/blob/35f17e0f7461359ca6a17aa51b309899a0fdc81e/website/favicon.svg)，用于关于页的项目入口。更新时从上游同步，不单独修改图形；配色与使用方式遵循 [品牌规范](https://github.com/nesnilnehc/ai-cortex/blob/35f17e0f7461359ca6a17aa51b309899a0fdc81e/docs/brand/README.md)。
+`assets/images/ai-cortex.svg` 同步自 [AI Cortex 的共享 SVG](https://github.com/nesnilnehc/ai-cortex/blob/e80c7a704bd685592d9119de3d5f6ccb8e76ba89/website/favicon.svg)，采用开口 C 轮廓、核心节点和连接线，用于关于页的项目入口。更新时从上游同步，不单独修改图形；配色与使用方式遵循 [品牌规范](https://github.com/nesnilnehc/ai-cortex/blob/e80c7a704bd685592d9119de3d5f6ccb8e76ba89/docs/brand/README.md)。

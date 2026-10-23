@@ -35,7 +35,7 @@
 已采用工作流：项目入口 → 差异审查 → 修复与测试 → 功能验收 → 范围内提交。
 资产根目录优先使用 `CORTEX_HOME`，否则为 `${XDG_DATA_HOME:-~/.local/share}/ai-cortex`。
 本机已核实默认目录 `/Users/nesnilnehc/.local/share/ai-cortex`；新环境须按
-[安装说明](https://github.com/nesnilnehc/ai-cortex#installation)安装并核对路径。
+[安装说明](https://github.com/nesnilnehc/ai-cortex)安装并核对路径。
 这些路径是阅读约定，不是自动执行器；缺少必需文件时停止对应流程并报告缺失。
 
 - 先读资产根的 `skills/INDEX.md`，再完整加载匹配的 `skills/review-diff/SKILL.md`、`skills/automate-tests/SKILL.md` 与 `skills/commit-work/SKILL.md`。

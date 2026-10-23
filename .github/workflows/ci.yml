@@ -21,6 +21,9 @@ on:
       - "assets/**"
       - "feed.xml"
       - "script/**"
+      - "Makefile"
+      - "AGENTS.md"
+      - ".ai-cortex/**"
       - "docs/**"
   push:
     branches:
@@ -42,6 +45,9 @@ on:
       - "assets/**"
       - "feed.xml"
       - "script/**"
+      - "Makefile"
+      - "AGENTS.md"
+      - ".ai-cortex/**"
       - "docs/**"
   workflow_dispatch:
 
@@ -60,6 +66,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.20.2"
+
+      - name: Test collection statistics
+        run: make test
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1

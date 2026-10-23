@@ -1,0 +1,2 @@
+test_command: make test
+base_branch: main

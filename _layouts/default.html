@@ -27,9 +27,11 @@
     {%- include footer.html -%}
 
     <div id="site-announcer" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
-    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
     {% if page.collection_analytics %}
     <script src="{{ '/assets/js/like-count.js' | relative_url }}" defer></script>
+    {% endif %}
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+    {% if page.collection_analytics %}
     <script src="{{ '/assets/js/collection-analytics.js' | relative_url }}" defer></script>
     {% endif %}
   </body>

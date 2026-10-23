@@ -10,7 +10,7 @@ strategic_goal_id: [goal-3]
 
 ## 范围与依据
 
-本方案已经用户确认，关联[统计分析需求](../backlog/2026-10-23-like-count-analytics.md)和[战略目标 goal-3](../project-overview/strategic-goals.md#goal-3个人收藏可准确回顾与分析)。用户随后授权按本方案实现和验证，暂不提交。
+本方案已经用户确认，关联[统计分析需求](../backlog/2026-10-23-like-count-analytics.md)和[战略目标 goal-3](../project-overview/strategic-goals.md#goal-3个人收藏可准确回顾与分析)。用户随后授权按本方案实现和验证，本次授权完成交付收尾、提交与推送。
 
 音乐与影视使用相同的分析结构，分别读取各自收藏数据的 `count`，不混合排名。正文沿用项目中文规划约定；本文是图表选型、布局与统计口径的维护入口，需求文档保留结果层面的验收标准。
 
@@ -110,3 +110,7 @@ strategic_goal_id: [goal-3]
 - `ruby script/validate_content.rb` 与 `bundle exec jekyll build`：内容校验及站点构建。
 
 浏览器页面验证覆盖 1440、390、320 像素宽视口，检查图表非空、页面无横向溢出、窄屏指标不挤行及数据表展开状态，并人工复查截图。截图默认位于 `/tmp/like-count-analytics`，不作为站点资源发布。验证使用 Chromium 桌面与移动视口，不代表已进行实体手机或其他浏览器测试。
+
+## 持续验证与交付
+
+统计模型测试现已纳入 `.github/workflows/ci.yml` 的构建前门禁，测试失败会阻止后续构建与部署。浏览器验收仍是需要本地服务和已有 Playwright 环境的独立检查，未宣称已在 CI 自动执行。2026-10-23 的复验与 AI Cortex 接入范围见[接入与交付验收](../ai-cortex-acceptance.md)。

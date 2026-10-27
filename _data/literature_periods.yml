@@ -1,0 +1,21 @@
+---
+- name: 春秋战国
+  years: 约公元前 770—前 221 年
+  sort_year: -770
+  source_url: https://www.chnmuseum.cn/portals/0/web/zt/gudai/default.html
+- name: 三国
+  years: 220—280 年
+  sort_year: 220
+  source_url: https://www.archives.go.jp/exhibition/digital/rekishitomonogatari/history02.html
+- name: 唐
+  years: 618—907 年
+  sort_year: 618
+  source_url: https://dict.revised.moe.edu.tw/appendix.jsp?ID=61&la=1&powerMode=0&ver=4
+- name: 北宋
+  years: 960—1127 年
+  sort_year: 960
+  source_url: https://dict.revised.moe.edu.tw/appendix.jsp?ID=61&la=1&powerMode=0&ver=4
+- name: 20 世纪
+  years: 1901—2000 年
+  sort_year: 1901
+  source_url: https://www.hko.gov.hk/sc/gts/time/centy-21-e.htm

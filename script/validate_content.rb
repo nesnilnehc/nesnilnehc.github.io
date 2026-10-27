@@ -431,6 +431,17 @@ begin
   ) || []
   person_names = YAML.safe_load_file("_data/person_names.yml", aliases: true) || {}
 
+  periods = YAML.safe_load_file("_data/literature_periods.yml", aliases: true) || []
+  period_names = periods.map { |period| period["name"] }
+  if period_names.uniq.length != period_names.length
+    errors << "_data/literature_periods.yml: duplicate period names"
+  end
+  periods.each do |period|
+    unless %w[name years source_url].all? { |field| period[field].is_a?(String) && !period[field].strip.empty? } && period["sort_year"].is_a?(Integer)
+      errors << "_data/literature_periods.yml: invalid period definition"
+    end
+  end
+
   literature.each do |work|
     title = work["title"] || "(untitled)"
 
@@ -450,6 +461,9 @@ begin
 
     if work["period"].to_s.match?(/(?:代|时期)\z/)
       errors << "_data/literature.yml: #{title} period must omit 代 and 时期 suffixes"
+    end
+    unless period_names.include?(work["period"])
+      errors << "_data/literature.yml: #{title} has unknown period: #{work['period']}"
     end
 
     unless work["region"].is_a?(String)

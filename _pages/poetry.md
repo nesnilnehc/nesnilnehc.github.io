@@ -20,7 +20,8 @@ sidebar: false
   {% assign poetry_types = poetry_types | push: work.type %}
 {% endfor %}
 {% assign poetry_authors = poetry_authors | uniq | sort %}
-{% assign poetry_periods = poetry_periods | uniq | sort %}
+{% assign poetry_periods = poetry_periods | uniq %}
+{% assign period_catalog = site.data.literature_periods | sort: "sort_year" %}
 {% assign poetry_types = poetry_types | uniq | sort %}
 
 <section class="collection-summary poetry-summary" aria-label="诗文收藏概览">
@@ -45,10 +46,15 @@ sidebar: false
 <section class="poetry-tools" aria-label="查找诗文">
   <div class="poetry-filter">
     <p class="poetry-filter__label">时期</p>
-    <div class="poetry-filter__controls">
-      <button class="poetry-filter__button is-active" type="button" data-poetry-period-filter="all" aria-pressed="true">全部</button>
-      {% for period in poetry_periods %}
-      <button class="poetry-filter__button" type="button" data-poetry-period-filter="{{ period | escape }}" aria-pressed="false">{{ period }}</button>
+    <div class="poetry-timeline" aria-label="按时期筛选，按年代先后排列">
+      <button class="poetry-filter__button poetry-timeline__all is-active" type="button" data-poetry-period-filter="all" aria-pressed="true">全部</button>
+      {% for period in period_catalog %}
+      {% if poetry_periods contains period.name %}
+      <button class="poetry-timeline__period" type="button" data-poetry-period-filter="{{ period.name | escape }}" aria-pressed="false">
+        <span class="poetry-timeline__name">{{ period.name }}</span>
+        <span class="poetry-timeline__years">{{ period.years }}</span>
+      </button>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -69,10 +75,14 @@ sidebar: false
 </div>
 
 <section class="poetry-shelf" aria-label="喜欢的诗文">
-  {% for work in site.data.literature %}
+  {% assign poetry_index = 0 %}
+  {% for period in period_catalog %}
+  {% assign period_works = site.data.literature | where: "period", period.name %}
+  {% for work in period_works %}
+  {% assign poetry_index = poetry_index | plus: 1 %}
   <details class="poetry-entry" id="{{ work.id }}" data-poetry-period="{{ work.period | escape }}" data-poetry-type="{{ work.type | escape }}">
     <summary class="poetry-entry__summary">
-      <span class="poetry-entry__index">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
+      <span class="poetry-entry__index">{{ poetry_index | prepend: "0" | slice: -2, 2 }}</span>
       <span class="poetry-entry__identity">
         <span class="poetry-entry__title">{{ work.title }}</span>
         <span class="poetry-entry__byline">{{ work.period }}{% if work.region != "" %}<span aria-hidden="true"> · </span>{{ work.region }}{% endif %}<span aria-hidden="true"> · </span>{% include person-name.html name=work.author %}</span>
@@ -112,6 +122,7 @@ sidebar: false
       </footer>
     </div>
   </details>
+  {% endfor %}
   {% endfor %}
   <p class="poetry-empty" data-poetry-empty hidden>没有找到符合条件的作品。</p>
 </section>

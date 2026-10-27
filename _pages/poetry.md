@@ -21,7 +21,8 @@ sidebar: false
 {% endfor %}
 {% assign poetry_authors = poetry_authors | uniq | sort %}
 {% assign poetry_periods = poetry_periods | uniq %}
-{% assign period_catalog = site.data.literature_periods | sort: "sort_year" | reverse %}
+{% assign period_catalog = site.data.literature_periods | sort: "sort_year" %}
+{% assign list_periods = period_catalog | reverse %}
 {% assign poetry_types = poetry_types | uniq | sort %}
 
 <section class="collection-summary poetry-summary" aria-label="诗文收藏概览">
@@ -46,7 +47,7 @@ sidebar: false
 <section class="poetry-tools" aria-label="查找诗文">
   <div class="poetry-filter">
     <p class="poetry-filter__label">时期</p>
-    <div class="poetry-timeline" aria-label="按时期筛选，按年代从近到远排列">
+    <div class="poetry-timeline" aria-label="按时期筛选，按年代从早到晚排列">
       <button class="poetry-filter__button poetry-timeline__all is-active" type="button" data-poetry-period-filter="all" aria-pressed="true">全部</button>
       {% for period in period_catalog %}
       {% if poetry_periods contains period.name %}
@@ -76,7 +77,7 @@ sidebar: false
 
 <section class="poetry-shelf" aria-label="喜欢的诗文">
   {% assign poetry_index = 0 %}
-  {% for period in period_catalog %}
+  {% for period in list_periods %}
   {% assign period_works = site.data.literature | where: "period", period.name %}
   {% for work in period_works %}
   {% assign poetry_index = poetry_index | plus: 1 %}

@@ -1,4 +1,19 @@
 ---
+- id: ji-you-song-feng-ting
+  title: 记游松风亭
+  author: 苏轼
+  period: 北宋
+  region: ''
+  type: 游记
+  form: prose
+  language: zh
+  aliases: []
+  content:
+  - 余尝寓居惠州嘉祐寺，纵步松风亭下，足力疲乏，思欲就林止息。望亭宇尚在木末，意谓是如何得到？良久忽曰：“此间有甚么歇不得处！”由是如挂钩之鱼，忽得解脱。若人悟此，虽兵阵相接，鼓声如雷霆，进则死敌，退则死法，当甚么时也不妨熟歇。
+  translated_content: []
+  note: 收录于《东坡志林》卷一。
+  source_label: 维基文库《东坡志林》
+  source_url: https://zh.wikisource.org/zh-hans/%E8%A8%98%E9%81%8A%E6%9D%BE%E9%A2%A8%E4%BA%AD
 - id: learn-the-rules-like-a-pro
   title: Learn the rules like a pro
   author: Pablo Picasso

@@ -8,7 +8,7 @@ sidebar: false
 ---
 
 <section class="poetry-profile" aria-label="诗文取向">
-  <p>收录偶然读到、愿意反复回看的诗、偈与短文。篇幅不必长，重要的是能在寥寥数语里，让人重新看见当下。非中文作品保留原文；有可靠中文译文时一并收录。</p>
+  <p>收录偶然读到、愿意反复回看的诗、偈与短文。篇幅不必长，重要的是能在寥寥数语里，让人重新看见当下。</p>
 </section>
 
 {% assign poetry_authors = "" | split: "" %}

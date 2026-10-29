@@ -1,0 +1,29 @@
+诸葛亮:
+  birth: 181
+  death: 234
+  label: 181—234 年
+  source_label: 中国文化研究院
+  source_url: https://chiculture.org.hk/sites/mainsite/files/2021-11/0104_zhugeliang_pdf_cn.pdf
+李商隐:
+  birth: 812
+  death: 858
+  label: 约 812—858 年
+  note: 生年有 811、812、813 年等说法；此处采用所引论文的 812 年。
+  source_label: 故宫博物院院刊（2021 年第 7 期）
+  source_url: https://img.dpm.org.cn/Uploads/File/2021/07/23/u60fa76c74742f.pdf
+苏轼:
+  birth: 1037
+  death: 1101
+  label: 1037—1101 年
+  source_label: 故宫博物院
+  source_url: https://www.dpm.org.cn/lemmas/242068.html
+Pablo Picasso:
+  birth: 1881
+  death: 1973
+  label: 1881—1973 年
+  source_label: 苏格兰国家美术馆
+  source_url: https://www.nationalgalleries.org/art-and-artists/artists/pablo-picasso
+无尽藏比丘尼:
+  note: 《梅花偈》相传为其所作；所引资料未提供生卒年，不据朝代推算生平。
+  source_label: 香港教育局教学资料
+  source_url: https://www.edb.gov.hk/attachment/sc/curriculum-development/kla/pshe/references-and-resources/ethics-and-religious-studies/ch7_sc.pdf

@@ -15,7 +15,7 @@ sidebar: false
 {% assign poetry_periods = "" | split: "" %}
 {% assign poetry_types = "" | split: "" %}
 {% for work in site.data.literature %}
-  {% assign poetry_authors = poetry_authors | push: work.author %}
+  {% unless work.author == "佚名" %}{% assign poetry_authors = poetry_authors | push: work.author %}{% endunless %}
   {% assign poetry_periods = poetry_periods | push: work.period %}
   {% assign poetry_types = poetry_types | push: work.type %}
 {% endfor %}
@@ -72,7 +72,6 @@ sidebar: false
 
 <div class="poetry-results" aria-live="polite">
   <span data-poetry-result-count>共 {{ site.data.literature | size }} 篇</span>
-  <span>点击题名展开全文</span>
 </div>
 
 <section class="poetry-shelf" aria-label="喜欢的诗文">
@@ -81,12 +80,13 @@ sidebar: false
   {% assign period_works = site.data.literature | where: "period", period.name %}
   {% for work in period_works %}
   {% assign poetry_index = poetry_index | plus: 1 %}
+  {% assign life = site.data.literature_lifespans[work.author] %}
   <details class="poetry-entry" id="{{ work.id }}" data-poetry-period="{{ work.period | escape }}" data-poetry-type="{{ work.type | escape }}">
     <summary class="poetry-entry__summary">
       <span class="poetry-entry__index">{{ poetry_index | prepend: "0" | slice: -2, 2 }}</span>
       <span class="poetry-entry__identity">
         <span class="poetry-entry__title">{{ work.title }}</span>
-        <span class="poetry-entry__byline">{{ work.period }}{% if work.region != "" %}<span aria-hidden="true"> · </span>{{ work.region }}{% endif %}<span aria-hidden="true"> · </span>{% include person-name.html name=work.author %}</span>
+        <span class="poetry-entry__byline">{{ work.period }}{% if work.region != "" %}<span aria-hidden="true"> · </span>{{ work.region }}{% endif %}<span aria-hidden="true"> · </span>{% include person-name.html name=work.author %}{% if life.birth %}<span class="poetry-entry__lifespan">（{{ life.label }}）</span>{% endif %}</span>
       </span>
       <span class="poetry-entry__type">{{ work.type }}</span>
       <span class="poetry-entry__toggle" aria-hidden="true"></span>
@@ -118,6 +118,7 @@ sidebar: false
       {% endif %}
 
       <footer class="poetry-entry__source">
+        {% if life %}<p class="poetry-entry__dates-source">{% if life.birth %}作者年代：{{ life.label }}。{% endif %}{{ life.note }} <a href="{{ life.source_url }}">年代资料：{{ life.source_label }}</a></p>{% endif %}
         <p>{{ work.note }}</p>
         <a href="{{ work.source_url }}" target="_blank" rel="noopener noreferrer">资料来源：{{ work.source_label }}<span aria-hidden="true"> ↗</span></a>
       </footer>

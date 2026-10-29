@@ -49,6 +49,24 @@
   note: 相传为唐代无尽藏比丘尼悟道时所作，亦常题作《悟道诗》或《嗅梅诗》。
   source_label: 国家文化记忆库
   source_url: https://tcmb.culture.tw/zh-tw/detail?id=140000000223&indexCode=MOCCOLLECTIONS
+- id: jin-se
+  title: 锦瑟
+  author: 李商隐
+  period: 唐
+  region: ''
+  type: 七言律诗
+  form: verse
+  language: zh
+  aliases: []
+  content:
+  - 锦瑟无端五十弦，一弦一柱思华年。
+  - 庄生晓梦迷蝴蝶，望帝春心托杜鹃。
+  - 沧海月明珠有泪，蓝田日暖玉生烟。
+  - 此情可待成追忆，只是当时已惘然。
+  translated_content: []
+  note: 收录于《全唐诗》卷五百三十九。
+  source_label: 维基文库《锦瑟》
+  source_url: https://zh.wikisource.org/zh-hans/%E9%8C%A6%E7%91%9F
 - id: jiezi-shu
   title: 诫子书
   author: 诸葛亮

@@ -1,4 +1,28 @@
 ---
+- title: 梅花泪
+  id: guo-jintong-mei-hua-lei
+  count: 1
+  original_title: 梅花泪
+  artist: 郭津彤
+  artists:
+  - 郭津彤
+  lyricists:
+  - 刘海东
+  composers:
+  - 刘亦敏
+  release_title: 梅花泪
+  date: '2017-08-31'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/7902096001
 - title: LILAC
   id: iu-lilac
   album_id: iu-lilac-album

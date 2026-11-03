@@ -1,28 +1,30 @@
 ---
 - title: 梅花泪
-  id: guo-jintong-mei-hua-lei
+  id: tong-li-mei-hua-lei
   count: 1
   original_title: 梅花泪
-  artist: 郭津彤
+  artist: 童丽
   artists:
-  - 郭津彤
+  - 童丽
   lyricists:
   - 刘海东
   composers:
   - 刘亦敏
-  release_title: 梅花泪
-  date: '2017-08-31'
-  date_label: 数字发行
+  release_title: 古筝遇见童丽
+  date: '2017-09-28'
+  date_label: 专辑发行
   languages:
   - zh
   primary_genre: pop
   genres: []
   tags:
   - solo
-  note: ''
+  note: 翻唱自郭津彤的《梅花泪》。
   listen_links:
-  - label: LINE MUSIC
-    url: https://music-tw.line.me/track/7902096001
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1792364190
+  - label: Spotify
+    url: https://open.spotify.com/track/2ocu3otV5QPl5214Jicztf
 - title: LILAC
   id: iu-lilac
   album_id: iu-lilac-album

@@ -734,7 +734,7 @@
   - label: YouTube
     url: https://www.youtube.com/watch?v=7nC3pU_F0w0
 - title: Missing You
-  count: 1
+  count: 2
   original_title: Missing You
   artist: G-DRAGON; Kim Yuna
   artists:
@@ -2545,3 +2545,28 @@
     url: https://music.bugs.co.kr/track/54376
   - label: Apple Music
     url: https://music.apple.com/us/album/darkness/1493950567
+- title: 妈妈的话
+  count: 1
+  original_title: 妈妈的话
+  artist: Zyboy忠宇
+  artists:
+  - Zyboy忠宇
+  lyricists:
+  - Zyboy忠宇
+  composers:
+  - Zyboy忠宇
+  release_title: 妈妈的话 - Single
+  date: '2021-12-18'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1667093603
+  - label: JOOX
+    url: https://www.joox.com/my-zh_cn/single/oDIgakJ7sul%2BVA8LTuVz8A%3D%3D

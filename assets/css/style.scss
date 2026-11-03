@@ -178,6 +178,15 @@ h4[id] {
 .like-ranking__count { color: var(--muted); font-size: 0.8rem; white-space: nowrap; }
 .like-ranking__track { grid-column: 1 / -1; height: 5px; background: var(--surface); margin-top: 0.3rem; }
 .like-ranking__bar { display: block; height: 100%; background: var(--signal); }
+[data-collection-analytics="music"] {
+  .like-distribution { min-height: 165px; }
+  .like-distribution__column { height: 165px; }
+  .like-ranking { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem 1rem; }
+  .like-ranking__row { margin: 0; align-content: start; }
+  .like-ranking__label { min-width: 0; line-height: 1.35; }
+  .like-ranking__artist { display: block; color: var(--muted); font-size: 0.72rem; overflow-wrap: anywhere; }
+  .like-ranking__track { height: 3px; }
+}
 .collection-analytics__table { overflow-x: auto; table { font-size: 0.8rem; } th, td { overflow-wrap: anywhere; } }
 .collection-analytics__selection { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 1rem; }
 .music-entry:focus, .movie-entry:focus { outline: 2px solid var(--accent); outline-offset: 4px; scroll-margin-top: 24px; }

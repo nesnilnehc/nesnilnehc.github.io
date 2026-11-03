@@ -10,19 +10,19 @@
       <h3 id="distribution-heading">次数分布</h3>
       <p class="collection-analytics__axis">条目数 / 喜欢次数</p>
       <div class="like-distribution" data-analytics-distribution></div>
-      <details>
+      {% if include.kind != 'music' %}<details>
         <summary>分布数据</summary>
         <div class="collection-analytics__table" data-analytics-distribution-table></div>
-      </details>
+      </details>{% endif %}
     </section>
     <section aria-labelledby="ranking-heading">
       <h3 id="ranking-heading">多次喜欢的作品</h3>
       <p class="collection-analytics__axis">至少 2 次 · 前 10 项（含并列）</p>
       <div class="like-ranking" data-analytics-ranking></div>
-      <details>
+      {% if include.kind != 'music' %}<details>
         <summary>作品数据</summary>
         <div class="collection-analytics__table" data-analytics-ranking-table></div>
-      </details>
+      </details>{% endif %}
     </section>
   </div>
   <p class="collection-analytics__selection" data-analytics-selection role="status"></p>

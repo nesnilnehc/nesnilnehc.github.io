@@ -30,6 +30,14 @@ test('music: metrics, all tenth-place ties, temporary selection, sorting, cleari
   const ranked=repeated.slice().sort((a,b)=>b-a);
   const threshold=ranked.length>10 ? ranked[9] : 2;
   assert.equal(await page.locator('.like-ranking__row').count(),repeated.filter(n=>n>=threshold).length);
+  assert.equal(await page.locator('#collection-analytics details').count(), 0);
+  assert(await page.locator('[data-analytics-distribution]').isVisible());
+  assert(await page.locator('[data-analytics-ranking]').isVisible());
+  for (const row of await page.locator('.like-ranking__row').all()) {
+    const id = (await row.locator('a').getAttribute('href')).slice(1);
+    const artists = await page.locator(`[id="${id}"] .music-entry__meta > div`).first().locator('dd').innerText();
+    assert.equal((await row.locator('.like-ranking__artist').innerText()).replace(/\s+/g, ' ').trim(), artists.replace(/\s+/g, ' ').trim());
+  }
   const baseline = await page.locator('[data-analytics-metrics]').innerText();
   const two = page.locator('[data-count-choice="2"]');
   await two.focus(); await page.keyboard.press('Space');
@@ -59,8 +67,6 @@ test('music: metrics, all tenth-place ties, temporary selection, sorting, cleari
   assert(visible > 0 && visible < counts.length);
   const sum = await page.locator('.music-entry:visible').evaluateAll(entries=>entries.reduce((n,e)=>n+Number(e.dataset.musicCount),0));
   assert.match(await page.locator('[data-analytics-metrics]').innerText(),new RegExp(`${sum} 次`));
-  await page.locator('summary').filter({hasText:'分布数据'}).click();
-  assert(await page.locator('[data-analytics-distribution-table] table').isVisible());
   assert.deepEqual(errors,[]);
   await page.close();
 });
@@ -136,10 +142,12 @@ test('desktop and mobile render nonblank charts with no horizontal page overflow
         const metric = await page.locator('[data-analytics-metrics] > div').nth(1).locator('dd').first().boundingBox();
         assert(metric.height < 40, 'mobile metric value must remain on one line');
       }
-      await page.locator('summary').filter({hasText:'作品数据'}).click();
-      assert(await page.locator('[data-analytics-ranking-table] table').isVisible());
-      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'expanded data table must fit');
-      await page.locator('summary').filter({hasText:'作品数据'}).click();
+      if (kind === 'movie') {
+        await page.locator('summary').filter({hasText:'作品数据'}).click();
+        assert(await page.locator('[data-analytics-ranking-table] table').isVisible());
+        assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth), 'expanded data table must fit');
+        await page.locator('summary').filter({hasText:'作品数据'}).click();
+      }
       await page.evaluate(() => {
         document.activeElement.blur();
         window.scrollTo({top:document.querySelector('#collection-analytics').getBoundingClientRect().top+scrollY,behavior:'instant'});

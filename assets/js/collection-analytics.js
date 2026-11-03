@@ -11,7 +11,8 @@
   const items = entries.map((entry, index) => {
     if (!entry.id) entry.id = kind + "-analytics-entry-" + index;
     entry.tabIndex = -1;
-    return {entry, id: entry.id, title: entry.querySelector("h2").textContent.trim(), count: entry.dataset[kind + "Count"]};
+    const artists = kind === "music" ? Array.from(entry.querySelectorAll(".music-entry__meta > div:first-child .credit-name"), name => name.textContent.trim()).join(" / ") : "";
+    return {entry, id: entry.id, title: entry.querySelector("h2").textContent.trim(), artists, count: entry.dataset[kind + "Count"]};
   });
   let baseline = items.slice();
   let selected = null;
@@ -106,7 +107,7 @@
       button.setAttribute("aria-label", "喜欢 " + bucket.count + " 次：" + bucket.size + unit + "，占有效条目 " + percent(bucket.share));
       button.setAttribute("aria-pressed", "false");
       const bar = element("span", undefined, "like-distribution__bar");
-      bar.style.height = (bucket.size / max * 140) + "px";
+      bar.style.height = (bucket.size / max * (kind === "music" ? 90 : 140)) + "px";
       button.append(element("span", bucket.size + unit), element("span", percent(bucket.share), "collection-analytics__note"), bar, element("span", bucket.count + " 次"));
       button.addEventListener("click", () => { selected = selected === bucket.count ? null : bucket.count; applySelection(); });
       distribution.appendChild(button);
@@ -130,15 +131,20 @@
       const bar = element("span", undefined, "like-ranking__bar");
       bar.style.width = (model.parseCount(item.count) / maximum * 100) + "%";
       track.appendChild(bar);
-      row.append(link, element("span", item.count + " 次", "like-ranking__count"), track);
+      const label = element("div", undefined, "like-ranking__label");
+      label.appendChild(link);
+      if (kind === "music") label.appendChild(element("span", item.artists, "like-ranking__artist"));
+      row.append(label, element("span", item.count + " 次", "like-ranking__count"), track);
       ranking.appendChild(row);
     });
     if (!result.top.length) {
       const allOne = result.valid && result.distribution.length === 1 && result.distribution[0].count === 1;
       ranking.appendChild(element("p", !result.valid ? "暂无可统计作品" : allOne ? "所有作品均记录为 1 次，暂无次数差异" : "暂无喜欢次数至少 2 次的作品"));
     }
-    target("distribution-table").replaceChildren(table(["喜欢次数", "条目数", "占有效条目"], result.distribution.map(b => [b.count, b.size, percent(b.share)])));
-    target("ranking-table").replaceChildren(table(["作品", "喜欢次数"], result.top.map(item => [item.title, item.count])));
+    if (kind !== "music") {
+      target("distribution-table").replaceChildren(table(["喜欢次数", "条目数", "占有效条目"], result.distribution.map(b => [b.count, b.size, percent(b.share)])));
+      target("ranking-table").replaceChildren(table(["作品", "喜欢次数"], result.top.map(item => [item.title, item.count])));
+    }
     applySelection();
   }
 

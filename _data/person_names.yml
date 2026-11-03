@@ -1,5 +1,14 @@
 # 人物姓名字典。顶层 key 就是 romanized_name；没有可靠罗马字时才使用原名。chinese_name 只来自人物页显式维护字段，不从译名自动生成。canonical_name 需要逐条以来源材料校准。
 ---
+Sia:
+  romanized_name: Sia
+  canonical_name: Sia Kate Isobelle Furler
+  chinese_name: 希雅
+  display_name: Sia · 希雅
+Christopher Braide:
+  romanized_name: Christopher Braide
+  canonical_name: Christopher Braide
+  display_name: Christopher Braide
 童丽:
   canonical_name: 童丽
   display_name: 童丽

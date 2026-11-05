@@ -14,6 +14,24 @@
   note: 收录于《东坡志林》卷一。
   source_label: 维基文库《东坡志林》
   source_url: https://zh.wikisource.org/zh-hans/%E8%A8%98%E9%81%8A%E6%9D%BE%E9%A2%A8%E4%BA%AD
+- id: bu-suan-zi-yong-mei-lu-you
+  title: 卜算子·咏梅
+  author: 陆游
+  period: 南宋
+  region: ''
+  type: 词
+  form: verse
+  language: zh
+  aliases: []
+  content:
+  - 驿外断桥边，寂寞开无主。
+  - 已是黄昏独自愁，更着风和雨。
+  - 无意苦争春，一任群芳妒。
+  - 零落成泥碾作尘，只有香如故。
+  translated_content: []
+  note: 收录于《渭南文集》卷四十九。正文采用统编语文教材所录版本。
+  source_label: 统编语文八年级下册
+  source_url: https://v3.ykt.cbern.com.cn/65/document/030cc3fde02044ef992260b739792925/pdf.pdf
 - id: learn-the-rules-like-a-pro
   title: Learn the rules like a pro
   author: Pablo Picasso
@@ -29,6 +47,24 @@
   note: 此句常被归于巴勃罗·毕加索，但现有网络引文未提供可核验的一手出处。
   source_label: Goodreads（社区引文，未经核实）
   source_url: https://www.goodreads.com/quotes/558213-learn-the-rules-like-a-pro-so-you-can-break
+- id: bu-suan-zi-yong-mei-mao-ze-dong
+  title: 卜算子·咏梅
+  author: 毛泽东
+  period: 20 世纪
+  region: 中国
+  type: 词
+  form: verse
+  language: zh
+  aliases: []
+  content:
+  - 风雨送春归，飞雪迎春到。
+  - 已是悬崖百丈冰，犹有花枝俏。
+  - 俏也不争春，只把春来报。
+  - 待到山花烂漫时，她在丛中笑。
+  translated_content: []
+  note: 1961 年 12 月作，取意于陆游的同题词，首次公开发表于 1963 年 12 月出版的《毛主席诗词》。
+  source_label: 天津师范大学
+  source_url: https://jgb.tjnu.edu.cn/info/1106/1457.htm
 - id: meihua-ji
   title: 梅花偈
   author: 无尽藏比丘尼

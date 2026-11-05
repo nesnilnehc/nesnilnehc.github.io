@@ -1,0 +1,4 @@
+interface:
+  display_name: "Add Music"
+  short_description: "Add verified tracks to the personal music page"
+  default_prompt: "Use $add-music to add a song to the site music page with verified metadata and links."

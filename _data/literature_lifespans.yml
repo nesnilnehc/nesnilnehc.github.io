@@ -17,12 +17,24 @@
   label: 1037—1101 年
   source_label: 故宫博物院
   source_url: https://www.dpm.org.cn/lemmas/242068.html
+陆游:
+  birth: 1125
+  death: 1210
+  label: 1125—1210 年
+  source_label: 故宫博物院
+  source_url: https://www.dpm.org.cn/lemmas/243049.html
 Pablo Picasso:
   birth: 1881
   death: 1973
   label: 1881—1973 年
   source_label: 苏格兰国家美术馆
   source_url: https://www.nationalgalleries.org/art-and-artists/artists/pablo-picasso
+毛泽东:
+  birth: 1893
+  death: 1976
+  label: 1893—1976 年
+  source_label: 故宫博物院
+  source_url: https://www.dpm.org.cn/lemmas/245354.html
 无尽藏比丘尼:
   note: 《梅花偈》相传为其所作；所引资料未提供生卒年，不据朝代推算生平。
   source_label: 香港教育局教学资料

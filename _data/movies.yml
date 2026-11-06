@@ -368,6 +368,33 @@
   - 数学
   - 科普
   note: 全片共 4 集，通过生活中的数学应用与数学家访谈介绍数学与人的关系。
+- original_title: Alike
+  count: 1
+  type: film
+  chinese_title: 相似
+  directors:
+  - Daniel Martínez Lara
+  - Rafa Cano Méndez
+  cast: []
+  # https://alike-short.blogspot.com/2015/07/mundos-digitales-international.html
+  premiere_date: '2015-07-11'
+  premiere_note: Mundos Digitales International Animation Festival
+  imdb_url: https://www.imdb.com/title/tt5293824/
+  interview_url: https://creativecommons.org/2017/05/24/alike/
+  watch_links:
+  - label: Vimeo 完整版
+    url: https://vimeo.com/194276412
+  - label: 影片官网
+    url: https://www.alike.es/
+  # 海报和获奖记录：https://www.premiosgoya.com/pelicula/alike/
+  poster: "/assets/images/movies/alike.png"
+  awards: 第 30 届戈雅奖最佳动画短片。
+  tags:
+  - 动画
+  - 短片
+  - 父子
+  - 创造力
+  note: 这部约 8 分钟的西班牙无对白短片是两位导演出于对育儿的思考发起的个人项目，讲述父亲 Copi 试图教儿子 Paste 走上「正确的路」的故事。
 - original_title: Naruto
   count: 1
   type: animation-series

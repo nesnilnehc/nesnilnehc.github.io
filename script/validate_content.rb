@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require "date"
+require "uri"
 require "yaml"
 
 POST_GLOB = "_posts/**/*.{md,markdown}".freeze
@@ -86,6 +87,15 @@ LITERATURE_REQUIRED_FIELDS = %w[
   source_url
 ].freeze
 LITERATURE_FORMS = %w[verse prose].freeze
+
+def absolute_http_url?(value)
+  return false unless value.is_a?(String)
+
+  uri = URI.parse(value)
+  uri.is_a?(URI::HTTP) && !uri.host.to_s.empty?
+rescue URI::InvalidURIError
+  false
+end
 
 errors = []
 
@@ -321,6 +331,24 @@ begin
       value = movie[field]
       missing_value = value.nil? || (field != "note" && value == "")
       errors << "_data/movies.yml: #{title} missing #{field}" if missing_value
+    end
+
+    if movie.key?("interview_url") && !absolute_http_url?(movie["interview_url"])
+      errors << "_data/movies.yml: #{title} interview_url must be an absolute HTTP or HTTPS URL"
+    end
+
+    if movie.key?("watch_links")
+      watch_links = movie["watch_links"]
+      if watch_links.is_a?(Array)
+        watch_links.each_with_index do |link, index|
+          label = link.is_a?(Hash) ? link["label"] : nil
+          next if label.is_a?(String) && label.match?(/[^[:space:]]/) && absolute_http_url?(link["url"])
+
+          errors << "_data/movies.yml: #{title} watch_links[#{index}] must contain a nonblank label and an absolute HTTP or HTTPS URL"
+        end
+      else
+        errors << "_data/movies.yml: #{title} watch_links must be an array"
+      end
     end
 
     credit_names = movie["directors"] || [movie["director"]].compact

@@ -930,10 +930,6 @@ h4[id] {
   margin-top: 0.28rem !important;
   padding-left: 0;
   border-left: 0;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 
 .music-shelf,
@@ -1084,7 +1080,7 @@ h4[id] {
     text-overflow: ellipsis;
     white-space: nowrap;
 
-    &:not(.movie-entry__premiere):not(.music-entry__release):not(.music-entry__links):not(.album-entry__release):not(.album-entry__tracks):not(.book-entry__publish) {
+    &:not(.movie-entry__premiere):not(.movie-entry__links):not(.music-entry__release):not(.music-entry__links):not(.album-entry__release):not(.album-entry__tracks):not(.book-entry__publish) {
       span:not(.credit-name):not(.person-inline-separator) {
         display: inline;
 
@@ -1123,7 +1119,8 @@ h4[id] {
   color: var(--line);
 }
 
-.movie-entry__premiere,
+.movie-entry__meta dd.movie-entry__premiere,
+.movie-entry__meta dd.movie-entry__links,
 .music-entry__links,
 .book-entry__publish {
   display: inline-flex;
@@ -1139,6 +1136,10 @@ h4[id] {
   .book-entry__separator {
     white-space: nowrap;
   }
+}
+
+.movie-entry__meta dd.movie-entry__awards {
+  white-space: normal;
 }
 
 .music-listen-link {
@@ -1187,8 +1188,7 @@ h4[id] {
 }
 
 .movie-entry__premiere {
-  time,
-  span {
+  time {
     white-space: nowrap;
   }
 }

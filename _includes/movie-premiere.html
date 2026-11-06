@@ -14,7 +14,7 @@
 {%- elsif note contains "上映" -%}
   {%- assign event_place = note | replace: " 上映", "" | replace: "上映", "" | strip -%}
   {%- assign event_kind = "上映" -%}
-{%- elsif note contains "Film Festival" or note contains "Silverdocs" or note contains "South by Southwest" -%}
+{%- elsif note contains "Film Festival" or note contains "Animation Festival" or note contains "Silverdocs" or note contains "South by Southwest" -%}
   {%- assign event_kind = "电影节" -%}
 {%- elsif note contains "premiere" or note contains "首映" -%}
   {%- assign event_place = note | replace: " premiere", "" | replace: "首映", "" | strip -%}

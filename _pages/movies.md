@@ -166,12 +166,29 @@ collection_analytics: true
       </div>
       <div>
         <dt>获奖</dt>
-        <dd>{{ movie.awards }}</dd>
+        <dd class="movie-entry__awards">{{ movie.awards }}</dd>
       </div>
       <div>
         <dt>资料</dt>
-        <dd><a href="{{ movie.imdb_url }}" target="_blank" rel="noopener noreferrer">IMDb</a></dd>
+        <dd class="movie-entry__links">
+          <a href="{{ movie.imdb_url }}" target="_blank" rel="noopener noreferrer">IMDb</a>
+          {% if movie.interview_url %}
+          <span class="movie-entry__separator" aria-hidden="true">/</span>
+          <a href="{{ movie.interview_url | escape }}" target="_blank" rel="noopener noreferrer">导演访谈</a>
+          {% endif %}
+        </dd>
       </div>
+      {% if movie.watch_links and movie.watch_links != empty %}
+      <div>
+        <dt>观看</dt>
+        <dd class="movie-entry__links">
+          {% for link in movie.watch_links %}
+          {% unless forloop.first %}<span class="movie-entry__separator" aria-hidden="true">/</span>{% endunless %}
+          <a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{{ link.label | escape }}</a>
+          {% endfor %}
+        </dd>
+      </div>
+      {% endif %}
     </dl>
     {% assign movie_note = movie.note | strip %}
     {% if movie_note != "" %}

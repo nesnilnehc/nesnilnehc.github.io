@@ -19,4 +19,4 @@ test-poetry: build
 	node --test script/poetry-periods.test.cjs
 
 test-browser:
-	node --test script/analytics-browser.test.cjs
+	node --test script/*-browser.test.cjs

@@ -18,13 +18,6 @@
     }, 50);
   }
 
-  const navigationToggle = document.getElementById("nav-trigger");
-  if (navigationToggle) {
-    navigationToggle.addEventListener("change", function () {
-      navigationToggle.setAttribute("aria-expanded", String(navigationToggle.checked));
-    });
-  }
-
   function splitValues(value) {
     return (value || "").split("|").filter(Boolean);
   }

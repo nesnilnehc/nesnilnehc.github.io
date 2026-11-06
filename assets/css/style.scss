@@ -1235,7 +1235,7 @@ a {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
-label[for="nav-trigger"]:focus-visible {
+.nav-trigger:focus-visible + .nav-toggle {
   outline: 3px solid rgba(18, 107, 75, 0.35);
   outline-offset: 3px;
 }
@@ -1459,88 +1459,6 @@ label[for="nav-trigger"]:focus-visible {
 
 .quick-search-result-title {
   color: #2a7ae2;
-}
-
-// 导航栏按钮通用样式
-%nav-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  margin-left: 10px;
-  color: #666;
-  border-radius: 50%;
-  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-  
-  &:hover {
-    color: #2a7ae2;
-    background: rgba(42, 122, 226, 0.1);
-  }
-  
-  svg {
-    transition: transform 0.2s ease;
-  }
-  
-  &:hover svg {
-    transform: scale(1.1);
-  }
-  
-  @media screen and (max-width: 600px) {
-    width: 32px;
-    height: 32px;
-    margin-left: 0;
-    
-    svg {
-      width: 18px;
-      height: 18px;
-    }
-  }
-}
-
-// 导航栏搜索按钮
-.site-nav {
-  display: flex;
-  align-items: center;
-  
-  .trigger {
-    order: 1;
-  }
-  
-  .nav-trigger {
-    order: 3;
-    & + label {
-      order: 3;
-    }
-  }
-  
-  .search-button {
-    @extend %nav-button;
-    order: 2;
-  }
-  
-  .rss-button {
-    @extend %nav-button;
-    order: 2;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .search-button {
-      position: absolute;
-      right: 85px;
-      top: 9px;
-    }
-    
-    .rss-button {
-      position: absolute;
-      right: 45px;
-      top: 9px;
-    }
-    
-    .nav-trigger + label {
-      right: 0;
-    }
-  }
 }
 
 // Global search: an editorial index across posts and collections.
@@ -2284,11 +2202,88 @@ label[for="nav-trigger"]:focus-visible {
     gap: 10px;
   }
 
+  .site-title {
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: none;
+  }
+
   .site-nav {
     order: 3;
+    flex: 0 0 auto;
+    margin-left: 0;
+    line-height: 1;
+
+    .nav-trigger {
+      display: block;
+    }
+
+    .nav-toggle {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      box-sizing: border-box;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      cursor: pointer;
+
+      svg {
+        fill: currentColor;
+      }
+    }
+
+    .trigger {
+      display: none;
+      position: absolute;
+      z-index: 3;
+      top: 100%;
+      right: 18px;
+      box-sizing: border-box;
+      width: 260px;
+      max-width: calc(100% - 36px);
+      max-height: calc(100vh - 80px);
+      max-height: calc(100dvh - 80px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding: 8px 0;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      box-shadow: 0 12px 30px rgba(23, 33, 28, 0.12);
+    }
+
+    .nav-trigger:checked {
+      + .nav-toggle {
+        background: var(--surface);
+      }
+
+      ~ .trigger {
+        display: block;
+      }
+    }
+
+    .page-link {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      width: auto;
+      min-height: 44px;
+      padding: 8px 16px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &--active::after {
+        display: none;
+      }
+    }
   }
 
   .header-actions {
+    flex: 0 0 auto;
     margin-left: auto;
   }
 
@@ -2314,43 +2309,7 @@ label[for="nav-trigger"]:focus-visible {
   }
 
   .site-title {
-    max-width: 170px;
     font-size: 17px;
-  }
-
-  .site-nav {
-    position: static;
-    margin-left: 0;
-
-    label[for="nav-trigger"] {
-      top: 18px;
-      right: 18px;
-    }
-
-    .trigger {
-      top: 64px;
-      right: 12px;
-      width: calc(100vw - 24px);
-      max-width: 260px;
-      padding: 8px 0;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 4px;
-      box-shadow: 0 12px 30px rgba(23, 33, 28, 0.12);
-    }
-
-    .page-link {
-      display: block;
-      padding: 10px 16px;
-
-      &--active::after {
-        display: none;
-      }
-    }
-  }
-
-  .header-actions {
-    margin-right: 40px;
   }
 
   .page-content {
@@ -2369,6 +2328,11 @@ label[for="nav-trigger"]:focus-visible {
     > p:not(.section-kicker) {
       font-size: 16px;
     }
+  }
+
+  .home-intro__actions {
+    flex-wrap: wrap;
+    gap: 12px 18px;
   }
 
   .home-section {

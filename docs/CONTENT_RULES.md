@@ -114,7 +114,7 @@ canonical_url:
 - 页面应把 `premiere_note` 渲染为三段式短语，例如 `日期 / 电影节 / Toronto International Film Festival`、`日期 / 首映 / Wembley Arena`、`日期 / 上映 / 中国大陆`、`日期 / 电视首播 / SBS`。
 - 避免把“首播/上映/发行”这类动作词同时写在字段值和页面标签里造成重复。
 - 影视页面该字段的展示标签使用 `播映`，由后续事件类型说明是电影节、首映、上映还是电视首播。
-- `watch_links` 可收录制作方或发行方提供的观看入口，每项包含 `label` 和 `url`。`interview_url` 可链接用于核实创作背景的主创访谈。
+- `watch_links` 可收录制作方或发行方提供的观看入口，使用数组。每项包含非空的 `label` 和绝对 HTTP 或 HTTPS 地址 `url`。`interview_url` 可用同类地址链接用于核实创作背景的主创访谈。两项均可省略。
 
 `note` 写作规则：
 

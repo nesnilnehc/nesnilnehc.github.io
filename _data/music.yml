@@ -1,4 +1,30 @@
 ---
+- title: 이젠안녕
+  id: helloping-ijen-annyeong
+  count: 1
+  original_title: 이젠안녕
+  artist: HELLOPING
+  artists:
+  - HELLOPING
+  lyricists:
+  - 성미 정
+  composers:
+  - 성미 정
+  release_title: 이젠안녕 - Single
+  date: '2025-10-08'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/6qTPKXVYxDYrha6aYl0BnU
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1845293688
 - title: Unstoppable
   id: sia-unstoppable
   count: 1

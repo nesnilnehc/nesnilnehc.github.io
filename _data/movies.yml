@@ -569,3 +569,21 @@
   - 情景喜剧
   - 友情
   note: 全剧共 10 季 236 集。
+- original_title: Perfect Days
+  count: 1
+  type: film
+  chinese_title: 完美的日子
+  director: Wim Wenders
+  cast:
+  - Koji Yakusho
+  - Tokio Emoto
+  - Arisa Nakano
+  premiere_date: '2023-05-25'
+  premiere_note: Cannes Film Festival
+  imdb_url: https://www.imdb.com/title/tt27503384/
+  poster: "/assets/images/movies/perfect-days.jpg"
+  awards: 第 76 届戛纳电影节最佳男演员（役所广司）。
+  tags:
+  - 日常
+  - 城市
+  note: ''

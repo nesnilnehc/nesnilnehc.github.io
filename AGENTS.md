@@ -30,7 +30,7 @@
 3. 必须遵循内容规范，保持永久链接，不将累计喜欢次数解释为未记录的行为或时间趋势。
 4. 必须在交付前加载下述 AI Cortex 审查与测试资产，保留发现、修复和验收结果。审查不能代替功能验收。
 5. 必须在提交前检查暂存差异；推送 main 会触发 Pages 部署，必须取得用户推送授权。
-6. 录入书籍、音乐或诗文时，必须分别使用仓库内的 [`add-book`](.agents/skills/add-book/SKILL.md)、[`add-music`](.agents/skills/add-music/SKILL.md) 或 [`add-poetry`](.agents/skills/add-poetry/SKILL.md)。有同名个人技能时，以仓库版本为准。
+6. 录入书籍、音乐、诗文或影视时，必须分别使用仓库内的 [`add-book`](.agents/skills/add-book/SKILL.md)、[`add-music`](.agents/skills/add-music/SKILL.md)、[`add-poetry`](.agents/skills/add-poetry/SKILL.md) 或 [`add-movie`](.agents/skills/add-movie/SKILL.md)。有同名个人技能时，以仓库版本为准。
 
 ## AI Cortex 发现与加载
 

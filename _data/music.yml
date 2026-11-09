@@ -1,4 +1,30 @@
 ---
+- title: Making Love Out of Nothing at All
+  id: air-supply-making-love-out-of-nothing-at-all
+  count: 1
+  original_title: Making Love Out of Nothing at All
+  artist: Air Supply
+  artists:
+  - Air Supply
+  lyricists:
+  - Jim Steinman
+  composers:
+  - Jim Steinman
+  release_title: Greatest Hits
+  date: '2004-04-07'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres:
+  - ballad
+  tags: []
+  note: ''
+  listen_links:
+  - label: Qobuz
+    url: https://www.qobuz.com/us-en/album/greatest-hits-air-supply/0828765926225
+  - label: Apple Music
+    url: https://music.apple.com/us/song/888867597
 - title: 이젠안녕
   id: helloping-ijen-annyeong
   count: 1

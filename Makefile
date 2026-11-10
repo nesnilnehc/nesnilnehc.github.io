@@ -1,4 +1,4 @@
-.PHONY: install dev build validate test test-poetry test-browser
+.PHONY: install dev build validate test test-music test-poetry test-browser
 
 install:
 	bundle install
@@ -14,6 +14,9 @@ validate:
 
 test:
 	node --test script/like-count.test.cjs
+
+test-music: build
+	node --test script/music-story.test.cjs
 
 test-poetry: build
 	node --test script/poetry-periods.test.cjs

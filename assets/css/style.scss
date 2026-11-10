@@ -1224,6 +1224,26 @@ h4[id] {
   -webkit-line-clamp: 1;
 }
 
+.music-entry__story {
+  grid-column: 2;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+
+  summary {
+    color: var(--accent-dark);
+    cursor: pointer;
+    padding: 0.35rem 0;
+  }
+
+  summary:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  p { margin: 0.35rem 0 0.7rem; }
+}
+
 a {
   color: var(--accent);
 

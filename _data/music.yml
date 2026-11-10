@@ -1,4 +1,38 @@
 ---
+- title: 我曾爱过一个男孩
+  id: liu-ruoying-wo-ceng-ai-guo-yi-ge-nan-hai
+  count: 1
+  original_title: 我曾爱过一个男孩
+  artist: 刘若英
+  artists:
+  - 刘若英
+  lyricists:
+  - 陈黎
+  composers:
+  - 陈升
+  release_title: 年华
+  date: '2001-02-23'
+  date_label: 专辑页日期
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: 陈黎为《Kinderspiele》旋律填词《故事》，经校园传唱后由陈升另谱新曲。
+  story:
+    paragraphs:
+    - 陈黎听到 Esther Ofarim 演唱的德语歌曲《Kinderspiele》后，依照旋律写下中文歌词《故事》，并在课堂上教学生演唱；他并未翻译原来的德语歌词。
+    - 这首歌从一个班级传到其他班级，又传到街上；一周后，陈黎的表妹从同事那里学会了这首歌，还打电话唱给他听。
+    - 黄莺莺读到陈黎写下的经过后，征得他同意，请陈升为歌词另谱新曲，收录于 1993 年的《宁愿相信》；刘若英后来在《年华》中翻唱。
+    - 2011 年，刘若英到陈升录音室探班，两人又共同录制了这首歌，收录于《家在北极村》。
+    sources:
+    - label: 陈黎《〈故事〉的故事》
+      url: https://faculty.ndhu.edu.tw/~chenli/prose2.htm
+    - label: 《家在北极村》专辑介绍
+      url: https://music-tw.line.me/album/1027568
+  listen_links:
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/1017236003
 - title: Making Love Out of Nothing at All
   id: air-supply-making-love-out-of-nothing-at-all
   count: 1

@@ -188,6 +188,13 @@ collection_analytics: true
     {% if track_note != "" %}
     <p class="music-entry__note">{{ track_note }}</p>
     {% endif %}
+    {% if track.story %}
+    <details class="music-entry__story">
+      <summary>歌曲故事</summary>
+      {% for paragraph in track.story.paragraphs %}<p>{{ paragraph | escape }}</p>{% endfor %}
+      <p>资料来源：{% for source in track.story.sources %}<a href="{{ source.url | escape }}">{{ source.label | escape }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</p>
+    </details>
+    {% endif %}
   </article>
   {% endfor %}
 </section>

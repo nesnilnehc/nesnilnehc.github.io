@@ -1,4 +1,29 @@
 ---
+- title: 可爱女人
+  id: zhou-jielun-ke-ai-nv-ren
+  count: 1
+  original_title: 可爱女人
+  artist: 周杰伦
+  artists:
+  - 周杰伦
+  lyricists:
+  - 徐若瑄
+  composers:
+  - 周杰伦
+  release_title: Jay
+  date: '2000-11-07'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: r-and-b
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/1018304001
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=87VUC4J_0Ps
 - title: 我曾爱过一个男孩
   id: liu-ruoying-wo-ceng-ai-guo-yi-ge-nan-hai
   count: 1

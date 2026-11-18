@@ -1,4 +1,34 @@
 ---
+- title: I am a woman too
+  id: minah-i-am-a-woman-too
+  count: 1
+  original_title: 나도 여자예요
+  artist: Minah
+  artists:
+  - Minah
+  lyricists:
+  - LONG CANDY
+  composers:
+  - Duble Kick
+  - 황금두현
+  - 머스탱
+  release_title: I am a Woman too
+  date: '2015-03-16'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: r-and-b
+  genres: []
+  tags:
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/kh/song/1453487135
+  - label: Spotify
+    url: https://open.spotify.com/track/51mUgktkQxkYq1kSOQsFM6
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=3lcblxEZFM8
 - title: 可爱女人
   id: zhou-jielun-ke-ai-nv-ren
   count: 1

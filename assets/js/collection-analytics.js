@@ -81,42 +81,43 @@
     const filters = Array.from(document.querySelectorAll(".collection-filters button.is-active"))
       .filter(button => !button.hasAttribute("data-" + kind + "-sort"))
       .filter(button => Object.values(button.dataset).some(value => value !== "all"));
-    target("scope").textContent = (filters.length ? filters.map(b => b.textContent.trim()).join(" · ") : "全部收藏") +
-      " · " + baseline.length + unit + " · 有效记录 " + result.valid + unit;
+    const scope = filters.length ? filters.map(button => button.textContent.trim()).join(" · ") : "全部收藏";
+    target("scope").textContent = scope + " · " + baseline.length +
+      (kind === "music" ? " 首" : unit + " · 有效记录 " + result.valid + unit);
     const warning = target("warning");
     warning.hidden = result.invalid === 0;
     warning.textContent = result.invalid + " 条次数缺失或无效，统计仅包含有效记录。";
-    const metrics = target("metrics");
-    metrics.replaceChildren();
-    [
-      ["累计喜欢次数", result.valid ? result.total + " 次" : "—", "有效记录次数之和"],
-      ["多次喜欢条目", result.repeated + unit + " / " + percent(result.repeatedShare), "占有效条目 " + result.repeated + "/" + result.valid],
-      ["多次喜欢贡献占比", percent(result.contribution), "占有效记录累计喜欢次数"]
-    ].forEach(([label, value, note]) => {
-      const group = element("div");
-      group.append(element("dt", label), element("dd", value), element("dd", note, "collection-analytics__note"));
-      metrics.appendChild(group);
-    });
     const distribution = target("distribution");
     distribution.replaceChildren();
     const max = Math.max(1, ...result.distribution.map(bucket => bucket.size));
     result.distribution.forEach(bucket => {
-      const button = element("button", undefined, "like-distribution__column");
+      const button = element("button", undefined, "like-distribution__bucket");
       button.type = "button";
       button.dataset.countChoice = String(bucket.count);
       button.setAttribute("aria-label", "喜欢 " + bucket.count + " 次：" + bucket.size + unit + "，占有效条目 " + percent(bucket.share));
       button.setAttribute("aria-pressed", "false");
       const bar = element("span", undefined, "like-distribution__bar");
-      bar.style.height = (bucket.size / max * (kind === "music" ? 90 : 140)) + "px";
-      button.append(element("span", bucket.size + unit), element("span", percent(bucket.share), "collection-analytics__note"), bar, element("span", bucket.count + " 次"));
+      const count = element("span", bucket.count + " 次");
+      const share = element("span", percent(bucket.share), "collection-analytics__note");
+      if (kind === "music") {
+        const plot = element("span", undefined, "like-distribution__plot");
+        bar.style.width = (bucket.share * 100) + "%";
+        plot.appendChild(bar);
+        button.append(count, plot, element("span", bucket.size + " 首", "like-distribution__value"), share);
+      } else {
+        button.classList.add("like-distribution__column");
+        bar.style.height = (bucket.size / max * 140) + "px";
+        button.append(element("span", bucket.size + unit), share, bar, count);
+      }
       button.addEventListener("click", () => { selected = selected === bucket.count ? null : bucket.count; applySelection(); });
       distribution.appendChild(button);
     });
     if (!result.valid) distribution.appendChild(element("p", baseline.length ? "暂无有效次数记录" : "当前筛选下暂无作品"));
     const ranking = target("ranking");
     ranking.replaceChildren();
+    const ranked = kind === "music" ? result.top.slice(0, 3) : result.top;
     const maximum = result.top.length ? model.parseCount(result.top[0].count) : 1;
-    result.top.forEach(item => {
+    ranked.forEach(item => {
       const row = element("div", undefined, "like-ranking__row");
       const link = element("a", item.title);
       link.href = "#" + item.id;
@@ -127,14 +128,18 @@
         item.entry.focus({preventScroll: true});
         item.entry.scrollIntoView({block: "start", behavior: "instant"});
       });
-      const track = element("span", undefined, "like-ranking__track");
-      const bar = element("span", undefined, "like-ranking__bar");
-      bar.style.width = (model.parseCount(item.count) / maximum * 100) + "%";
-      track.appendChild(bar);
       const label = element("div", undefined, "like-ranking__label");
       label.appendChild(link);
-      if (kind === "music") label.appendChild(element("span", item.artists, "like-ranking__artist"));
-      row.append(label, element("span", item.count + " 次", "like-ranking__count"), track);
+      row.append(label, element("span", item.count + " 次", "like-ranking__count"));
+      if (kind === "music") {
+        label.appendChild(element("span", item.artists, "like-ranking__artist"));
+      } else {
+        const track = element("span", undefined, "like-ranking__track");
+        const bar = element("span", undefined, "like-ranking__bar");
+        bar.style.width = (model.parseCount(item.count) / maximum * 100) + "%";
+        track.appendChild(bar);
+        row.appendChild(track);
+      }
       ranking.appendChild(row);
     });
     if (!result.top.length) {
@@ -142,12 +147,35 @@
       ranking.appendChild(element("p", !result.valid ? "暂无可统计作品" : allOne ? "所有作品均记录为 1 次，暂无次数差异" : "暂无喜欢次数至少 2 次的作品"));
     }
     if (kind !== "music") {
+      const metrics = target("metrics");
+      metrics.replaceChildren();
+      [
+        ["累计喜欢次数", result.valid ? result.total + " 次" : "—", "有效记录次数之和"],
+        ["多次喜欢条目", result.repeated + unit + " / " + percent(result.repeatedShare), "占有效条目 " + result.repeated + "/" + result.valid],
+        ["多次喜欢贡献占比", percent(result.contribution), "占有效记录累计喜欢次数"]
+      ].forEach(([label, value, note]) => {
+        const group = element("div");
+        group.append(element("dt", label), element("dd", value), element("dd", note, "collection-analytics__note"));
+        metrics.appendChild(group);
+      });
       target("distribution-table").replaceChildren(table(["喜欢次数", "条目数", "占有效条目"], result.distribution.map(b => [b.count, b.size, percent(b.share)])));
       target("ranking-table").replaceChildren(table(["作品", "喜欢次数"], result.top.map(item => [item.title, item.count])));
     }
     applySelection();
   }
 
+  document.addEventListener("collection-filter", event => {
+    if (event.detail.kind !== kind) return;
+    baseline = items.filter(item => !item.entry.hidden);
+    selected = null;
+    render();
+  });
+  render();
+
+  if (!toggle) {
+    panel.hidden = false;
+    return;
+  }
   toggle.hidden = false;
   toggle.addEventListener("click", () => {
     panel.hidden = !panel.hidden;
@@ -157,11 +185,4 @@
       applySelection();
     }
   });
-  document.addEventListener("collection-filter", event => {
-    if (event.detail.kind !== kind) return;
-    baseline = items.filter(item => !item.entry.hidden);
-    selected = null;
-    render();
-  });
-  render();
 }());

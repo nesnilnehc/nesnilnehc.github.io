@@ -1,0 +1,9 @@
+<section{% if include.kind == 'music' %} class="collection-analytics__ranking"{% endif %} aria-labelledby="ranking-heading">
+  <h3 id="ranking-heading">{% if include.kind == 'music' %}最喜欢的作品{% else %}多次喜欢的作品{% endif %}</h3>
+  {% if include.kind != 'music' %}<p class="collection-analytics__axis">至少 2 次 · 前 10 项（含并列）</p>{% endif %}
+  <div class="like-ranking" data-analytics-ranking></div>
+  {% if include.kind != 'music' %}<details>
+    <summary>作品数据</summary>
+    <div class="collection-analytics__table" data-analytics-ranking-table></div>
+  </details>{% endif %}
+</section>

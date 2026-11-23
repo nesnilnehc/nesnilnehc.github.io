@@ -1,29 +1,28 @@
+{% capture analytics_selection %}<p class="collection-analytics__selection" data-analytics-selection role="status"></p>{% endcapture %}
 <section class="collection-analytics" id="collection-analytics" data-collection-analytics="{{ include.kind }}" aria-labelledby="analytics-heading" hidden>
+  {% if include.kind == 'music' %}<div class="collection-analytics__card">{% endif %}
   <header class="collection-analytics__header">
     <h2 id="analytics-heading">喜欢次数统计</h2>
     <p data-analytics-scope></p>
   </header>
   <p data-analytics-warning role="status" hidden></p>
-  <dl class="collection-analytics__metrics" data-analytics-metrics></dl>
+  {% if include.kind != 'music' %}<dl class="collection-analytics__metrics" data-analytics-metrics></dl>{% endif %}
   <div class="collection-analytics__charts">
     <section aria-labelledby="distribution-heading">
       <h3 id="distribution-heading">次数分布</h3>
-      <p class="collection-analytics__axis">条目数 / 喜欢次数</p>
+      {% if include.kind != 'music' %}<p class="collection-analytics__axis">条目数 / 喜欢次数</p>{% endif %}
       <div class="like-distribution" data-analytics-distribution></div>
-      {% if include.kind != 'music' %}<details>
-        <summary>分布数据</summary>
-        <div class="collection-analytics__table" data-analytics-distribution-table></div>
-      </details>{% endif %}
+      {% if include.kind == 'music' %}
+        {{ analytics_selection }}
+      {% else %}
+        <details>
+          <summary>分布数据</summary>
+          <div class="collection-analytics__table" data-analytics-distribution-table></div>
+        </details>
+      {% endif %}
     </section>
-    <section aria-labelledby="ranking-heading">
-      <h3 id="ranking-heading">多次喜欢的作品</h3>
-      <p class="collection-analytics__axis">至少 2 次 · 前 10 项（含并列）</p>
-      <div class="like-ranking" data-analytics-ranking></div>
-      {% if include.kind != 'music' %}<details>
-        <summary>作品数据</summary>
-        <div class="collection-analytics__table" data-analytics-ranking-table></div>
-      </details>{% endif %}
-    </section>
+    {% include collection-analytics-ranking.html kind=include.kind %}
   </div>
-  <p class="collection-analytics__selection" data-analytics-selection role="status"></p>
+  {% if include.kind != 'music' %}{{ analytics_selection }}{% endif %}
+  {% if include.kind == 'music' %}</div>{% endif %}
 </section>

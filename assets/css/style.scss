@@ -157,6 +157,8 @@ h4[id] {
   height: 230px;
   max-width: 100px;
   padding: 0.4rem;
+}
+.like-distribution__bucket {
   box-sizing: border-box;
   background: transparent;
   border: 1px solid transparent;
@@ -178,14 +180,115 @@ h4[id] {
 .like-ranking__count { color: var(--muted); font-size: 0.8rem; white-space: nowrap; }
 .like-ranking__track { grid-column: 1 / -1; height: 5px; background: var(--surface); margin-top: 0.3rem; }
 .like-ranking__bar { display: block; height: 100%; background: var(--signal); }
+.post-content [data-collection-analytics="music"] .collection-analytics__header h2 {
+  font-size: clamp(1.3rem, 1.7vw, 1.5rem);
+  line-height: 1.25;
+}
 [data-collection-analytics="music"] {
-  .like-distribution { min-height: 165px; }
-  .like-distribution__column { height: 165px; }
-  .like-ranking { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem 1rem; }
-  .like-ranking__row { margin: 0; align-content: start; }
-  .like-ranking__label { min-width: 0; line-height: 1.35; }
-  .like-ranking__artist { display: block; color: var(--muted); font-size: 0.72rem; overflow-wrap: anywhere; }
-  .like-ranking__track { height: 3px; }
+  margin: 0.85rem 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.45;
+
+  .collection-analytics__card {
+    padding: 0.65rem clamp(0.75rem, 2.5vw, 1.5rem);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--paper);
+  }
+
+  .collection-analytics__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.1rem 0.65rem;
+    margin-bottom: 0.55rem;
+
+    p { min-width: 0; margin: 0; font-size: 0.78rem; }
+  }
+
+  .collection-analytics__charts {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.65rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--line);
+
+    @media (min-width: 761px) {
+      grid-template-columns: minmax(256px, 1fr) minmax(0, 1.12fr);
+      gap: clamp(1.75rem, 3.5vw, 3rem);
+    }
+  }
+
+  .like-distribution {
+    display: grid;
+    gap: 0.125rem;
+    min-height: 0;
+    border: 0;
+    overflow: visible;
+  }
+  .like-distribution > p { margin-bottom: 0; }
+
+  .like-distribution__bucket {
+    display: grid;
+    grid-template-columns: 2.6rem minmax(0, 1fr) 3.25rem 3rem;
+    align-items: center;
+    column-gap: 0.4rem;
+    min-height: 1.625rem;
+    padding: 0.15rem 0.2rem;
+    border-radius: 3px;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+
+    > span:first-child { text-align: left; }
+    &:hover { background: var(--surface); }
+    &:focus-visible { outline-offset: -3px; }
+  }
+
+  .like-distribution__value { font-weight: 600; }
+  .like-distribution__bar { height: 0.45rem; max-width: none; border-radius: 2px; }
+  .collection-analytics__selection { margin: 0.25rem 0 0; }
+  .collection-analytics__selection:empty { margin-top: 0; }
+}
+
+.collection-analytics__ranking {
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
+
+  @media (min-width: 761px) {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .like-ranking__row {
+    margin: 0;
+    padding: 0.24rem 0;
+    align-items: baseline;
+    column-gap: 1rem;
+
+    a { display: block; font-size: 0.95rem; font-weight: 600; line-height: 1.35; }
+  }
+
+  .like-ranking__row + .like-ranking__row { border-top: 1px solid var(--line); }
+
+  .like-ranking__label { min-width: 0; }
+  .like-ranking__artist {
+    display: block;
+    margin-top: 0.1rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .like-ranking__count {
+    color: var(--accent-dark);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.35;
+    text-align: right;
+  }
 }
 .collection-analytics__table { overflow-x: auto; table { font-size: 0.8rem; } th, td { overflow-wrap: anywhere; } }
 .collection-analytics__selection { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: 1rem; }

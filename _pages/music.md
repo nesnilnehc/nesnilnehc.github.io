@@ -69,8 +69,9 @@ collection_analytics: true
     <span class="collection-summary__value">{{ music_primary_genres | size }}</span>
     <span class="collection-summary__label">类主曲风</span>
   </div>
-  <button type="button" class="analytics-text-button" data-analytics-toggle aria-controls="collection-analytics" aria-expanded="false" hidden>统计分析</button>
 </section>
+
+{% include collection-analytics.html kind="music" %}
 
 <section class="collection-filters" aria-label="筛选音乐">
   <div class="music-filter">
@@ -119,8 +120,6 @@ collection_analytics: true
   </div>
   {% endif %}
 </section>
-
-{% include collection-analytics.html kind="music" %}
 
 <section class="music-shelf" aria-label="喜欢的音乐">
   {% for track in tracks_by_release %}

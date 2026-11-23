@@ -1,4 +1,31 @@
 ---
+- title: 时光旅行者
+  id: xu-fei-shi-guang-lv-xing-zhe
+  count: 1
+  original_title: 时光旅行者
+  artist: 许飞
+  artists:
+  - 许飞
+  lyricists:
+  - 董玉方
+  composers:
+  - 许飞
+  release_title: 时光旅行者
+  date: '2019-08-02'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: 这首歌是人民日报新媒体「时光博物馆」全国巡展的主题曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/%E6%97%B6%E5%85%89%E6%97%85%E8%A1%8C%E8%80%85/6805415673?i=6805415682
+  - label: Spotify
+    url: https://open.spotify.com/track/4xD4yMqggJ5JrJpcQYGORL
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=GdQ8YNTIUS8
 - title: I am a woman too
   id: minah-i-am-a-woman-too
   count: 1

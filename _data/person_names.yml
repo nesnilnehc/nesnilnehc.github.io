@@ -1722,3 +1722,27 @@ LONG CANDY:
 머스탱:
   canonical_name: 머스탱
   display_name: 머스탱
+HWASA:
+  romanized_name: HWASA
+  canonical_name: 화사
+  chinese_name: 华莎
+  display_name: HWASA · 화사 · 华莎
+An Shinae:
+  romanized_name: An Shinae
+  canonical_name: 안신애
+  chinese_name: 安信爱
+  display_name: An Shinae · 안신애 · 安信爱
+Woosang Park:
+  romanized_name: Woosang Park
+  canonical_name: 박우상
+  display_name: Woosang Park · 박우상
+Miyeon:
+  romanized_name: Miyeon
+  canonical_name: 조미연
+  chinese_name: 曺薇娟
+  display_name: Miyeon · 조미연 · 曺薇娟
+Minnie:
+  romanized_name: Minnie
+  canonical_name: ณิชา ยนตรรักษ์
+  chinese_name: 米妮
+  display_name: Minnie · ณิชา ยนตรรักษ์ · 米妮

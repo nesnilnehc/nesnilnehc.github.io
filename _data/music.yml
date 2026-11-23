@@ -1,4 +1,68 @@
 ---
+- title: Good Goodbye
+  id: hwasa-good-goodbye
+  count: 1
+  original_title: Good Goodbye
+  artist: HWASA
+  artists:
+  - HWASA
+  lyricists:
+  - HWASA
+  - An Shinae
+  composers:
+  - Woosang Park
+  - HWASA
+  release_title: Good Goodbye
+  date: '2025-10-15'
+  date_label: 数字发行
+  languages:
+  - ko
+  - en
+  primary_genre: pop
+  genres:
+  - ballad
+  tags:
+  - k-pop
+  - solo
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/good-goodbye/1843518968
+  - label: Spotify
+    url: https://open.spotify.com/track/3cLXrotzCjYCkN73PewALM
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=Qe8fa4b5xNU
+- title: Good Goodbye
+  id: i-dle-good-goodbye-live
+  count: 1
+  original_title: Good Goodbye
+  artist: Miyeon; Minnie; Soyeon
+  artists:
+  - Miyeon
+  - Minnie
+  - Soyeon
+  lyricists:
+  - HWASA
+  - An Shinae
+  composers:
+  - Woosang Park
+  - HWASA
+  release_title: The Seasons - 10CM의 쓰담쓰담
+  date: '2026-01-30'
+  date_label: 节目日期
+  languages:
+  - ko
+  - en
+  primary_genre: pop
+  genres:
+  - ballad
+  tags:
+  - k-pop
+  - live
+  note: 原唱为华莎，三位演唱者均为 i-dle 成员。
+  listen_links:
+  - label: QQ音乐
+    url: https://y.qq.com/n/ryqq/songDetail/000muyez0sP5GH
 - title: 时光旅行者
   id: xu-fei-shi-guang-lv-xing-zhe
   count: 1

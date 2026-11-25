@@ -1,4 +1,34 @@
 ---
+- title: hate that i made you love me
+  id: ariana-grande-hate-that-i-made-you-love-me
+  count: 1
+  original_title: hate that i made you love me
+  artist: Ariana Grande
+  artists:
+  - Ariana Grande
+  lyricists:
+  - Ariana Grande
+  composers:
+  - Ariana Grande
+  - Max Martin
+  - Ilya Salmanzadeh
+  release_title: hate that i made you love me
+  date: '2026-05-29'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags:
+  - solo
+  note: 这首歌是专辑《petal》的首发单曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/hate-that-i-made-you-love-me/6773388585
+  - label: Spotify
+    url: https://open.spotify.com/track/20jbSiX29FDX4oQxBXyUEi
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=7CUz7Ec7cWc
 - title: Good Goodbye
   id: hwasa-good-goodbye
   count: 1

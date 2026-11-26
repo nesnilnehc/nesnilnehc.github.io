@@ -62,7 +62,7 @@ collection_analytics: true
     <span class="collection-summary__label">个表演</span>
   </div>
   <div>
-    <span class="collection-summary__value">{{ music_languages | size }}</span>
+    <span class="collection-summary__value">{{ music_languages | where_exp: "language", "language != 'zxx'" | size }}</span>
     <span class="collection-summary__label">种语种</span>
   </div>
   <div>

@@ -3976,3 +3976,26 @@
     url: https://music.163.com/song?id=1923210613
   - label: YouTube
     url: https://www.youtube.com/watch?v=DuWHblPuvd4
+- title: La Campanella
+  id: iwamizu-la-campanella
+  count: 1
+  original_title: La Campanella
+  artist: iwamizu
+  artists:
+  - iwamizu
+  release_title: Aporia
+  date: '2018-05-07'
+  date_label: 专辑发行
+  languages:
+  - zxx
+  primary_genre: hip-hop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Bandcamp
+    url: https://iwamizu.bandcamp.com/track/la-campanella
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1383673455
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=OlBfpUK2bok

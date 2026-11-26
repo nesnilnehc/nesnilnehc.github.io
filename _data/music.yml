@@ -1706,7 +1706,7 @@
   - label: QQ音乐
     url: https://y.qq.com/n/ryqq/songDetail/00081r5M0uNy4A
 - title: Nine Million Bicycles
-  count: 1
+  count: 2
   original_title: Nine Million Bicycles
   artist: Katie Melua
   artists:
@@ -1724,7 +1724,7 @@
   genres:
   - folk
   tags: []
-  note: ''
+  note: Mike Batt 游览北京时听导游说「北京有九百万辆自行车」，由此获得创作灵感。
   listen_links:
   - label: Apple Music
     url: https://music.apple.com/us/song/nine-million-bicycles/292453105

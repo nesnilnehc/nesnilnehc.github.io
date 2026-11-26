@@ -4,6 +4,8 @@ languages:
   en: English
   ja: 日本語
   fr: Français
+  nan: 台语 / Taiwanese Hokkien
+  sw: Kiswahili / 斯瓦希里语
   zxx: 纯音乐 / Instrumental
 
 genres:

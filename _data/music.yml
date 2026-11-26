@@ -3999,3 +3999,1406 @@
     url: https://music.apple.com/us/song/1383673455
   - label: YouTube
     url: https://www.youtube.com/watch?v=OlBfpUK2bok
+- title: 岁月
+  id: wang-fei-na-ying-sui-yue
+  count: 1
+  original_title: 岁月
+  artist: 王菲; 那英
+  artists:
+  - 王菲
+  - 那英
+  lyricists:
+  - 王菲
+  - 那英
+  composers:
+  - 钱雷
+  release_title: 岁月
+  date: '2018-02-15'
+  date_label: 单曲发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - duet
+  note: ''
+  listen_links:
+  - label: 酷狗音乐
+    url: https://www.kugou.com/song-36/m1148ad.html
+- title: Can't Stop
+  id: cnblue-cant-stop
+  count: 1
+  original_title: Can't Stop
+  artist: CNBLUE
+  artists:
+  - CNBLUE
+  release_title: Can't Stop - EP
+  date: '2014-02-24'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/6809661347
+- title: 关不上的窗
+  id: steve-chou-guan-bu-shang-de-chuang
+  count: 1
+  original_title: 关不上的窗
+  artist: Steve Chou
+  artists:
+  - Steve Chou
+  release_title: 恋人创世纪
+  date: '2009'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/1676922646
+- title: Too Far
+  id: anna-f-too-far
+  count: 1
+  original_title: Too Far
+  artist: Anna F.
+  artists:
+  - Anna F.
+  release_title: DNA - EP
+  date: '2013'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1442771365
+- title: さがしもの
+  id: humbert-humbert-sagashimono
+  count: 1
+  original_title: さがしもの
+  artist: Humbert Humbert
+  artists:
+  - Humbert Humbert
+  release_title: おかえりなさい - Single
+  date: '2007-01-17'
+  date_label: 数字发行
+  languages:
+  - ja
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: OTOTOY
+    url: https://ototoy.jp/_/default/p/114537
+- title: 他不爱我
+  id: karen-mok-ta-bu-ai-wo
+  count: 1
+  original_title: 他不爱我
+  artist: 莫文蔚
+  artists:
+  - 莫文蔚
+  release_title: 做自己
+  date: '1997-08-12'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1020224742
+- title: Live 酒馆 300 秒
+  id: deserts-chang-live-jiu-guan-300-miao
+  count: 1
+  original_title: Live酒館300秒
+  artist: 张悬
+  artists:
+  - 张悬
+  release_title: My Life Will
+  date: '2006-06-09'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/300117916
+- title: Wind
+  id: akeboshi-wind
+  count: 1
+  original_title: Wind
+  artist: Akeboshi
+  artists:
+  - Akeboshi
+  release_title: Akeboshi
+  date: '2005-06-22'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1536226794
+- title: Get Up
+  id: baby-vox-get-up
+  count: 1
+  original_title: Get Up
+  artist: Baby V.O.X
+  artists:
+  - Baby V.O.X
+  release_title: Come Come Come Baby
+  date: '1999'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - girl-group
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/1PABWYCQ2oDhPA5gNpgKfb
+- title: 1분 1초
+  id: epik-high-taru-1-bun-1-cho
+  original_title: 1분 1초
+  artist: Epik High; Taru
+  artists:
+  - Epik High
+  - Taru
+  release_title: Lovescream - EP
+  date: '2008-09-30'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/1606606
+- title: 1분 1초
+  id: jiyeon-1-bun-1-cho
+  original_title: 1분1초
+  artist: Jiyeon
+  artists:
+  - Jiyeon
+  release_title: Never Ever - EP
+  date: '2014-05-20'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/2pxaUkSvUVW0HejBdAkdmt
+- title: 我曾爱过一个男孩
+  id: bobby-chen-renee-liu-wo-ceng-ai-guo-yi-ge-nan-hai
+  count: 1
+  original_title: 我曾爱过一个男孩
+  artist: 陈升; 刘若英
+  artists:
+  - 陈升
+  - 刘若英
+  release_title: 流浪日记二部曲：家在北极村
+  date: '2011-12-23'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - duet
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/544656034
+- title: 历史的天空
+  id: mao-a-min-li-shi-de-tian-kong
+  count: 1
+  original_title: 历史的天空
+  artist: 毛阿敏
+  artists:
+  - 毛阿敏
+  release_title: 三国演义
+  date: '1994'
+  date_label: 原声
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - soundtrack
+  note: 电视剧《三国演义》片尾曲。
+  listen_links:
+  - label: 央视剧集
+    url: https://tv.cctv.com/2012/12/19/VIDA1355904363986430.shtml
+- title: Moonsea
+  id: phildel-moonsea
+  count: 1
+  original_title: Moonsea
+  artist: PHILDEL
+  artists:
+  - PHILDEL
+  release_title: The Disappearance of the Girl
+  date: '2013-03-15'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/id/song/815667897
+- title: Seve (Radio Edit)
+  id: tez-cadey-seve-radio-edit
+  count: 1
+  original_title: Seve (Radio Edit)
+  artist: Tez Cadey
+  artists:
+  - Tez Cadey
+  release_title: Seve (Radio Edit) - Single
+  date: '2015-01-26'
+  date_label: 数字发行
+  languages:
+  - sw
+  primary_genre: electronic
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/0MKchmCfCPDzTigAADz7Jz
+- title: Love Sex Magic
+  id: ciara-justin-timberlake-love-sex-magic
+  count: 1
+  original_title: Love Sex Magic
+  artist: Ciara; Justin Timberlake
+  artists:
+  - Ciara
+  - Justin Timberlake
+  release_title: Love Sex Magic - Single
+  date: '2009-03-12'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: r-and-b
+  genres: []
+  tags:
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/love-sex-magic-feat-justin-timberlake-single/307564775
+- title: 反语
+  id: majiko-irony
+  count: 2
+  original_title: アイロニ
+  artist: majiko
+  artists:
+  - majiko
+  lyricists:
+  - scop
+  composers:
+  - scop
+  release_title: Contrast
+  date: '2015-04-01'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/album/1B0FQuDxHXJSVmWkBJT6ye
+- title: 층간스캔들
+  id: plastic-sean-lee-cheunggan-seukaendeul
+  count: 1
+  original_title: 층간스캔들
+  artist: Plastic; Sean Lee
+  artists:
+  - Plastic
+  - Sean Lee
+  lyricists:
+  - Lee Sung Jae
+  - Lee Ye Ji Na
+  composers:
+  - Lee Sung Jae
+  release_title: 층간스캔들 - Single
+  date: '2015-02-26'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - duet
+  note: 女声由 Plastic 的成员 은여울 演唱。
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/3932824
+  - label: Bugs
+    url: https://music.bugs.co.kr/album/486478
+- title: Time Machine
+  id: ingrid-michaelson-time-machine
+  count: 1
+  original_title: Time Machine
+  artist: Ingrid Michaelson
+  artists:
+  - Ingrid Michaelson
+  release_title: Lights Out
+  date: '2014-04-15'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1511191201
+- title: Listen
+  id: beyonce-listen
+  count: 1
+  original_title: Listen
+  artist: Beyoncé
+  artists:
+  - Beyoncé
+  release_title: Dreamgirls
+  date: '2006'
+  date_label: 原声
+  languages:
+  - en
+  primary_genre: r-and-b
+  genres: []
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/395768614
+- title: Lover
+  id: taylor-swift-lover
+  count: 2
+  original_title: Lover
+  artist: Taylor Swift
+  artists:
+  - Taylor Swift
+  release_title: Lover
+  date: '2019-08-16'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1468058173
+- title: Reset
+  id: tiger-jk-jinsil-reset
+  count: 1
+  original_title: Reset
+  artist: Tiger JK; Jinsil
+  artists:
+  - Tiger JK
+  - Jinsil
+  release_title: 'Who Are You: School 2015 OST'
+  date: '2015-04-27'
+  date_label: 原声
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1608832857
+- title: Mr. K
+  id: asami-kado-mr-k
+  count: 1
+  original_title: Mr. K
+  artist: Asami Kado
+  artists:
+  - Asami Kado
+  release_title: Sachet
+  date: '1980'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/album/1L7cFg3P7LYF9EPQgHdkKA
+- title: This Is the Life
+  id: angie-miller-this-is-the-life
+  count: 1
+  original_title: This Is the Life
+  artist: Angie Miller
+  artists:
+  - Angie Miller
+  release_title: Weathered - EP
+  date: '2014'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: 酷狗音乐
+    url: https://www.kugou.com/mixsong/h4k611d.html
+- title: STEP
+  id: kara-step
+  count: 1
+  original_title: STEP
+  artist: KARA
+  artists:
+  - KARA
+  release_title: STEP
+  date: '2011-09-06'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - girl-group
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/2437594
+- title: 谁
+  id: ma-shang-you-shui
+  count: 3
+  original_title: 谁
+  artist: 马上又
+  artists:
+  - 马上又
+  release_title: 父亲的身份
+  date: '2016'
+  date_label: 原声
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - soundtrack
+  note: 电视剧《父亲的身份》主题曲。
+  listen_links:
+  - label: 央视剧集
+    url: https://tv.cctv.com/2016/04/22/VIDEW0gWVmVidZxOJw9xWplN160422.shtml
+- title: When You Say Nothing at All
+  id: alison-krauss-union-station-when-you-say-nothing-at-all
+  count: 1
+  original_title: When You Say Nothing at All
+  artist: Alison Krauss & Union Station
+  artists:
+  - Alison Krauss & Union Station
+  release_title: 'Keith Whitley: A Tribute Album'
+  date: '1994-09-27'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: country
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1440777643
+- title: 思ひで
+  id: tsunekichi-suzuki-omoide
+  count: 1
+  original_title: 思ひで
+  artist: Tsunekichi Suzuki
+  artists:
+  - Tsunekichi Suzuki
+  release_title: ぜいご
+  date: '2006-10-29'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/339693053
+- title: In Disguise
+  id: ashe-in-disguise
+  count: 2
+  original_title: In Disguise
+  artist: Ashe
+  artists:
+  - Ashe
+  release_title: 'Moral of the Story: Chapter 2 - EP'
+  date: '2019'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Qobuz
+    url: https://www.qobuz.com/no-en/album/moral-of-the-story-chapter-2-ashe/q7nkmrtkk4o7i
+- title: The Sounds of Silence
+  id: simon-garfunkel-the-sounds-of-silence-acoustic
+  count: 1
+  original_title: The Sounds of Silence
+  artist: Simon & Garfunkel
+  artists:
+  - Simon & Garfunkel
+  release_title: Wednesday Morning, 3 A.M.
+  date: '1964-10-19'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: 1964 年原声录音。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/203925465
+- title: MONEY
+  id: lisa-money
+  count: 1
+  original_title: MONEY
+  artist: LISA
+  artists:
+  - LISA
+  release_title: LALISA - Single
+  date: '2021-09-10'
+  date_label: 数字发行
+  languages:
+  - en
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1584836391
+- title: 记事本
+  id: kelly-chen-ji-shi-ben
+  original_title: 记事本
+  artist: 陈慧琳
+  artists:
+  - 陈慧琳
+  release_title: 爱我不爱
+  date: '1998'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Amazon Music
+    url: https://music.amazon.com/albums/B0CGVP3CCT
+- title: 记事本
+  id: steve-chou-ji-shi-ben-transfer
+  original_title: 记事本
+  artist: Steve Chou
+  artists:
+  - Steve Chou
+  release_title: Transfer
+  date: '2000-12-28'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/1027196006
+- title: 你知道什么
+  id: ns-yoon-g-verbal-jint-what-do-you-know
+  count: 1
+  original_title: 니가 뭘 알아
+  artist: NS Yoon-G; Verbal Jint
+  artists:
+  - NS Yoon-G
+  - Verbal Jint
+  release_title: 니가 뭘 알아 - Single
+  date: '2011-12-21'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - collaboration
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1612477879
+- title: 红豆曲
+  id: chen-li-wang-jie-shi-hong-dou-qu
+  original_title: 红豆曲
+  artist: 陈力; 王洁实
+  artists:
+  - 陈力
+  - 王洁实
+  release_title: 红楼梦
+  date: '1987'
+  date_label: 原声
+  languages:
+  - zh
+  primary_genre: traditional
+  genres: []
+  tags:
+  - duet
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/hk/song/1647367088
+- title: 多远都要在一起
+  id: gem-duo-yuan-dou-yao-zai-yi-qi
+  count: 1
+  original_title: 多远都要在一起
+  artist: G.E.M.
+  artists:
+  - G.E.M.
+  lyricists:
+  - G.E.M.
+  composers:
+  - G.E.M.
+  release_title: 新的心跳
+  date: '2015'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=D9ksLn6hZ7Q
+- title: 被动 (Live)
+  id: lala-hsu-wu-bai-bei-dong-live
+  count: 1
+  original_title: 被動 (feat. 伍佰) [Live]
+  artist: 徐佳莹; 伍佰
+  artists:
+  - 徐佳莹
+  - 伍佰
+  release_title: 徐佳莹是日救星演唱会
+  date: '2019-12-06'
+  date_label: 收录
+  languages:
+  - zh
+  primary_genre: rock
+  genres: []
+  tags:
+  - duet
+  - live
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1487091672
+- title: 9 Crimes
+  id: damien-rice-lisa-hannigan-9-crimes
+  count: 1
+  original_title: 9 Crimes
+  artist: Damien Rice; Lisa Hannigan
+  artists:
+  - Damien Rice
+  - Lisa Hannigan
+  release_title: '9'
+  date: '2006-11-03'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: folk
+  genres: []
+  tags:
+  - duet
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/203880558
+- title: 一腔诗意喂了狗
+  id: hua-zhou-yi-qiang-shi-yi-wei-le-gou
+  count: 1
+  original_title: 一腔诗意喂了狗
+  artist: 花粥
+  artists:
+  - 花粥
+  release_title: 2017（三）
+  date: '2017-02-17'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/1698231056
+  - label: Spotify
+    url: https://open.spotify.com/track/301wyiVVLmgvyoq6cEmubh
+- title: 追梦的孩子
+  id: duan-lin-xi-zhui-meng-de-hai-zi
+  count: 1
+  original_title: 追梦的孩子
+  artist: 段林希
+  artists:
+  - 段林希
+  release_title: Baby Sister
+  date: '2011-09-16'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/sg/song/1631487191?l=zh-Hans-CN
+- title: 我也不想这样 (Live)
+  id: lala-hsu-wo-ye-bu-xiang-zhe-yang-live
+  count: 2
+  original_title: 我也不想這樣 (Live)
+  artist: 徐佳莹
+  artists:
+  - 徐佳莹
+  release_title: 日全蚀（演唱会现场实录）
+  date: '2016-05-13'
+  date_label: 收录
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - live
+  note: 演出录于 2015 年 3 月 21 日台北小巨蛋。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1106227043
+  - label: LINE MUSIC
+    url: https://music-tw.line.me/track/1273558021
+- title: 他不懂
+  id: zhang-jie-ta-bu-dong
+  count: 1
+  original_title: 他不懂
+  artist: 张杰
+  artists:
+  - 张杰
+  release_title: 爱，不解释
+  date: '2013-12-20'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/3dvctyFrohcjpTZfkhDoBA
+  - label: Apple Music
+    url: https://music.apple.com/us/album/1631476149
+- title: 你生活的那个家
+  id: jy-park-ni-ga-sa-neun-geu-jip
+  count: 1
+  original_title: 니가 사는 그집
+  artist: J.Y. Park
+  artists:
+  - J.Y. Park
+  release_title: Back To Stage
+  date: '2007-11-16'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: r-and-b
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/1jo8oDcDUhjiQoah8sumkR
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=E2BCCqPFvjs
+- title: 爱过的你
+  id: he-jie-ai-guo-de-ni
+  count: 1
+  original_title: 爱过的你
+  artist: 何洁
+  artists:
+  - 何洁
+  release_title: 短暂的爱情
+  date: '2011-10-24'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/1690840988
+  - label: Spotify
+    url: https://open.spotify.com/track/50FfabHa78E4KlR3U4Veds
+- title: 淯水吟
+  id: mao-a-min-yu-shui-yin
+  count: 1
+  original_title: 淯水吟
+  artist: 毛阿敏
+  artists:
+  - 毛阿敏
+  release_title: 三国演义
+  date: '1994'
+  date_label: 原声
+  languages:
+  - zh
+  primary_genre: traditional
+  genres: []
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: 酷狗音乐
+    url: https://www.kugou.com/song/1ogaqf2.html
+- title: Chocolate Cream
+  id: laysha-nassun-chocolate-cream
+  count: 1
+  original_title: Chocolate Cream
+  artist: LAYSHA; Nassun
+  artists:
+  - LAYSHA
+  - Nassun
+  release_title: Chocolate Cream - Single
+  date: '2016-07-20'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - girl-group
+  - k-pop
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1811926881
+- title: Someone Like You
+  id: adele-someone-like-you
+  count: 1
+  original_title: Someone Like You
+  artist: Adele
+  artists:
+  - Adele
+  release_title: '21'
+  date: '2011-01-19'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1544491998
+- title: 亲爱的，别担心
+  id: lee-juck-dont-worry
+  count: 1
+  original_title: 걱정말아요 그대
+  artist: Lee Juck
+  artists:
+  - Lee Juck
+  release_title: 请回答 1988 OST Part.2
+  date: '2015-11-07'
+  date_label: 原声
+  languages:
+  - ko
+  primary_genre: folk
+  genres: []
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1639308035
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/30047200
+- title: 浪子回头
+  id: eggplantegg-lang-zi-hui-tou
+  count: 1
+  original_title: 浪子回頭
+  artist: EggPlantEgg
+  artists:
+  - EggPlantEgg
+  release_title: 卡通人物
+  date: '2017'
+  date_label: 专辑发行
+  languages:
+  - nan
+  primary_genre: rock
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/tw/song/1726978526
+  - label: Spotify
+    url: https://open.spotify.com/track/301mxTHzMyFOVUXl6U22sf
+- title: 我怀念的
+  id: stefanie-sun-wo-huai-nian-de
+  count: 1
+  original_title: 我怀念的
+  artist: 孙燕姿
+  artists:
+  - 孙燕姿
+  release_title: 逆光
+  date: '2007-03-22'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/905226305
+- title: 最初的位置
+  id: lee-boram-cheoeum-geu-jarie
+  original_title: 처음 그 자리에
+  artist: Lee Boram
+  artists:
+  - Lee Boram
+  release_title: 浪漫满屋 OST
+  date: '2004-07-19'
+  date_label: 原声
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/8001195
+- title: 不留
+  id: faye-wong-bu-liu
+  count: 1
+  original_title: 不留
+  artist: 王菲
+  artists:
+  - 王菲
+  lyricists:
+  - 王菲
+  composers:
+  - 王菲
+  release_title: 将爱
+  date: '2003-11-07'
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/966483497
+- title: 公子向北走
+  id: li-chun-hua-gong-zi-xiang-bei-zou
+  count: 1
+  original_title: 公子向北走
+  artist: 李春花
+  artists:
+  - 李春花
+  release_title: 公子向北走 - Single
+  date: '2019-02-20'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: JOOX
+    url: https://www.joox.com/my-zh_cn/single/qNf0SjKm1jaHMHjbU30dxA%3D%3D
+  - label: JOOX
+    url: https://www.joox.com/my-zh_cn/album/BBuSxgB3VMdWgBl38gtJ_w%3D%3D
+- title: 所以遗憾是什么呢
+  id: shark-afmc-suo-yi-yi-han-shi-shen-me-ne
+  count: 1
+  original_title: 所以遗憾是什么呢
+  artist: SHARK 卫彬月; AFMC 黑子
+  artists:
+  - SHARK 卫彬月
+  - AFMC 黑子
+  release_title: 所以遗憾是什么呢 - Single
+  date: '2023'
+  date_label: 数字发行
+  languages:
+  - zh
+  primary_genre: hip-hop
+  genres: []
+  tags:
+  - duet
+  note: ''
+  listen_links:
+  - label: Spotify
+    url: https://open.spotify.com/track/3mk1ZGNlZGT7Pfpv39faJ2
+- title: Fox
+  id: leebada-fox
+  count: 1
+  original_title: 여우
+  artist: LEEBADA
+  artists:
+  - LEEBADA
+  release_title: THE OCEAN
+  date: '2019-03-29'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: r-and-b
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/31527516
+  - label: Bugs
+    url: https://music.bugs.co.kr/album/20242131?wl_ref=M_contents_01_04
+- title: Single
+  id: natasha-bedingfield-single
+  count: 1
+  original_title: Single
+  artist: Natasha Bedingfield
+  artists:
+  - Natasha Bedingfield
+  release_title: Unwritten
+  date: '2004-09-06'
+  date_label: 专辑发行
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/430514890
+- title: 夢追人
+  id: kokia-yumeoibito
+  count: 1
+  original_title: 夢追人
+  artist: KOKIA
+  artists:
+  - KOKIA
+  release_title: 至学館高等学校校歌「夢追人」 - Single
+  date: '2012-03-01'
+  date_label: 数字发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: 91Q
+    url: https://91q.com/song/T10064937849
+- title: ありがとう・・・
+  id: kokia-arigatou-1999
+  count: 1
+  original_title: ありがとう・・・
+  artist: KOKIA
+  artists:
+  - KOKIA
+  release_title: ありがとう・・・ - Single
+  date: '1999-06-17'
+  date_label: 数字发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Amazon Music
+    url: https://music.amazon.co.jp/tracks/B00C44Y7MW
+- title: 夏をあきらめて
+  id: naoko-ken-natsu-wo-akiramete
+  count: 1
+  original_title: 夏をあきらめて
+  artist: Naoko Ken
+  artists:
+  - Naoko Ken
+  release_title: 夏をあきらめて / ボサノバ
+  date: '1982'
+  date_label: 收录
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Amazon Music
+    url: https://music.amazon.co.jp/tracks/B0B525C7KL
+- title: Rivers of Babylon
+  id: boney-m-rivers-of-babylon
+  count: 1
+  original_title: Rivers of Babylon
+  artist: Boney M.
+  artists:
+  - Boney M.
+  release_title: Rivers of Babylon / Brown Girl in the Ring
+  date: '1978'
+  date_label: 收录
+  languages:
+  - en
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/202488960
+- title: 听你说
+  id: yisa-yu-freya-lim-ting-ni-shuo
+  count: 1
+  original_title: 听你说
+  artist: 郁可唯; 林凡
+  artists:
+  - 郁可唯
+  - 林凡
+  lyricists:
+  - 王雅君
+  composers:
+  - 王雅君
+  release_title: 犀利人妻 幸福秘笈音乐图文原声带
+  date: '2011-04-08'
+  date_label: 原声
+  languages:
+  - zh
+  primary_genre: pop
+  genres: []
+  tags:
+  - duet
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/tw/song/547142479
+- title: The Chairman's Waltz
+  id: john-williams-the-chairmans-waltz
+  count: 1
+  original_title: The Chairman's Waltz
+  artist: John Williams; Yo-Yo Ma; Itzhak Perlman; Memoirs of a Geisha Original Soundtrack
+    Orchestra
+  artists:
+  - John Williams
+  - Yo-Yo Ma
+  - Itzhak Perlman
+  - Memoirs of a Geisha Original Soundtrack Orchestra
+  composers:
+  - John Williams
+  release_title: Memoirs of a Geisha
+  date: '2005-11-22'
+  date_label: 原声
+  languages:
+  - zxx
+  primary_genre: classical
+  genres: []
+  tags:
+  - soundtrack
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/539722782
+- title: 想把我唱给你听
+  id: lao-lang-wang-jing-xiang-ba-wo-chang-gei-ni-ting
+  original_title: 想把我唱给你听
+  artist: 老狼; 王婧
+  artists:
+  - 老狼
+  - 王婧
+  release_title: 北京的冬天
+  date: 2007-02
+  date_label: 专辑发行
+  languages:
+  - zh
+  primary_genre: folk
+  genres: []
+  tags:
+  - duet
+  note: 这段双人录音采用了重新编写的编曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/cn/song/369654263
+  - label: Spotify
+    url: https://open.spotify.com/track/6JkRuPFjvHLOpMeubjra1Q
+- title: Give Love
+  id: akmu-give-love
+  count: 1
+  original_title: Give Love
+  artist: AKMU
+  artists:
+  - AKMU
+  release_title: PLAY
+  date: '2014-04-07'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/song/1316852696
+- title: 细汉仔
+  id: bobby-chen-xi-han-zai
+  count: 1
+  original_title: 细汉仔
+  artist: 陈升
+  artists:
+  - 陈升
+  lyricists:
+  - 陈升
+  composers:
+  - 陈升
+  release_title: 新乐园
+  date: 1989-12
+  date_label: 专辑发行
+  languages:
+  - zh
+  - nan
+  primary_genre: rock
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/tw/song/622504209
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=msGyFNuMGuo
+- title: 想い出はあざやかに
+  id: yoshiko-tanaka-omoide-wa-azayaka-ni
+  count: 1
+  original_title: 想い出はあざやかに
+  artist: Yoshiko Tanaka
+  artists:
+  - Yoshiko Tanaka
+  release_title: 好子
+  date: '1984-01-21'
+  date_label: 专辑发行
+  languages:
+  - ja
+  primary_genre: pop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/jp/song/336131268
+- title: 堤岸的梦
+  id: gary-john-park-ttukbang-ui-kkum
+  count: 1
+  original_title: 뚝방의 꿈
+  artist: Gary; John Park
+  artists:
+  - Gary
+  - John Park
+  release_title: '2002'
+  date: '2015-09-21'
+  date_label: 专辑发行
+  languages:
+  - ko
+  primary_genre: hip-hop
+  genres: []
+  tags: []
+  note: ''
+  listen_links:
+  - label: Bugs
+    url: https://music.bugs.co.kr/track/4577209
+  - label: Bugs
+    url: https://music.bugs.co.kr/album/533131
+- title: So Hot (Korean Ver.)
+  id: wonder-girls-so-hot-korean
+  count: 1
+  original_title: So Hot (Korean Ver.)
+  artist: Wonder Girls
+  artists:
+  - Wonder Girls
+  lyricists:
+  - J.Y. Park
+  composers:
+  - J.Y. Park
+  release_title: So Hot - EP
+  date: '2008-06-03'
+  date_label: 数字发行
+  languages:
+  - ko
+  primary_genre: pop
+  genres: []
+  tags:
+  - girl-group
+  - k-pop
+  note: ''
+  listen_links:
+  - label: JOOX
+    url: https://www.joox.com/my-en/single/NvsLKpHt5O0vSpUe7XSmgQ%3D%3D
+  - label: Apple Music
+    url: https://music.apple.com/us/album/so-hot-ep/1698682666

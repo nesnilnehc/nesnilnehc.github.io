@@ -1,4 +1,39 @@
 ---
+- title: Moonride
+  id: hearts2hearts-moonride
+  count: 1
+  original_title: Moonride
+  artist: Hearts2Hearts
+  artists:
+  - Hearts2Hearts
+  lyricists:
+  - Ondine
+  composers:
+  - Malibu Babie
+  - Stephen Schmuldt
+  - Shae Jacobs
+  - Arineh Karimi
+  - Hailey Collier
+  release_title: Moonride
+  date: '2026-09-09'
+  date_label: 数字发行
+  languages:
+  - ko
+  - en
+  primary_genre: pop
+  genres:
+  - synth-pop
+  tags:
+  - k-pop
+  - girl-group
+  note: 这首歌是与起亚 RV Black Edition 合作推出的单曲。
+  listen_links:
+  - label: Apple Music
+    url: https://music.apple.com/us/album/moonride/6807315056?i=6807315057
+  - label: Spotify
+    url: https://open.spotify.com/track/318Irz9qyCcwS0teqsaNcg
+  - label: YouTube
+    url: https://www.youtube.com/watch?v=hfftbNrp_lw
 - title: hate that i made you love me
   id: ariana-grande-hate-that-i-made-you-love-me
   count: 1
